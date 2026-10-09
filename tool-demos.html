@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michael Farzinpour's research portfolio: synthetic survey quality checks, quota tracking, Python and SQL reporting, ChatGPT-assisted drafts, and dashboard workbook prototypes.">
+  <title>Tool demonstrations | Michael Farzinpour</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23122136'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='29' font-weight='700' text-anchor='middle' fill='%23ffab57'%3EMF%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="identity" href="#main">Michael Farzinpour<span>PhD · Audience &amp; Consumer Insights</span></a>
+    <nav aria-label="Portfolio"><a href="index.html">Film analysis</a><a href="#survey">Survey workflow</a><a href="#assistant">AI-assisted reporting</a><a href="#workbooks">Workbooks</a><a href="https://www.linkedin.com/in/michaelfarzinpour">LinkedIn</a></nav>
+  </header>
+  <main id="main">
+    <section class="intro wrap" aria-labelledby="intro-title">
+      <div class="intro-copy"><p class="eyebrow">Research portfolio / October 2026</p><h1 id="intro-title">From survey exports<br>to clear research updates.</h1><p class="lead">A reproducible Python and SQL prototype for quality review, quota tracking, and reporting—plus a ChatGPT prompt workflow for drafting toplines from checked outputs.</p><div class="actions"><a class="button primary" href="files/Streaming_Survey_Operations_Portfolio.zip" download>Download source &amp; examples</a><a class="button secondary" href="report/Streaming_Survey_Operations_Report.html">Open full survey report</a></div></div>
+      <aside class="scope"><span class="scope-label">Portfolio prototype</span><h2>Synthetic data, visible calculations.</h2><p>All records and ratings are generated. The work demonstrates research operations and reporting methods; it does not represent real audience findings or campaign results.</p><dl><div><dt>Core tools</dt><dd>Python · SQLite · SQL</dd></div><div><dt>AI use</dt><dd>ChatGPT-assisted coding and draft examples</dd></div><div><dt>Inspect</dt><dd>Source, outputs, checks, and review guidance</dd></div></dl></aside>
+    </section>
+    <section id="survey" class="paper" aria-labelledby="survey-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">01 / Survey operations</p><h2 id="survey-title">Quality checks and quota tracking</h2></div><a class="text-link" href="files/summary.json">Inspect the computed summary</a></div>
+        <div class="metrics" aria-label="Computed survey metrics"><div><span>Raw export rows</span><strong>656</strong><small>640 unique response IDs</small></div><div><span>Valid completes</span><strong>576</strong><small>After documented quality checks</small></div><div><span>Excluded rows</span><strong>80</strong><small>12.2% of exported rows</small></div><div><span>Overall shortfall</span><strong>24</strong><small>Against a target of 600</small></div></div>
+        <div class="data-grid">
+          <div><h3>What was excluded</h3><p class="subtext">Each excluded row has one assigned reason.</p><div class="bars" aria-label="Exclusion counts"><div class="bar-row"><span>Attention check failure</span><div class="track"><div style="width:100%"></div></div><b>24</b></div><div class="bar-row"><span>Duplicate response ID</span><div class="track"><div style="width:66.67%"></div></div><b>16</b></div><div class="bar-row"><span>Eligibility failure</span><div class="track"><div style="width:66.67%"></div></div><b>16</b></div><div class="bar-row"><span>Below duration threshold</span><div class="track"><div style="width:66.67%"></div></div><b>16</b></div><div class="bar-row"><span>Missing / invalid watch intent</span><div class="track"><div style="width:33.33%"></div></div><b>8</b></div></div><a class="text-link" href="files/qa_flags.csv" download>Download row-level QC flags</a></div>
+          <div><h3>Age quotas remain open</h3><table><caption class="sr-only">Synthetic valid completes and remaining age quota needs</caption><thead><tr><th scope="col">Age</th><th scope="col">Target</th><th scope="col">Valid</th><th scope="col">Needed</th></tr></thead><tbody><tr><th scope="row">18–24</th><td>150</td><td>151</td><td>0</td></tr><tr><th scope="row">25–34</th><td>150</td><td>147</td><td>3</td></tr><tr><th scope="row">35–44</th><td>150</td><td>140</td><td>10</td></tr><tr><th scope="row">45+</th><td>150</td><td>138</td><td>12</td></tr></tbody></table><p class="note">Segment quotas need <strong>25</strong> additional completes. That differs from the overall shortfall of 24 because ages 18–24 are already one above target.</p></div>
+        </div>
+        <details class="source"><summary>Inspect the SQL that verifies the counts</summary><p>The reporting output is reconciled against SQLite queries. The complete query file and verification scripts are included in the download.</p><pre><code>SELECT primary_reason, COUNT(*) AS row_count
+FROM qa_flags
+GROUP BY primary_reason
+ORDER BY primary_reason;
+
+SELECT q.age_group, q.target,
+       COUNT(r.response_id) AS valid_completes,
+       MAX(0, q.target - COUNT(r.response_id)) AS remaining
+FROM quotas q
+LEFT JOIN responses_clean r ON r.age_group = q.age_group
+GROUP BY q.age_group, q.target
+ORDER BY q.age_group;</code></pre><a class="text-link" href="files/queries.sql" download>Download the actual query file</a></details>
+        <div class="concept"><div><h3>Mock concept topline</h3><p>Two fictional promotion concepts demonstrate how to preserve denominators and report a clear takeaway.</p><p class="note">The generator embeds the difference. No actual trailer was shown, and these results cannot establish audience preference, campaign effectiveness, causation, or box-office performance.</p></div><div><table><caption class="sr-only">Generated ratings for fictional promotion concepts</caption><thead><tr><th scope="col">Concept</th><th scope="col">Valid n</th><th scope="col">Rated 4 or 5</th></tr></thead><tbody><tr><th scope="row">Character-led</th><td>289</td><td>112 / 289 <b>38.8%</b></td></tr><tr><th scope="row">Action-led</th><td>287</td><td>138 / 287 <b>48.1%</b></td></tr></tbody></table><a class="text-link" href="files/topline_draft.md">Read the draft topline</a></div></div>
+      </div>
+    </section>
+    <section id="assistant" class="wrap assistant" aria-labelledby="assistant-title">
+      <div class="section-head"><div><p class="eyebrow">02 / AI-assisted reporting</p><h2 id="assistant-title">A prompt workflow with a human review step</h2></div></div>
+      <p class="section-lead">Python and SQL compute the metrics. Reusable ChatGPT instructions guide draft QC updates, mock toplines, and quota recruitment memos using those outputs.</p>
+      <ol class="workflow"><li><span>01</span><h3>Calculate &amp; reconcile</h3><p>Run the quality rules, preserve the raw export, and compare JSON results with independent SQL output.</p></li><li><span>02</span><h3>Draft from checked inputs</h3><p>Use the instruction file with the synthetic summary. Retain denominators and separate the overall target from segment quotas.</p></li><li><span>03</span><h3>Review before sharing</h3><p>Check numeric claims, rounding, limitations, and recommendations. Keep a named human reviewer in the workflow.</p></li></ol>
+      <div class="assistant-links"><a class="button primary" href="files/assistant_instructions.md">Read assistant instructions</a><a class="button secondary" href="files/recruitment_memo.md">Read the mock recruit memo</a><a class="text-link" href="files/review_checklist.md">Review checklist</a></div>
+      <details class="source dark"><summary>What this prototype demonstrates</summary><p>ChatGPT-assisted coding and worked draft examples; reusable prompt instructions; checks that reconcile the structured draft with JSON and SQLite outputs; and a manual evaluation plan.</p><p>The reporting scripts use deterministic templates and do not call an AI model or API. The assistant is a prompt/configuration prototype, not a deployed custom GPT or autonomous agent. The project does not establish access to ChatGPT Enterprise or Microsoft Copilot.</p><p>Only synthetic, nonconfidential inputs are used. The instructions require data minimization, source checks, handling dataset text as untrusted content, and human approval before external release.</p><a class="text-link" href="files/assistant_readme.md">Read the workflow documentation</a></details>
+    </section>
+    <section id="workbooks" class="paper workbooks" aria-labelledby="workbook-title"><div class="wrap"><div class="section-head"><div><p class="eyebrow">03 / Reporting workbooks</p><h2 id="workbook-title">KPI workbook prototypes</h2></div><span class="tag">Synthetic marketplace data</span></div><div class="workbook-grid"><div><h3>5,015 generated listings</h3><p>A separate marketplace example demonstrates KPI reporting in Excel and a packaged Tableau workbook. It is a reporting exercise using synthetic used-EV listings.</p><div class="workbook-facts"><div><strong>Excel</strong><span>KPI workbook prototype</span></div><div><strong>Tableau</strong><span>8 worksheets · 1 dashboard</span></div></div></div><div class="downloads"><a href="files/Used_EV_Marketplace_Dashboard.xlsx" download><strong>Excel workbook</strong><span>.xlsx download</span></a><a href="files/Used_EV_Marketplace_Analytics.twbx" download><strong>Tableau packaged workbook</strong><span>.twbx download</span></a><a href="files/used_ev_marketplace_simulated.csv" download><strong>Underlying synthetic data</strong><span>.csv download</span></a></div></div><p class="note">Tableau coursework and workbook preparation are represented here. The packaged workbook’s structure and data references were checked; it still needs native Tableau rendering and a Tableau Public publication. No Tableau Public link is claimed.</p></div></section>
+  </main>
+  <footer class="wrap"><div><strong>Michael Farzinpour, PhD</strong><span>Research Analyst · Audience and Consumer Insights</span></div><a href="https://www.linkedin.com/in/michaelfarzinpour">Connect on LinkedIn</a><p>Portfolio prototypes · October 2026 · All displayed data are synthetic.</p></footer>
+</body>
+</html>

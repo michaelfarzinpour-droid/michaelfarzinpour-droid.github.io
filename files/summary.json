@@ -1,0 +1,71 @@
+{
+  "synthetic_data": true,
+  "seed": 20261007,
+  "raw_export_rows": 656,
+  "unique_response_ids": 640,
+  "valid_completes": 576,
+  "excluded_rows": 80,
+  "target_valid_completes": 600,
+  "overall_remaining": 24,
+  "quota_remaining": 25,
+  "fielding_complete": false,
+  "quality_counts": {
+    "Retained": 576,
+    "Below duration threshold": 16,
+    "Eligibility failure": 16,
+    "Attention check failure": 24,
+    "Missing or invalid watch intent": 8,
+    "Duplicate response ID": 16
+  },
+  "quotas": [
+    {
+      "age_group": "18-24",
+      "target": 150,
+      "valid_completes": 151,
+      "remaining": 0,
+      "status": "Complete"
+    },
+    {
+      "age_group": "25-34",
+      "target": 150,
+      "valid_completes": 147,
+      "remaining": 3,
+      "status": "Open"
+    },
+    {
+      "age_group": "35-44",
+      "target": 150,
+      "valid_completes": 140,
+      "remaining": 10,
+      "status": "Open"
+    },
+    {
+      "age_group": "45+",
+      "target": 150,
+      "valid_completes": 138,
+      "remaining": 12,
+      "status": "Open"
+    }
+  ],
+  "concept_feedback": [
+    {
+      "concept": "Character-led",
+      "n": 289,
+      "top_two_count": 112,
+      "top_two_rate": 0.3875432525951557,
+      "mean_watch_intent": 3.179930795847751
+    },
+    {
+      "concept": "Action-led",
+      "n": 287,
+      "top_two_count": 138,
+      "top_two_rate": 0.4808362369337979,
+      "mean_watch_intent": 3.4146341463414633
+    }
+  ],
+  "limitations": [
+    "All records and ratings are generated, not collected from people.",
+    "Concept effects are embedded in the generator; they cannot support real audience or causal conclusions.",
+    "This prototype does not deploy Qualtrics surveys, recruit a panel, or call an AI API."
+  ]
+}
