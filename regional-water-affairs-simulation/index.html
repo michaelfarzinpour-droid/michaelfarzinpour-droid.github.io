@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An independent interactive regional water affairs portfolio simulation by Michael Farzinpour." />
+  <title>Regional Water Affairs Simulation | Michael Farzinpour</title>
+  <style>
+    :root {
+      --ink: #12313b;
+      --muted: #5b7178;
+      --paper: #f5f2e9;
+      --white: #fffefa;
+      --aqua: #0d7884;
+      --aqua-dark: #07545e;
+      --sky: #99d4d6;
+      --blue: #1b5375;
+      --sand: #e9d9bb;
+      --gold: #c8882d;
+      --coral: #be624d;
+      --line: rgba(18, 49, 59, 0.16);
+      --shadow: 0 18px 50px rgba(19, 55, 65, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 85% 8%, rgba(153,212,214,.35), transparent 27rem),
+        linear-gradient(180deg, #fbfaf4 0%, var(--paper) 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    a { color: var(--aqua-dark); }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .skip { position: absolute; left: -999px; }
+    .skip:focus { left: 1rem; top: 1rem; z-index: 20; background: white; padding: .7rem 1rem; }
+    .shell { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; }
+    .topbar {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1.1rem 0; border-bottom: 1px solid var(--line);
+    }
+    .brand { color: inherit; text-decoration: none; font-weight: 800; letter-spacing: -.02em; }
+    .brand small { display: block; font-size: .7rem; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+    .pill { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid var(--line); border-radius: 999px; padding: .45rem .75rem; font-size: .78rem; background: rgba(255,255,255,.6); }
+    .dot { width: .48rem; height: .48rem; border-radius: 50%; background: var(--gold); }
+    .hero { padding: 5.6rem 0 4rem; display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: center; }
+    .eyebrow { color: var(--aqua-dark); text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; font-weight: 800; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.2rem, 7.5vw, 6.8rem); letter-spacing: -.055em; line-height: .91; margin: .65rem 0 1.5rem; font-weight: 500; }
+    .lede { max-width: 47rem; color: #36545d; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+    .btn { border: 0; border-radius: 999px; padding: .82rem 1.15rem; font-weight: 800; font-size: .92rem; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem; }
+    .btn-primary { background: var(--ink); color: white; }
+    .btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    .region-card { position: relative; min-height: 360px; background: var(--ink); color: white; border-radius: 2.2rem; overflow: hidden; box-shadow: var(--shadow); padding: 2rem; }
+    .region-card::before, .region-card::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.17); border-radius: 50%; }
+    .region-card::before { width: 340px; height: 340px; left: 38%; top: -25%; }
+    .region-card::after { width: 250px; height: 250px; right: 48%; bottom: -28%; }
+    .region-title { position: relative; z-index: 1; font-family: Georgia, serif; font-size: 2rem; margin: 0 0 1.5rem; }
+    .route { position: relative; z-index: 1; display: grid; gap: 1rem; }
+    .place { display: grid; grid-template-columns: 2.2rem 1fr; gap: .8rem; align-items: center; }
+    .place i { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; font-style: normal; color: var(--sky); font-size: .75rem; }
+    .place strong { display: block; }
+    .place span { color: rgba(255,255,255,.65); font-size: .83rem; }
+    .section { padding: 5rem 0; border-top: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: .65fr 1.35fr; gap: 2rem; margin-bottom: 2.2rem; align-items: start; }
+    h2 { font-family: Georgia, serif; font-weight: 500; font-size: clamp(2.2rem, 5vw, 4.1rem); line-height: 1; letter-spacing: -.035em; margin: 0; }
+    .section-intro { max-width: 47rem; color: var(--muted); font-size: 1.06rem; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+    .fact { background: rgba(255,255,255,.65); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.25rem; min-height: 170px; }
+    .fact b { display: block; font-family: Georgia, serif; font-size: 2.05rem; color: var(--aqua-dark); font-weight: 500; }
+    .fact p { margin: .55rem 0 0; color: #49636b; font-size: .9rem; }
+    .source-tag { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+    .assignment { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .memo { background: var(--white); border: 1px solid var(--line); border-radius: 1.5rem; padding: 1.6rem; box-shadow: 0 10px 35px rgba(18,49,59,.06); }
+    .memo h3, .stakeholder h3, .round h3 { margin: 0 0 .65rem; font-size: 1.12rem; }
+    .memo p { color: var(--muted); margin: 0; }
+    .memo ul { padding-left: 1.2rem; margin-bottom: 0; }
+    .stakeholders { display: grid; grid-template-columns: repeat(5, 1fr); gap: .75rem; }
+    .stakeholder { background: var(--ink); color: white; border-radius: 1.2rem; padding: 1.15rem; min-height: 210px; }
+    .stakeholder:nth-child(2) { background: var(--aqua-dark); }
+    .stakeholder:nth-child(3) { background: var(--blue); }
+    .stakeholder:nth-child(4) { background: #66543c; }
+    .stakeholder:nth-child(5) { background: #5f4b58; }
+    .stakeholder .role { display: inline-block; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: var(--sky); margin-bottom: 1rem; }
+    .stakeholder p { color: rgba(255,255,255,.75); font-size: .84rem; margin: 0; }
+    .sim-wrap { display: grid; grid-template-columns: 270px 1fr; gap: 1.2rem; align-items: start; }
+    .scorecard { position: sticky; top: 1rem; background: var(--ink); color: white; border-radius: 1.4rem; padding: 1.2rem; }
+    .scorecard h3 { margin: 0 0 1rem; }
+    .meter { margin: 1rem 0; }
+    .meter-label { display: flex; justify-content: space-between; font-size: .8rem; margin-bottom: .38rem; }
+    .track { height: .48rem; background: rgba(255,255,255,.15); border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; width: 50%; border-radius: inherit; background: var(--sky); transition: width .5s ease; }
+    .score-note { color: rgba(255,255,255,.65); font-size: .76rem; margin-top: 1rem; }
+    .round { background: rgba(255,255,255,.72); border: 1px solid var(--line); border-radius: 1.4rem; padding: clamp(1.2rem, 3vw, 2rem); }
+    .round-top { display: flex; justify-content: space-between; gap: 1rem; align-items: center; margin-bottom: 1.2rem; }
+    .round-number { color: var(--aqua-dark); text-transform: uppercase; letter-spacing: .12em; font-size: .7rem; font-weight: 800; }
+    .prompt { font-family: Georgia, serif; font-size: clamp(1.55rem, 3vw, 2.35rem); line-height: 1.16; margin: .25rem 0 1.2rem; }
+    .context { color: var(--muted); background: #eef5f3; border-left: 3px solid var(--aqua); padding: .9rem 1rem; border-radius: 0 .7rem .7rem 0; }
+    .choices { display: grid; gap: .7rem; margin-top: 1.25rem; }
+    .choice { width: 100%; text-align: left; background: white; color: var(--ink); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem; cursor: pointer; font: inherit; transition: .2s ease; }
+    .choice:hover, .choice:focus-visible { border-color: var(--aqua); transform: translateY(-1px); box-shadow: 0 8px 22px rgba(13,120,132,.08); outline: none; }
+    .choice b { display: block; margin-bottom: .25rem; }
+    .choice span { color: var(--muted); font-size: .9rem; }
+    .feedback { display: none; margin-top: 1.2rem; padding: 1.05rem; border-radius: 1rem; background: #e8f2ee; border: 1px solid #c7ddd4; }
+    .feedback.show { display: block; }
+    .next { margin-top: 1rem; display: none; }
+    .next.show { display: inline-flex; }
+    .progress { font-size: .76rem; color: var(--muted); }
+    .debrief { display: none; }
+    .debrief.show { display: block; }
+    .result-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 1rem; }
+    .result-card { background: var(--white); border: 1px solid var(--line); border-radius: 1.4rem; padding: 1.5rem; }
+    .big-score { font-family: Georgia, serif; font-size: 4.5rem; color: var(--aqua-dark); line-height: 1; }
+    .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; margin-top: 1rem; }
+    .time-item { border-top: 3px solid var(--aqua); padding-top: .8rem; }
+    .time-item b { display: block; color: var(--aqua-dark); }
+    .method { display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; }
+    .method article { padding: 1.1rem; border-left: 1px solid var(--line); }
+    .method strong { display: block; margin-bottom: .45rem; }
+    .approach-panel { background: var(--ink); color: white; border-radius: 1.8rem; padding: clamp(1.4rem, 4vw, 2.4rem); box-shadow: var(--shadow); }
+    .approach-opening { max-width: 58rem; font-family: Georgia, serif; font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.3; margin: 0 0 2rem; color: #f7f2e8; }
+    .approach-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .9rem; }
+    .approach-step { border-top: 1px solid rgba(255,255,255,.28); padding-top: 1rem; }
+    .approach-step b { display: block; color: var(--sky); margin-bottom: .45rem; }
+    .approach-step span { color: rgba(255,255,255,.72); font-size: .88rem; }
+    .sources { display: grid; gap: .7rem; }
+    .source { display: flex; justify-content: space-between; gap: 1rem; align-items: center; border-bottom: 1px solid var(--line); padding: .8rem 0; }
+    .source span { color: var(--muted); font-size: .85rem; }
+    footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .8rem; }
+    footer .shell { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+    @media (max-width: 900px) {
+      .hero, .section-head, .assignment, .result-grid { grid-template-columns: 1fr; }
+      .facts { grid-template-columns: 1fr 1fr; }
+      .stakeholders { grid-template-columns: 1fr 1fr; }
+      .stakeholder:last-child { grid-column: 1 / -1; }
+      .sim-wrap { grid-template-columns: 1fr; }
+      .scorecard { position: static; display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; }
+      .scorecard h3, .score-note { grid-column: 1 / -1; }
+    }
+    @media (max-width: 600px) {
+      .shell { width: min(100% - 1.2rem, 1160px); }
+      .hero { padding-top: 3.5rem; }
+      h1 { font-size: 3.55rem; }
+      .topbar .pill { display: none; }
+      .facts, .stakeholders, .timeline, .method, .approach-grid { grid-template-columns: 1fr; }
+      .stakeholder:last-child { grid-column: auto; }
+      .scorecard { grid-template-columns: 1fr; }
+      .scorecard h3, .score-note { grid-column: auto; }
+      .source { align-items: flex-start; flex-direction: column; }
+      footer .shell { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#simulation">Skip to simulation</a>
+  <header class="shell topbar">
+    <a class="brand" href="../">Michael Farzinpour <small>Communication & stakeholder strategy · Main portfolio</small></a>
+    <div class="pill"><span class="dot"></span> Independent portfolio simulation</div>
+  </header>
+
+  <main>
+    <section class="shell hero">
+      <div>
+        <div class="eyebrow">Regional water affairs · Decision exercise</div>
+        <h1>Listen first.<br>Lead clearly.</h1>
+        <p class="lede">You are preparing a regional community-leaders briefing on Pure Water Southern California. Your job is to translate a complex water initiative, respond to competing priorities, and leave stakeholders with a credible path forward.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#simulation">Begin the 5-minute simulation →</a>
+          <a class="btn btn-secondary" href="#brief">Read the assignment</a>
+        </div>
+      </div>
+      <aside class="region-card" aria-label="Regional focus">
+        <p class="eyebrow" style="color:var(--sky)">Regional focus</p>
+        <h2 class="region-title">Three counties.<br>One shared water future.</h2>
+        <div class="route">
+          <div class="place"><i>01</i><div><strong>Eastern Los Angeles County</strong><span>Community questions, member-agency coordination</span></div></div>
+          <div class="place"><i>02</i><div><strong>San Bernardino County</strong><span>Potential conveyance and local supply connections</span></div></div>
+          <div class="place"><i>03</i><div><strong>Riverside County</strong><span>Regional reliability, affordability, long-range planning</span></div></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="context">
+      <div class="shell">
+        <div class="section-head">
+          <h2>The factual foundation</h2>
+          <p class="section-intro">The scenario is fictional, but its foundation is real. Metropolitan describes Pure Water Southern California as a major regional recycled-water initiative intended to strengthen climate resilience and diversify local supply.</p>
+        </div>
+        <div class="facts">
+          <article class="fact"><span class="source-tag">Service area</span><b>19 million</b><p>People served through Metropolitan and its 26 member agencies.</p></article>
+          <article class="fact"><span class="source-tag">Potential production</span><b>150 MGD</b><p>Up to 150 million gallons per day—enough water for approximately 500,000 homes.</p></article>
+          <article class="fact"><span class="source-tag">Potential reach</span><b>Azusa → Upland</b><p>Planning documents describe conveyance as far north as Azusa and as far east as Upland.</p></article>
+          <article class="fact"><span class="source-tag">2026 milestone</span><b>CEQA approved</b><p>Metropolitan certified the final environmental impact report and approved the program for CEQA purposes in February 2026.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="brief">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Your assignment</h2>
+          <p class="section-intro">Act as a regional liaison preparing a 45-minute briefing for public officials, member agencies, and community partners. The goal is informed dialogue—not predetermined agreement.</p>
+        </div>
+        <div class="assignment">
+          <article class="memo">
+            <h3>Situation</h3>
+            <p>Interest has increased following the 2026 environmental milestone. Stakeholders want useful answers about regional benefits, cost, equity, construction, water quality, and how future decisions will be made.</p>
+          </article>
+          <article class="memo">
+            <h3>Your operating principles</h3>
+            <ul>
+              <li>Separate verified facts from proposals and unknowns.</li>
+              <li>Adapt the message without changing the underlying facts.</li>
+              <li>Document unanswered questions and close the loop.</li>
+              <li>Treat disagreement as information for better outreach.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Who is in the room</h2>
+          <p class="section-intro">These are composite stakeholders created for the exercise. Each represents a plausible concern a regional affairs representative would need to hear, clarify, and carry forward.</p>
+        </div>
+        <div class="stakeholders">
+          <article class="stakeholder"><span class="role">Elected-office staff</span><h3>“What will this mean for residents’ bills?”</h3><p>Needs a defensible explanation of costs, funding, timelines, and what has not yet been decided.</p></article>
+          <article class="stakeholder"><span class="role">Member agency</span><h3>“How does this improve supply reliability here?”</h3><p>Wants regional benefits translated into operational relevance for its service area.</p></article>
+          <article class="stakeholder"><span class="role">Community partner</span><h3>“Who benefits—and who bears the burden?”</h3><p>Expects affordability, equity, community benefits, and meaningful participation to be addressed.</p></article>
+          <article class="stakeholder"><span class="role">Business coalition</span><h3>“How will disruption be communicated?”</h3><p>Wants advance notice, a reliable contact, and clear information about construction impacts.</p></article>
+          <article class="stakeholder"><span class="role">Water-quality advocate</span><h3>“What safeguards protect public health?”</h3><p>Expects plain-language treatment, monitoring, regulatory, and uncertainty information.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="simulation">
+      <div class="shell">
+        <div class="section-head">
+          <h2>The briefing begins</h2>
+          <p class="section-intro">Choose how you would respond at four moments. The exercise scores the communication choices—not support for any particular project outcome.</p>
+        </div>
+        <div class="sim-wrap">
+          <aside class="scorecard" aria-live="polite">
+            <h3>Room temperature</h3>
+            <div class="meter"><div class="meter-label"><span>Trust</span><b id="trustNum">50</b></div><div class="track"><div class="fill" id="trustFill"></div></div></div>
+            <div class="meter"><div class="meter-label"><span>Clarity</span><b id="clarityNum">50</b></div><div class="track"><div class="fill" id="clarityFill"></div></div></div>
+            <div class="meter"><div class="meter-label"><span>Collaboration</span><b id="collabNum">50</b></div><div class="track"><div class="fill" id="collabFill"></div></div></div>
+            <p class="score-note">A credible liaison balances all three. Scores reflect this simulation’s communication framework.</p>
+          </aside>
+
+          <div>
+            <article class="round" id="roundCard">
+              <div class="round-top"><span class="round-number" id="roundNumber">Decision 1 of 4</span><span class="progress" id="progressText">Opening the meeting</span></div>
+              <h3 class="prompt" id="prompt"></h3>
+              <div class="context" id="roundContext"></div>
+              <div class="choices" id="choices"></div>
+              <div class="feedback" id="feedback" role="status"></div>
+              <button class="btn btn-primary next" id="nextButton">Continue →</button>
+            </article>
+
+            <section class="debrief" id="debrief" aria-live="polite">
+              <div class="result-grid">
+                <article class="result-card"><span class="source-tag">Overall readiness</span><div class="big-score" id="finalScore">—</div><h3 id="resultTitle"></h3><p id="resultText"></p><button class="btn btn-secondary" id="restartButton">Run again</button></article>
+                <article class="result-card"><span class="source-tag">Recommended follow-through</span><h3>Your regional liaison plan</h3><div class="timeline"><div class="time-item"><b>Within 48 hours</b><span>Send a plain-language recap, question log, responsible owners, and response dates.</span></div><div class="time-item"><b>Within 2 weeks</b><span>Coordinate a technical follow-up and provide accessible, multilingual materials.</span></div><div class="time-item"><b>Within 30 days</b><span>Report themes, unresolved concerns, and outreach recommendations to internal teams and member agencies.</span></div></div></article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recommended-approach">
+      <div class="shell">
+        <div class="section-head">
+          <h2>My recommended approach</h2>
+          <p class="section-intro">My role would be to make the conversation useful: give stakeholders accurate information, hear what the standard presentation may miss, and ensure questions produce accountable follow-through.</p>
+        </div>
+        <div class="approach-panel">
+          <p class="approach-opening">“I would open by explaining what has been decided, what remains under development, and how questions from the meeting will be documented and answered. I would invite disagreement early so it can inform the conversation rather than surface after decisions are made.”</p>
+          <div class="approach-grid">
+            <div class="approach-step"><b>1 · Listen for the real concern</b><span>Clarify whether a question is about affordability, reliability, disruption, water quality, process, or trust before responding.</span></div>
+            <div class="approach-step"><b>2 · Answer in three parts</b><span>State the verified fact, name the limit of current knowledge or authority, and explain the path to a complete answer.</span></div>
+            <div class="approach-step"><b>3 · Turn concerns into action</b><span>Record the question, responsible team, requested evidence, and response date instead of relying on general assurances.</span></div>
+            <div class="approach-step"><b>4 · Close the loop</b><span>Return with a plain-language recap, coordinated answers, accessible materials, and the themes internal teams need to address.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head"><h2>What this work sample demonstrates</h2><p class="section-intro">The simulation applies communication research skills to a public-agency setting while keeping the limits of a portfolio exercise explicit.</p></div>
+        <div class="method">
+          <article><strong>Policy translation</strong><span>Distills public planning materials into accurate, accessible briefing language.</span></article>
+          <article><strong>Stakeholder judgment</strong><span>Recognizes that agencies, officials, residents, businesses, and advocates enter with different questions.</span></article>
+          <article><strong>Accountable follow-up</strong><span>Treats unanswered questions, ownership, response timing, and feedback loops as part of the work.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="shell">
+        <div class="section-head"><h2>Sources & limits</h2><p class="section-intro">Program facts are drawn from Metropolitan’s public materials accessed in October 2026. All meeting dialogue, stakeholder roles, scores, and recommendations are original simulated content.</p></div>
+        <div class="sources">
+          <div class="source"><div><strong>Pure Water Southern California</strong><br><span>Program overview, benefits, milestones, presentations</span></div><a href="https://www.mwdh2o.com/building-local-supplies/pure-water-southern-california/" target="_blank" rel="noreferrer">View MWD source ↗</a></div>
+          <div class="source"><div><strong>Pure Water Notice of Preparation</strong><br><span>Potential conveyance, geography, and supply figures</span></div><a href="https://www.mwdh2o.com/building-local-supplies/pure-water-southern-california-notice-of-preparation/" target="_blank" rel="noreferrer">View MWD source ↗</a></div>
+          <div class="source"><div><strong>CAMP4W</strong><br><span>Reliability, affordability, equity, and collaborative planning context</span></div><a href="https://www.mwdh2o.com/stories/camp4w/" target="_blank" rel="noreferrer">View MWD source ↗</a></div>
+          <div class="source"><div><strong>Legislative Services</strong><br><span>Community-leaders briefings and regional policy engagement</span></div><a href="https://www.mwdh2o.com/legislative-services/" target="_blank" rel="noreferrer">View MWD source ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell"><span>Prepared by Michael Farzinpour, PhD · October 2026</span><span>Independent portfolio simulation · No affiliation with or endorsement by MWD</span></div></footer>
+
+  <script>
+    const rounds = [
+      {
+        title: "How do you open a room with competing priorities?",
+        phase: "Opening the meeting",
+        context: "The audience includes agency staff, an elected official’s representative, community leaders, and business owners. Several attendees expect a sales pitch.",
+        choices: [
+          { head: "Lead with the program’s scale and innovation", body: "Open with production figures, regional importance, and the project’s transformational potential.", delta: {trust: 0, clarity: 7, collab: -4}, feedback: "The facts establish scale, but an achievement-first opening may confirm the room’s expectation that the outcome is already settled. Add purpose, decision status, and how input will be used." },
+          { head: "Name the purpose, the limits, and the questions", body: "Explain what is known, what remains under development, and how questions will be documented and answered.", delta: {trust: 12, clarity: 9, collab: 11}, feedback: "Strong opening. It sets a useful contract with the room: verified information, honest limits, and accountable follow-up. That creates space for disagreement without losing structure." },
+          { head: "Start with a technical presentation", body: "Use the first 20 minutes to explain treatment technology before taking questions.", delta: {trust: -5, clarity: 3, collab: -8}, feedback: "Technical grounding matters, but delaying questions can feel one-directional. Begin by learning what the room needs, then adjust the technical depth." }
+        ]
+      },
+      {
+        title: "An elected-office staffer asks: ‘What will residents pay?’",
+        phase: "Responding on affordability",
+        context: "You have program information but do not have authority to promise a final rate impact. The room wants a direct answer.",
+        choices: [
+          { head: "Offer reassurance", body: "Say regional investment spreads costs and should keep impacts manageable.", delta: {trust: -7, clarity: -5, collab: 0}, feedback: "The intention is calming, but the statement outruns the evidence available in the room. Credibility rises when you distinguish an objective from a guaranteed outcome." },
+          { head: "Explain the decision path and commit to specifics", body: "Acknowledge the concern, separate approved milestones from future cost decisions, identify funding questions, and promise a dated follow-up.", delta: {trust: 13, clarity: 12, collab: 8}, feedback: "Strong response. It answers what you can, shows how decisions are made, and creates an accountable path for what you cannot answer immediately." },
+          { head: "Refer the question elsewhere", body: "State that rates are handled by finance staff and move to the next topic.", delta: {trust: -10, clarity: -6, collab: -8}, feedback: "Referral may be necessary, but ownership still matters. Capture the question, name the responsible team, and tell the stakeholder when and how the answer will return." }
+        ]
+      },
+      {
+        title: "A community partner challenges the definition of regional benefit.",
+        phase: "Addressing equity",
+        context: "They ask whether underserved communities will see tangible benefits or primarily absorb cost and disruption.",
+        choices: [
+          { head: "Point to service-area scale", body: "Explain that a more reliable supply benefits all 19 million people in Metropolitan’s service area.", delta: {trust: -2, clarity: 5, collab: -3}, feedback: "This is relevant context, but it does not answer distributional questions. Regional benefit and equitable benefit are related but distinct claims." },
+          { head: "Ask for the outcome they need measured", body: "Acknowledge the concern, discuss affordability and community-benefit work, and invite specific measures and follow-up participation.", delta: {trust: 12, clarity: 7, collab: 14}, feedback: "Strong response. You provide context while turning a broad concern into measurable questions that can inform outreach, analysis, and future decisions." },
+          { head: "Defend the project’s environmental value", body: "Emphasize recycling, climate resilience, and reduced dependence on imported supply.", delta: {trust: -4, clarity: 4, collab: -6}, feedback: "Environmental benefits may matter to the stakeholder, but changing the subject leaves the equity question unanswered. Address the stated concern before adding another benefit frame." }
+        ]
+      },
+      {
+        title: "A water-quality question triggers visible concern across the room.",
+        phase: "Closing with credibility",
+        context: "One attendee repeats an alarming claim from social media. You are not the technical expert, but you need to keep the conversation accurate and constructive.",
+        choices: [
+          { head: "Correct the claim immediately", body: "Say the claim is false and direct the audience to official technical materials.", delta: {trust: -3, clarity: 5, collab: -6}, feedback: "Accuracy matters, but a blunt correction can harden resistance. Ask what the person heard, clarify the verified facts, and connect them with technical expertise." },
+          { head: "Clarify, explain, and create a technical follow-up", body: "Identify the specific concern, explain the treatment and oversight at a plain-language level, name your limits, and arrange expert follow-up or a facility visit.", delta: {trust: 14, clarity: 13, collab: 12}, feedback: "Strong close. You keep responsibility for the relationship while bringing in the right expertise. The combination of clear facts, humility, and follow-through supports trust." },
+          { head: "Defer all technical questions", body: "Explain that you handle regional affairs and cannot discuss treatment or safety.", delta: {trust: -8, clarity: -8, collab: -4}, feedback: "You should not improvise technical claims, but the liaison role still owns the connection. State what you know, document what needs verification, and bring the answer back." }
+        ]
+      }
+    ];
+
+    let index = 0;
+    let scores = { trust: 50, clarity: 50, collab: 50 };
+    const els = {
+      number: document.getElementById('roundNumber'), phase: document.getElementById('progressText'), prompt: document.getElementById('prompt'),
+      context: document.getElementById('roundContext'), choices: document.getElementById('choices'), feedback: document.getElementById('feedback'),
+      next: document.getElementById('nextButton'), card: document.getElementById('roundCard'), debrief: document.getElementById('debrief')
+    };
+
+    function clamp(n) { return Math.max(0, Math.min(100, n)); }
+    function updateMeters() {
+      ['trust','clarity','collab'].forEach(k => {
+        const label = k === 'collab' ? 'collab' : k;
+        document.getElementById(label + 'Num').textContent = scores[k];
+        document.getElementById(label + 'Fill').style.width = scores[k] + '%';
+      });
+    }
+    function renderRound() {
+      const r = rounds[index];
+      els.number.textContent = `Decision ${index + 1} of ${rounds.length}`;
+      els.phase.textContent = r.phase;
+      els.prompt.textContent = r.title;
+      els.context.textContent = r.context;
+      els.choices.innerHTML = '';
+      els.feedback.className = 'feedback';
+      els.feedback.textContent = '';
+      els.next.className = 'btn btn-primary next';
+      r.choices.forEach((c, i) => {
+        const b = document.createElement('button');
+        b.className = 'choice';
+        b.innerHTML = `<b>${c.head}</b><span>${c.body}</span>`;
+        b.addEventListener('click', () => choose(i));
+        els.choices.appendChild(b);
+      });
+    }
+    function choose(i) {
+      const choice = rounds[index].choices[i];
+      Object.keys(scores).forEach(k => scores[k] = clamp(scores[k] + choice.delta[k]));
+      updateMeters();
+      [...els.choices.children].forEach((b, n) => { b.disabled = true; b.style.opacity = n === i ? '1' : '.48'; });
+      els.feedback.innerHTML = `<strong>Communication assessment</strong><br>${choice.feedback}`;
+      els.feedback.className = 'feedback show';
+      els.next.textContent = index === rounds.length - 1 ? 'View debrief →' : 'Continue →';
+      els.next.className = 'btn btn-primary next show';
+    }
+    function showDebrief() {
+      els.card.style.display = 'none';
+      els.debrief.className = 'debrief show';
+      const avg = Math.round((scores.trust + scores.clarity + scores.collab) / 3);
+      document.getElementById('finalScore').textContent = avg;
+      let title, text;
+      if (avg >= 78) { title = 'Regional liaison ready'; text = 'Your choices consistently paired accurate information with listening, transparency, and accountable follow-through.'; }
+      else if (avg >= 62) { title = 'Credible foundation'; text = 'You maintained structure and accuracy. Review where reassurance, referral, or one-way explanation weakened the stakeholder relationship.'; }
+      else { title = 'Rebuild the room'; text = 'The next step is to treat questions as operational input: acknowledge the concern, state what is known, name the limit, and close the loop.'; }
+      document.getElementById('resultTitle').textContent = title;
+      document.getElementById('resultText').textContent = text;
+    }
+    els.next.addEventListener('click', () => { if (index < rounds.length - 1) { index++; renderRound(); els.card.scrollIntoView({behavior:'smooth', block:'center'}); } else { showDebrief(); } });
+    document.getElementById('restartButton').addEventListener('click', () => { index = 0; scores = {trust:50, clarity:50, collab:50}; updateMeters(); els.card.style.display = 'block'; els.debrief.className = 'debrief'; renderRound(); els.card.scrollIntoView({behavior:'smooth', block:'center'}); });
+    renderRound();
+  </script>
+</body>
+</html>
