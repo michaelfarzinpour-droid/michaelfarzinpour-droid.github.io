@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An independent interactive simulation and companion policy brief on California disability policy, Individual Program Plans, accessible research, and accountable follow-through." />
+  <meta name="theme-color" content="#17253b" />
+  <title>From Plan to Support | California Disability Policy Simulation</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17253b;
+      --muted: #4e5d6d;
+      --paper: #f4f2eb;
+      --card: #fffefa;
+      --teal: #0f7478;
+      --teal-dark: #07565b;
+      --teal-pale: #e2f0ed;
+      --lavender: #e7e1f2;
+      --gold: #8a5614;
+      --line: rgba(23, 37, 59, .17);
+      --shadow: 0 20px 50px rgba(23, 37, 59, .10);
+      --radius: 1.25rem;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(circle at 88% 8%, rgba(15,116,120,.12), transparent 27rem), linear-gradient(180deg, #fbfaf6, var(--paper));
+      font: 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--teal-dark); text-underline-offset: .18em; }
+    a:hover { color: #063c40; }
+    button { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, [tabindex="-1"]:focus-visible { outline: 3px solid #925700; outline-offset: 3px; }
+    .skip-link { position: absolute; left: -9999px; top: 1rem; z-index: 10; padding: .8rem 1rem; background: #fff; border: 2px solid var(--ink); border-radius: .5rem; }
+    .skip-link:focus { left: 1rem; }
+    .shell { width: min(1160px, calc(100% - 2rem)); margin-inline: auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+    .brand { font-weight: 800; letter-spacing: -.025em; }
+    .brand small { display: block; font-size: .72rem; color: var(--muted); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+    .tag { display: inline-flex; gap: .5rem; align-items: center; border: 1px solid var(--line); background: rgba(255,255,255,.7); border-radius: 999px; padding: .42rem .78rem; font-size: .78rem; font-weight: 700; }
+    .tag-dot { width: .52rem; height: .52rem; background: var(--teal); border-radius: 50%; }
+    .nav { display: flex; flex-wrap: wrap; gap: .3rem 1rem; padding: .75rem 0; border-bottom: 1px solid var(--line); }
+    .nav a { font-size: .84rem; font-weight: 700; text-decoration: none; padding: .25rem 0; }
+    .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 2rem; align-items: center; padding: 4.5rem 0 3.8rem; }
+    .eyebrow { color: var(--teal-dark); text-transform: uppercase; letter-spacing: .13em; font-size: .73rem; font-weight: 850; }
+    h1, h2, .serif { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+    h1 { font-size: clamp(3.2rem, 7.5vw, 6.2rem); letter-spacing: -.055em; line-height: .93; margin: .55rem 0 1.1rem; }
+    .lede { max-width: 47rem; font-size: clamp(1.05rem, 2vw, 1.28rem); color: #34485c; }
+    .note { border-left: 3px solid var(--gold); background: #f8f0df; border-radius: 0 .8rem .8rem 0; padding: .85rem 1rem; color: #463b2c; font-size: .9rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
+    .btn { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border: 1px solid transparent; border-radius: 999px; padding: .7rem 1.05rem; cursor: pointer; font-weight: 800; text-decoration: none; }
+    .btn-primary { background: var(--ink); color: #fff; }
+    .btn-primary:hover { background: #243b5a; color: #fff; }
+    .btn-secondary { border-color: var(--line); color: var(--ink); background: transparent; }
+    .btn-secondary:hover { background: #fff; }
+    .path-card { background: var(--ink); color: #fff; border-radius: 1.8rem; padding: 1.7rem; min-height: 340px; box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .path-card::after { content: ""; position: absolute; width: 260px; height: 260px; right: -95px; bottom: -135px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; box-shadow: 0 0 0 28px rgba(255,255,255,.025), 0 0 0 58px rgba(255,255,255,.025); }
+    .path-card h2 { font-size: 2rem; line-height: 1.08; margin: .3rem 0 1.4rem; position: relative; z-index: 1; }
+    .path-list { display: grid; gap: .92rem; position: relative; z-index: 1; }
+    .path-item { display: grid; grid-template-columns: 2.1rem 1fr; gap: .8rem; align-items: center; }
+    .path-num { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border: 1px solid rgba(255,255,255,.45); border-radius: 50%; color: #bce8df; font-size: .75rem; font-weight: 800; }
+    .path-item strong { display: block; }
+    .path-item span:last-child { color: rgba(255,255,255,.76); font-size: .84rem; }
+    .section { padding: 4.2rem 0; border-top: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: .7fr 1.3fr; gap: 1.5rem 2rem; align-items: start; margin-bottom: 1.8rem; }
+    h2 { font-size: clamp(2.1rem, 5vw, 3.7rem); letter-spacing: -.035em; line-height: 1; margin: 0; }
+    .intro { margin: 0; max-width: 49rem; color: var(--muted); font-size: 1.02rem; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+    .fact { background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.15rem; min-height: 174px; }
+    .fact .label { display: block; color: var(--teal-dark); font-size: .69rem; text-transform: uppercase; letter-spacing: .09em; font-weight: 800; }
+    .fact strong { display: block; margin: .42rem 0; font-family: Georgia, serif; font-size: 1.42rem; line-height: 1.15; font-weight: 500; }
+    .fact p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .assignment { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.35rem; box-shadow: 0 9px 28px rgba(23,37,59,.045); }
+    .panel h3 { margin: 0 0 .6rem; font-size: 1.08rem; }
+    .panel p { color: var(--muted); margin: 0; }
+    .panel ul { margin: .55rem 0 0; padding-left: 1.25rem; color: var(--muted); }
+    .roles { display: grid; grid-template-columns: repeat(5, 1fr); gap: .7rem; }
+    .role { min-height: 205px; color: #fff; background: #20344f; border-radius: 1.1rem; padding: 1rem; }
+    .role:nth-child(2) { background: #07565b; }
+    .role:nth-child(3) { background: #37516a; }
+    .role:nth-child(4) { background: #5b4761; }
+    .role:nth-child(5) { background: #554631; }
+    .role small { color: #c4e8df; display: block; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; margin-bottom: .8rem; }
+    .role h3 { font-size: 1.04rem; line-height: 1.2; margin: 0 0 .5rem; }
+    .role p { color: rgba(255,255,255,.83); font-size: .85rem; margin: 0; }
+    .sim-layout { display: grid; grid-template-columns: 265px 1fr; gap: 1rem; align-items: start; }
+    .profile { background: var(--ink); color: #fff; border-radius: 1.25rem; padding: 1.15rem; position: sticky; top: 1rem; }
+    .profile h3 { margin: 0; font-size: 1.05rem; }
+    .profile-note { color: rgba(255,255,255,.75); font-size: .78rem; margin: .4rem 0 1rem; }
+    .meter { margin: .9rem 0; }
+    .meter-label { display: flex; justify-content: space-between; gap: .8rem; font-size: .79rem; margin-bottom: .28rem; }
+    .meter-label output { font-weight: 800; font-variant-numeric: tabular-nums; }
+    progress { display: block; width: 100%; height: .62rem; border: 0; border-radius: 999px; overflow: hidden; background: rgba(255,255,255,.22); }
+    progress::-webkit-progress-bar { background: rgba(255,255,255,.22); border-radius: 999px; }
+    progress::-webkit-progress-value { background: #a8e1d6; border-radius: 999px; }
+    progress::-moz-progress-bar { background: #a8e1d6; border-radius: 999px; }
+    .sim-card { background: rgba(255,255,255,.78); border: 1px solid var(--line); border-radius: 1.35rem; padding: clamp(1.1rem, 3vw, 1.8rem); }
+    .sim-meta { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: .7rem; }
+    .step-label { color: var(--teal-dark); font-size: .7rem; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
+    .progress-copy { color: var(--muted); font-size: .78rem; font-weight: 700; }
+    .sim-progress { width: 100%; height: .42rem; margin-bottom: 1.3rem; background: #dce4e2; }
+    .sim-progress::-webkit-progress-bar { background: #dce4e2; }
+    .sim-progress::-webkit-progress-value { background: var(--teal); }
+    .sim-progress::-moz-progress-bar { background: var(--teal); }
+    .decision-title { font-family: Georgia, serif; font-weight: 500; font-size: clamp(1.55rem, 3.5vw, 2.2rem); line-height: 1.18; margin: .3rem 0 .8rem; }
+    .scenario { background: var(--teal-pale); border-left: 3px solid var(--teal); border-radius: 0 .8rem .8rem 0; padding: .9rem 1rem; color: #29474b; }
+    .choices { display: grid; gap: .7rem; margin: 1rem 0 0; }
+    .choice { width: 100%; display: grid; grid-template-columns: 2rem 1fr; gap: .75rem; text-align: left; border: 1px solid var(--line); border-radius: 1rem; background: #fff; color: var(--ink); padding: .95rem; cursor: pointer; transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+    .choice:hover, .choice:focus-visible { border-color: var(--teal); box-shadow: 0 6px 20px rgba(15,116,120,.12); transform: translateY(-1px); }
+    .choice:disabled { cursor: default; opacity: .58; transform: none; box-shadow: none; }
+    .choice[aria-pressed="true"] { border: 2px solid var(--teal-dark); background: #f0faf6; opacity: 1; }
+    .choice-letter { display: grid; place-items: center; width: 1.9rem; height: 1.9rem; background: var(--lavender); border-radius: 50%; font-size: .78rem; font-weight: 900; }
+    .choice strong { display: block; margin-bottom: .18rem; }
+    .choice span:last-child { color: var(--muted); font-size: .88rem; }
+    .feedback { margin-top: 1rem; padding: 1rem; border: 1px solid #bfd9d1; background: #edf6f1; border-radius: 1rem; }
+    .feedback h4 { margin: 0 0 .3rem; font-size: .94rem; }
+    .feedback p { margin: 0; color: #344d48; }
+    [hidden] { display: none !important; }
+    .sim-actions { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; }
+    .small-note { color: var(--muted); font-size: .78rem; }
+    .debrief { background: var(--card); border: 1px solid var(--line); border-radius: 1.35rem; padding: clamp(1.15rem, 3vw, 1.8rem); }
+    .debrief h3 { margin: 0 0 .5rem; }
+    .debrief-intro { color: var(--muted); margin: 0 0 1rem; }
+    .debrief-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 1rem; }
+    .debrief-card { border: 1px solid var(--line); background: #fff; border-radius: 1rem; padding: 1rem; }
+    .debrief-card h4 { margin: 0 0 .65rem; }
+    .decision-list { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    .decision-list li + li { margin-top: .5rem; }
+    .outcome { background: var(--ink); color: #fff; border-radius: 1.1rem; padding: 1.1rem; margin-top: 1rem; }
+    .outcome p { color: rgba(255,255,255,.83); margin: .4rem 0 0; }
+    .approach { background: var(--ink); color: #fff; border-radius: 1.5rem; padding: clamp(1.3rem, 4vw, 2rem); }
+    .approach-lede { max-width: 57rem; font: 1.35rem/1.35 Georgia, serif; color: #f4f1e8; margin: 0 0 1.3rem; }
+    .approach-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .85rem; }
+    .approach-step { border-top: 1px solid rgba(255,255,255,.32); padding-top: .8rem; }
+    .approach-step strong { color: #bce8df; display: block; margin-bottom: .35rem; }
+    .approach-step span { color: rgba(255,255,255,.79); font-size: .86rem; }
+    .limits { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+    .limit-card { background: #f8f0df; border: 1px solid #ddcfb2; border-radius: var(--radius); padding: 1.2rem; }
+    .limit-card h3 { margin: 0 0 .5rem; font-size: 1.02rem; }
+    .limit-card p { margin: 0; color: #4b443a; font-size: .9rem; }
+    .sources { display: grid; gap: .55rem; }
+    .source { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .8rem; padding: .75rem 0; border-bottom: 1px solid var(--line); }
+    .source strong { display: block; }
+    .source span { color: var(--muted); font-size: .84rem; }
+    .source a { font-weight: 750; font-size: .84rem; }
+    .source-note { color: var(--muted); font-size: .84rem; }
+    .brief-shell { max-width: 1050px; }
+    .brief-actions { display: flex; justify-content: flex-end; margin: 0 0 1rem; }
+    .brief-block { background: rgba(255,255,255,.82); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1rem, 3vw, 1.5rem); margin-top: 1rem; }
+    .brief-block h3 { font: 500 clamp(1.35rem, 3vw, 1.8rem)/1.15 Georgia, "Times New Roman", serif; margin: 0 0 .7rem; }
+    .brief-block h4 { margin: 0 0 .35rem; font-size: .98rem; }
+    .brief-block p { margin: .45rem 0; color: #34485c; }
+    .brief-question { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 1.25rem; margin: 1.2rem 0; }
+    .brief-question strong { display: block; color: #bce8df; text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; margin-bottom: .4rem; }
+    .brief-question p { margin: 0; font: 500 clamp(1.25rem, 3vw, 1.8rem)/1.25 Georgia, "Times New Roman", serif; }
+    .brief-recommendation { border-left: 4px solid var(--teal); background: var(--teal-pale); padding: 1rem 1.1rem; border-radius: 0 .9rem .9rem 0; }
+    .brief-recommendation p { margin: .3rem 0 0; }
+    .brief-table-wrap { overflow-x: auto; margin: .8rem 0; border: 1px solid var(--line); border-radius: .8rem; background: #fff; }
+    .brief-table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: .88rem; }
+    .brief-table caption { text-align: left; padding: .75rem; font-weight: 800; color: var(--ink); }
+    .brief-table th, .brief-table td { padding: .8rem; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+    .brief-table thead th { background: #e8f0ee; color: var(--ink); border-top: 0; }
+    .brief-table td { color: #34485c; }
+    .brief-table ul { margin: 0; padding-left: 1.1rem; }
+    .brief-table li + li { margin-top: .3rem; }
+    .brief-source-list { padding-left: 1.3rem; margin: .5rem 0; }
+    .brief-source-list li { padding: .25rem 0 .45rem; }
+    .brief-source-list a { font-weight: 750; }
+    .brief-source-list span { color: var(--muted); }
+    .brief-callout { background: #f8f0df; border: 1px solid #ddcfb2; border-radius: .9rem; padding: 1rem; color: #463b2c; }
+    .brief-callout p { margin: .35rem 0 0; color: #463b2c; }
+    footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: .8rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 1rem; }
+    @media (max-width: 980px) {
+      .hero, .section-head, .assignment, .debrief-grid { grid-template-columns: 1fr; }
+      .facts { grid-template-columns: 1fr 1fr; }
+      .roles { grid-template-columns: repeat(2, 1fr); }
+      .role:last-child { grid-column: 1 / -1; }
+      .sim-layout { grid-template-columns: 1fr; }
+      .profile { position: static; }
+      .profile-meters { display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem 1rem; }
+      .profile h3, .profile-note { grid-column: 1 / -1; }
+    }
+    @media (max-width: 620px) {
+      .shell { width: min(100% - 1.2rem, 1160px); }
+      .topbar { align-items: flex-start; }
+      .topbar .tag { max-width: 9.7rem; font-size: .69rem; }
+      .nav { gap: .25rem .8rem; }
+      .nav a { font-size: .79rem; }
+      .hero { padding: 3.2rem 0 2.6rem; }
+      h1 { font-size: 3.45rem; }
+      .facts, .roles, .approach-grid, .limits, .profile-meters { grid-template-columns: 1fr; }
+      .role:last-child { grid-column: auto; }
+      .section { padding: 3.2rem 0; }
+      .sim-meta { align-items: flex-start; flex-direction: column; gap: .2rem; }
+      .source { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; }
+      .sim-actions { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: #fff; }
+      .topbar, .nav, .hero, #policy-frame, #assignment, #roles, #method, #limits, #sources, footer, .profile, .choices, .sim-actions, .actions { display: none !important; }
+      #simulation { border: 0; padding: 0; }
+      .sim-layout { display: block; }
+      .sim-card, .debrief { border: 0; padding: 0; }
+      .debrief[hidden] { display: block !important; }
+      body.print-brief main > section:not(#companion-brief), body.print-brief .topbar, body.print-brief .nav, body.print-brief footer { display: none !important; }
+      body.print-brief #companion-brief { display: block !important; border: 0; padding: 0; }
+      body.print-brief #companion-brief .shell { width: auto; max-width: none; margin: 0; }
+      body.print-brief #companion-brief .brief-actions { display: none !important; }
+      body.print-brief #companion-brief a { color: #111; text-decoration: none; }
+      body.print-brief #companion-brief .brief-block, body.print-brief #companion-brief .brief-question { break-inside: avoid; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#simulation">Skip to the interactive simulation</a>
+  <header class="shell topbar">
+    <div class="brand">Michael Farzinpour, PhD<small>Research · Policy · Community accountability</small></div>
+    <div class="tag"><span class="tag-dot" aria-hidden="true"></span> Independent portfolio simulation</div>
+  </header>
+  <nav class="shell nav" aria-label="Page sections">
+    <a href="#policy-frame">Policy frame</a>
+    <a href="#assignment">Assignment</a>
+    <a href="#simulation">Simulation</a>
+    <a href="#companion-brief">Policy brief</a>
+    <a href="#method">Approach</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <main>
+    <section class="shell hero" aria-labelledby="page-title">
+      <div>
+        <div class="eyebrow">California disability policy · Interactive decision exercise</div>
+        <h1 id="page-title">From Plan<br>to Support</h1>
+        <p class="lede">A research-policy simulation about how a person's stated priorities connect to planning, service coordination, and accountable follow-through in California's Regional Center system.</p>
+        <p class="note"><strong>Independent exercise:</strong> the case and stakeholder roles are fictional composites based on public sources. The author brings separate experience working with disabled people and a disability-led organization; this scenario has not been reviewed by those collaborators and reports no research findings.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#simulation">Begin the 6-minute simulation <span aria-hidden="true">→</span></a>
+          <a class="btn btn-secondary" href="#companion-brief">Read the companion policy brief</a>
+          <a class="btn btn-secondary" href="#assignment">Read the assignment</a>
+        </div>
+      </div>
+      <aside class="path-card" aria-label="Simulation pathway">
+        <div class="eyebrow" style="color:#bce8df">Follow the policy question</div>
+        <h2>From a person's priority to a documented next step.</h2>
+        <div class="path-list">
+          <div class="path-item"><span class="path-num">01</span><span><strong>Person-defined goal</strong><span>What matters to the individual?</span></span></div>
+          <div class="path-item"><span class="path-num">02</span><span><strong>Planning process</strong><span>Who is involved, and how?</span></span></div>
+          <div class="path-item"><span class="path-num">03</span><span><strong>Service coordination</strong><span>What evidence and responsibilities apply?</span></span></div>
+          <div class="path-item"><span class="path-num">04</span><span><strong>Follow-through</strong><span>Who will act, and when will it be reviewed?</span></span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="policy-frame" aria-labelledby="policy-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="policy-title">The policy frame</h2>
+          <p class="intro">California Department of Developmental Services materials describe Regional Centers as helping people plan, access, coordinate, and monitor services. DDS also describes planning teams that include the person receiving services and people the person chooses to involve. The simulation uses those public descriptions as its starting point.</p>
+        </div>
+        <div class="facts">
+          <article class="fact"><span class="label">California system</span><strong>Regional Centers</strong><p>DDS contracts with community-based centers to coordinate services and supports for eligible Californians with developmental disabilities.</p></article>
+          <article class="fact"><span class="label">Planning lens</span><strong>Person-centered planning</strong><p>DDS describes planning around the individual's choices, goals, and requested planning-team members.</p></article>
+          <article class="fact"><span class="label">Research question</span><strong>Plan to next step</strong><p>How can a research team examine whether a person's stated priority is documented, assigned, and revisited?</p></article>
+          <article class="fact"><span class="label">Evidence boundary</span><strong>No prevalence claim</strong><p>A fictional case can test research design. It cannot establish how often an experience occurs across California.</p></article>
+        </div>
+        <p class="source-note">The DDS pages below distinguish Regional Center responsibilities from supports that may be the responsibility of other public agencies. The exercise does not assume that every service is funded or delivered by the same program.</p>
+      </div>
+    </section>
+
+    <section class="section" id="assignment" aria-labelledby="assignment-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="assignment-title">Your assignment</h2>
+          <p class="intro">You are the research-policy lead at an independent university center. A faculty director asks you to prepare a concise public briefing on how person-identified priorities move through service planning and follow-up.</p>
+        </div>
+        <div class="assignment">
+          <article class="panel">
+            <h3>The situation</h3>
+            <p>You have three weeks to produce a first briefing. You have public DDS materials and a fictional case. No interviews, administrative data, or community review have been completed. The briefing can explain the policy framework and propose a responsible next research step, but it cannot claim statewide findings.</p>
+          </article>
+          <article class="panel">
+            <h3>Requested work products</h3>
+            <ul>
+              <li>A short policy brief with source notes and clearly stated limits.</li>
+              <li>A plain-language summary designed for accessible distribution.</li>
+              <li>A voluntary, accessible input plan for a future community-engaged phase.</li>
+              <li>A follow-up tracker with proposed owners, dates, and open questions.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roles" aria-labelledby="roles-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="roles-title">Who the scenario includes</h2>
+          <p class="intro">These are fictional role descriptions for practicing research and policy judgment. They are not testimonials, and no role speaks for all people with disabilities, families, agencies, or advocates.</p>
+        </div>
+        <div class="roles">
+          <article class="role"><small>Composite role 01</small><h3>Person receiving services</h3><p>Names a personal goal and decides who, if anyone, to invite into the conversation.</p></article>
+          <article class="role"><small>Composite role 02</small><h3>Chosen supporter</h3><p>Raises a concern about practical support and asks how a next step will be handled.</p></article>
+          <article class="role"><small>Composite role 03</small><h3>Service coordinator</h3><p>Clarifies process questions and where another agency may have a role.</p></article>
+          <article class="role"><small>Composite role 04</small><h3>Advocacy representative</h3><p>Asks how participation will be accessible and how findings will be returned.</p></article>
+          <article class="role"><small>Composite role 05</small><h3>Research team</h3><p>Checks source accuracy, privacy, evidence gaps, timelines, and publication steps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="simulation" aria-labelledby="simulation-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="simulation-title">The research briefing begins</h2>
+          <p class="intro">Make four decisions as the project lead. Feedback reflects an authored practice rubric; it is not a measure of real-world outcomes or community trust. Your selections stay in this browser and are not submitted.</p>
+        </div>
+        <div class="sim-layout">
+          <aside class="profile" aria-labelledby="profile-title">
+            <h3 id="profile-title">Practice profile</h3>
+            <p class="profile-note">The bars track design choices in this fictional exercise.</p>
+            <div class="profile-meters">
+              <div class="meter"><div class="meter-label"><span>Policy grounding</span><output id="policyScore">50</output></div><progress id="policyMeter" max="100" value="50" aria-label="Policy grounding"></progress></div>
+              <div class="meter"><div class="meter-label"><span>Person's direction</span><output id="directionScore">50</output></div><progress id="directionMeter" max="100" value="50" aria-label="Respect for the person's direction"></progress></div>
+              <div class="meter"><div class="meter-label"><span>Access planning</span><output id="accessScore">50</output></div><progress id="accessMeter" max="100" value="50" aria-label="Accessibility planning"></progress></div>
+              <div class="meter"><div class="meter-label"><span>Follow-through</span><output id="followScore">50</output></div><progress id="followMeter" max="100" value="50" aria-label="Accountable follow-through"></progress></div>
+            </div>
+          </aside>
+
+          <div>
+            <article class="sim-card" id="decisionCard">
+              <div class="sim-meta"><span class="step-label" id="stepLabel">Decision 1 of 4</span><span class="progress-copy" id="phaseLabel">Set the scope</span></div>
+              <progress class="sim-progress" id="roundProgress" max="4" value="1" aria-label="Simulation progress"></progress>
+              <h3 class="decision-title" id="decisionTitle" tabindex="-1"></h3>
+              <p class="scenario" id="scenarioText"></p>
+              <div class="choices" id="choices" role="group" aria-label="Choose a research-policy response"></div>
+              <div class="feedback" id="feedback" role="status" aria-live="polite" tabindex="-1" hidden>
+                <h4 id="feedbackTitle">Decision feedback</h4>
+                <p id="feedbackText"></p>
+              </div>
+              <div class="sim-actions"><span class="small-note" id="choiceHint">Choose one response to continue.</span><button class="btn btn-primary" id="nextButton" type="button" hidden>Continue <span aria-hidden="true">→</span></button></div>
+            </article>
+
+            <section class="debrief" id="debrief" aria-labelledby="debrief-title" hidden>
+              <div class="eyebrow">Simulation debrief</div>
+              <h3 id="debrief-title" tabindex="-1">Your decision record</h3>
+              <p class="debrief-intro" id="debriefIntro"></p>
+              <div class="debrief-grid">
+                <article class="debrief-card"><h4>Your four decisions</h4><ol class="decision-list" id="decisionList"></ol></article>
+                <article class="debrief-card"><h4>A responsible briefing would include</h4><ul class="decision-list"><li>The public policy framework, with source notes and careful distinctions about agency responsibilities.</li><li>The evidence collected so far, the gaps that remain, and what cannot yet be concluded.</li><li>Accessible ways to invite voluntary input if a future research phase is approved.</li><li>Named next steps, owners, and review dates, with a plain-language summary.</li></ul></article>
+              </div>
+              <div class="outcome"><strong>Portfolio boundary</strong><p>This run shows how you would structure a research-policy response. It does not provide legal advice, represent lived experience, or establish the performance of a California program.</p></div>
+              <div class="actions"><button class="btn btn-primary" id="restartButton" type="button">Run the simulation again</button><button class="btn btn-secondary" id="printButton" type="button">Print this debrief</button></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="companion-brief" aria-labelledby="companion-brief-title">
+      <div class="shell brief-shell">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Companion policy brief · October 2026</div>
+            <h2 id="companion-brief-title">From person-centered plan to accountable follow-through</h2>
+          </div>
+          <p class="intro">A focused analysis of how California can learn whether the statewide Individual Program Plan (IPP) process turns a person's priorities into understandable next steps. This is a proposed policy and research approach, not a report of completed fieldwork.</p>
+        </div>
+        <div class="brief-actions"><button class="btn btn-secondary" id="printBriefButton" type="button">Print this brief</button></div>
+
+        <div class="brief-question">
+          <strong>Policy question</strong>
+          <p>How should California's Department of Developmental Services (DDS) evaluate whether the standardized IPP process gives each person meaningful direction and a visible path from a chosen priority to a responsible next step?</p>
+        </div>
+
+        <article class="brief-block">
+          <h3>Recommendation</h3>
+          <div class="brief-recommendation">
+            <strong>Use the existing IPP feedback and Regional Center Performance Measures infrastructure, then pilot a voluntary follow-up check designed with disabled people and disability-led partners.</strong>
+            <p>At 60–90 days after a new IPP, invite the person to say whether a priority was captured in their terms, whether they know who will follow up and when, and whether the agreed next step started, changed, stalled, or is no longer what they want. Treat the answer as system feedback—not a score of the person's success or a condition of services.</p>
+          </div>
+          <p>The FY 2025–26 DDS measures already track IPP survey return rates, person-centered planning trainers, and outreach activity. DDS says its optional IPP survey is intended to gauge satisfaction and identify where technical assistance may be useful. The published measures provide a real foundation; the proposed pilot would test the next link between a participant's priority, a named action, and follow-up. <a href="#brief-source-5">[5]</a> <a href="#brief-source-6">[6]</a></p>
+        </article>
+
+        <article class="brief-block">
+          <h3>What the law and current guidance establish</h3>
+          <ul>
+            <li><strong>California's Lanterman Act:</strong> Welfare and Institutions Code (WIC) §§ 4646 and 4646.5 govern the individual program planning framework and IPP process, including person-centered planning and the person's preferences. <a href="#brief-source-1">[1]</a> <a href="#brief-source-2">[2]</a></li>
+            <li><strong>Standard statewide format:</strong> WIC § 4435.1(d) directs DDS to establish an IPP format and procedures; DDS reports that the standardized template has been in use for new IPPs since January 1, 2025. <a href="#brief-source-3">[3]</a> <a href="#brief-source-4">[4]</a></li>
+            <li><strong>Performance-measure authority:</strong> WIC § 4620.5 directs DDS to work with the Regional Center Performance Measures Workgroup to develop measures and incentives. Its FY 2025–26 measures already cover IPP survey returns, person-centered planning trainers, and outreach activity. <a href="#brief-source-5">[5]</a> <a href="#brief-source-8">[8]</a></li>
+            <li><strong>Medicaid HCBS context:</strong> For services furnished under a § 1915(c) HCBS waiver, 42 C.F.R. § 441.301(c) requires a person-led planning process and a plan that records goals, supports, providers, and who monitors it. This federal waiver rule does not apply to every Regional Center service or every person receiving services. <a href="#brief-source-7">[7]</a></li>
+            <li><strong>DDS implementation guidance:</strong> DDS says service coordinators monitor desired outcomes; its IPP survey is voluntary, available through several return routes, and offered in 11 listed languages. The agency also directs centers to listen to people who communicate without speech, including through facial expression, vocalization, posture, or behavior. <a href="#brief-source-4">[4]</a></li>
+          </ul>
+          <p class="source-note">The proposed follow-up measure would supplement current requirements. It does not assume the law guarantees a particular service will be funded or start immediately.</p>
+        </article>
+
+        <article class="brief-block">
+          <h3>Options and trade-offs</h3>
+          <div class="brief-table-wrap" role="region" aria-label="Policy options comparison; scroll horizontally on a small screen" tabindex="0">
+            <table class="brief-table">
+              <caption>Three ways DDS could evaluate IPP implementation</caption>
+              <thead><tr><th scope="col">Option</th><th scope="col">What it offers</th><th scope="col">Trade-offs</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1 · Continue the current measures</th><td>Uses an existing voluntary survey, current data channels, and person-centered planning outreach and training measures. Keeps added burden low.</td><td>Survey participation can be uneven. Return rates and activity counts alone do not show whose input is missing or whether a person can identify the agreed next step.</td></tr>
+                <tr><th scope="row">2 · Audit IPP records</th><td>A sample review can check whether a plan identifies outcomes, responsible people, and review dates. Easier to compare across centers.</td><td>A complete-looking record does not prove the person directed the plan or understood it. Adds staff workload and requires privacy protections.</td></tr>
+                <tr><th scope="row">3 · Pilot an accessible follow-up check <em>(recommended)</em></th><td>Pairs current feedback with the person's voluntary account of what happened to one chosen priority. Can identify practical changes for centers and DDS.</td><td>Costs more to co-design and administer; may miss people who are hardest to reach. Must avoid pressure to participate and must not penalize centers for goals or service delays beyond their control.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="brief-block">
+          <h3>Next steps, owners, and measures</h3>
+          <div class="brief-table-wrap" role="region" aria-label="Proposed implementation steps with owners and measures; scroll horizontally on a small screen" tabindex="0">
+            <table class="brief-table">
+              <caption>Proposed 12-month work plan</caption>
+              <thead><tr><th scope="col">Timing</th><th scope="col">Owner(s)</th><th scope="col">Action and measure</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Months 0–3</th><td>DDS IPP team and Regional Center Performance Measures Workgroup, co-led with paid self-advocates and a disability-led organization.</td><td>Review current survey items and co-design a short follow-up protocol. Measure: protocol and accessible formats tested with disabled participants using varied communication methods; document changes made and unresolved access needs.</td></tr>
+                <tr><th scope="row">Months 3–6</th><td>Two or three volunteer Regional Centers; their service coordinators and data leads; community co-design partners.</td><td>Offer a voluntary check-in 60–90 days after a new IPP. Measure: invitations and responses by language and return channel; participant-reported fit of the plan to their priority; whether they can identify an owner and review date; and status of the next step (started, changed, delayed, no longer wanted, or other).</td></tr>
+                <tr><th scope="row">Months 6–9</th><td>Independent evaluator with the paid community advisory group and participating centers.</td><td>Assess response patterns, accessibility, completion time, staff burden, and reasons next steps changed or stalled. Measure: accessible public summary and action log; every identified system issue has an owner, due date, and status.</td></tr>
+                <tr><th scope="row">Months 9–12</th><td>DDS and the statewide Performance Measures Workgroup, with community co-leads.</td><td>Decide whether to revise, expand, or stop the pilot. Measure: a written decision tied to pilot evidence, including how DDS will address missing voices and when results will be revisited.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="source-note">Set improvement targets after the co-designed pilot establishes a baseline. Report results in aggregate, suppress small cells, and do not tie a person's goal attainment or survey response to eligibility, services, or staff incentives.</p>
+        </article>
+
+        <div class="brief-callout">
+          <strong>Scope and practice context</strong>
+          <p>This brief focuses on California's Regional Center system for people with intellectual and developmental disabilities; it does not generalize to all disabled Californians. It is based on statutes and public agency materials, with no IPP records or new interviews analyzed. The author has prior experience working with disabled people and a disability-led organization. That experience is separate from this fictional work sample; no organization or individual is represented as having reviewed or endorsed it.</p>
+        </div>
+
+        <article class="brief-block" aria-labelledby="brief-sources-title">
+          <h3 id="brief-sources-title">Sources</h3>
+          <ol class="brief-source-list">
+            <li id="brief-source-1"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4646.&amp;lawCode=WIC" target="_blank" rel="noopener noreferrer">California Welfare and Institutions Code § 4646</a> <span>(individual program planning framework).</span></li>
+            <li id="brief-source-2"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4646.5.&amp;lawCode=WIC" target="_blank" rel="noopener noreferrer">California Welfare and Institutions Code § 4646.5</a> <span>(IPP planning process).</span></li>
+            <li id="brief-source-3"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4435.1.&amp;lawCode=WIC" target="_blank" rel="noopener noreferrer">California Welfare and Institutions Code § 4435.1(d)</a> <span>(standard IPP format and procedures).</span></li>
+            <li id="brief-source-4"><a href="https://www.dds.ca.gov/rc/ipp/" target="_blank" rel="noopener noreferrer">California Department of Developmental Services, Individual Program Planning</a> <span>(standardized IPP, survey, and person-centered practice guidance).</span></li>
+            <li id="brief-source-5"><a href="https://www.dds.ca.gov/wp-content/uploads/2025/10/AttachmentA_-RCPM_SummaryMeasuresIncentives.pdf" target="_blank" rel="noopener noreferrer">DDS, Regional Center Performance Measures and Incentives, FY 2025–26, Attachment A</a> <span>(survey return rate, planning trainers, and outreach measures).</span></li>
+            <li id="brief-source-6"><a href="https://www.dds.ca.gov/rc/regional-center-performance-measures/" target="_blank" rel="noopener noreferrer">DDS, Regional Center Performance Measures</a> <span>(workgroup and performance-measure updates).</span></li>
+            <li id="brief-source-7"><a href="https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-C/part-441/subpart-G/section-441.301" target="_blank" rel="noopener noreferrer">42 C.F.R. § 441.301(c)</a> <span>(person-centered planning and service plan requirements for § 1915(c) HCBS waivers).</span></li>
+            <li id="brief-source-8"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=4620.5.&amp;lawCode=WIC" target="_blank" rel="noopener noreferrer">California Welfare and Institutions Code § 4620.5</a> <span>(Regional Center performance measures).</span></li>
+          </ol>
+          <p class="source-note">Statutes and agency materials checked October 2026. This is a policy work sample, not legal advice, formal research, or a representation of DDS, a Regional Center, or a community partner.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="method" aria-labelledby="method-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="method-title">A research-policy approach</h2>
+          <p class="intro">The intended practice is to keep the analysis source-based, the process accessible, and the commitments specific enough to review.</p>
+        </div>
+        <div class="approach">
+          <p class="approach-lede">Start from what the person says matters. Build a research process that can hear it, document it accurately, and show what happens next.</p>
+          <div class="approach-grid">
+            <div class="approach-step"><strong>01 · Ground the analysis</strong><span>Use official policy materials, distinguish agency roles, and separate verified facts from assumptions.</span></div>
+            <div class="approach-step"><strong>02 · Plan access</strong><span>Ask people what communication formats and participation supports work for them; do not assume one format fits everyone.</span></div>
+            <div class="approach-step"><strong>03 · Protect the person's direction</strong><span>Invite supporters according to the person's choice and do not treat another participant as an automatic substitute for their input.</span></div>
+            <div class="approach-step"><strong>04 · Close the loop</strong><span>Return a plain-language account of findings, limits, responsible next steps, and how feedback shaped the work.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="limits" aria-labelledby="limits-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="limits-title">What this sample can show</h2>
+          <p class="intro">The simulation is designed to make the scope and evidence status visible to a reviewer.</p>
+        </div>
+        <div class="limits">
+          <article class="limit-card"><h3>It can demonstrate</h3><p>Policy translation from public sources, research design judgment, accessible engagement planning, careful handling of evidence limits, and structured follow-through.</p></article>
+          <article class="limit-card"><h3>It does not establish</h3><p>This fictional work sample is not evidence of project-specific interviews, community review, endorsement by a disability-led organization, lived experience, legal advice, or findings about the California service system.</p></article>
+        </div>
+        <p class="source-note">The author has separate prior experience working with disabled people and a disability-led organization. Any future project-specific community-engaged phase would still require accessible participation choices, consent, compensation where appropriate, and clear attribution.</p>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="shell">
+        <div class="section-head">
+          <h2 id="sources-title">Sources and scope</h2>
+          <p class="intro">The policy frame is based on official California DDS materials. The cases, roles, decision choices, feedback, and practice rubric are original fictional content created for this independent exercise.</p>
+        </div>
+        <div class="sources">
+          <div class="source"><div><strong>Regional Centers</strong><span>California DDS overview of the Regional Center network and service coordination.</span></div><a href="https://www.dds.ca.gov/rc/" target="_blank" rel="noopener noreferrer">Open DDS source <span aria-hidden="true">↗</span></a></div>
+          <div class="source"><div><strong>Regional Center Services and Descriptions</strong><span>DDS information about service planning, supports, and planning teams.</span></div><a href="https://www.dds.ca.gov/rc/rc-services/" target="_blank" rel="noopener noreferrer">Open DDS source <span aria-hidden="true">↗</span></a></div>
+          <div class="source"><div><strong>Regional Center Eligibility and Services</strong><span>DDS overview of person-centered planning and Regional Center services.</span></div><a href="https://www.dds.ca.gov/general/Eligibility/" target="_blank" rel="noopener noreferrer">Open DDS source <span aria-hidden="true">↗</span></a></div>
+          <div class="source"><div><strong>Support Services</strong><span>DDS descriptions of supports and the role of other public resources.</span></div><a href="https://www.dds.ca.gov/general/eligibility/support-services/" target="_blank" rel="noopener noreferrer">Open DDS source <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <p class="source-note">Sources checked October 2026. This simulation is not affiliated with or endorsed by the California Department of Developmental Services or any Regional Center.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-inner"><span>Prepared by Michael Farzinpour, PhD · October 2026</span><span>Independent portfolio simulation · No project-specific community review represented</span></div></footer>
+
+  <script>
+    (function () {
+      "use strict";
+      var rounds = [
+        {
+          phase: "Set the scope",
+          title: "What question can this first briefing answer responsibly?",
+          context: "You have public DDS materials and a fictional case, but no interviews or administrative data. The faculty director wants a useful deliverable in three weeks.",
+          choices: [
+            { title: "Estimate how often plans fail to result in services", body: "Use the fictional case to frame a statewide performance finding and draft a headline about unmet needs.", delta: { policy: -12, direction: 0, access: 0, follow: -8 }, feedback: "The case cannot establish how often an experience occurs. Define what data, permissions, definitions, and comparison period would be needed before making a prevalence or performance claim." },
+            { title: "Trace a person-identified priority to a next step", body: "Review the public policy framework, then describe how a future study could examine documentation, responsibility, and follow-up without claiming statewide results.", delta: { policy: 15, direction: 8, access: 2, follow: 10 }, feedback: "This is a focused question that fits the evidence available. It separates a source-based policy explanation from findings that would require real data or community input." },
+            { title: "Summarize only public DDS guidance", body: "Produce a concise desk-based brief on the stated roles, planning process, and evidence gaps; label it as a policy scan.", delta: { policy: 8, direction: 2, access: 1, follow: 5 }, feedback: "A desk-based policy scan is a defensible first deliverable. State that it does not show how people experience the process, and identify what accessible research could follow." }
+          ]
+        },
+        {
+          phase: "Plan participation",
+          title: "How would you invite input if the next phase proceeds?",
+          context: "The draft plan proposes listening to people who use services. No one has been contacted, and you do not know what access supports participants may prefer.",
+          choices: [
+            { title: "Use one standard online survey", body: "Send the same self-completion form to everyone and close it after two weeks to keep the project on schedule.", delta: { policy: 2, direction: -4, access: -13, follow: -2 }, feedback: "A single format may be convenient for the research team but can create barriers. Ask about preferred formats, communication supports, timing, and other access needs before selecting methods." },
+            { title: "Offer choices and ask about access needs", body: "Plan more than one voluntary way to participate, ask individuals what communication supports work for them, explain consent and privacy, and budget time for follow-up.", delta: { policy: 4, direction: 10, access: 15, follow: 7 }, feedback: "This plan treats accessibility as part of research design. In a real project, the formats and supports should be shaped with participants and available resources, then described accurately." },
+            { title: "Collect input through families and providers", body: "Ask supporters and service providers to describe what people using services generally want, without inviting those individuals directly.", delta: { policy: 3, direction: -14, access: -7, follow: 1 }, feedback: "Supporters and providers may offer useful perspectives, but their views do not replace a person's own input. Invite people directly in accessible ways and let them decide whom to include." }
+          ]
+        },
+        {
+          phase: "Respond to a difference in views",
+          title: "A person's stated goal differs from a supporter's concern. What do you do?",
+          context: "In the fictional case, the person says community participation is a priority. A supporter is concerned about transportation and safety. A coordinator says more information is needed about possible supports.",
+          choices: [
+            { title: "Ask the person what they want discussed and who they want involved", body: "Clarify the person's goal, ask what support or information would help, and document unresolved questions without presuming a solution.", delta: { policy: 5, direction: 16, access: 5, follow: 9 }, feedback: "This keeps the person's direction visible while making space to understand practical concerns. It also creates a specific research question: what information and coordination are needed to assess next steps?" },
+            { title: "Center the supporter's concern until risk is resolved", body: "Pause the person's stated goal and make safety the lead issue for the research team to address.", delta: { policy: 0, direction: -15, access: -3, follow: -5 }, feedback: "The concern may need attention, but the scenario does not establish that another person should decide the goal. Ask the person how they want the concern addressed and who should be part of that discussion." },
+            { title: "Treat the case as an anecdote and move on", body: "Exclude the disagreement from the briefing because the case is fictional and cannot count as evidence.", delta: { policy: 3, direction: -7, access: 1, follow: -9 }, feedback: "It is right not to present a fictional case as a finding. You can still use it to test the research protocol and identify what real, voluntary input would be needed to study the issue." }
+          ]
+        },
+        {
+          phase: "Write the recommendation",
+          title: "What should the first policy brief recommend?",
+          context: "The deadline is near. You need a useful conclusion that reflects official materials and identifies what a next phase would need to learn.",
+          choices: [
+            { title: "Make a systemwide finding from the scenario", body: "State that current plans do not reflect people's choices and recommend an immediate statewide policy change.", delta: { policy: -14, direction: -5, access: 0, follow: -9 }, feedback: "The exercise provides no evidence for a systemwide finding. Separate the official policy description, the hypothetical case, and questions that need real research before recommending a specific policy change." },
+            { title: "Separate policy, evidence, and open questions", body: "Summarize what DDS materials say, state that no performance findings were collected, and recommend a co-designed research phase with clear owners and a review date.", delta: { policy: 15, direction: 9, access: 5, follow: 15 }, feedback: "This produces a useful and honest briefing. It translates public policy, protects against overclaiming, and gives the next research phase accountable steps." },
+            { title: "Wait for a complete statewide dataset", body: "Delay the brief until every question can be answered with systemwide quantitative data.", delta: { policy: 7, direction: 1, access: 0, follow: -11 }, feedback: "A statewide dataset may be useful for some questions, but a source-based policy scan can still help now. Explain what it answers, what it cannot answer, and how to close the evidence gaps." }
+          ]
+        }
+      ];
+
+      var scores = { policy: 50, direction: 50, access: 50, follow: 50 };
+      var index = 0;
+      var decisions = [];
+      var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var $ = function (id) { return document.getElementById(id); };
+      var decisionTitle = $("decisionTitle");
+      var scenarioText = $("scenarioText");
+      var choicesNode = $("choices");
+      var feedbackBox = $("feedback");
+      var nextButton = $("nextButton");
+      var decisionCard = $("decisionCard");
+      var debrief = $("debrief");
+
+      function clamp(value) { return Math.max(0, Math.min(100, value)); }
+      function scrollTo(node) {
+        node.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+      }
+      function updateScores() {
+        var keys = [
+          ["policy", "policyScore", "policyMeter"],
+          ["direction", "directionScore", "directionMeter"],
+          ["access", "accessScore", "accessMeter"],
+          ["follow", "followScore", "followMeter"]
+        ];
+        keys.forEach(function (entry) {
+          $(entry[1]).textContent = String(scores[entry[0]]);
+          $(entry[2]).value = scores[entry[0]];
+          $(entry[2]).setAttribute("aria-valuenow", String(scores[entry[0]]));
+        });
+      }
+      function renderRound() {
+        var round = rounds[index];
+        $("stepLabel").textContent = "Decision " + (index + 1) + " of " + rounds.length;
+        $("phaseLabel").textContent = round.phase;
+        $("roundProgress").value = index + 1;
+        decisionTitle.textContent = round.title;
+        scenarioText.textContent = round.context;
+        choicesNode.replaceChildren();
+        feedbackBox.hidden = true;
+        nextButton.hidden = true;
+        $("choiceHint").textContent = "Choose one response to continue.";
+        round.choices.forEach(function (choice, choiceIndex) {
+          var button = document.createElement("button");
+          button.type = "button";
+          button.className = "choice";
+          button.setAttribute("aria-pressed", "false");
+          var letter = document.createElement("span");
+          letter.className = "choice-letter";
+          letter.setAttribute("aria-hidden", "true");
+          letter.textContent = String.fromCharCode(65 + choiceIndex);
+          var copy = document.createElement("span");
+          var strong = document.createElement("strong");
+          strong.textContent = choice.title;
+          var detail = document.createElement("span");
+          detail.textContent = choice.body;
+          copy.appendChild(strong);
+          copy.appendChild(detail);
+          button.appendChild(letter);
+          button.appendChild(copy);
+          button.addEventListener("click", function () { choose(choiceIndex); });
+          choicesNode.appendChild(button);
+        });
+      }
+      function choose(choiceIndex) {
+        var round = rounds[index];
+        var choice = round.choices[choiceIndex];
+        Object.keys(scores).forEach(function (key) { scores[key] = clamp(scores[key] + choice.delta[key]); });
+        decisions.push({ title: round.title, choice: choice.title });
+        updateScores();
+        Array.prototype.forEach.call(choicesNode.children, function (button, i) {
+          button.disabled = true;
+          button.setAttribute("aria-pressed", i === choiceIndex ? "true" : "false");
+        });
+        $("feedbackTitle").textContent = "Decision feedback";
+        $("feedbackText").textContent = choice.feedback;
+        feedbackBox.hidden = false;
+        nextButton.textContent = index === rounds.length - 1 ? "View your debrief" : "Continue to the next decision";
+        nextButton.hidden = false;
+        $("choiceHint").textContent = "Your selection has been recorded for this browser session only.";
+        feedbackBox.focus();
+      }
+      function showDebrief() {
+        decisionCard.hidden = true;
+        debrief.hidden = false;
+        var average = Math.round((scores.policy + scores.direction + scores.access + scores.follow) / 4);
+        var message;
+        if (average >= 76) {
+          message = "This run paired source discipline with attention to participant direction and concrete follow-through. The bars show how this exercise's rubric scored your decisions; they do not measure real-world impact.";
+        } else if (average >= 58) {
+          message = "This run includes some strong research-policy choices and some trade-offs to revisit. Use the decision record to consider what you would change before a real study.";
+        } else {
+          message = "This run surfaced several design choices to strengthen before a real study. Review the feedback for ways to improve source accuracy, accessible participation, and follow-through.";
+        }
+        $("debriefIntro").textContent = message;
+        var list = $("decisionList");
+        list.replaceChildren();
+        decisions.forEach(function (decision) {
+          var item = document.createElement("li");
+          item.textContent = decision.choice;
+          list.appendChild(item);
+        });
+        scrollTo(debrief);
+        $("debrief-title").focus();
+      }
+      nextButton.addEventListener("click", function () {
+        if (index < rounds.length - 1) {
+          index += 1;
+          renderRound();
+          scrollTo(decisionCard);
+          decisionTitle.focus();
+        } else {
+          showDebrief();
+        }
+      });
+      $("restartButton").addEventListener("click", function () {
+        index = 0;
+        decisions = [];
+        scores = { policy: 50, direction: 50, access: 50, follow: 50 };
+        updateScores();
+        debrief.hidden = true;
+        decisionCard.hidden = false;
+        renderRound();
+        scrollTo(decisionCard);
+        decisionTitle.focus();
+      });
+      $("printButton").addEventListener("click", function () { window.print(); });
+      $("printBriefButton").addEventListener("click", function () {
+        document.body.classList.add("print-brief");
+        window.print();
+      });
+      window.addEventListener("afterprint", function () { document.body.classList.remove("print-brief"); });
+      updateScores();
+      renderRound();
+    }());
+  </script>
+</body>
+</html>
