@@ -1,0 +1,6 @@
+specification,weather_adjusted,matched_comparison,data_rule,estimated_reduction_pct,interpretation
+Participant pre/post only,No,No,Complete + short gaps,9.3,Descriptive; no external counterfactual
+Matched difference-in-differences,No,Yes,Complete + short gaps,8.4,Unadjusted comparison estimate
+"Matched DiD, preferred specification",Yes,Yes,Documented protocol,8.4,Primary portfolio estimate
+"Preferred model, complete cases",Yes,Yes,Complete cases only,8.4,Missing-data sensitivity
+"Preferred model, flagged spikes retained",Yes,Yes,Spikes retained,8.5,Outlier sensitivity

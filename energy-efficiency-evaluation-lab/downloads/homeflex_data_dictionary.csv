@@ -1,0 +1,14 @@
+field,type,description
+household_id,string,Synthetic household identifier
+match_id,integer,Illustrative matched-pair identifier
+participant,binary,1 for HomeFlex participant and 0 for comparison household
+month,YYYY-MM,Synthetic billing month
+period,string,Pre-installation or post-installation period
+home_type,categorical,Single-family townhome or multifamily dwelling
+climate_zone,categorical,Synthetic hot-dry mixed-dry or warm-dry zone
+income_group,categorical,Priority or standard customer segment
+hdd,numeric,Synthetic heating degree-day indicator
+cdd,numeric,Synthetic cooling degree-day indicator
+kwh,numeric,Synthetic monthly electricity consumption
+flagged_spike,binary,1 when the record is designated for outlier sensitivity review
+record_version,integer,Illustrative version used to resolve duplicate records

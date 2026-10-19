@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="A synthetic utility program evaluation exercise by Michael Farzinpour." />
+  <title>Energy Efficiency Evaluation Lab</title>
+  <style>
+    :root{
+      --ink:#10222b;--muted:#5d7078;--paper:#f5f3ed;--card:#fffdf8;--line:#d6ddd9;
+      --teal:#0d6d67;--teal2:#e0f1ed;--orange:#df7044;--navy:#123d4a;--gold:#e9bb5b;
+      --shadow:0 18px 50px rgba(16,34,43,.11);--radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    button,input{font:inherit}
+    a{color:var(--teal)}
+    .shell{max-width:1180px;margin:auto;padding:0 28px}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(245,243,237,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(16,34,43,.1)}
+    .topbar .shell{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}
+    .brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--navy);color:white;font-size:16px}
+    .toplinks{display:flex;gap:20px;font-size:14px}.toplinks a{text-decoration:none;color:var(--ink)}
+    .status-pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #b8d9d2;border-radius:999px;background:#f2fbf8;color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    .status-pill:before{content:"";width:7px;height:7px;border-radius:99px;background:var(--teal)}
+    header{padding:76px 0 52px;position:relative;overflow:hidden}
+    header:after{content:"";position:absolute;right:-100px;top:-190px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(13,109,103,.15),transparent 66%);pointer-events:none}
+    .eyebrow{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:16px}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,7vw,82px);line-height:.98;letter-spacing:-.055em;max-width:860px;margin:0 0 24px;font-weight:600}
+    .lede{max-width:740px;font-size:20px;color:#40545d;margin:0 0 30px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px}.hero-meta span{padding:9px 12px;background:rgba(255,255,255,.65);border:1px solid var(--line);border-radius:10px;font-size:13px}
+    .disclosure{margin-top:26px;padding:15px 18px;border-left:4px solid var(--orange);background:#fff7ef;max-width:860px;font-size:14px;color:#5b463c}
+    .workspace{display:grid;grid-template-columns:260px minmax(0,1fr);gap:26px;align-items:start;padding-bottom:80px}
+    .rail{position:sticky;top:92px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(16,34,43,.06)}
+    .rail-label{font-size:11px;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.12em;margin:0 0 10px 10px}
+    .step-btn{width:100%;border:0;background:transparent;text-align:left;padding:12px;border-radius:11px;color:var(--muted);font-weight:700;cursor:pointer;display:flex;align-items:center;gap:11px}
+    .step-btn:hover{background:#f2f5f2}.step-btn.active{background:var(--navy);color:#fff}
+    .step-num{display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:rgba(16,34,43,.08);font-size:12px}.active .step-num{background:rgba(255,255,255,.16)}
+    .progress{height:5px;background:#e1e5e2;border-radius:99px;margin-top:17px;overflow:hidden}.progress div{height:100%;background:var(--orange);width:16.6%;transition:.35s}
+    .panel{display:none}.panel.active{display:block;animation:fade .3s ease}@keyframes fade{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:none}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);margin-bottom:18px}
+    .section-kicker{color:var(--teal);font-weight:900;font-size:12px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:8px}
+    h2{font-family:Georgia,"Times New Roman",serif;font-size:37px;line-height:1.08;letter-spacing:-.025em;margin:0 0 13px;font-weight:600}
+    h3{font-size:18px;margin:0 0 10px}p{margin-top:0}.muted{color:var(--muted)}
+    .metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+    .metric{background:#f1f6f3;border:1px solid #d9e5e0;border-radius:15px;padding:17px}.metric strong{display:block;font-size:27px;line-height:1;color:var(--navy);margin-bottom:7px}.metric span{font-size:12px;color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1.08fr .92fr;gap:18px}
+    .brief-list{display:grid;gap:12px;margin-top:18px}.brief-row{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:13px 0;border-top:1px solid var(--line)}.brief-row b{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .option-grid{display:grid;gap:12px;margin-top:20px}
+    .choice{position:relative;border:1px solid var(--line);border-radius:15px;padding:18px 18px 18px 52px;background:white;cursor:pointer;transition:.18s}
+    .choice:hover{transform:translateY(-1px);border-color:#9ebbb5}.choice.selected{border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,109,103,.12);background:#f5fbf9}
+    .choice input{position:absolute;left:18px;top:21px;accent-color:var(--teal);width:18px;height:18px}.choice b{display:block;margin-bottom:4px}.choice small{display:block;color:var(--muted);line-height:1.42}
+    .feedback{display:none;margin-top:16px;padding:15px 17px;border-radius:13px;background:var(--teal2);color:#174e4a;border-left:4px solid var(--teal)}.feedback.show{display:block}
+    .feedback.warn{background:#fff2e7;border-color:var(--orange);color:#72442f}
+    .actions{display:flex;justify-content:space-between;gap:12px;margin-top:22px}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:800;cursor:pointer}.btn.primary{background:var(--navy);color:white}.btn.primary:hover{background:#0b303b}.btn.secondary{background:#e5ebe8;color:var(--ink)}.btn.orange{background:var(--orange);color:white}
+    .data-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:17px}.data-table th{text-align:left;padding:11px 10px;background:var(--navy);color:#fff}.data-table th:first-child{border-radius:10px 0 0 0}.data-table th:last-child{border-radius:0 10px 0 0}.data-table td{padding:11px 10px;border-bottom:1px solid var(--line)}.data-table tr:nth-child(even) td{background:#f6f7f4}.flag{display:inline-block;padding:3px 7px;border-radius:7px;font-size:11px;font-weight:800}.flag.red{background:#ffe3d8;color:#8a3a1f}.flag.gold{background:#fff0c9;color:#715016}.flag.green{background:#dff2e9;color:#17594b}
+    .chart{width:100%;height:255px;display:block;margin-top:8px}.chart text{font-family:Inter,system-ui,sans-serif;fill:#5d7078;font-size:11px}.chart .grid{stroke:#dce2de;stroke-width:1}.chart .p-line{fill:none;stroke:var(--orange);stroke-width:4}.chart .c-line{fill:none;stroke:var(--teal);stroke-width:4}.legend{display:flex;gap:18px;font-size:12px;color:var(--muted)}.legend i{display:inline-block;width:18px;height:3px;vertical-align:middle;margin-right:6px}.legend .p{background:var(--orange)}.legend .c{background:var(--teal)}
+    .result-banner{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:22px;background:var(--navy);color:#fff;border-radius:17px;margin:18px 0}.result-banner strong{font-family:Georgia,serif;font-size:38px;line-height:1}.result-banner small{display:block;color:#bcd0d3;margin-top:5px}.range{width:100%;accent-color:var(--orange)}
+    .toggle-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.toggle{border:1px solid var(--line);background:white;border-radius:999px;padding:8px 12px;font-weight:700;font-size:12px;cursor:pointer}.toggle.on{background:var(--teal2);border-color:var(--teal);color:var(--teal)}
+    .themes{display:grid;gap:12px}.theme-row{display:grid;grid-template-columns:145px 1fr 45px;gap:12px;align-items:center;font-size:13px}.bar{height:10px;background:#e4e9e6;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;background:var(--teal);border-radius:99px}.quote{padding:16px;border-left:3px solid var(--gold);background:#fffaf0;border-radius:0 12px 12px 0;font-family:Georgia,serif;font-size:17px}.quote small{display:block;font-family:Inter,system-ui,sans-serif;color:var(--muted);margin-top:7px;font-size:11px}
+    .evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.evidence{padding:18px;border:1px solid var(--line);border-radius:15px;background:white}.evidence .tag{font-size:10px;letter-spacing:.09em;text-transform:uppercase;font-weight:900;color:var(--teal)}.evidence b{display:block;margin:8px 0 6px}.evidence p{font-size:13px;color:var(--muted);margin:0}
+    .recommendation{padding:23px;border-radius:16px;background:#edf5f1;border:1px solid #c9ddd5}.recommendation h3{font-family:Georgia,serif;font-size:25px}.recommendation ul{padding-left:20px}.recommendation li{margin:8px 0}
+    .score-ring{width:98px;height:98px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--orange) calc(var(--score)*1%),#dfe5e2 0);position:relative}.score-ring:after{content:"";position:absolute;inset:10px;background:var(--navy);border-radius:50%}.score-ring span{position:relative;z-index:1;font-size:24px;font-weight:900}
+    .memo{white-space:pre-wrap;padding:22px;background:#132b34;color:#eaf4f1;border-radius:15px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.6;max-height:410px;overflow:auto}
+    .methods-section{padding:76px 0;background:#f0eee7;border-top:1px solid var(--line)}
+    .methods-section h2,.sources h2{font-size:34px}.methods-intro{max-width:800px}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin:28px 0 34px}.flow-node{position:relative;padding:18px 15px;border:1px solid var(--line);border-radius:15px;background:white;min-height:125px}.flow-node:not(:last-child):after{content:"→";position:absolute;right:-19px;top:42px;color:var(--orange);font-weight:900;font-size:21px}.flow-node strong{display:block;font-family:Georgia,serif;font-size:25px;color:var(--navy)}.flow-node span{font-size:12px;color:var(--muted)}
+    .method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0 30px}.method-card{padding:21px;border:1px solid var(--line);border-radius:15px;background:white}.method-card .method-num{font-size:11px;color:var(--orange);font-weight:900;letter-spacing:.1em;text-transform:uppercase}.method-card h3{margin-top:7px}.method-card p{font-size:13px;color:var(--muted);margin-bottom:0}
+    .appendix-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:27px;margin-top:18px}.appendix-card h3{font-family:Georgia,serif;font-size:25px}
+    .download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:18px}.download-card{display:block;padding:17px;border:1px solid var(--line);border-radius:14px;background:white;text-decoration:none;color:var(--ink);transition:.18s}.download-card:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 8px 24px rgba(16,34,43,.08)}.download-card b{display:block;color:var(--teal);margin-bottom:5px}.download-card small{color:var(--muted);line-height:1.4;display:block}
+    .sources{padding:70px 0;background:#e8ece8;border-top:1px solid var(--line)}.sources ol{padding-left:20px;max-width:900px}.sources li{margin:12px 0}.sources p{max-width:850px}
+    footer{background:var(--ink);color:#d8e2df;padding:28px 0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row a{color:#fff}
+    @media(max-width:880px){.workspace{grid-template-columns:1fr}.rail{position:static;display:flex;overflow:auto;padding:10px}.rail-label,.progress{display:none}.step-btn{min-width:max-content}.metric-grid,.evidence-grid,.download-grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}.toplinks{display:none}.flow{grid-template-columns:1fr}.flow-node{min-height:auto}.flow-node:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-25px}.method-grid{grid-template-columns:1fr}}
+    @media(max-width:560px){.shell{padding:0 17px}header{padding-top:48px}h1{font-size:45px}.lede{font-size:17px}.metric-grid,.evidence-grid,.download-grid{grid-template-columns:1fr}.card,.appendix-card{padding:21px;border-radius:17px}.brief-row{grid-template-columns:1fr;gap:4px}.theme-row{grid-template-columns:115px 1fr 38px}.footer-row{align-items:flex-start;flex-direction:column}.result-banner{grid-template-columns:1fr}.rail{margin:0 -5px}.data-table{font-size:11px}.data-table th,.data-table td{padding:8px 6px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Primary navigation">
+    <div class="shell">
+      <div class="brand"><span class="brand-mark">EF</span><span>Evaluation Fieldnote</span></div>
+      <div class="toplinks"><a href="#lab">Interactive lab</a><a href="#methods">Methods appendix</a><a href="#sources">Sources</a><a href="https://michaelfarzinpour-droid.github.io/">Portfolio</a></div>
+      <span class="status-pill">Synthetic exercise</span>
+    </div>
+  </nav>
+
+  <header>
+    <div class="shell">
+      <div class="eyebrow">Utility program evaluation · independent portfolio project</div>
+      <h1>Can a rebate program deliver savings—and a better customer experience?</h1>
+      <p class="lede">Step into a fictional utility evaluation. Define the design, resolve imperfect billing data, interpret mixed evidence, and deliver a recommendation that respects uncertainty.</p>
+      <div class="hero-meta"><span>24 months of billing data</span><span>2,500 synthetic households</span><span>Survey + interview evidence</span><span>Six evaluation decisions</span></div>
+      <div class="disclosure"><strong>Transparency note:</strong> The utility, program, households, results, and stakeholder quotations are fictional. The exercise demonstrates research judgment and workflow; it is not a claim of client work or a real-world impact estimate.</div>
+    </div>
+  </header>
+
+  <main id="lab" class="shell workspace">
+    <aside class="rail" aria-label="Evaluation steps">
+      <div class="rail-label">Your evaluation</div>
+      <button class="step-btn active" data-step="0"><span class="step-num">1</span>Program brief</button>
+      <button class="step-btn" data-step="1"><span class="step-num">2</span>Research design</button>
+      <button class="step-btn" data-step="2"><span class="step-num">3</span>Data quality</button>
+      <button class="step-btn" data-step="3"><span class="step-num">4</span>Impact analysis</button>
+      <button class="step-btn" data-step="4"><span class="step-num">5</span>Evidence synthesis</button>
+      <button class="step-btn" data-step="5"><span class="step-num">6</span>Client recommendation</button>
+      <div class="progress"><div id="progressBar"></div></div>
+    </aside>
+
+    <section>
+      <article class="panel active" data-panel="0">
+        <div class="card">
+          <div class="section-kicker">The assignment</div><h2>Evaluate HomeFlex</h2>
+          <p class="muted">Desert Valley Electric asks whether its first-year residential heat-pump rebate generated measurable electricity savings, reached priority customers, and delivered an experience worth scaling.</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>1,240</strong><span>Program participants</span></div>
+            <div class="metric"><strong>1,260</strong><span>Potential comparisons</span></div>
+            <div class="metric"><strong>$1.8M</strong><span>Synthetic incentive spend</span></div>
+            <div class="metric"><strong>12 mo.</strong><span>Post-installation window</span></div>
+          </div>
+          <div class="brief-list">
+            <div class="brief-row"><b>Primary question</b><span>What change in household electricity use is plausibly associated with program participation?</span></div>
+            <div class="brief-row"><b>Secondary questions</b><span>Which customers participated, what barriers did they report, and where should program delivery change?</span></div>
+            <div class="brief-row"><b>Available evidence</b><span>Monthly bills, weather indicators, program tracking records, a customer survey, and coded interview notes.</span></div>
+            <div class="brief-row"><b>Decision</b><span>Continue, modify, or pause the program before the next funding cycle.</span></div>
+          </div>
+          <div class="actions"><span></span><button class="btn primary next">Choose the design →</button></div>
+        </div>
+      </article>
+
+      <article class="panel" data-panel="1">
+        <div class="card">
+          <div class="section-kicker">Decision 1 of 4</div><h2>Choose an impact design</h2>
+          <p class="muted">Enrollment was voluntary, so participants may differ from nonparticipants before installation. Select the most defensible design available from the supplied data.</p>
+          <div class="option-grid" id="designChoices">
+            <label class="choice"><input type="radio" name="design" value="prepost"><b>Participant pre/post comparison</b><small>Compare each participant’s year before installation with the year after. Fast, but vulnerable to weather and time trends.</small></label>
+            <label class="choice"><input type="radio" name="design" value="did"><b>Matched comparison + difference-in-differences</b><small>Match on baseline use, home type, climate zone, and income proxy; compare changes over time between groups.</small></label>
+            <label class="choice"><input type="radio" name="design" value="post"><b>Post-period participant benchmark</b><small>Compare post-installation use with a regional average. Simple, but weak for estimating program-associated change.</small></label>
+          </div>
+          <div id="designFeedback" class="feedback"></div>
+          <div class="actions"><button class="btn secondary prev">← Brief</button><button class="btn primary next">Audit the data →</button></div>
+        </div>
+      </article>
+
+      <article class="panel" data-panel="2">
+        <div class="card">
+          <div class="section-kicker">Decision 2 of 4</div><h2>Resolve the data-quality flags</h2>
+          <p class="muted">A reproducible intake audit finds missing months, duplicate enrollment records, and unusually high usage values.</p>
+          <table class="data-table">
+            <thead><tr><th>Issue</th><th>Records</th><th>Why it matters</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>1–2 missing months</td><td>146</td><td>May reduce usable sample and bias seasonal estimates</td><td><span class="flag gold">Review</span></td></tr>
+              <tr><td>3+ missing months</td><td>54</td><td>Insufficient annual coverage</td><td><span class="flag red">High risk</span></td></tr>
+              <tr><td>Duplicate enrollment IDs</td><td>31</td><td>Can double-count participants and incentives</td><td><span class="flag red">Resolve</span></td></tr>
+              <tr><td>Extreme monthly spikes</td><td>22</td><td>May reflect billing corrections or genuine use</td><td><span class="flag gold">Flag</span></td></tr>
+            </tbody>
+          </table>
+          <div class="option-grid" id="qaChoices">
+            <label class="choice"><input type="radio" name="qa" value="drop"><b>Use complete cases only</b><small>Drop every household with any missing or unusual record.</small></label>
+            <label class="choice"><input type="radio" name="qa" value="structured"><b>Apply a documented decision protocol</b><small>Deduplicate first; interpolate isolated gaps; exclude long gaps; retain plausible spikes but test sensitivity with and without them.</small></label>
+            <label class="choice"><input type="radio" name="qa" value="mean"><b>Mean-fill all missing values</b><small>Replace every missing month with the overall sample mean and retain all other records.</small></label>
+          </div>
+          <div id="qaFeedback" class="feedback"></div>
+          <div class="actions"><button class="btn secondary prev">← Design</button><button class="btn primary next">Estimate impact →</button></div>
+        </div>
+      </article>
+
+      <article class="panel" data-panel="3">
+        <div class="card">
+          <div class="section-kicker">Decision 3 of 4</div><h2>Interrogate the impact estimate</h2>
+          <div class="two-col">
+            <div>
+              <svg class="chart" viewBox="0 0 520 255" role="img" aria-label="Synthetic monthly electricity index for participant and comparison groups">
+                <line class="grid" x1="46" y1="30" x2="46" y2="216"/><line class="grid" x1="46" y1="216" x2="500" y2="216"/>
+                <line class="grid" x1="46" y1="70" x2="500" y2="70"/><line class="grid" x1="46" y1="120" x2="500" y2="120"/><line class="grid" x1="46" y1="170" x2="500" y2="170"/>
+                <text x="9" y="74">110</text><text x="15" y="124">100</text><text x="15" y="174">90</text><text x="48" y="238">Pre 12</text><text x="256" y="238">Install</text><text x="455" y="238">Post 12</text>
+                <polyline class="c-line" points="48,115 88,101 128,126 168,91 208,110 248,100 288,111 328,95 368,117 408,99 448,109 498,101"/>
+                <polyline class="p-line" id="participantLine" points="48,112 88,98 128,122 168,88 208,106 248,97 288,128 328,116 368,140 408,125 448,137 498,130"/>
+                <line x1="270" y1="25" x2="270" y2="218" stroke="#87989d" stroke-dasharray="5 5"/><text x="278" y="44">Installation</text>
+              </svg>
+              <div class="legend"><span><i class="p"></i>Participants</span><span><i class="c"></i>Matched comparison</span></div>
+            </div>
+            <div>
+              <h3>Analysis settings</h3>
+              <p class="muted">Toggle adjustments to see why a headline estimate needs context.</p>
+              <div class="toggle-row"><button class="toggle on" data-toggle="weather">Weather adjustment</button><button class="toggle on" data-toggle="baseline">Baseline controls</button><button class="toggle" data-toggle="outliers">Include flagged spikes</button></div>
+              <div class="result-banner"><div><strong id="savingsValue">8.4%</strong><small id="savingsDetail">estimated reduction · 95% CI 5.9%–10.8%</small></div></div>
+              <label for="threshold"><b>Decision threshold</b>: at least <span id="thresholdValue">6</span>% savings</label>
+              <input id="threshold" class="range" type="range" min="3" max="12" value="6" />
+              <p id="thresholdNote" class="muted" style="font-size:13px;margin-top:10px">The estimate clears the current threshold, but the confidence interval and model assumptions still belong in the recommendation.</p>
+            </div>
+          </div>
+          <div class="feedback show"><strong>Analyst judgment:</strong> Treat the result as an adjusted, program-associated estimate—not proof that every observed change was caused by the rebate. Report specification and sensitivity results together.</div>
+          <div class="actions"><button class="btn secondary prev">← Data quality</button><button class="btn primary next">Synthesize evidence →</button></div>
+        </div>
+      </article>
+
+      <article class="panel" data-panel="4">
+        <div class="card">
+          <div class="section-kicker">Decision 4 of 4</div><h2>Reconcile the mixed evidence</h2>
+          <p class="muted">The impact model is encouraging, but customer evidence reveals uneven access and delivery friction.</p>
+          <div class="evidence-grid">
+            <div class="evidence"><span class="tag">Billing analysis</span><b>8.4% adjusted reduction</b><p>Estimated program-associated change, with sensitivity across specifications.</p></div>
+            <div class="evidence"><span class="tag">Survey</span><b>65.7% response rate</b><p>276 of 420 invited customers completed the survey; priority-customer response was lower.</p></div>
+            <div class="evidence"><span class="tag">Program tracking</span><b>19-day median install</b><p>Priority-area households waited 8 days longer than other participants.</p></div>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <h3>Coded customer themes</h3>
+            <p class="muted" style="font-size:13px">Multiple themes could be assigned to one response.</p>
+            <div class="themes">
+              <div class="theme-row"><span>Improved comfort</span><div class="bar"><span style="width:42%"></span></div><b>42%</b></div>
+              <div class="theme-row"><span>Application friction</span><div class="bar"><span style="width:29%"></span></div><b>29%</b></div>
+              <div class="theme-row"><span>Contractor delays</span><div class="bar"><span style="width:21%"></span></div><b>21%</b></div>
+              <div class="theme-row"><span>Bill confusion</span><div class="bar"><span style="width:18%"></span></div><b>18%</b></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Illustrative interview note</h3>
+            <div class="quote">“The home is more comfortable, but I could not tell whether the lower bill came from the equipment or the milder month.”<small>Composite participant quotation · synthetic</small></div>
+            <div class="quote" style="margin-top:13px">“We lost several applicants while they waited for contractor availability.”<small>Composite program-staff quotation · synthetic</small></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Select the recommendation posture</h3>
+          <div class="option-grid" id="recChoices">
+            <label class="choice"><input type="radio" name="rec" value="scale"><b>Scale immediately</b><small>Expand the program based primarily on the positive impact estimate.</small></label>
+            <label class="choice"><input type="radio" name="rec" value="modify"><b>Continue with targeted modifications</b><small>Preserve the program while addressing access, contractor capacity, and measurement gaps.</small></label>
+            <label class="choice"><input type="radio" name="rec" value="pause"><b>Pause pending another full year</b><small>Wait for more data before continuing any program activity.</small></label>
+          </div>
+          <div id="recFeedback" class="feedback"></div>
+          <div class="actions"><button class="btn secondary prev">← Analysis</button><button class="btn orange next">Build the client brief →</button></div>
+        </div>
+      </article>
+
+      <article class="panel" data-panel="5">
+        <div class="card">
+          <div class="section-kicker">Your deliverable</div><h2>Client recommendation</h2>
+          <div class="result-banner"><div><b>Evidence discipline score</b><small id="scoreLabel">Complete the decisions to score your approach.</small></div><div class="score-ring" id="scoreRing" style="--score:0"><span id="scoreValue">0</span></div></div>
+          <div class="recommendation">
+            <h3>My recommended approach</h3>
+            <ul>
+              <li>Continue HomeFlex for a second year while treating the first-year 8.4% estimate as promising rather than definitive.</li>
+              <li>Use a matched comparison difference-in-differences design, publish sensitivity results, and retain a documented data-quality protocol.</li>
+              <li>Expand contractor capacity in priority areas and simplify application guidance before increasing enrollment targets.</li>
+              <li>Use targeted survey follow-up and response weighting or sensitivity analysis to address lower response among priority customers.</li>
+              <li>Pre-register Year 2 measures, thresholds, subgroup tests, and data-exclusion rules before the next evaluation cycle.</li>
+            </ul>
+          </div>
+          <h3 style="margin-top:24px">Generated evaluation memo</h3>
+          <div class="memo" id="memo"></div>
+          <div class="actions"><button class="btn secondary prev">← Evidence</button><button class="btn primary" id="downloadMemo">Download memo</button></div>
+        </div>
+        <div class="card">
+          <div class="section-kicker">Portfolio context</div><h3>What this exercise demonstrates</h3>
+          <p class="muted">Research-question translation, quasi-experimental reasoning, data-quality decisions, quantitative and qualitative synthesis, uncertainty communication, and client-ready recommendations. The analysis is an independent demonstration using synthetic data.</p>
+          <p style="margin-bottom:0"><strong>Created by Michael Farzinpour, PhD</strong> · <a href="https://michaelfarzinpour-droid.github.io/">View full research and analytics portfolio</a></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <section id="methods" class="methods-section">
+    <div class="shell">
+      <div class="section-kicker">Reproducibility appendix</div><h2>From intake file to analytic sample</h2>
+      <p class="muted methods-intro">The workflow below makes the simulated exclusions, matching loss, and sensitivity rules visible. Counts are generated by the downloadable synthetic-data script using a fixed random seed.</p>
+      <div class="flow" aria-label="Analytic sample flow">
+        <div class="flow-node"><strong>2,500</strong><span>synthetic households received at intake</span></div>
+        <div class="flow-node"><strong>31</strong><span>duplicate monthly rows resolved by record version</span></div>
+        <div class="flow-node"><strong>54</strong><span>households excluded for three or more missing months</span></div>
+        <div class="flow-node"><strong>2,446</strong><span>households eligible after coverage rules</span></div>
+        <div class="flow-node"><strong>1,188 pairs</strong><span>2,376 households retained in the matched analysis</span></div>
+      </div>
+
+      <div class="appendix-card">
+        <h3>Methods in brief</h3>
+        <div class="method-grid">
+          <div class="method-card"><span class="method-num">01 · Matching</span><h3>Construct a credible comparison</h3><p>Participants are paired with nonparticipants on baseline consumption, home type, climate zone, and income group. Unmatched records are excluded from the matched estimate but retained in descriptive reporting.</p></div>
+          <div class="method-card"><span class="method-num">02 · Difference in differences</span><h3>Compare changes, not levels</h3><p>The estimator compares the participant group’s pre-to-post change with the comparison group’s change over the same period. This removes shared time trends but does not eliminate all unmeasured selection bias.</p></div>
+          <div class="method-card"><span class="method-num">03 · Weather adjustment</span><h3>Normalize temperature-related demand</h3><p>Synthetic heating and cooling degree-day indicators are used to remove modeled weather load before calculating the preferred estimate. Adjusted and unadjusted results are shown together.</p></div>
+          <div class="method-card"><span class="method-num">04 · Missing data</span><h3>Apply rules before viewing outcomes</h3><p>Duplicate versions are resolved first. One- or two-month gaps remain eligible for limited within-household interpolation; households missing three or more months are excluded. Twenty-two flagged spikes are omitted from the primary result and restored in sensitivity analysis.</p></div>
+        </div>
+        <p class="muted" style="font-size:13px;margin-bottom:0"><strong>Interpretation boundary:</strong> This is a teaching implementation of a matched billing analysis. A production study would add balance diagnostics, parallel-trends tests, uncertainty clustered at the appropriate level, jurisdiction-specific protocols, and independent code review.</p>
+      </div>
+
+      <div class="appendix-card">
+        <h3>Sensitivity analysis</h3>
+        <p class="muted">The preferred result is not presented alone. Alternative specifications show how the conclusion changes when the counterfactual, weather treatment, missing-data rule, or spike handling changes.</p>
+        <table class="data-table">
+          <thead><tr><th>Specification</th><th>Comparison</th><th>Weather adjusted</th><th>Estimated reduction</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td>Participant pre/post</td><td>No</td><td>No</td><td>9.3%</td><td><span class="flag gold">Descriptive</span></td></tr>
+            <tr><td>Matched difference-in-differences</td><td>Yes</td><td>No</td><td>8.4%</td><td><span class="flag gold">Check</span></td></tr>
+            <tr><td>Preferred matched specification</td><td>Yes</td><td>Yes</td><td>8.4%</td><td><span class="flag green">Primary</span></td></tr>
+            <tr><td>Preferred model, complete cases</td><td>Yes</td><td>Yes</td><td>8.4%</td><td><span class="flag green">Robust</span></td></tr>
+            <tr><td>Preferred model, spikes retained</td><td>Yes</td><td>Yes</td><td>8.5%</td><td><span class="flag green">Robust</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="appendix-card">
+        <h3>Qualitative coding framework</h3>
+        <p class="muted">Open-ended responses can receive multiple codes. The codebook separates customer outcomes from process barriers and defines inclusion and exclusion boundaries.</p>
+        <table class="data-table">
+          <thead><tr><th>Code</th><th>Operational definition</th><th>Include</th><th>Exclude</th></tr></thead>
+          <tbody>
+            <tr><td>Improved comfort</td><td>Better temperature stability or comfort</td><td>Direct comfort or temperature reference</td><td>General satisfaction only</td></tr>
+            <tr><td>Application friction</td><td>Difficulty understanding or completing enrollment</td><td>Forms, documentation, eligibility, unclear steps</td><td>Post-approval contractor scheduling</td></tr>
+            <tr><td>Contractor delays</td><td>Installation scheduling or availability problems</td><td>Wait time, cancellations, capacity constraints</td><td>Utility processing time</td></tr>
+            <tr><td>Bill confusion</td><td>Uncertainty separating savings from other influences</td><td>Rates, weather, behavior, or expected savings</td><td>General affordability concerns</td></tr>
+            <tr><td>Positive service</td><td>Helpful staff, contractor, or communication experience</td><td>Specific positive interaction</td><td>Equipment performance alone</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="appendix-card">
+        <h3>Download the reproducible materials</h3>
+        <p class="muted">Everything below is synthetic and may be shared. The Python file uses only the standard library, regenerates the data with a fixed seed, applies the documented rules, and writes the sensitivity table.</p>
+        <div class="download-grid">
+          <a class="download-card" href="downloads/homeflex_synthetic_monthly.csv.gz" download><b>Monthly billing data</b><small>59,615 synthetic household-month records · compressed CSV · 767 KB</small></a>
+          <a class="download-card" href="downloads/homeflex_analysis.py" download><b>Python analysis</b><small>Data generation, cleaning, matched estimates, and sensitivity output</small></a>
+          <a class="download-card" href="downloads/homeflex_sensitivity_results.csv" download><b>Sensitivity results</b><small>Specification comparison in reusable CSV format</small></a>
+          <a class="download-card" href="downloads/homeflex_data_dictionary.csv" download><b>Data dictionary</b><small>Field names, data types, and definitions</small></a>
+          <a class="download-card" href="downloads/homeflex_qualitative_codebook.csv" download><b>Qualitative codebook</b><small>Definitions, boundaries, and synthetic examples</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources" class="sources">
+    <div class="shell">
+      <div class="section-kicker">Methodological grounding</div><h2>Methods and public sources</h2>
+      <p class="muted">The exercise draws conceptually on public evaluation, measurement, and verification guidance. Its scenario and numerical results remain entirely synthetic.</p>
+      <ol>
+        <li><a href="https://www.energy.gov/cmei/buildings/uniform-methods-project-determining-energy-efficiency-savings-specific-measures">U.S. Department of Energy — Uniform Methods Project</a></li>
+        <li><a href="https://www.energy.gov/sites/default/files/2014/05/f15/emv_ee_program_impact_guide.pdf">SEE Action — Energy Efficiency Program Impact Evaluation Guide</a></li>
+        <li><a href="https://www.epa.gov/sites/default/files/2019-06/documents/guidebook_for_energy_efficiency_evaluation_measurement_verification.pdf">U.S. EPA — Guidebook for Energy Efficiency Evaluation, Measurement, and Verification</a></li>
+      </ol>
+      <p><strong>Limitations:</strong> This interface does not execute a production-grade billing model. Displayed estimates are precomputed for the fictional scenario and are intended to demonstrate methodological choices, interpretation, and communication. A real evaluation would require jurisdiction-specific protocols, privacy safeguards, complete diagnostics, model review, and reproducible analytical code.</p>
+    </div>
+  </section>
+  <footer><div class="shell footer-row"><span>Energy Efficiency Evaluation Lab · Independent portfolio project · 2026</span><a href="#lab">Return to the lab ↑</a></div></footer>
+
+  <script>
+    const state={step:0,design:null,qa:null,rec:null,weather:true,baseline:true,outliers:false};
+    const panels=[...document.querySelectorAll('.panel')],stepButtons=[...document.querySelectorAll('.step-btn')];
+    function go(n){state.step=Math.max(0,Math.min(5,n));panels.forEach((p,i)=>p.classList.toggle('active',i===state.step));stepButtons.forEach((b,i)=>b.classList.toggle('active',i===state.step));document.getElementById('progressBar').style.width=((state.step+1)/6*100)+'%';window.scrollTo({top:document.getElementById('lab').offsetTop-78,behavior:'smooth'});if(state.step===5)renderMemo()}
+    stepButtons.forEach((b,i)=>b.addEventListener('click',()=>go(i)));document.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>go(state.step+1)));document.querySelectorAll('.prev').forEach(b=>b.addEventListener('click',()=>go(state.step-1)));
+    function bindChoices(name,key,feedbackId,copy){document.querySelectorAll(`input[name="${name}"]`).forEach(input=>input.addEventListener('change',e=>{state[key]=e.target.value;document.querySelectorAll(`input[name="${name}"]`).forEach(i=>i.closest('.choice').classList.toggle('selected',i.checked));const f=document.getElementById(feedbackId);f.classList.add('show');f.classList.toggle('warn',!copy[e.target.value].good);f.innerHTML=copy[e.target.value].text;}))}
+    bindChoices('design','design','designFeedback',{
+      prepost:{good:false,text:'<strong>Useful descriptive view, but incomplete.</strong> A participant-only trend cannot separate program effects from weather or broader changes.'},
+      did:{good:true,text:'<strong>Best available design.</strong> Matching improves comparability, while difference-in-differences accounts for shared time trends. Residual selection bias should still be disclosed.'},
+      post:{good:false,text:'<strong>Weak counterfactual.</strong> A regional benchmark may differ in housing, climate, and baseline consumption.'}
+    });
+    bindChoices('qa','qa','qaFeedback',{
+      drop:{good:false,text:'<strong>Transparent, but potentially wasteful.</strong> Complete-case analysis can reduce precision and introduce bias if missingness is systematic.'},
+      structured:{good:true,text:'<strong>Defensible and auditable.</strong> The protocol distinguishes recoverable gaps from inadequate records and preserves sensitivity checks.'},
+      mean:{good:false,text:'<strong>Not recommended.</strong> Overall mean filling suppresses real variation and ignores household and seasonal patterns.'}
+    });
+    bindChoices('rec','rec','recFeedback',{
+      scale:{good:false,text:'<strong>Too confident.</strong> Scaling before addressing participation and delivery gaps gives the impact estimate more certainty than it can support.'},
+      modify:{good:true,text:'<strong>Balanced recommendation.</strong> It connects positive impact evidence with specific delivery improvements and a stronger Year 2 design.'},
+      pause:{good:false,text:'<strong>More conservative than the evidence requires.</strong> The current estimate supports continuation if limitations and corrective actions are explicit.'}
+    });
+    function updateEstimate(){let v=8.4;if(!state.baseline)v+=.9;if(state.outliers)v+=.1;const lo=(v-2.5).toFixed(1),hi=(v+2.4).toFixed(1);document.getElementById('savingsValue').textContent=v.toFixed(1)+'%';document.getElementById('savingsDetail').textContent=`estimated reduction · 95% CI ${lo}%–${hi}%`;updateThreshold(v)}
+    document.querySelectorAll('.toggle').forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.toggle;state[k]=!state[k];b.classList.toggle('on',state[k]);updateEstimate()}));
+    const threshold=document.getElementById('threshold');function updateThreshold(v=8.4){const t=+threshold.value;document.getElementById('thresholdValue').textContent=t;document.getElementById('thresholdNote').textContent=v>=t?'The estimate clears this threshold, but the confidence interval and assumptions still belong in the recommendation.':'The point estimate does not clear this threshold; continuation would need to rest on learning value or non-energy benefits.'}threshold.addEventListener('input',()=>updateThreshold(parseFloat(document.getElementById('savingsValue').textContent)));
+    function score(){let s=20;if(state.design==='did')s+=25;else if(state.design)s+=8;if(state.qa==='structured')s+=25;else if(state.qa)s+=8;if(state.weather&&state.baseline&&!state.outliers)s+=10;if(state.rec==='modify')s+=20;else if(state.rec)s+=7;return Math.min(100,s)}
+    function renderMemo(){const s=score();document.getElementById('scoreValue').textContent=s;document.getElementById('scoreRing').style.setProperty('--score',s);document.getElementById('scoreLabel').textContent=s>=90?'Strong alignment with an evidence-disciplined evaluation approach.':s>=65?'Sound foundation; revisit any flagged choices before presenting.':'Complete or revise the evaluation decisions to strengthen the brief.';const design=state.design==='did'?'matched comparison difference-in-differences':state.design==='prepost'?'participant pre/post comparison':state.design==='post'?'post-period benchmark':'not yet selected';const qa=state.qa==='structured'?'documented deduplication, limited gap interpolation, exclusions, and sensitivity checks':state.qa==='drop'?'complete-case analysis':state.qa==='mean'?'overall mean imputation':'not yet selected';const rec=state.rec==='modify'?'continue with targeted modifications':state.rec==='scale'?'scale immediately':state.rec==='pause'?'pause pending another year':'not yet selected';document.getElementById('memo').textContent=`TO: Desert Valley Electric Program Team\nFROM: Evaluation Researcher\nSUBJECT: HomeFlex First-Year Evaluation — Synthetic Exercise\n\nQUESTION\nDid HomeFlex produce measurable changes in electricity use, reach priority customers, and provide an experience worth scaling?\n\nAPPROACH\nSelected design: ${design}.\nData-quality treatment: ${qa}.\n\nFINDINGS\nThe preferred synthetic specification estimates an 8.4% reduction in participant electricity use relative to the matched comparison group (95% CI: 5.9%–10.8%). Survey completion was 65.7%, with lower response among priority customers. Qualitative evidence indicates improved comfort alongside application friction, contractor delays, and difficulty interpreting bill changes.\n\nRECOMMENDATION\n${rec.charAt(0).toUpperCase()+rec.slice(1)}. Preserve sensitivity analyses, increase contractor capacity in priority areas, simplify application guidance, and pre-register Year 2 measures and exclusion rules.\n\nLIMITATIONS\nAll data and findings are synthetic. A real evaluation would require model diagnostics, jurisdiction-specific EM&V protocols, privacy review, reproducible code, and independent quality assurance.`}
+    document.getElementById('downloadMemo').addEventListener('click',()=>{renderMemo();const blob=new Blob([document.getElementById('memo').textContent],{type:'text/plain'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='HomeFlex_Synthetic_Evaluation_Memo.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+    renderMemo();
+  </script>
+</body>
+</html>
