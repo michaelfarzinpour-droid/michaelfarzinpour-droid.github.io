@@ -1,0 +1,13 @@
+response_id,journey,region,user_type,week,experience_score,device,open_text,human_theme,ai_theme,review_status
+CX001,candidate,West,first-time,1,8,mobile,"The confirmation was clear and arrived right away.",Communication clarity,Communication clarity,agree
+CX002,candidate,West,first-time,5,4,desktop,"I received two different interview times and could not tell which was current.",Scheduling clarity,Scheduling clarity,agree
+CX003,candidate,West,returning,5,5,mobile,"The portal kept returning me to the login page, but the recruiter helped.",Technology friction,Technology friction,review
+CX004,candidate,West,first-time,6,3,mobile,"I could not find anyone to contact about changing the time.",Communication access,Scheduling clarity,review
+CX005,candidate,West,returning,6,6,desktop,"Once I found the right person, rescheduling was quick.",Communication access,Process speed,review
+CX006,candidate,Northeast,first-time,6,8,desktop,"The steps were easy to understand.",Communication clarity,Communication clarity,agree
+CX007,client,West,first-time,5,8,desktop,"The status update was useful and concise.",Communication clarity,Communication clarity,agree
+CX008,client,West,returning,6,7,mobile,"I wanted a clearer explanation of the next step.",Communication clarity,Process clarity,agree
+CX009,candidate,West,first-time,6,2,mobile,"The link opened, but the page froze before I could confirm.",Technology friction,Technology friction,agree
+CX010,candidate,West,first-time,6,4,desktop,"Available times disappeared while I was choosing.",Appointment availability,Scheduling clarity,review
+CX011,client,South,returning,5,9,desktop,"Fast response and clear follow-up.",Service responsiveness,Service responsiveness,agree
+CX012,candidate,Midwest,returning,4,8,mobile,"No problems and I knew what to expect.",Communication clarity,Communication clarity,agree
