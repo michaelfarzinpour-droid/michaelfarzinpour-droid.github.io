@@ -1,0 +1,24 @@
+CX LISTENING PROGRAM LAB — METHODS NOTE
+Michael Farzinpour | Independent portfolio project | 2026
+
+PURPOSE
+This simulation demonstrates a transparent workflow for monitoring and investigating customer-experience signals across candidate and client journeys. It is not an analysis of Robert Half or any other employer.
+
+DATA
+All records, comments, scores, organizations, and outcomes are fictional and synthetic. The downloadable CSV is a compact illustrative sample; dashboard totals represent a larger simulated dataset.
+
+ELIGIBILITY AND QUALITY RULES
+1. Include responses linked to an eligible survey trigger and completed within the reporting window.
+2. Retain one response per synthetic journey event.
+3. Flag duplicate identifiers, failed attention or validation rules, and implausibly short completion times.
+4. Exclude a flagged record only when it meets a documented rule; retain an audit count of all exclusions.
+5. Reconcile completed-response totals against the synthetic distribution log.
+
+QUANTITATIVE REVIEW
+Weekly experience scores are summarized overall and by journey, region, user type, and device. Alert review compares the current period with the prior period and examines whether changes persist after quality exclusions and response-mix review. The exercise is descriptive; it does not claim causal impact.
+
+OPEN-TEXT REVIEW
+Comments may receive up to two human codes. A 20% sample is double-coded for validation. AI suggestions are compared with the codebook and source text. Ambiguous, novel, or multi-theme comments are routed for human review rather than automatically accepted.
+
+RECOMMENDATION STANDARD
+The executive brief separates observed evidence, uncertainty, proposed action, and monitoring criteria. The preferred response is a bounded pilot that preserves an opportunity to learn before broad implementation.
