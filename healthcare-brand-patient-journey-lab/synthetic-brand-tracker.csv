@@ -1,0 +1,7 @@
+market,audience,n,unaided_awareness,aided_awareness,trial_or_prescribing_intent,current_use_or_recent_recommendation,satisfaction
+United States,Patients,180,18,61,43,24,67
+United Kingdom,Patients,130,12,53,38,19,71
+Germany,Patients,110,9,48,34,16,64
+United States,HCPs,50,42,82,58,46,72
+United Kingdom,HCPs,40,35,75,51,39,76
+Germany,HCPs,30,31,69,47,34,68
