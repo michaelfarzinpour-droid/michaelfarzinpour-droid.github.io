@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent CGM customer insights and brand research simulation using synthetic data.">
+  <title>CGM Customer Insights and Brand Research Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analysis</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CGM Research Lab home">
+      <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M3 23h8l4-10 6 21 6-17 4 6h10"/></svg>
+      <span>CGM Research Lab</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#journey">Journey</a>
+      <a href="#messages">Message test</a>
+      <a href="#verbatims">Feedback</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#methods">Methods</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent portfolio simulation · October 2026</p>
+        <h1>CGM Customer Insights<br>and Brand Research Lab</h1>
+        <p class="lede">A decision-oriented research environment for exploring awareness, adoption, onboarding, sustained use, HCP recommendation, message performance, and unstructured customer feedback for a fictional continuous glucose monitoring brand.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#dashboard">Explore the evidence</a>
+          <button class="button secondary" id="download-data">Download synthetic data</button>
+        </div>
+        <p class="disclosure"><strong>Important:</strong> Aster CGM is fictional. Every respondent, quote, result, cost, and recommendation is synthetic. This project is not affiliated with or based on confidential information from any company.</p>
+      </div>
+      <div class="hero-visual" aria-label="Illustrative CGM trend chart">
+        <div class="visual-label"><span>Illustrative glucose trace</span><span>24 hours</span></div>
+        <svg viewBox="0 0 560 260" role="img" aria-label="Synthetic glucose trace moving mostly within target range">
+          <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3dd6c6" stop-opacity=".35"/><stop offset="1" stop-color="#3dd6c6" stop-opacity="0"/></linearGradient></defs>
+          <rect class="target" x="20" y="72" width="520" height="110" rx="12"/>
+          <path class="area" d="M20 178 C65 160,85 124,120 130 S178 197,216 164 S275 92,312 116 S360 183,400 151 S458 98,540 125 L540 230 L20 230 Z"/>
+          <path class="trace" d="M20 178 C65 160,85 124,120 130 S178 197,216 164 S275 92,312 116 S360 183,400 151 S458 98,540 125"/>
+          <line x1="20" y1="72" x2="540" y2="72"/><line x1="20" y1="182" x2="540" y2="182"/>
+          <text x="28" y="65">180</text><text x="28" y="202">70</text>
+        </svg>
+        <div class="visual-stat"><span>Research objective</span><strong>Find the friction behind the funnel</strong></div>
+      </div>
+    </section>
+
+    <section class="section dashboard-section" id="dashboard">
+      <div class="section-heading split">
+        <div><p class="eyebrow">Executive research view</p><h2>Brand health and adoption</h2></div>
+        <div class="filters" aria-label="Dashboard filters">
+          <label>Market<select id="market-filter"><option value="all">All markets</option><option value="us">United States</option><option value="uk">United Kingdom</option><option value="de">Germany</option></select></label>
+          <label>Patient segment<select id="segment-filter"><option value="all">All patients</option><option value="t1d">Type 1 diabetes</option><option value="t2i">Type 2 · insulin</option><option value="t2n">Type 2 · non-insulin</option></select></label>
+        </div>
+      </div>
+      <div class="metric-grid" id="metric-grid" aria-live="polite"></div>
+      <div class="analysis-grid">
+        <article class="panel span-7">
+          <div class="panel-heading"><div><p class="kicker">Brand funnel</p><h3>Awareness is not becoming sustained use</h3></div><span class="sample" id="sample-size"></span></div>
+          <div id="funnel-chart" class="funnel-chart"></div>
+          <p class="chart-note">Percent of eligible synthetic patient respondents. Activation is calculated among starters; 90-day use is calculated among activated users.</p>
+        </article>
+        <article class="panel span-5 alert-panel">
+          <div class="panel-heading"><div><p class="kicker">Signal investigation</p><h3>Activation alert</h3></div><span class="status alert">Review</span></div>
+          <p class="signal-number"><strong>-11.4 pts</strong><span>Quarter-over-quarter activation</span></p>
+          <ol class="validation-list">
+            <li><button data-check="distribution"><span>1</span>Distribution and survey logic</button></li>
+            <li><button data-check="mix"><span>2</span>Response mix and weighting</button></li>
+            <li><button data-check="device"><span>3</span>Device drop-off and exclusions</button></li>
+            <li><button data-check="themes"><span>4</span>Open-text and support themes</button></li>
+          </ol>
+          <div class="evidence-box" id="evidence-box">Select a validation step to inspect the evidence.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="journey">
+      <div class="section-heading split">
+        <div><p class="eyebrow">Patient journey</p><h2>Where momentum breaks</h2></div>
+        <div class="view-switch" role="group" aria-label="Journey view">
+          <button class="active" data-journey-view="patient">Patient</button>
+          <button data-journey-view="hcp">HCP</button>
+        </div>
+      </div>
+      <div class="journey-layout">
+        <div class="journey-path" id="journey-path"></div>
+        <article class="journey-detail" id="journey-detail" aria-live="polite"></article>
+      </div>
+    </section>
+
+    <section class="section" id="messages">
+      <div class="section-heading"><p class="eyebrow">Creative and communications testing</p><h2>Choose a message, then interrogate why it wins</h2><p>Three concepts were tested among 360 synthetic patients. Select a concept to compare clarity, relevance, trust, motivation, and intent to discuss CGM with an HCP.</p></div>
+      <div class="message-grid" id="message-grid"></div>
+      <div class="message-readout">
+        <div class="score-bars" id="score-bars"></div>
+        <article class="recommendation" id="message-recommendation"></article>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="verbatims">
+      <div class="section-heading split">
+        <div><p class="eyebrow">Unstructured feedback</p><h2>Human-coded themes, AI-assisted scale</h2><p>Explore 240 synthetic app reviews, support contacts, and open-ended survey responses.</p></div>
+        <label class="source-filter">Source<select id="source-filter"><option value="all">All feedback</option><option value="app">App reviews</option><option value="support">Support contacts</option><option value="survey">Open-ended survey</option></select></label>
+      </div>
+      <div class="feedback-layout">
+        <article class="panel"><p class="kicker">Theme distribution</p><div id="theme-chart" class="theme-chart"></div></article>
+        <article class="panel"><div class="panel-heading"><div><p class="kicker">Verbatim explorer</p><h3 id="theme-title">Setup and pairing</h3></div><span class="status neutral">Synthetic quotes</span></div><div id="quote-list" class="quote-list"></div></article>
+        <article class="panel validation-panel">
+          <p class="kicker">AI validation</p><h3>Automation supports—not replaces—judgment</h3>
+          <div class="agreement"><strong>88%</strong><span>AI-to-human theme agreement</span></div>
+          <div class="mini-metrics"><span><strong>0.84</strong> macro F1</span><span><strong>n=60</strong> validation sample</span><span><strong>9</strong> escalations</span></div>
+          <p>Low-confidence and safety-related comments are routed to human review. AI summaries are checked against source comments before reporting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="decision">
+      <div class="section-heading"><p class="eyebrow">Insight to action</p><h2>What would you recommend?</h2><p>The activation decline remains after distribution, response-mix, device, and exclusion checks. Setup and pairing friction rose most sharply among first-time users.</p></div>
+      <div class="decision-grid" id="decision-grid">
+        <button data-decision="campaign"><span class="decision-label">Option A</span><strong>Increase awareness media</strong><small>Invest above the funnel to expand reach.</small></button>
+        <button data-decision="onboarding"><span class="decision-label">Option B</span><strong>Pilot guided onboarding</strong><small>Test live setup support for first-time users.</small></button>
+        <button data-decision="discount"><span class="decision-label">Option C</span><strong>Offer a broad discount</strong><small>Reduce acquisition cost across segments.</small></button>
+      </div>
+      <div class="decision-result" id="decision-result">Select a recommendation to see how well it fits the evidence.</div>
+    </section>
+
+    <section class="section dark-section" id="delivery">
+      <div class="section-heading"><p class="eyebrow">Research operations</p><h2>From business question to decision</h2></div>
+      <div class="delivery-grid">
+        <article><h3>Six-week plan</h3><div class="timeline" id="timeline"></div></article>
+        <article><h3>Illustrative job-cost monitor</h3><div class="budget" id="budget"></div><p class="chart-note light">Illustrative costs only; not evidence of professional budget ownership.</p></article>
+        <article><h3>Risk and escalation log</h3><div class="risk-list" id="risk-list"></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="methods">
+      <div class="section-heading"><p class="eyebrow">Methods and transparency</p><h2>How the simulation works</h2></div>
+      <div class="methods-grid">
+        <article><span>01</span><h3>Design</h3><p>Fictional, multi-market brand tracker with synthetic patient and HCP samples, paired with synthetic depth-interview themes and digital feedback.</p></article>
+        <article><span>02</span><h3>Quality</h3><p>Eligibility screeners, soft quotas, logic tests, duplicate and speed checks, minimum-base flags, documented exclusions, and source-level review.</p></article>
+        <article><span>03</span><h3>Analysis</h3><p>Descriptive comparisons, funnel diagnostics, message-score contrasts, rule-based qualitative coding, and AI-to-human validation.</p></article>
+        <article><span>04</span><h3>Limits</h3><p>Synthetic results demonstrate research thinking, not product performance, market facts, clinical evidence, or causal effects.</p></article>
+      </div>
+      <details class="appendix"><summary>Open the research brief and sample specifications</summary><div class="appendix-grid"><div><h3>Patient tracker</h3><p>n=720: U.S. 360, U.K. 180, Germany 180. Soft quotas by diabetes type, insulin status, age, and CGM experience.</p></div><div><h3>HCP tracker</h3><p>n=180: endocrinologists, primary-care clinicians, diabetes educators, and prescribing nurses.</p></div><div><h3>Qualitative layer</h3><p>30 synthetic depth interviews, 240 synthetic feedback records, and a six-theme codebook with inclusion and exclusion rules.</p></div><div><h3>Reporting rule</h3><p>Flag bases below 50, separate observed patterns from explanations, and label all recommendations as hypotheses to test.</p></div></div></details>
+    </section>
+  </main>
+
+  <footer><div><strong>CGM Customer Insights and Brand Research Lab</strong><p>Created by Michael Farzinpour as an independent portfolio simulation.</p></div><div><a href="https://michaelfarzinpour-droid.github.io/">Portfolio</a><a href="#top">Back to top</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
