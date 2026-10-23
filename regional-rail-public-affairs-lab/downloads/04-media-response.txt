@@ -1,0 +1,15 @@
+MEDIA RESPONSE — FICTIONAL EXERCISE
+
+QUESTION
+Why did customers hear about the disruption on social media before the agency issued an alert?
+
+RESPONSE
+Customers deserved a faster acknowledgement. Our first priority was confirming which segments were affected so we did not amplify an inaccurate systemwide-closure claim. Once operations verified the service area, we issued a bounded update that identified the affected locations, customer actions, and the time of the next update. We are reviewing the first-alert workflow so an acknowledgement can be issued sooner while operational details are still being confirmed.
+
+RESPONSE STRUCTURE
+1. Acknowledge the concern.
+2. State only verified facts.
+3. Explain the immediate customer action.
+4. Commit to the next update or corrective step.
+
+Independent portfolio simulation. Not affiliated with Metrolink, SCRRA, or any public agency.

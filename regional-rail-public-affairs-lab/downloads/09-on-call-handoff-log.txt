@@ -1,0 +1,41 @@
+ON-CALL HANDOFF LOG — FICTIONAL EXERCISE
+
+SHIFT
+Outgoing lead: Public Affairs Lead A
+Incoming lead: Public Affairs Lead B
+Handoff time: 6:45 p.m.
+
+CURRENT CONFIRMED FACTS
+• Signal functionality restored at 6:27 p.m.
+• Residual delays of up to 25 minutes remain.
+• Bus bridging is phasing out.
+• Central Station elevator remains unavailable.
+
+UNRESOLVED QUESTIONS
+• Final root-cause confirmation from Rail Operations
+• Estimated time for elevator restoration
+• Whether the closure rumor requires a second correction
+
+APPROVALS
+• Recovery update approved by Operations and Customer Experience
+• Media response approved by Public Affairs lead
+• Accessibility language confirmed by duty specialist
+
+PRIORITY CONTACTS
+• Rail Operations incident commander
+• Customer Experience duty manager
+• Accessibility duty specialist
+• City and county public information officers
+• Member-agency communications leads
+
+NEXT REQUIRED UPDATE
+7:00 p.m., or sooner if residual delays increase or elevator status changes.
+
+ESCALATION TRIGGERS
+• Delays rise above 30 minutes
+• New safety condition or station closure
+• Accessibility alternative becomes unavailable
+• False closure claim increases by more than 50% in 15 minutes
+• Elected office or major media inquiry requires executive briefing
+
+Independent portfolio simulation. Not affiliated with Metrolink, SCRRA, or any public agency.

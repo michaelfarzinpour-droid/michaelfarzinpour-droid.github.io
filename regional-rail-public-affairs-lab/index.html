@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Independent interactive regional rail public affairs and incident response simulation by Michael Farzinpour." />
+  <title>Regional Rail Public Affairs and Incident Response Lab</title>
+  <style>
+    :root {
+      --ink:#0c1c2d; --navy:#102d4f; --blue:#1d5f8a; --teal:#148c89;
+      --yellow:#f4b942; --red:#c85454; --green:#2c7a62; --paper:#f7f4ed;
+      --white:#fff; --muted:#5c6975; --line:#d7dce0; --soft:#eaf1f4;
+      --shadow:0 14px 40px rgba(12,28,45,.12); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    button,input,textarea,select{font:inherit}
+    a{color:var(--blue)}
+    .topbar{position:sticky;top:0;z-index:30;background:rgba(12,28,45,.96);color:#fff;border-bottom:3px solid var(--yellow);backdrop-filter:blur(10px)}
+    .topbar-inner{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em}
+    .brand-mark{width:34px;height:34px;border-radius:50%;border:4px solid var(--yellow);position:relative}
+    .brand-mark:after{content:"";position:absolute;width:4px;height:22px;background:#fff;left:11px;top:2px;border-radius:4px}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-size:.87rem;font-weight:650;opacity:.86}
+    nav a:hover,nav a:focus{opacity:1;color:var(--yellow)}
+    .hero{background:linear-gradient(120deg,#0b1e33 0%,#143f67 55%,#176f79 100%);color:#fff;overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(105deg,transparent 0 85px,rgba(255,255,255,.035) 85px 87px)}
+    .hero-inner{max-width:1180px;margin:auto;padding:70px 24px 64px;position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:52px;align-items:end}
+    .eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.45rem,5.5vw,5.35rem);line-height:.98;letter-spacing:-.035em;margin:0 0 22px;max-width:900px}
+    .hero p{font-size:1.08rem;max-width:760px;color:#dbe9f2;margin:0}
+    .disclaimer{border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.08);border-radius:var(--radius);padding:20px;font-size:.86rem;color:#eef7fb}
+    .disclaimer strong{display:block;color:var(--yellow);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+    .rail-line{height:8px;background:linear-gradient(90deg,var(--yellow) 0 22%,#fff 22% 24%,var(--teal) 24% 60%,#fff 60% 62%,#ef776b 62%);position:relative}
+    .rail-line span{position:absolute;top:50%;width:18px;height:18px;background:var(--paper);border:4px solid var(--navy);border-radius:50%;transform:translate(-50%,-50%)}
+    .rail-line span:nth-child(1){left:12%}.rail-line span:nth-child(2){left:38%}.rail-line span:nth-child(3){left:68%}.rail-line span:nth-child(4){left:90%}
+    main{max-width:1180px;margin:auto;padding:44px 24px 90px}
+    section{scroll-margin-top:78px;margin-bottom:58px}
+    .section-kicker{color:var(--blue);font-size:.76rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase;margin-bottom:6px}
+    h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.75rem,3vw,2.7rem);line-height:1.08;margin:0 0 10px}
+    .lede{color:var(--muted);max-width:830px;margin:0 0 24px}
+    .scenario-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .scenario-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 8px 24px rgba(12,28,45,.06);position:relative;overflow:hidden}
+    .scenario-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--teal)}
+    .scenario-card.incident:before{background:var(--yellow)}
+    .scenario-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.11em;font-weight:800;color:var(--blue)}
+    .scenario-card h3{font-size:1.35rem;margin:6px 0 9px}
+    .scenario-card p{color:var(--muted);margin:0 0 18px}
+    .tag-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+    .tag{background:var(--soft);border-radius:999px;padding:5px 10px;font-size:.75rem;font-weight:700;color:var(--navy)}
+    .btn{appearance:none;border:0;border-radius:999px;background:var(--navy);color:#fff;padding:10px 16px;font-weight:750;cursor:pointer;transition:.2s transform,.2s background}
+    .btn:hover,.btn:focus{transform:translateY(-1px);background:var(--blue)}
+    .btn.secondary{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+    .btn.warn{background:var(--yellow);color:var(--ink)}
+    .btn.small{padding:7px 12px;font-size:.8rem}
+    .lab-shell{display:grid;grid-template-columns:280px minmax(0,1fr);gap:20px;align-items:start}
+    .sidebar{position:sticky;top:78px;background:var(--ink);color:#fff;border-radius:var(--radius);padding:18px}
+    .mode-title{font-size:.78rem;color:var(--yellow);font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .sidebar h3{margin:4px 0 14px;font-size:1.05rem}
+    .step-list{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+    .step-list button{width:100%;text-align:left;border:0;background:transparent;color:#bfceda;padding:10px 11px;border-radius:10px;cursor:pointer;font-weight:650;font-size:.84rem}
+    .step-list button.active{background:#fff;color:var(--ink)}
+    .step-list button.complete:before{content:"✓";color:var(--yellow);margin-right:7px}
+    .scorecard{margin-top:18px;border-top:1px solid rgba(255,255,255,.2);padding-top:14px;display:grid;gap:10px}
+    .score-row{display:grid;grid-template-columns:86px 1fr 30px;gap:8px;align-items:center;font-size:.75rem}
+    .score-track{height:7px;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden}
+    .score-fill{height:100%;background:var(--yellow);width:50%;transition:.35s width}
+    .workspace{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);min-height:620px;overflow:hidden}
+    .workspace-head{padding:22px 26px;background:var(--soft);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+    .workspace-head h3{margin:0;font-size:1.4rem}.workspace-head p{margin:4px 0 0;color:var(--muted)}
+    .time-chip{white-space:nowrap;background:var(--ink);color:#fff;padding:7px 10px;border-radius:8px;font-weight:800;font-size:.78rem}
+    .step-panel{display:none;padding:26px}.step-panel.active{display:block}
+    .brief{border-left:5px solid var(--yellow);padding:14px 16px;background:#fff8e8;margin-bottom:20px}
+    .brief strong{display:block;margin-bottom:4px}.brief p{margin:0;color:#4d5560}
+    .fact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:18px 0}
+    .fact{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
+    .fact span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}.fact b{display:block;margin-top:3px}
+    .choices{display:grid;gap:10px;margin:18px 0}
+    .choice{border:1px solid var(--line);background:#fff;border-radius:13px;padding:14px 15px;text-align:left;cursor:pointer;display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+    .choice:hover{border-color:var(--blue)}.choice.selected{border:2px solid var(--teal);background:#effaf8}
+    .choice .letter{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:var(--soft);font-weight:850;font-size:.78rem}
+    .choice b{display:block;margin-bottom:2px}.choice small{color:var(--muted)}
+    .feedback{display:none;border-radius:12px;padding:13px 15px;margin:13px 0;background:#eaf6f1;border:1px solid #afd6c8;color:#214f40}
+    .feedback.show{display:block}.feedback.caution{background:#fff5e4;border-color:#e8c67f;color:#6a4a12}
+    .panel-actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+    .stakeholder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+    .stakeholder{border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;background:#fff}
+    .stakeholder input{margin-right:6px}.stakeholder b{display:block;font-size:.88rem}.stakeholder span{font-size:.75rem;color:var(--muted)}
+    textarea{width:100%;min-height:150px;border:1px solid #b7c2ca;border-radius:12px;padding:14px;color:var(--ink);resize:vertical;background:#fcfdfd}
+    .template-tools{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
+    .output{white-space:pre-wrap;background:#f5f7f8;border:1px solid var(--line);border-radius:12px;padding:16px;min-height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.83rem}
+    .dashboard-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 8px 26px rgba(12,28,45,.05)}
+    .card h3{margin:0 0 4px}.card>p{color:var(--muted);margin:0 0 16px}
+    .metric-row{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;margin:13px 0}
+    .metric-bar{height:12px;background:#edf0f2;border-radius:99px;overflow:hidden}.metric-bar i{display:block;height:100%;background:var(--teal);border-radius:99px}
+    .alert{border-left:5px solid var(--red);background:#fff1f1;padding:13px 14px;margin:12px 0}.alert.amber{border-color:var(--yellow);background:#fff8e8}
+    table{width:100%;border-collapse:collapse;font-size:.84rem}
+    th,td{padding:10px 9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+    th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+    .status{display:inline-block;border-radius:999px;padding:4px 8px;background:#eaf6f1;color:#25624f;font-size:.7rem;font-weight:800}.status.pending{background:#fff3dd;color:#7b5410}
+    .contact-controls{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}.contact-controls select,.contact-controls input{border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff}
+    .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label,.check-title{font-size:.75rem;font-weight:850;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}.field input,.field select{width:100%;border:1px solid #b7c2ca;border-radius:10px;padding:10px;background:#fff}.field textarea{min-height:108px}.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.check-item{border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;font-size:.84rem}.progress-wrap{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin:14px 0}.progress{height:10px;background:#e7ecef;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--teal);transition:.25s width}.handoff-layout,.drill-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}.output.tall{min-height:360px}.question-tabs{display:grid;gap:8px;margin:12px 0 18px}.question-tab{border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px 13px;text-align:left;cursor:pointer;font-weight:700}.question-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.response-option{display:block;border:1px solid var(--line);border-radius:11px;padding:12px;margin:9px 0;cursor:pointer}.response-option:has(input:checked){border:2px solid var(--teal);background:#effaf8}.score-ring{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--teal) var(--score,0%),#e4e9ec 0);position:relative;font-weight:900}.score-ring:after{content:"";position:absolute;inset:8px;border-radius:50%;background:#fff}.score-ring span{position:relative;z-index:1}.coach{display:grid;grid-template-columns:74px 1fr;gap:14px;align-items:center;margin-top:14px}.language-card{border:1px solid var(--line);border-radius:14px;overflow:hidden}.language-head{display:flex;justify-content:space-between;gap:12px;align-items:center;background:var(--soft);padding:12px 15px}.toggle-group{display:flex;gap:4px}.toggle-group button{border:1px solid var(--navy);background:#fff;color:var(--navy);padding:5px 10px;cursor:pointer}.toggle-group button.active{background:var(--navy);color:#fff}.language-body{padding:16px;white-space:pre-wrap}.packet-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.packet-cta{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:var(--radius);padding:25px}.packet-cta p{color:#d9e8f1}.packet-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.packet-link{display:block;border:1px solid var(--line);border-radius:11px;padding:11px;text-decoration:none;background:#fff;font-weight:700}.packet-link small{display:block;color:var(--muted);font-weight:500;margin-top:2px}
+    .budget-total{font-family:Georgia,serif;font-size:2rem;margin:4px 0}.budget-line{display:grid;grid-template-columns:1fr 90px 90px;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+    .budget-line input{width:100%;border:1px solid var(--line);border-radius:7px;padding:6px}
+    .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .method-grid .card{box-shadow:none}.method-grid h3{font-size:1rem}.method-grid p{font-size:.85rem}
+    .crosswalk td:first-child{font-weight:800;width:28%}.crosswalk td:nth-child(2){width:42%}
+    .recommend{background:var(--ink);color:#fff;border-radius:24px;padding:32px;display:grid;grid-template-columns:.75fr 1.25fr;gap:30px}.recommend h2{color:#fff}.recommend p{color:#d5e0e8}.recommend ol{margin:0;padding-left:20px}.recommend li{margin-bottom:11px}
+    footer{background:#091827;color:#c5d2dc;padding:34px 24px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px}.footer-inner p{max-width:700px;margin:0;font-size:.85rem}
+    .hidden{display:none!important}
+    .toast{position:fixed;right:20px;bottom:20px;background:var(--ink);color:#fff;padding:12px 16px;border-radius:10px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:none}
+    @media(max-width:900px){.hero-inner,.lab-shell,.recommend,.dashboard-grid,.handoff-layout,.drill-layout,.packet-grid{grid-template-columns:1fr}.sidebar{position:relative;top:auto}.scenario-grid,.method-grid{grid-template-columns:1fr}.stakeholder-grid{grid-template-columns:1fr 1fr}nav{display:none}.hero-inner{padding-top:48px}.fact-grid{grid-template-columns:1fr}}
+    @media(max-width:620px){.topbar-inner{padding:10px 16px}.brand{font-size:.85rem}.hero-inner,main{padding-left:16px;padding-right:16px}.workspace-head{display:block}.time-chip{display:inline-block;margin-top:10px}.stakeholder-grid,.form-grid,.check-grid,.packet-list{grid-template-columns:1fr}.field.full{grid-column:auto}.panel-actions{flex-wrap:wrap}.budget-line{grid-template-columns:1fr 72px 72px}h1{font-size:2.45rem}}
+    @media print{.topbar,.btn,.panel-actions,.rail-line{display:none!important}body{background:#fff}.workspace,.card{box-shadow:none}.step-panel{display:block!important;break-inside:avoid}.sidebar{display:none}.lab-shell{display:block}.hero{background:#fff;color:#000}.hero p,.disclaimer{color:#333}.disclaimer{border-color:#aaa}.eyebrow{color:#333}main{padding-top:20px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Regional Rail Public Affairs Lab</span></div>
+      <nav aria-label="Primary navigation">
+        <a href="#simulation">Scenario</a><a href="#handoff">Handoff</a><a href="#media-drill">Media drill</a><a href="#packet">Packet</a><a href="#methods">Methods</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Independent portfolio simulation</div>
+        <h1>Communicate early. Verify relentlessly. Follow through.</h1>
+        <p>An interactive exercise in regional rail incident response, community engagement, media readiness, and capital-project outreach—built to show how public information moves from operational fact to accountable action.</p>
+      </div>
+      <aside class="disclaimer"><strong>Important disclosure</strong>All agencies, people, incidents, messages, metrics, and costs are fictional. This project uses no confidential information and is not affiliated with Metrolink, SCRRA, or any public agency.</aside>
+    </div>
+  </div>
+  <div class="rail-line" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <main>
+    <section id="brief">
+      <div class="section-kicker">Assignment brief</div>
+      <h2>Two pressures. One public trust standard.</h2>
+      <p class="lede">Choose a scenario, work through the decisions, and watch how timeliness, accuracy, coordination, and trust change. The recommended path is visible after each choice so the exercise demonstrates judgment rather than pretending there is only one perfect answer.</p>
+      <div class="scenario-grid">
+        <article class="scenario-card incident">
+          <div class="scenario-label">Scenario 01 · Operations</div><h3>Evening peak service disruption</h3>
+          <p>A signal-system failure stops trains across two segments. Facts are incomplete, rider frustration is rising, and a false closure rumor is spreading.</p>
+          <div class="tag-row"><span class="tag">Holding statement</span><span class="tag">Rider updates</span><span class="tag">Media response</span><span class="tag">Rumor control</span></div>
+          <button class="btn" data-start="incident">Enter incident desk</button>
+        </article>
+        <article class="scenario-card">
+          <div class="scenario-label">Scenario 02 · Capital project</div><h3>Night construction and community concern</h3>
+          <p>A six-week track project will create noise, access changes, and overnight work near homes, businesses, a school, and a sensitive habitat.</p>
+          <div class="tag-row"><span class="tag">Stakeholder map</span><span class="tag">Community notice</span><span class="tag">Public meeting</span><span class="tag">Risk mitigation</span></div>
+          <button class="btn" data-start="project">Open outreach plan</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="simulation">
+      <div class="section-kicker">Interactive simulation</div>
+      <h2 id="simTitle">Incident communications desk</h2>
+      <p class="lede" id="simLede">Move through a fictional service disruption from first alert to after-action review.</p>
+      <div class="lab-shell">
+        <aside class="sidebar">
+          <div class="mode-title" id="modeLabel">Scenario 01</div><h3 id="sideTitle">Evening peak disruption</h3>
+          <ol class="step-list" id="stepList"></ol>
+          <div class="scorecard" aria-label="Performance indicators">
+            <div class="score-row"><span>Timeliness</span><div class="score-track"><div class="score-fill" id="score-time"></div></div><b id="val-time">50</b></div>
+            <div class="score-row"><span>Accuracy</span><div class="score-track"><div class="score-fill" id="score-accuracy"></div></div><b id="val-accuracy">50</b></div>
+            <div class="score-row"><span>Coordination</span><div class="score-track"><div class="score-fill" id="score-coordination"></div></div><b id="val-coordination">50</b></div>
+            <div class="score-row"><span>Public trust</span><div class="score-track"><div class="score-fill" id="score-trust"></div></div><b id="val-trust">50</b></div>
+          </div>
+        </aside>
+        <div class="workspace">
+          <div class="workspace-head"><div><h3 id="workspaceTitle">First alert</h3><p id="workspaceSub">Separate confirmed facts from assumptions.</p></div><span class="time-chip" id="timeChip">T + 05 min</span></div>
+          <div id="panels"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="handoff">
+      <div class="section-kicker">24/7 continuity</div><h2>Build the on-call handoff before the next shift takes over.</h2>
+      <p class="lede">Complete the operational record the incoming spokesperson needs to act immediately. The coverage meter rewards usable facts, named owners, approval status, a promised update time, and explicit escalation triggers.</p>
+      <div class="handoff-layout">
+        <div class="card">
+          <div class="form-grid" id="handoffForm">
+            <div class="field"><label for="outgoingLead">Outgoing spokesperson</label><input id="outgoingLead" value="M. Rivera · Lead on-call"></div>
+            <div class="field"><label for="incomingLead">Incoming spokesperson</label><input id="incomingLead" value="J. Chen · Incoming lead"></div>
+            <div class="field"><label for="handoffTime">Handoff time</label><input id="handoffTime" type="time" value="18:40"></div>
+            <div class="field"><label for="nextUpdate">Next public update</label><input id="nextUpdate" type="time" value="19:00"></div>
+            <div class="field full"><label for="confirmedFacts">Current confirmed facts</label><textarea id="confirmedFacts">Signal functionality restored at 6:27 p.m. Rail movement has resumed. Residual delays are up to 25 minutes. The system was never closed systemwide.</textarea></div>
+            <div class="field full"><label for="openQuestions">Unresolved questions and owners</label><textarea id="openQuestions">Cause confirmation — Rail Operations. Bus-bridge phase-out time — Service Planning. Central Station elevator restoration — Accessibility lead.</textarea></div>
+            <div class="field full"><span class="check-title">Approvals and contacts</span><div class="check-grid">
+              <label class="check-item"><input class="handoff-check" type="checkbox" checked> Operations facts approved</label>
+              <label class="check-item"><input class="handoff-check" type="checkbox" checked> Public Affairs lead approved</label>
+              <label class="check-item"><input class="handoff-check" type="checkbox" checked> Member-agency leads notified</label>
+              <label class="check-item"><input class="handoff-check" type="checkbox"> City and county PIOs updated</label>
+              <label class="check-item"><input class="handoff-check" type="checkbox" checked> Accessibility lead reachable</label>
+              <label class="check-item"><input class="handoff-check" type="checkbox"> Media desk follow-up assigned</label>
+            </div></div>
+            <div class="field full"><span class="check-title">Escalation triggers</span><div class="check-grid">
+              <label class="check-item"><input class="trigger-check" type="checkbox" checked> Delay exceeds 30 minutes</label>
+              <label class="check-item"><input class="trigger-check" type="checkbox" checked> Safety or injury confirmed</label>
+              <label class="check-item"><input class="trigger-check" type="checkbox" checked> Closure rumor accelerates</label>
+              <label class="check-item"><input class="trigger-check" type="checkbox" checked> Accessibility plan changes</label>
+            </div></div>
+          </div>
+          <div class="progress-wrap"><div class="progress"><i id="handoffProgress"></i></div><b id="handoffCoverage">0% covered</b></div>
+          <button class="btn" id="generateHandoff">Generate handoff brief</button>
+        </div>
+        <div class="card"><h3>Incoming lead brief</h3><p>Generated from the working log; review aloud before control changes hands.</p><div class="output tall" id="handoffOutput">Complete or review the fields, then generate the brief.</div><div class="template-tools"><button class="btn secondary small" id="downloadHandoff">Download handoff log</button></div></div>
+      </div>
+    </section>
+
+    <section id="media-drill">
+      <div class="section-kicker">Spokesperson practice</div><h2>Answer difficult questions without becoming defensive or speculative.</h2>
+      <p class="lede">Select a pressure question, compare three response patterns, then draft an answer. The coach checks for acknowledgement, verified facts, customer action, and a next-update commitment—not polished spin.</p>
+      <div class="drill-layout">
+        <div class="card"><h3>Reporter questions</h3><div class="question-tabs" id="questionTabs"></div><div id="mediaOptions"></div><div class="feedback" id="mediaChoiceFeedback"></div></div>
+        <div class="card"><h3 id="draftQuestion">Draft your response</h3><textarea id="mediaDraft" placeholder="Acknowledge the concern, state only confirmed facts, give the customer action, and commit to the next update."></textarea><div class="template-tools"><button class="btn small" id="evaluateMedia">Evaluate response</button><button class="btn secondary small" id="loadModel">Load model response</button></div><div class="coach"><div class="score-ring" id="mediaScore"><span>0</span></div><div><b id="mediaVerdict">Awaiting response</b><p id="mediaCoaching" style="margin:4px 0;color:var(--muted)">Four evidence-based response elements are evaluated.</p></div></div></div>
+      </div>
+      <div class="language-card" style="margin-top:18px"><div class="language-head"><div><b>Rider alert · bilingual practice</b><br><small>Plain language, identical operational meaning.</small></div><div class="toggle-group"><button class="active" data-lang="en">English</button><button data-lang="es">Español</button></div></div><div class="language-body" id="languageAlert"></div><div style="padding:0 16px 16px"><a class="btn secondary small" href="downloads/03-alerta-para-pasajeros-espanol.txt" download>Download Spanish alert</a></div></div>
+    </section>
+
+    <section id="packet">
+      <div class="section-kicker">Ready-to-review deliverables</div><h2>Download the complete communications packet.</h2>
+      <p class="lede">Nine coordinated, fictional artifacts use one fact pattern and preserve the same unknowns, customer actions, update timing, and disclosure across channels.</p>
+      <div class="packet-grid"><div class="packet-cta"><h3 style="margin-top:0">Regional Rail Communications Packet</h3><p>Holding statement, bilingual rider alerts, media response, community notice, talking points, stakeholder matrix, after-action report, on-call handoff log, and a readme.</p><a class="btn warn" href="downloads/regional-rail-communications-packet.zip" download>Download ZIP packet</a><div style="margin-top:14px"><button class="btn secondary small" onclick="window.print()">Print / save site as PDF</button></div></div>
+        <div class="packet-list">
+          <a class="packet-link" href="downloads/01-holding-statement.txt" download>Holding statement<small>Verified facts and unknowns</small></a>
+          <a class="packet-link" href="downloads/02-rider-alert-english.txt" download>Rider alert · English<small>Customer action and update time</small></a>
+          <a class="packet-link" href="downloads/03-alerta-para-pasajeros-espanol.txt" download>Alerta · Español<small>Spanish-language rider alert</small></a>
+          <a class="packet-link" href="downloads/04-media-response.txt" download>Media response<small>Difficult-question answer</small></a>
+          <a class="packet-link" href="downloads/05-community-notice.txt" download>Community notice<small>Construction impacts and support</small></a>
+          <a class="packet-link" href="downloads/06-talking-points.txt" download>Talking points<small>Spokesperson briefing</small></a>
+          <a class="packet-link" href="downloads/07-stakeholder-matrix.csv" download>Stakeholder matrix<small>Owners, channels, status</small></a>
+          <a class="packet-link" href="downloads/08-after-action-report.txt" download>After-action report<small>Lessons, owners, deadlines</small></a>
+          <a class="packet-link" href="downloads/09-on-call-handoff-log.txt" download>On-call handoff log<small>Continuity and triggers</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="signals">
+      <div class="section-kicker">Signal monitoring</div><h2>Validate the signal before escalating the story.</h2>
+      <p class="lede">Synthetic inquiry and channel data show how a public-affairs team can distinguish operational friction, response-mix changes, and misinformation.</p>
+      <div class="dashboard-grid">
+        <div class="card"><h3>Inquiry themes · last 60 minutes</h3><p>Fictional volume across customer, media, and community channels.</p>
+          <div class="metric-row"><span>Delay duration</span><b>146</b><div class="metric-bar" style="grid-column:1/-1"><i style="width:92%"></i></div></div>
+          <div class="metric-row"><span>Alternate transportation</span><b>98</b><div class="metric-bar" style="grid-column:1/-1"><i style="width:64%"></i></div></div>
+          <div class="metric-row"><span>Station access</span><b>61</b><div class="metric-bar" style="grid-column:1/-1"><i style="width:40%"></i></div></div>
+          <div class="metric-row"><span>False systemwide closure claim</span><b>43</b><div class="metric-bar" style="grid-column:1/-1"><i style="width:28%;background:var(--red)"></i></div></div>
+          <div class="metric-row"><span>Accessibility assistance</span><b>24</b><div class="metric-bar" style="grid-column:1/-1"><i style="width:16%;background:var(--yellow)"></i></div></div>
+        </div>
+        <div class="card"><h3>Alert review</h3><p>Illustrative thresholds require human validation.</p>
+          <div class="alert"><b>Red · misinformation velocity</b><br><small>Closure rumor mentions increased 240% in 15 minutes. Confirm service map, capture source examples, and issue a bounded correction.</small></div>
+          <div class="alert amber"><b>Amber · accessibility requests</b><br><small>Requests rose above baseline at two stations. Confirm elevator status and accessible alternative service before publishing.</small></div>
+          <label><input type="checkbox" id="validateSource"> Source data checked</label><br>
+          <label><input type="checkbox" id="validateOps"> Operations confirmation logged</label><br>
+          <label><input type="checkbox" id="validateMix"> Channel and location mix reviewed</label>
+          <div style="margin-top:15px"><button class="btn small" id="validateAlert">Validate alert</button></div>
+          <div class="feedback" id="alertFeedback">Signal validated: the closure claim is false, while accessibility demand is operationally meaningful. Escalate both with distinct messages.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <div class="section-kicker">Stakeholder operations</div><h2>Targeted contact list and follow-through tracker</h2>
+      <p class="lede">A fictional working database connects jurisdiction, role, communication need, channel, owner, and follow-up status. No real contact information is included.</p>
+      <div class="card">
+        <div class="contact-controls"><input id="contactSearch" aria-label="Search contacts" placeholder="Search role or jurisdiction"><select id="contactFilter" aria-label="Filter contact type"><option value="all">All groups</option><option>Public agency</option><option>Community</option><option>Media</option><option>Internal</option><option>Contractor</option></select><button class="btn small" id="exportContacts">Download CSV</button></div>
+        <div style="overflow-x:auto"><table><thead><tr><th>Jurisdiction / group</th><th>Role</th><th>Need</th><th>Channel</th><th>Owner</th><th>Status</th></tr></thead><tbody id="contactRows"></tbody></table></div>
+      </div>
+    </section>
+
+    <section id="budget">
+      <div class="section-kicker">Contractor and budget oversight</div><h2>Illustrative outreach cost monitor</h2>
+      <p class="lede">Adjust fictional committed costs to see variance against a $36,000 community-outreach budget. The quality column keeps cost control connected to deliverable standards.</p>
+      <div class="dashboard-grid">
+        <div class="card"><h3>Budget position</h3><div class="budget-total" id="budgetTotal">$31,700 committed</div><p id="budgetVariance">$4,300 available · 88.1% committed</p><div id="budgetLines"></div></div>
+        <div class="card"><h3>Contractor quality gate</h3><p>Release deliverables only after required checks.</p>
+          <label><input class="qa" type="checkbox"> Uses approved facts and dates</label><br><label><input class="qa" type="checkbox"> Plain-language and accessibility review complete</label><br><label><input class="qa" type="checkbox"> Translations checked by qualified reviewer</label><br><label><input class="qa" type="checkbox"> Distribution list and geography verified</label><br><label><input class="qa" type="checkbox"> Version and approval history documented</label>
+          <div class="feedback" id="qaFeedback"></div><div style="margin-top:15px"><button class="btn small" id="qaReview">Review deliverable</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="methods">
+      <div class="section-kicker">Documentation</div><h2>Methods, assumptions, and role crosswalk</h2>
+      <p class="lede">The simulation is deliberately transparent about what is demonstrated, what is fictional, and what would require agency procedures and operational expertise.</p>
+      <div class="method-grid">
+        <div class="card"><h3>Evidence rules</h3><p>Distinguish confirmed operational facts, attributed reports, analytical inferences, and unknowns. Never convert a plausible explanation into a public fact.</p></div>
+        <div class="card"><h3>Decision scoring</h3><p>Choices adjust four illustrative indicators: timeliness, accuracy, coordination, and trust. Scores teach tradeoffs; they do not claim predictive validity.</p></div>
+        <div class="card"><h3>Data boundaries</h3><p>All records, names, incidents, counts, costs, contact roles, and message drafts are synthetic. No official emergency procedure is represented.</p></div>
+      </div>
+      <div class="card" style="margin-top:18px;overflow-x:auto"><table class="crosswalk"><thead><tr><th>Role responsibility</th><th>Where demonstrated</th><th>Evidence produced</th></tr></thead><tbody>
+        <tr><td>Respond to public and media inquiries</td><td>Incident steps 2–5 and output center</td><td>Holding statement, rider alert, media response, recovery update</td></tr>
+        <tr><td>Build city, county, and stakeholder relationships</td><td>Stakeholder map and contact database</td><td>Jurisdiction-specific needs, channels, owners, and follow-up status</td></tr>
+        <tr><td>Support crisis communications</td><td>Time-based operational scenario</td><td>Verification log, escalation decision, rumor correction, after-action review</td></tr>
+        <tr><td>Serve on a 24/7 on-call rotation</td><td>Interactive handoff builder</td><td>Facts, open questions, approvals, contacts, next update, escalation triggers</td></tr>
+        <tr><td>Respond to difficult media inquiries</td><td>Spokesperson question drill</td><td>Choice rationale, drafted response, four-part response score</td></tr>
+        <tr><td>Monitor project risks and public perception</td><td>Capital-project scenario and signal dashboard</td><td>Risk register, inquiry themes, mitigation triggers, outreach plan</td></tr>
+        <tr><td>Create communications materials</td><td>Document generator and downloadable packet</td><td>Holding statement, bilingual alerts, community notice, talking points, media materials</td></tr>
+        <tr><td>Oversee contractors and budgets</td><td>Cost monitor and quality gate</td><td>Variance view, acceptance checklist, approval record</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section class="recommend" id="approach">
+      <div><div class="section-kicker" style="color:var(--yellow)">My recommended approach</div><h2>Make the first update useful, then make every update more complete.</h2><p>The public does not need false certainty. It needs timely acknowledgement, verified facts, clear actions, and visible follow-through.</p></div>
+      <ol><li><b>Establish one verified fact pattern.</b> Record what operations confirms, what remains unknown, and when the next update will arrive.</li><li><b>Coordinate before amplifying.</b> Align operations, customer experience, accessibility, member agencies, and affected jurisdictions on the core message.</li><li><b>Segment without fragmenting.</b> Keep one factual spine while adapting calls to action for riders, communities, media, elected offices, and partners.</li><li><b>Monitor for operational and reputational risk.</b> Validate spikes, locate friction, correct misinformation, and document escalations.</li><li><b>Close the loop.</b> Publish recovery or project follow-up, record commitments, and use the after-action review to improve the next response.</li></ol>
+    </section>
+  </main>
+  <footer><div class="footer-inner"><p><b>Created by Michael Farzinpour.</b> Independent portfolio work demonstrating strategic communication, stakeholder analysis, issue monitoring, and accountable public-affairs judgment.</p><p>Fictional simulation · October 2026</p></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const scenarioData = {
+      incident:{label:'Scenario 01',title:'Evening peak disruption',mainTitle:'Incident communications desk',lede:'Move through a fictional service disruption from first alert to after-action review.',steps:[
+        {title:'First alert',sub:'Separate confirmed facts from assumptions.',time:'T + 05 min',html:`<div class="brief"><strong>Operations alert</strong><p>At 5:15 p.m., a signal-system failure stopped train movement between Harbor Junction and Central Station. Two routes are affected. Cause and restoration time are unknown.</p></div><div class="fact-grid"><div class="fact"><span>Confirmed</span><b>Two segments are stopped</b></div><div class="fact"><span>Confirmed</span><b>Crews are responding</b></div><div class="fact"><span>Unknown</span><b>Cause and restoration time</b></div><div class="fact"><span>Unverified</span><b>Systemwide closure rumor</b></div></div><h4>What do you do first?</h4><div class="choices">${choice('a','Wait for a restoration estimate','Avoid publishing until every operational detail is known','time:-15,trust:-8')} ${choice('b','Issue a bounded holding update','Acknowledge the disruption, name affected segments, state what is unknown, and promise a timed update','time:16,accuracy:8,trust:10')} ${choice('c','Publish the likely cause','Use an early technical hypothesis to appear definitive','accuracy:-18,trust:-12')}</div><div class="feedback" data-feedback></div>`},
+        {title:'Inquiry triage',sub:'Answer the question people are actually asking.',time:'T + 15 min',html:`<div class="brief"><strong>Inbound pattern</strong><p>Riders ask about duration, alternate transportation, accessibility, and whether the entire system is closed. A television assignment desk requests confirmation within ten minutes.</p></div><h4>Select the response priority.</h4><div class="choices">${choice('a','Correct the rumor only','Address the false closure claim but omit rider actions','time:6,trust:-3')} ${choice('b','Lead with rider action and bounded facts','Name affected locations, provide alternatives, correct the rumor, and set the next update time','time:10,accuracy:8,trust:12')} ${choice('c','Respond to media before customers','Prepare a detailed media answer while rider channels wait','coordination:-6,time:-8')}</div><div class="feedback" data-feedback></div>`},
+        {title:'Coordinate partners',sub:'Align the factual spine across channels.',time:'T + 22 min',html:`<div class="brief"><strong>Coordination window</strong><p>Operations confirms bus bridging is being arranged. One elevator is unavailable at Central Station. Select the partners who need the core update now.</p></div><div class="stakeholder-grid">${stakeholders(['Rail operations','Customer experience','Accessibility lead','City and county PIOs','Member agencies','Station contractor','Media desk','Board liaison'])}</div><button class="btn small" data-coordinate>Log coordination</button><div class="feedback" data-feedback></div>`},
+        {title:'Draft and approve',sub:'Create an accurate holding statement.',time:'T + 30 min',html:`<div class="brief"><strong>Approved facts</strong><p>Two segments remain stopped. Bus bridging is beginning. The system is not closed. Elevator access is unavailable at Central Station; accessible assistance is available at North Station. Next operational review: 6:00 p.m.</p></div><div class="template-tools"><button class="btn small" data-generate="holding">Generate holding statement</button><button class="btn secondary small" data-generate="rider">Generate rider alert</button><button class="btn secondary small" data-copy>Copy output</button></div><div class="output" data-output>Select a template to generate a draft.</div>`},
+        {title:'Recovery and review',sub:'Close the loop and preserve lessons.',time:'T + 75 min',html:`<div class="brief"><strong>Recovery</strong><p>Signal functionality is restored at 6:27 p.m. Residual delays of up to 25 minutes remain. The closure rumor peaked before the bounded correction was distributed.</p></div><h4>Choose the closing action.</h4><div class="choices">${choice('a','Resume normal posting','Remove the alert when trains move and close the incident','trust:-7')} ${choice('b','Publish recovery plus after-action commitments','State residual impacts, thank partners, capture accessibility and rumor-response lessons, and assign owners','coordination:10,trust:14,accuracy:5')} ${choice('c','Defend the response publicly','Explain why incomplete information made faster updates impossible','trust:-12')}</div><div class="feedback" data-feedback></div><div class="template-tools"><button class="btn small" data-generate="recovery">Generate recovery update</button><button class="btn secondary small" data-generate="aar">Generate after-action review</button><button class="btn secondary small" data-export>Export session notes</button></div><div class="output" data-output>Select an output.</div>`}
+      ]},
+      project:{label:'Scenario 02',title:'Night construction outreach',mainTitle:'Capital-project engagement desk',lede:'Plan a fictional six-week track project while protecting schedule, access, and public trust.',steps:[
+        {title:'Define the impact',sub:'Translate engineering scope into community meaning.',time:'Week − 8',html:`<div class="brief"><strong>Project brief</strong><p>Six weeks of overnight track work will occur from 9 p.m. to 5 a.m. near 740 households, 38 businesses, one school, and a habitat corridor. Two weekend street closures are proposed.</p></div><h4>How do you begin?</h4><div class="choices">${choice('a','Publish the engineering schedule','Post the technical scope and wait for questions','trust:-8')} ${choice('b','Build an impact and stakeholder map','Translate noise, access, parking, school, business, and habitat impacts before selecting channels','coordination:12,accuracy:8,trust:8')} ${choice('c','Delay outreach until permits are final','Avoid changes to the message by waiting','time:-15,trust:-6')}</div><div class="feedback" data-feedback></div>`},
+        {title:'Map stakeholders',sub:'Match needs, influence, and communication channels.',time:'Week − 7',html:`<div class="brief"><strong>Stakeholder landscape</strong><p>Residents want sleep protection; businesses need delivery access; the school needs safe routes; environmental groups want monitoring; the city council office wants a briefing.</p></div><div class="stakeholder-grid">${stakeholders(['Residents and HOAs','Local businesses','School administration','Environmental groups','City and county staff','Council office','Emergency services','Construction contractor'])}</div><button class="btn small" data-coordinate>Build outreach map</button><div class="feedback" data-feedback></div>`},
+        {title:'Design outreach',sub:'Sequence notice, listening, and follow-through.',time:'Week − 6',html:`<div class="brief"><strong>Decision point</strong><p>The first overnight shift is six weeks away. The final traffic-control plan may still change.</p></div><div class="choices">${choice('a','Wait for the final plan','Avoid communicating details that could change','time:-10,trust:-5')} ${choice('b','Use staged outreach with explicit uncertainty','Share confirmed purpose and impact window now, gather concerns, then update specific access details as approved','time:10,coordination:10,trust:12')} ${choice('c','Hold one general public meeting','Use one channel for every audience','coordination:-8')}</div><div class="feedback" data-feedback></div>`},
+        {title:'Prepare materials',sub:'One factual spine, audience-specific action.',time:'Week − 4',html:`<div class="brief"><strong>Confirmed plan</strong><p>Night work runs Monday–Thursday. One weekend closure is approved; the second remains tentative. A noise hotline and business-access coordinator will operate during construction.</p></div><div class="template-tools"><button class="btn small" data-generate="notice">Generate community notice</button><button class="btn secondary small" data-generate="talking">Generate talking points</button><button class="btn secondary small" data-generate="briefing">Generate elected-office brief</button><button class="btn secondary small" data-copy>Copy output</button></div><div class="output" data-output>Select a template to generate a draft.</div>`},
+        {title:'Monitor and follow up',sub:'Turn concerns into owned actions.',time:'Week + 2',html:`<div class="brief"><strong>Field signals</strong><p>Night-two noise complaints exceed the trigger at the east work zone. Three businesses report blocked deliveries. Habitat monitoring remains within limits.</p></div><div class="choices">${choice('a','Repeat the original notice','Repost approved hours and hotline information','trust:-4')} ${choice('b','Validate, assign, and report back','Confirm locations, adjust field controls, contact affected businesses, publish the change, and track commitments','coordination:12,accuracy:8,trust:14')} ${choice('c','Refer all issues to the contractor','Move complaints outside the agency workflow','coordination:-12,trust:-10')}</div><div class="feedback" data-feedback></div><div class="template-tools"><button class="btn small" data-generate="followup">Generate follow-up notice</button><button class="btn secondary small" data-generate="aar-project">Generate project review</button><button class="btn secondary small" data-export>Export session notes</button></div><div class="output" data-output>Select an output.</div>`}
+      ]}
+    };
+
+    function choice(letter,title,desc,impact){return `<button class="choice" data-impact="${impact}"><span class="letter">${letter.toUpperCase()}</span><span><b>${title}</b><small>${desc}</small></span></button>`}
+    function stakeholders(items){return items.map((x,i)=>`<label class="stakeholder"><input type="checkbox" value="${x}"><b>${x}</b><span>${i%2?'Coordinate and confirm':'Notify, listen, and record'}</span></label>`).join('')}
+    const state={scenario:'incident',step:0,scores:{time:50,accuracy:50,coordination:50,trust:50},choices:[],contacts:[]};
+    const stepList=document.getElementById('stepList'),panels=document.getElementById('panels');
+    function renderScenario(name,reset=true){state.scenario=name;if(reset){state.step=0;state.scores={time:50,accuracy:50,coordination:50,trust:50};state.choices=[]}const d=scenarioData[name];document.getElementById('modeLabel').textContent=d.label;document.getElementById('sideTitle').textContent=d.title;document.getElementById('simTitle').textContent=d.mainTitle;document.getElementById('simLede').textContent=d.lede;stepList.innerHTML=d.steps.map((s,i)=>`<li><button data-step="${i}">${i+1}. ${s.title}</button></li>`).join('');panels.innerHTML=d.steps.map((s,i)=>`<article class="step-panel" data-panel="${i}">${s.html}<div class="panel-actions"><button class="btn secondary small" data-prev ${i===0?'disabled':''}>Back</button><button class="btn small" data-next>${i===d.steps.length-1?'Review results':'Continue'}</button></div></article>`).join('');bind();showStep(0);updateScores()}
+    function bind(){document.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>showStep(+b.dataset.step));document.querySelectorAll('[data-next]').forEach(b=>b.onclick=()=>{if(state.step<scenarioData[state.scenario].steps.length-1)showStep(state.step+1);else document.getElementById('approach').scrollIntoView()});document.querySelectorAll('[data-prev]').forEach(b=>b.onclick=()=>state.step&&showStep(state.step-1));document.querySelectorAll('.choice').forEach(b=>b.onclick=()=>selectChoice(b));document.querySelectorAll('[data-coordinate]').forEach(b=>b.onclick=()=>coordinate(b));document.querySelectorAll('[data-generate]').forEach(b=>b.onclick=()=>generateOutput(b));document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>copyOutput(b));document.querySelectorAll('[data-export]').forEach(b=>b.onclick=exportSession)}
+    function showStep(i){state.step=i;const d=scenarioData[state.scenario],s=d.steps[i];document.querySelectorAll('.step-panel').forEach((p,x)=>p.classList.toggle('active',x===i));document.querySelectorAll('[data-step]').forEach((b,x)=>{b.classList.toggle('active',x===i);b.classList.toggle('complete',x<i)});document.getElementById('workspaceTitle').textContent=s.title;document.getElementById('workspaceSub').textContent=s.sub;document.getElementById('timeChip').textContent=s.time}
+    function selectChoice(btn){const group=btn.closest('.choices');if(group.dataset.done)return;group.dataset.done='1';group.querySelectorAll('.choice').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');applyImpact(btn.dataset.impact);const title=btn.querySelector('b').textContent;state.choices.push({scenario:state.scenario,step:state.step,decision:title});const feedback=group.parentElement.querySelector('[data-feedback]');const recommended=/bounded|rider action|impact and stakeholder|staged outreach|validate, assign|recovery plus/i.test(title);feedback.textContent=recommended?'Strong approach: it balances speed with verified facts, coordinates affected partners, and makes the next action visible.':'Tradeoff identified: this choice may protect one objective, but it creates avoidable risk to timeliness, coordination, accuracy, or public trust.';feedback.classList.add('show');feedback.classList.toggle('caution',!recommended)}
+    function applyImpact(text){text.split(',').forEach(p=>{const [k,v]=p.split(':');state.scores[k]=Math.max(0,Math.min(100,state.scores[k]+Number(v)))});updateScores()}
+    function updateScores(){Object.entries(state.scores).forEach(([k,v])=>{document.getElementById('score-'+k).style.width=v+'%';document.getElementById('val-'+k).textContent=v})}
+    function coordinate(btn){const boxes=[...btn.parentElement.querySelectorAll('.stakeholder input:checked')];const f=btn.parentElement.querySelector('[data-feedback]');if(boxes.length<4){f.textContent='Select at least four groups to build a workable coordination chain.';f.className='feedback show caution';return}const essential=state.scenario==='incident'?['Rail operations','Customer experience','Accessibility lead']:['Residents and HOAs','Local businesses','City and county staff'];const missing=essential.filter(x=>!boxes.some(b=>b.value===x));if(missing.length){f.textContent='The map is useful, but reconsider the missing core group(s): '+missing.join(', ')+'.';f.className='feedback show caution';applyImpact('coordination:3')}else{f.textContent='Coordination logged. Core operational or community owners are included, and the message can now move through a controlled approval path.';f.className='feedback show';applyImpact('coordination:14,trust:6')}state.choices.push({scenario:state.scenario,step:state.step,stakeholders:boxes.map(b=>b.value)})}
+    const templates={
+      holding:`HOLDING STATEMENT — FICTIONAL EXERCISE\n\nWe are responding to a signal-system issue affecting rail service between Harbor Junction and Central Station. Crews are on scene. Two segments are affected; the regional system is not closed. Bus bridging is beginning. The cause and restoration time remain under investigation.\n\nCustomers should allow additional travel time and check official channels before traveling. Accessible assistance is available at North Station while the Central Station elevator is unavailable. Our next update will be provided by 6:00 p.m., or sooner if conditions change.`,
+      rider:`RIDER ALERT — FICTIONAL EXERCISE\n\nService stopped: Harbor Junction–Central Station\n• Bus bridge beginning\n• Regional system remains open\n• Accessible assistance: North Station\n• Expect major delays and use official trip updates\nNext update: 6:00 p.m.`,
+      recovery:`RECOVERY UPDATE — FICTIONAL EXERCISE\n\nRail movement resumed at 6:27 p.m. after crews restored signal functionality. Residual delays of up to 25 minutes remain while trains return to schedule. Bus-bridge service will phase out as platforms clear. Thank you to customers, city and county partners, accessibility staff, and field crews. A review is underway to improve early alternate-service and misinformation updates.`,
+      aar:`AFTER-ACTION REVIEW — FICTIONAL EXERCISE\n\nWhat worked\n• Bounded first update distinguished facts from unknowns\n• Accessibility condition received a separate call to action\n• Jurisdiction and member-agency coordination used one factual spine\n\nImprove\n• Preapprove alternate-service message components\n• Escalate closure rumors at a defined velocity threshold\n• Assign an accessibility liaison in the first coordination call\n\nOwners / dates\n• Public Affairs: revised templates — 10 business days\n• Customer Experience: channel audit — 15 business days\n• Operations: fact-confirmation protocol review — 20 business days`,
+      notice:`COMMUNITY NOTICE — FICTIONAL EXERCISE\n\nWHY: Essential track renewal to improve long-term reliability\nWHEN: Monday–Thursday, 9 p.m.–5 a.m., for six weeks\nWHAT TO EXPECT: Intermittent construction noise, work lighting, and one confirmed weekend street closure. A second weekend closure is tentative and will not be presented as final until approved.\n\nSUPPORT\n• 24-hour construction hotline\n• Business-access coordinator\n• Weekly schedule update\n• Accessible formats and translated notices upon request\n\nWe will publish confirmed access maps before work begins and report back on noise and access concerns each week.`,
+      talking:`COMMUNITY MEETING TALKING POINTS — FICTIONAL EXERCISE\n\n1. Start with purpose and acknowledged impacts, not engineering detail.\n2. Separate confirmed work from tentative closures.\n3. Explain noise, access, school-route, and habitat controls.\n4. State who owns each concern and when the community will hear back.\n5. Record unanswered questions; do not improvise facts.`,
+      briefing:`ELECTED-OFFICE BRIEF — FICTIONAL EXERCISE\n\nDecision / status: Six-week overnight track project; one weekend closure approved, one tentative.\nConstituent impacts: Noise, delivery access, parking, school routes, work lighting.\nMitigation: Hotline, business coordinator, monitoring, staged notices, weekly issue report.\nOpen risks: Second closure approval; east-zone noise trigger; delivery-route conflicts.\nNext update: Final access map and mitigation commitments within ten business days.`,
+      followup:`CONSTRUCTION FOLLOW-UP — FICTIONAL EXERCISE\n\nWe confirmed elevated noise near the east work zone and delivery-access conflicts affecting three businesses. Tonight, the contractor will reposition equipment, add a spotter at the delivery entrance, and limit backup alarms where safety rules permit. The business-access coordinator has contacted each affected operator. Habitat monitoring remains within established limits. We will report results after the next two shifts.`,
+      'aar-project':`PROJECT OUTREACH REVIEW — FICTIONAL EXERCISE\n\nSignal: East-zone noise and delivery access exceeded action thresholds.\nValidation: Complaint locations, work logs, and field observations aligned.\nAction: Equipment repositioning, delivery spotter, direct business outreach.\nFollow-through: Two-shift review, public update, contractor corrective-action log.\nLesson: Geography-specific thresholds detected concentrated impacts that an overall complaint total would have hidden.`
+    };
+    function generateOutput(btn){const out=btn.closest('.step-panel').querySelector('[data-output]');out.textContent=templates[btn.dataset.generate]||'Template unavailable.'}
+    async function copyOutput(btn){const text=btn.closest('.step-panel').querySelector('[data-output]').textContent;await navigator.clipboard.writeText(text);toast('Draft copied')}
+    function exportSession(){const data={project:'Regional Rail Public Affairs and Incident Response Lab',disclosure:'Fictional independent simulation',scenario:state.scenario,scores:state.scores,decisions:state.choices,exported:new Date().toISOString()};download('regional-rail-simulation-session.json',JSON.stringify(data,null,2),'application/json')}
+    function download(name,content,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();URL.revokeObjectURL(a.href)}
+    document.querySelectorAll('[data-start]').forEach(b=>b.onclick=()=>{renderScenario(b.dataset.start);document.getElementById('simulation').scrollIntoView()});
+    function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+
+    const contacts=[
+      ['City A','Public information officer','Jurisdiction update','Email + phone','Public Affairs','Complete','Public agency'],
+      ['County transportation office','Duty officer','Service impacts','Phone','Government relations','Complete','Public agency'],
+      ['Member agency','Communications lead','Shared factual spine','Email','Public Affairs','Complete','Public agency'],
+      ['Central Station neighborhood','Community liaison','Noise and access','SMS + email','Community relations','Pending','Community'],
+      ['Business corridor','Association director','Delivery access','Phone + briefing','Project outreach','Pending','Community'],
+      ['Regional assignment desk','News editor','Verified incident facts','Media line','Spokesperson','Complete','Media'],
+      ['Rail operations','Incident commander','Operational confirmation','Incident channel','Operations liaison','Complete','Internal'],
+      ['Accessibility team','Duty specialist','Elevator and alternate access','Incident channel','Customer experience','Complete','Internal'],
+      ['Outreach contractor','Account lead','Notices and translations','Project platform','Contract manager','Pending','Contractor']
+    ];
+    function renderContacts(){const q=document.getElementById('contactSearch').value.toLowerCase(),f=document.getElementById('contactFilter').value;document.getElementById('contactRows').innerHTML=contacts.filter(r=>(f==='all'||r[6]===f)&&r.join(' ').toLowerCase().includes(q)).map(r=>`<tr>${r.slice(0,5).map(x=>`<td>${x}</td>`).join('')}<td><span class="status ${r[5]==='Pending'?'pending':''}">${r[5]}</span></td></tr>`).join('')}
+    document.getElementById('contactSearch').oninput=renderContacts;document.getElementById('contactFilter').onchange=renderContacts;document.getElementById('exportContacts').onclick=()=>download('fictional-stakeholder-contact-list.csv','Jurisdiction,Role,Need,Channel,Owner,Status,Type\n'+contacts.map(r=>r.map(x=>'"'+x+'"').join(',')).join('\n'),'text/csv');renderContacts();
+
+    const budget=[['Community notices and translation',8200,7600],['Public meeting logistics',6400,6100],['Digital and paid outreach',7200,6800],['Hotline and field support',7900,7400],['Contingency',6300,3800]];
+    function renderBudget(){document.getElementById('budgetLines').innerHTML=budget.map((r,i)=>`<div class="budget-line"><span>${r[0]}</span><input aria-label="Planned ${r[0]}" value="${r[1]}" data-bp="${i}"><input aria-label="Committed ${r[0]}" value="${r[2]}" data-bc="${i}"></div>`).join('');document.querySelectorAll('[data-bp]').forEach(x=>x.oninput=e=>{budget[e.target.dataset.bp][1]=Number(e.target.value)||0;calcBudget()});document.querySelectorAll('[data-bc]').forEach(x=>x.oninput=e=>{budget[e.target.dataset.bc][2]=Number(e.target.value)||0;calcBudget()});calcBudget()}
+    function calcBudget(){const plan=budget.reduce((s,r)=>s+r[1],0),used=budget.reduce((s,r)=>s+r[2],0),v=plan-used;document.getElementById('budgetTotal').textContent='$'+used.toLocaleString()+' committed';document.getElementById('budgetVariance').textContent=(v>=0?'$'+v.toLocaleString()+' available':'$'+Math.abs(v).toLocaleString()+' over plan')+' · '+(used/plan*100).toFixed(1)+'% committed'}renderBudget();
+    document.getElementById('qaReview').onclick=()=>{const n=document.querySelectorAll('.qa:checked').length,f=document.getElementById('qaFeedback');f.className='feedback show '+(n<5?'caution':'');f.textContent=n===5?'All five acceptance checks are documented. Deliverable is ready for agency approval.':`${n}/5 checks complete. Hold release and return the deliverable with specific corrections.`};
+    document.getElementById('validateAlert').onclick=()=>{const ok=['validateSource','validateOps','validateMix'].every(id=>document.getElementById(id).checked),f=document.getElementById('alertFeedback');f.className='feedback show '+(ok?'':'caution');f.textContent=ok?'Signal validated: the closure claim is false, while accessibility demand is operationally meaningful. Escalate both with distinct messages.':'Complete the source, operations, and response-mix checks before escalating the alert.'};
+
+    function handoffText(){
+      const checked=[...document.querySelectorAll('.handoff-check:checked')].map(x=>x.parentElement.textContent.trim());
+      const triggers=[...document.querySelectorAll('.trigger-check:checked')].map(x=>x.parentElement.textContent.trim());
+      return `ON-CALL HANDOFF LOG — FICTIONAL EXERCISE\n\nHANDOFF\nOutgoing: ${outgoingLead.value}\nIncoming: ${incomingLead.value}\nTime: ${handoffTime.value}\n\nCURRENT CONFIRMED FACTS\n${confirmedFacts.value.trim()}\n\nUNRESOLVED QUESTIONS / OWNERS\n${openQuestions.value.trim()}\n\nAPPROVALS AND PRIORITY CONTACTS\n${checked.length?'• '+checked.join('\n• '):'None documented — do not complete handoff.'}\n\nNEXT PUBLIC UPDATE\n${nextUpdate.value||'Not set'}\n\nESCALATION TRIGGERS\n${triggers.length?'• '+triggers.join('\n• '):'None documented — escalation criteria required.'}\n\nDisclosure: Independent portfolio simulation; all details are fictional.`;
+    }
+    function updateHandoffCoverage(){
+      const required=[outgoingLead.value,incomingLead.value,handoffTime.value,nextUpdate.value,confirmedFacts.value.trim(),openQuestions.value.trim()];
+      const base=required.filter(Boolean).length;
+      const approvals=document.querySelectorAll('.handoff-check:checked').length?1:0;
+      const triggers=document.querySelectorAll('.trigger-check:checked').length?1:0;
+      const pct=Math.round((base+approvals+triggers)/8*100);
+      handoffProgress.style.width=pct+'%';handoffCoverage.textContent=pct+'% covered';
+      handoffCoverage.style.color=pct===100?'var(--green)':'var(--muted)';
+    }
+    document.querySelectorAll('#handoffForm input,#handoffForm textarea').forEach(x=>{x.addEventListener('input',updateHandoffCoverage);x.addEventListener('change',updateHandoffCoverage)});
+    generateHandoff.onclick=()=>{handoffOutput.textContent=handoffText();toast('Handoff brief generated')};
+    downloadHandoff.onclick=()=>download('on-call-handoff-log.txt',handoffText(),'text/plain');
+    updateHandoffCoverage();
+
+    const mediaQuestions=[
+      {q:'Why did customers hear about this from social media first?',model:'You are right to expect official information quickly. We confirmed the disruption before issuing the first alert, and our initial update did not move as quickly as customers needed. Rail service has resumed with residual delays of up to 25 minutes. Customers should continue checking official channels; our next update is at 7:00 p.m. We will review the alert timeline and publish the corrective actions.',options:[['We posted as soon as we could; social media rumors are outside our control.','Defensive: it dismisses the experience and avoids accountability.'],['The delay happened because a vendor platform failed.','Speculative: the cause is not confirmed and blame is premature.'],['You are right to expect official information quickly. We are confirming the timeline, sharing verified service facts now, and will report what we change.','Recommended: acknowledges the concern, stays bounded, and commits to follow-through.']]},
+      {q:'Are you withholding the cause of the signal failure?',model:'I understand why the absence of a cause raises concern. We are not withholding a confirmed finding; the cause remains under investigation. What we can confirm is that signal functionality was restored at 6:27 p.m. and rail movement resumed. Customers should expect residual delays and check official channels. We will update the cause when it is verified, with the next service update at 7:00 p.m.',options:[['No. The equipment probably overheated.','Speculative: “probably” converts an unverified theory into a public claim.'],['The cause is still under investigation. We will publish it when verified; here is what is confirmed now.','Recommended: corrects the premise without becoming combative.'],['We cannot comment on an active investigation.','Incomplete: it offers no confirmed facts, customer action, or update commitment.']]},
+      {q:'Who is accountable for riders being stranded?',model:'Riders experienced an unacceptable disruption, and we are responsible for explaining what happened and improving the response. We have confirmed that service resumed at 6:27 p.m.; the technical cause is still under investigation. Customers should continue to allow extra time while residual delays clear. The after-action review will assign corrective actions, and we will provide the next update at 7:00 p.m.',options:[['The contractor will be held accountable.','Premature: accountability cannot be assigned before the facts are established.'],['Everyone worked hard in a difficult situation.','Evasive: effort does not answer the concern or explain the next action.'],['We own the response, are verifying the cause, and will assign corrective actions through the after-action review.','Recommended: accepts agency responsibility without inventing individual fault.']]},
+      {q:'How can riders be sure the service is safe?',model:'Safety is the first question we verify before rail movement resumes. Operations authorized movement after signal functionality was restored at 6:27 p.m. We have no confirmed report of an injury in this exercise. Customers should follow platform directions and expect residual delays. If the operating condition changes, we will notify riders immediately; the next scheduled update is at 7:00 p.m.',options:[['The service is completely safe.','Overbroad: absolute guarantees exceed the known facts.'],['Operations authorized movement after the system was restored; we will communicate immediately if conditions change.','Recommended: states the verified operating decision and avoids an absolute promise.'],['Rail travel is statistically safer than driving.','Deflection: a general comparison does not answer the incident-specific question.']]},
+      {q:'Why should communities trust your construction commitments?',model:'The community should judge the project by whether we document impacts, assign owners, and report back. The current plan includes a hotline, a business-access coordinator, weekly updates, and action thresholds for noise and access. One weekend closure is confirmed; a second remains tentative. We will publish the next access update within ten business days and record any commitment changes.',options:[['We have delivered many projects successfully.','Too general: past performance does not specify how current commitments will be tracked.'],['The contractor is contractually required to comply.','Incomplete: it pushes responsibility away from the agency and omits public follow-through.'],['We will publish confirmed commitments, name owners, track thresholds, and report back when conditions change.','Recommended: makes trust observable through documentation and follow-through.']]}
+    ];
+    let mediaIndex=0;
+    function renderMedia(){
+      questionTabs.innerHTML=mediaQuestions.map((x,i)=>`<button class="question-tab ${i===mediaIndex?'active':''}" data-q="${i}">${i+1}. ${x.q}</button>`).join('');
+      const item=mediaQuestions[mediaIndex];draftQuestion.textContent=item.q;
+      mediaOptions.innerHTML=item.options.map((x,i)=>`<label class="response-option"><input type="radio" name="media-option" value="${i}"> ${x[0]}</label>`).join('');
+      mediaChoiceFeedback.className='feedback';mediaChoiceFeedback.textContent='';
+      document.querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{mediaIndex=+b.dataset.q;mediaDraft.value='';resetMediaScore();renderMedia()});
+      document.querySelectorAll('[name="media-option"]').forEach(r=>r.onchange=()=>{const note=item.options[+r.value][1],good=/Recommended/.test(note);mediaChoiceFeedback.textContent=note;mediaChoiceFeedback.className='feedback show '+(good?'':'caution')});
+    }
+    function resetMediaScore(){mediaScore.style.setProperty('--score','0%');mediaScore.querySelector('span').textContent='0';mediaVerdict.textContent='Awaiting response';mediaCoaching.textContent='Four evidence-based response elements are evaluated.'}
+    evaluateMedia.onclick=()=>{
+      const t=mediaDraft.value.toLowerCase();
+      const tests=[
+        {ok:/understand|right to expect|acknowledge|unacceptable|concern/.test(t),label:'acknowledgement'},
+        {ok:/confirm|verified|restored|resumed|investigation|approved/.test(t),label:'verified fact or bounded unknown'},
+        {ok:/customer|rider|check|allow|follow|should/.test(t),label:'customer action'},
+        {ok:/next update|update at|report back|provide.*update|notify/.test(t),label:'next-update commitment'}
+      ];
+      const hedged=!/definitely|probably|guarantee|completely safe|no doubt/.test(t);
+      const score=tests.filter(x=>x.ok).length*20+(hedged?20:0);
+      mediaScore.style.setProperty('--score',score+'%');mediaScore.querySelector('span').textContent=score;
+      mediaVerdict.textContent=score>=80?'Response is media-ready':score>=60?'Revise before release':'Hold and rebuild';
+      const missing=tests.filter(x=>!x.ok).map(x=>x.label);
+      mediaCoaching.textContent=(missing.length?'Add: '+missing.join(', ')+'. ':'All four response elements are present. ')+(hedged?'No obvious speculation cue detected.':'Remove absolute or speculative language.');
+    };
+    loadModel.onclick=()=>{mediaDraft.value=mediaQuestions[mediaIndex].model;evaluateMedia.click()};
+    renderMedia();resetMediaScore();
+
+    const riderAlerts={en:`RIDER ALERT — FICTIONAL EXERCISE\n\nService is suspended between Harbor Junction and Central Station because of a signal-system issue. A bus bridge is operating. The regional rail system remains open. Accessible assistance is available at North Station while the Central Station elevator is unavailable. Expect major delays and check official channels before traveling. Next update: 6:00 p.m.`,es:`ALERTA PARA PASAJEROS — EJERCICIO FICTICIO\n\nEl servicio está suspendido entre Harbor Junction y Central Station debido a un problema con el sistema de señales. Hay autobuses de enlace en operación. El sistema ferroviario regional permanece abierto. Hay asistencia accesible disponible en North Station mientras el ascensor de Central Station está fuera de servicio. Anticipe demoras considerables y consulte los canales oficiales antes de viajar. Próxima actualización: 6:00 p. m.`};
+    function showLanguage(lang){languageAlert.textContent=riderAlerts[lang];document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang))}
+    document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>showLanguage(b.dataset.lang));showLanguage('en');
+    renderScenario('incident');
+  </script>
+</body>
+</html>
