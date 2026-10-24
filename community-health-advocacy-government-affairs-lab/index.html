@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive fictional community-health government-affairs simulation by Michael Farzinpour.">
+  <meta name="theme-color" content="#0b3b46">
+  <title>Community Health Advocacy & Government Affairs Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Community Health Advocacy Lab home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44" role="img"><path d="M22 5v34M5 22h34"/><circle cx="22" cy="22" r="18"/></svg>
+      </span>
+      <span>Community Health Advocacy Lab</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#brief">Brief</a>
+      <a href="#simulation">Simulation</a>
+      <a href="#stakeholders">Stakeholders</a>
+      <a href="#deliverables">Work samples</a>
+      <a href="#methods">Methods</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent portfolio simulation · fictional organization and policy</p>
+        <h1>Turn a fast-moving health policy issue into an accountable public response.</h1>
+        <p class="lede">You have 72 hours to brief leadership, prepare an elected-official meeting, coordinate community partners, and protect public trust—without speculating or crossing nonprofit nonpartisanship boundaries.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#simulation">Begin the simulation</a>
+          <a class="button secondary packet-zip" href="downloads/Community_Health_Advocacy_Communications_Packet.zip" download>Download work-sample packet</a>
+        </div>
+        <p class="disclosure"><strong>Disclosure:</strong> HarborBridge Community Health, all policies, stakeholders, figures, and outcomes are fictional. This lab demonstrates a proposed workflow; it is not government, legal, or healthcare advice and is not affiliated with St. John’s Community Health.</p>
+      </div>
+
+      <aside class="situation-card" aria-label="Simulation situation summary">
+        <div class="pulse-row"><span class="pulse"></span><span>Active scenario</span></div>
+        <h2>Access under pressure</h2>
+        <p>A fictional state proposal could expand patient navigation funding. At the same time, a county budget revision could reduce support for mobile care.</p>
+        <div class="metric-grid">
+          <div><strong>3</strong><span>counties</span></div>
+          <div><strong>38,400</strong><span>annual patients*</span></div>
+          <div><strong>2</strong><span>policy tracks</span></div>
+          <div><strong>72 hrs</strong><span>to brief</span></div>
+        </div>
+        <p class="micro">*Synthetic figure used only for the exercise.</p>
+      </aside>
+    </section>
+
+    <section class="section brief-section" id="brief">
+      <div class="section-heading">
+        <p class="eyebrow">01 · Situation brief</p>
+        <h2>Two policy tracks. One coordinated response.</h2>
+        <p>The operating question is not simply whether HarborBridge supports or opposes a proposal. It is what leaders need to know, what patients could experience, what partners can responsibly do, and what must be verified before the organization speaks.</p>
+      </div>
+
+      <div class="policy-grid">
+        <article class="policy-card teal">
+          <div class="card-topline"><span>State</span><span>Hearing in 9 days</span></div>
+          <h3>Community Care Access & Navigation Act</h3>
+          <p>Would create a two-year grant program for multilingual enrollment assistance, referral navigation, and community outreach. Reporting requirements and allowable costs remain unresolved.</p>
+          <dl>
+            <div><dt>Potential benefit</dt><dd>Navigation capacity</dd></div>
+            <div><dt>Open question</dt><dd>Administrative burden</dd></div>
+            <div><dt>Immediate action</dt><dd>Verify text and fiscal assumptions</dd></div>
+          </dl>
+        </article>
+        <article class="policy-card coral">
+          <div class="card-topline"><span>County</span><span>Budget vote in 16 days</span></div>
+          <h3>Mobile Care Contract Revision</h3>
+          <p>Would reduce the fictional mobile-care allocation by 12% while shifting performance measures toward completed visits. The service-area and equity effects have not been published.</p>
+          <dl>
+            <div><dt>Potential risk</dt><dd>Fewer outreach days</dd></div>
+            <div><dt>Open question</dt><dd>Geographic impact</dd></div>
+            <div><dt>Immediate action</dt><dd>Model scenarios; request detail</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="principle-strip" aria-label="Operating principles">
+        <span>Verify before amplifying</span>
+        <span>Center patient access</span>
+        <span>Make one concrete ask</span>
+        <span>Log every commitment</span>
+      </div>
+    </section>
+
+    <section class="section simulation-section" id="simulation">
+      <div class="section-heading light">
+        <p class="eyebrow">02 · Interactive exercise</p>
+        <h2>Make five decisions across the advocacy cycle.</h2>
+        <p>Your choices update six dimensions. Strong answers protect credibility while keeping the work moving.</p>
+      </div>
+
+      <div class="scoreboard" aria-label="Current score">
+        <div class="score-total"><span id="total-score">0</span><small>/ 100</small><p>readiness score</p></div>
+        <div class="score-bars" id="score-bars"></div>
+      </div>
+
+      <div class="sim-shell">
+        <div class="progress-wrap">
+          <span id="step-label">Decision 1 of 5</span>
+          <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+        </div>
+
+        <article class="decision-card" id="decision-card" aria-live="polite">
+          <p class="decision-kicker" id="decision-kicker"></p>
+          <h3 id="decision-title"></h3>
+          <p id="decision-context"></p>
+          <div class="choice-list" id="choice-list"></div>
+          <div class="feedback" id="feedback" hidden></div>
+          <div class="decision-actions">
+            <button class="button secondary" id="back-button" type="button" disabled>Back</button>
+            <button class="button primary" id="next-button" type="button" disabled>Next decision</button>
+          </div>
+        </article>
+
+        <aside class="judgment-panel">
+          <p class="eyebrow">Decision standard</p>
+          <h3>Before acting, ask:</h3>
+          <ol>
+            <li>What is verified, inferred, or still unknown?</li>
+            <li>Whose access or trust could be affected?</li>
+            <li>What approval or nonprofit guardrail applies?</li>
+            <li>Who owns the next action—and by when?</li>
+          </ol>
+        </aside>
+      </div>
+
+      <div class="results-panel" id="results-panel" hidden>
+        <p class="eyebrow">Simulation complete</p>
+        <div class="result-heading">
+          <div>
+            <h3 id="result-title">Readiness assessment</h3>
+            <p id="result-summary"></p>
+          </div>
+          <div class="final-score"><span id="final-score">0</span><small>/100</small></div>
+        </div>
+        <div class="result-grid">
+          <div>
+            <h4>Strongest dimensions</h4>
+            <ul id="strength-list"></ul>
+          </div>
+          <div>
+            <h4>Next development priorities</h4>
+            <ul id="development-list"></ul>
+          </div>
+        </div>
+        <button class="button secondary" id="reset-button" type="button">Run again</button>
+      </div>
+
+      <div class="recommended-approach">
+        <p class="eyebrow">My recommended approach</p>
+        <h3>Move quickly, but never faster than the facts.</h3>
+        <div class="approach-grid">
+          <div><span>1</span><p><strong>Verify.</strong> Confirm operative text, decision dates, fiscal assumptions, and who has authority.</p></div>
+          <div><span>2</span><p><strong>Translate.</strong> Explain likely patient and operational effects in plain language, separating evidence from scenario assumptions.</p></div>
+          <div><span>3</span><p><strong>Align.</strong> Give leadership a clear recommendation, concrete ask, approval path, and risk register.</p></div>
+          <div><span>4</span><p><strong>Engage.</strong> Prepare distinct materials for officials, patients, partners, staff, and media while keeping the core facts consistent.</p></div>
+          <div><span>5</span><p><strong>Follow through.</strong> Record commitments, owners, deadlines, next updates, and outcomes so advocacy becomes accountable execution.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stakeholders-section" id="stakeholders">
+      <div class="section-heading">
+        <p class="eyebrow">03 · Relationship map</p>
+        <h2>One issue, different information needs.</h2>
+        <p>Filter the stakeholder matrix to see how the same verified core message changes by audience—without changing the facts.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter stakeholders">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="government" type="button">Government</button>
+        <button class="filter" data-filter="community" type="button">Community</button>
+        <button class="filter" data-filter="internal" type="button">Internal</button>
+        <button class="filter" data-filter="media" type="button">Media</button>
+      </div>
+      <div class="stakeholder-grid" id="stakeholder-grid"></div>
+    </section>
+
+    <section class="section civic-section" id="civic">
+      <div class="section-heading light">
+        <p class="eyebrow">04 · Civic engagement guardrails</p>
+        <h2>Participation without partisanship.</h2>
+        <p>This fictional workflow treats civic engagement as education and access—not candidate advocacy.</p>
+      </div>
+      <div class="guardrail-grid">
+        <article><span class="status yes">Do</span><h3>Explain the process</h3><p>Describe how residents can learn about a proposal, submit public comment, attend a hearing, or register through official channels.</p></article>
+        <article><span class="status yes">Do</span><h3>Use issue-based materials</h3><p>Connect policy choices to patient access and organizational mission using accurate, approved, nonpartisan language.</p></article>
+        <article><span class="status no">Avoid</span><h3>Candidate preference</h3><p>Do not endorse, oppose, rank, or imply support for a candidate through organizational resources.</p></article>
+        <article><span class="status no">Avoid</span><h3>Unreviewed mobilization</h3><p>Do not launch calls to action before confirming the facts, approval pathway, audience, and applicable rules.</p></article>
+      </div>
+      <p class="micro inverse">Portfolio workflow only. An employer’s counsel, compliance policies, and approved procedures would govern actual activity.</p>
+    </section>
+
+    <section class="section media-section" id="media">
+      <div class="section-heading">
+        <p class="eyebrow">05 · Difficult media question</p>
+        <h2>Acknowledge the concern without guessing.</h2>
+        <p>Draft a short response to the question below. The checker looks for the structure of a disciplined holding response; it does not evaluate legal sufficiency.</p>
+      </div>
+      <div class="media-lab">
+        <blockquote>“Why did patients hear about the possible mobile-care cuts from social media before HarborBridge said anything?”</blockquote>
+        <label for="media-draft">Your response</label>
+        <textarea id="media-draft" rows="6" placeholder="Draft 2–4 sentences..."></textarea>
+        <div class="media-actions">
+          <button class="button primary" id="check-draft" type="button">Check response structure</button>
+          <button class="text-button" id="show-model" type="button">Show model response</button>
+        </div>
+        <div class="draft-feedback" id="draft-feedback" aria-live="polite"></div>
+        <div class="model-response" id="model-response" hidden>
+          <strong>Model response:</strong>
+          <p>We understand why patients and families are concerned and why they expected timely information from us. We are verifying the county proposal and its potential service effects before stating conclusions that may change. We will share confirmed information and any needed patient guidance by 3:00 p.m. tomorrow through our website, clinics, and community partners.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bilingual-section" id="bilingual">
+      <div class="section-heading">
+        <p class="eyebrow">06 · Bilingual patient update</p>
+        <h2>One message, two languages, the same commitments.</h2>
+      </div>
+      <div class="language-toggle" role="group" aria-label="Select language">
+        <button class="active" data-lang="en" type="button">English</button>
+        <button data-lang="es" type="button">Español</button>
+      </div>
+      <article class="notice" id="notice-en">
+        <p class="notice-label">Sample patient notice · fictional scenario</p>
+        <h3>Mobile-care services remain scheduled while HarborBridge reviews the county proposal.</h3>
+        <p>No appointment changes have been confirmed. We are reviewing the proposal and will share verified information by 3:00 p.m. tomorrow. If your appointment changes, our care team will contact you directly.</p>
+        <p><strong>Questions:</strong> Call the fictional patient information line at (555) 010-2400.</p>
+      </article>
+      <article class="notice" id="notice-es" hidden lang="es">
+        <p class="notice-label">Aviso de muestra para pacientes · escenario ficticio</p>
+        <h3>Los servicios de atención móvil continúan programados mientras HarborBridge revisa la propuesta del condado.</h3>
+        <p>No se ha confirmado ningún cambio de cita. Estamos revisando la propuesta y compartiremos información verificada mañana antes de las 3:00 p. m. Si su cita cambia, nuestro equipo de atención se comunicará con usted directamente.</p>
+        <p><strong>Preguntas:</strong> Llame a la línea ficticia de información para pacientes al (555) 010-2400.</p>
+      </article>
+    </section>
+
+    <section class="section deliverables-section" id="deliverables">
+      <div class="section-heading light">
+        <p class="eyebrow">07 · Work-sample packet</p>
+        <h2>From issue intake to documented follow-through.</h2>
+        <p>Preview the purpose of each deliverable, then download the complete packet as a PDF or ZIP.</p>
+      </div>
+      <div class="deliverable-grid" id="deliverable-grid"></div>
+      <div class="download-row">
+        <a class="button primary light-button packet-pdf" href="downloads/Community_Health_Advocacy_Communications_Packet.pdf" download>Download PDF packet</a>
+        <a class="button secondary inverse-button packet-zip" href="downloads/Community_Health_Advocacy_Communications_Packet.zip" download>Download editable files</a>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">08 · Six-week work plan</p>
+        <h2>Milestones, owners, and risks stay visible.</h2>
+      </div>
+      <div class="timeline" id="timeline-list"></div>
+      <div class="risk-table-wrap">
+        <table>
+          <caption>Selected risks and mitigations</caption>
+          <thead><tr><th>Risk</th><th>Trigger</th><th>Mitigation</th><th>Owner</th></tr></thead>
+          <tbody>
+            <tr><td>Policy text changes</td><td>Amendment posted</td><td>Pause dated materials; issue revision note</td><td>Policy lead</td></tr>
+            <tr><td>Patient confusion</td><td>Call volume rises 20%*</td><td>Publish FAQ; equip frontline staff</td><td>Communications</td></tr>
+            <tr><td>Partner message drift</td><td>Conflicting public claim</td><td>Recirculate shared facts and attribution rules</td><td>Coalition liaison</td></tr>
+            <tr><td>Nonpartisan concern</td><td>Candidate-linked request</td><td>Stop, document, and obtain compliance review</td><td>Executive sponsor</td></tr>
+          </tbody>
+        </table>
+        <p class="micro">*Illustrative threshold for this fictional scenario.</p>
+      </div>
+    </section>
+
+    <section class="section methods-section" id="methods">
+      <div class="section-heading">
+        <p class="eyebrow">09 · Methods and limitations</p>
+        <h2>What this lab demonstrates—and what it does not.</h2>
+      </div>
+      <div class="methods-grid">
+        <div>
+          <h3>Demonstrates</h3>
+          <ul>
+            <li>Policy intake, issue framing, and uncertainty labeling</li>
+            <li>Audience-specific translation from one verified fact base</li>
+            <li>Briefing, advocacy, media, bilingual, and follow-up materials</li>
+            <li>Project planning, approvals, risk escalation, and documentation</li>
+            <li>Judgment principles for nonprofit civic engagement</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Does not claim</h3>
+          <ul>
+            <li>Employment by a community health center or government agency</li>
+            <li>Direct interaction with elected officials or their staff</li>
+            <li>Legal review, lobbying registration analysis, or compliance approval</li>
+            <li>Real patient, organizational, legislative, or funding data</li>
+            <li>Endorsement by St. John’s Community Health or another organization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="crosswalk">
+        <h3>Role crosswalk</h3>
+        <div class="crosswalk-grid">
+          <div><strong>Policy research</strong><span>Two-track policy brief, open questions, impact framing</span></div>
+          <div><strong>Leadership materials</strong><span>Memo, talking points, meeting brief, public comment</span></div>
+          <div><strong>Advocacy and civic engagement</strong><span>Nonpartisan education, patient leadership, coalition plan</span></div>
+          <div><strong>Community communications</strong><span>Plain-language and bilingual patient updates</span></div>
+          <div><strong>Media support</strong><span>Holding response, difficult-question exercise, update cadence</span></div>
+          <div><strong>Project coordination</strong><span>Timeline, approvals, risks, contact matrix, commitment tracker</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Community Health Advocacy & Government Affairs Lab</strong>
+      <p>Independent portfolio simulation by Michael Farzinpour, PhD · Los Angeles, California</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://michaelfarzinpour-droid.github.io/">Portfolio</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
