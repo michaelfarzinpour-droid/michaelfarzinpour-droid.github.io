@@ -1,0 +1,7 @@
+retailer,current_budget_usd,recommended_budget_usd,change_usd,modeled_roas,decision_rationale
+Target,95000,125000,30000,4.8,Scale proven onsite display
+Walmart,105000,80000,-25000,2.6,Trim weak offsite video and retain branded search
+CVS,70000,40000,-30000,1.7,Protect high-intent search and pause prospecting display
+Amazon,145000,170000,25000,5.7,Defend efficient sponsored-product coverage
+Instacart,85000,85000,0,4.3,Maintain high-conversion digital incentive test
+TOTAL,500000,500000,0,,Synthetic reallocation maintains total spend

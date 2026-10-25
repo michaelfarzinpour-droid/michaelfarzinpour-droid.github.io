@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Independent synthetic-data portfolio simulation for women's wellness retail insights and media optimization.">
+  <title>Women’s Wellness Retail Insights & Media Optimization Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">INDEPENDENT PORTFOLIO SIMULATION · SYNTHETIC DATA</p>
+      <h1>Women’s Wellness Retail Insights<br><span>& Media Optimization Lab</span></h1>
+      <p class="hero-text">A decision-focused demonstration of how I would connect shopper behavior, retail performance, media efficiency, and creative execution across a fast-growing wellness portfolio.</p>
+      <div class="hero-actions">
+        <button class="primary" data-jump="overview">Explore the command center</button>
+        <a class="secondary" href="downloads/wellness_retail_media_data.csv" download>Download synthetic data</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-label="Illustrative portfolio health summary">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="hero-card"><span>Portfolio sales</span><strong>$14.8M</strong><em>+12.4% vs. prior period</em></div>
+      <div class="hero-card small"><span>Blended ROAS</span><strong>4.3×</strong></div>
+      <div class="hero-card small accent"><span>Growth opportunity</span><strong>CVS + MenoEase</strong></div>
+    </div>
+  </header>
+
+  <div class="disclosure"><strong>Scope and integrity:</strong> All brands, products, retailers’ results, shoppers, campaigns, budgets, vendors, and findings are fictional. Retailer names identify simulated channels only; this project is not affiliated with Target, Walmart, CVS, Amazon, Instacart, O Positiv, or any other company.</div>
+
+  <nav class="section-nav" aria-label="Lab sections">
+    <button class="nav-pill active" data-section="overview">Overview</button>
+    <button class="nav-pill" data-section="retail">Retail performance</button>
+    <button class="nav-pill" data-section="media">Retail media</button>
+    <button class="nav-pill" data-section="comparisons">Comparisons</button>
+    <button class="nav-pill" data-section="creative">Creative testing</button>
+    <button class="nav-pill" data-section="investigation">Campaign investigation</button>
+    <button class="nav-pill" data-section="budget">Budget optimizer</button>
+    <button class="nav-pill" data-section="calendar">Creative calendar</button>
+    <button class="nav-pill" data-section="executive">Executive recommendations</button>
+    <button class="nav-pill" data-section="methodology">Methodology appendix</button>
+    <button class="nav-pill" data-section="approach">My recommended approach</button>
+  </nav>
+
+  <main id="main">
+    <section id="overview" class="panel active-panel" aria-labelledby="overview-title">
+      <div class="section-head"><div><p class="eyebrow">PORTFOLIO COMMAND CENTER</p><h2 id="overview-title">Growth is real—but not evenly distributed.</h2></div><p class="section-intro">VelaBloom, a fictional women’s wellness company, needs to determine which retail and media investments are creating durable growth rather than temporary volume.</p></div>
+      <div class="kpi-grid" id="overview-kpis"></div>
+      <div class="two-col">
+        <article class="card decision-card"><p class="label">DECISION BRIEF</p><h3>Shift from broad reach to retailer-specific conversion plans.</h3><p>Amazon and Target generate most incremental sales, while CVS has strong distribution but weak media conversion. Instacart is small, efficient, and underfunded.</p><button class="text-button" data-jump="investigation">Investigate the weak signal →</button></article>
+        <article class="card"><p class="label">PORTFOLIO ARCHITECTURE</p><ul class="clean-list"><li><b>4 products</b> across cycle care, vaginal health, menopause, and digestion</li><li><b>5 retail channels</b> with store, marketplace, and delivery contexts</li><li><b>8 campaigns</b> spanning sponsored product, display, video, and incentives</li><li><b>3 audience groups</b> linked to distinct need states</li></ul></article>
+      </div>
+      <div class="artifact-row">
+        <a href="downloads/wellness_retail_media_data.csv" download>Synthetic performance data</a>
+        <a href="downloads/budget_reallocation.csv" download>Budget reallocation</a>
+        <a href="downloads/creative_calendar.csv" download>Creative calendar</a>
+        <a href="downloads/executive_brief.html" target="_blank" rel="noopener">Executive brief</a>
+      </div>
+    </section>
+
+    <section id="retail" class="panel" aria-labelledby="retail-title">
+      <div class="section-head"><div><p class="eyebrow">RETAIL PERFORMANCE</p><h2 id="retail-title">Compare commercial signals across channels.</h2></div><p class="section-intro">Select a metric and period to separate scale, velocity, availability, conversion, and share.</p></div>
+      <div class="control-bar">
+        <label>Metric<select id="retail-metric"><option value="sales">Sales</option><option value="units">Units</option><option value="distribution">Distribution</option><option value="conversion">Conversion</option><option value="share">Category share</option></select></label>
+        <label>Period<select id="retail-period"><option value="q2">Q2</option><option value="q1">Q1</option></select></label>
+      </div>
+      <div class="two-col wide-left"><article class="card chart-card"><div class="chart-head"><h3 id="retail-chart-title">Sales by retailer</h3><span class="tag">Synthetic</span></div><div id="retail-bars" class="bar-chart"></div></article><article class="card"><p class="label">WHAT THE DATA SAYS</p><h3 id="retail-insight-title"></h3><p id="retail-insight-copy"></p><div id="retail-delta" class="signal-box"></div></article></div>
+      <div class="table-wrap"><table><thead><tr><th>Retailer</th><th>Sales</th><th>Units</th><th>Distribution</th><th>Conversion</th><th>Category share</th><th>Trend</th></tr></thead><tbody id="retail-table"></tbody></table></div>
+    </section>
+
+    <section id="media" class="panel" aria-labelledby="media-title">
+      <div class="section-head"><div><p class="eyebrow">RETAIL MEDIA</p><h2 id="media-title">Find efficiency without losing scale.</h2></div><p class="section-intro">Compare sponsored product, onsite display, offsite display, video, and digital incentives through the same performance lens.</p></div>
+      <div class="control-bar"><label>Retailer<select id="media-retailer"><option>All retailers</option><option>Target</option><option>Walmart</option><option>CVS</option><option>Amazon</option><option>Instacart</option></select></label><label>Placement<select id="media-placement"><option>All placements</option><option>Onsite</option><option>Offsite</option></select></label></div>
+      <div id="media-kpis" class="kpi-grid compact"></div>
+      <div class="two-col wide-left"><article class="card chart-card"><div class="chart-head"><h3>Spend versus attributed sales</h3><span class="tag">ROAS comparison</span></div><div id="media-scatter" class="scatter" aria-label="Spend versus attributed sales chart"></div></article><article class="card"><p class="label">ONSITE VS. OFFSITE</p><div id="placement-compare"></div></article></div>
+      <div class="table-wrap"><table><thead><tr><th>Retailer</th><th>Tactic</th><th>Placement</th><th>Spend</th><th>ROAS</th><th>CPC</th><th>CTR</th><th>CVR</th><th>Status</th></tr></thead><tbody id="media-table"></tbody></table></div>
+    </section>
+
+    <section id="comparisons" class="panel" aria-labelledby="comparisons-title">
+      <div class="section-head"><div><p class="eyebrow">SEGMENT & PORTFOLIO LENS</p><h2 id="comparisons-title">Interrogate retailer, product, audience, and campaign differences.</h2></div><p class="section-intro">Change one dimension at a time to keep the comparison actionable.</p></div>
+      <div class="segmented" role="group" aria-label="Comparison dimension"><button class="seg active" data-compare="retailer">Retailer</button><button class="seg" data-compare="product">Product</button><button class="seg" data-compare="audience">Audience</button><button class="seg" data-compare="campaign">Campaign</button></div>
+      <div id="comparison-grid" class="comparison-grid"></div>
+      <article class="card opportunity"><p class="label">SHOPPER & CATEGORY OPPORTUNITY</p><h3 id="opportunity-title"></h3><p id="opportunity-copy"></p></article>
+    </section>
+
+    <section id="creative" class="panel" aria-labelledby="creative-title">
+      <div class="section-head"><div><p class="eyebrow">CREATIVE A/B TESTING</p><h2 id="creative-title">Test the message, not just the artwork.</h2></div><p class="section-intro">Choose a hypothesis, inspect the creative variants, and determine whether the observed lift is decision-worthy.</p></div>
+      <div class="control-bar"><label>Audience<select id="creative-audience"><option value="cycle">Cycle Support Seekers</option><option value="flora">Daily Wellness Maintainers</option><option value="meno">Menopause Navigators</option></select></label><label>Primary KPI<select id="creative-kpi"><option value="ctr">CTR</option><option value="cvr">CVR</option><option value="roas">ROAS</option></select></label></div>
+      <div class="creative-grid" id="creative-cards"></div>
+      <div id="creative-verdict" class="verdict"></div>
+    </section>
+
+    <section id="investigation" class="panel" aria-labelledby="investigation-title">
+      <div class="section-head"><div><p class="eyebrow">UNDERPERFORMING CAMPAIGN INVESTIGATION</p><h2 id="investigation-title">CVS offsite display is spending faster than it converts.</h2></div><p class="section-intro">Investigate measurement, audience, creative, and destination experience before changing budget.</p></div>
+      <div class="incident-strip"><div><span>Campaign</span><strong>CVS MenoEase Prospecting</strong></div><div><span>ROAS</span><strong class="negative">1.7×</strong></div><div><span>CTR</span><strong>0.42%</strong></div><div><span>CVR</span><strong class="negative">2.1%</strong></div><div><span>Spend pace</span><strong class="warning">118%</strong></div></div>
+      <div class="investigation-grid"><article class="card"><h3>Validation sequence</h3><div id="checks" class="check-list"></div></article><article class="card"><h3>Choose the next action</h3><div id="actions" class="action-list"></div><div id="action-result" class="action-result" aria-live="polite">Select an action to see the modeled impact.</div></article></div>
+    </section>
+
+    <section id="budget" class="panel" aria-labelledby="budget-title">
+      <div class="section-head"><div><p class="eyebrow">BUDGET REALLOCATION</p><h2 id="budget-title">Reallocate $500K without increasing total spend.</h2></div><p class="section-intro">Adjust retailer allocations, then compare projected attributed sales and portfolio risk.</p></div>
+      <div class="budget-layout"><article class="card"><div id="budget-sliders"></div><div class="budget-total"><span>Allocated</span><strong id="budget-total">$500K</strong><span id="budget-balance" class="tag">Balanced</span></div><button id="apply-budget" class="primary">Apply recommended allocation</button></article><article class="card result-card"><p class="label">PROJECTED IMPACT</p><div class="big-number" id="projected-sales">$2.15M</div><p>Attributed sales at modeled channel ROAS</p><div class="mini-metrics"><div><span>Blended ROAS</span><strong id="projected-roas">4.3×</strong></div><div><span>Risk level</span><strong id="risk-level">Moderate</strong></div></div><p class="fineprint">Projection is arithmetic on synthetic assumptions, not a forecast or guarantee.</p></article></div>
+      <div class="table-wrap"><table><thead><tr><th>Retailer</th><th>Current budget</th><th>Recommended</th><th>Change</th><th>Decision rationale</th></tr></thead><tbody id="budget-table"></tbody></table></div>
+    </section>
+
+    <section id="calendar" class="panel" aria-labelledby="calendar-title">
+      <div class="section-head"><div><p class="eyebrow">CROSS-FUNCTIONAL CREATIVE CALENDAR</p><h2 id="calendar-title">Make ownership and approval visible.</h2></div><p class="section-intro">A compact launch calendar linking retail needs, creative production, legal review, media trafficking, and retailer deadlines.</p></div>
+      <div class="control-bar"><label>Status<select id="calendar-filter"><option>All</option><option>On track</option><option>At risk</option><option>Approved</option></select></label></div>
+      <div class="table-wrap"><table><thead><tr><th>Deliverable</th><th>Retailer</th><th>Owner</th><th>Due</th><th>Dependency</th><th>Approval</th><th>Status</th></tr></thead><tbody id="calendar-table"></tbody></table></div>
+      <div class="dependency-flow" aria-label="Creative workflow"><span>Retail brief</span><b>→</b><span>Creative concept</span><b>→</b><span>Claims and legal</span><b>→</b><span>Retailer specs</span><b>→</b><span>Trafficking</span></div>
+    </section>
+
+    <section id="executive" class="panel" aria-labelledby="executive-title">
+      <div class="section-head"><div><p class="eyebrow">EXECUTIVE RECOMMENDATIONS</p><h2 id="executive-title">Invest, test, and stop—with clear decision rules.</h2></div><p class="section-intro">Recommendations distinguish what the evidence supports now from what still requires validation.</p></div>
+      <div class="recommend-grid"><article class="recommend invest"><span>INVEST</span><h3>Scale high-intent retail media</h3><p>Move incremental dollars to Amazon sponsored product, Target onsite display, and Instacart digital incentives while monitoring marginal ROAS.</p><ul><li>Decision gate: ROAS ≥ 4.0×</li><li>Guardrail: CVR does not decline >10%</li></ul></article><article class="recommend test"><span>TEST</span><h3>Build the menopause opportunity</h3><p>Pair MenoEase education creative with CVS search and Target offsite retargeting, then measure conversion by new-to-brand status.</p><ul><li>Decision gate: +15% CVR lift</li><li>Test window: four weeks</li></ul></article><article class="recommend stop"><span>STOP</span><h3>Pause broad CVS prospecting</h3><p>Stop the current offsite audience until overlap, landing-page continuity, and creative relevance are corrected.</p><ul><li>Restart only after QA passes</li><li>Cap learning spend at $10K</li></ul></article></div>
+      <article class="card executive-story"><p class="label">THE EXECUTIVE STORY</p><h3>Distribution is not the same as demand.</h3><p>VelaBloom has broad availability, but its next growth phase depends on converting retailer-specific shoppers with relevant messages and disciplined investment. The portfolio should protect efficient base sales, build one evidence-backed growth bet, and stop funding tactics that cannot pass measurement and conversion checks.</p><a class="secondary" href="downloads/executive_brief.html" target="_blank" rel="noopener">Open the final presentation</a></article>
+    </section>
+
+    <section id="methodology" class="panel" aria-labelledby="methodology-title">
+      <div class="section-head"><div><p class="eyebrow">METHODOLOGY APPENDIX</p><h2 id="methodology-title">Make every metric and decision auditable.</h2></div><p class="section-intro">These definitions, attribution assumptions, adjustment rules, and decision gates govern the synthetic analysis. They are illustrative—not retailer specifications or causal estimates.</p></div>
+      <div class="method-grid">
+        <article class="method-card"><span>SALES</span><strong>Σ net recognized retail sales</strong><p>Gross merchandise value less cancellations and returns; taxes and shipping excluded.</p></article>
+        <article class="method-card"><span>UNITS</span><strong>Σ fulfilled units</strong><p>Completed units sold after cancellations and returns.</p></article>
+        <article class="method-card"><span>DISTRIBUTION</span><strong>Carrying-store category ACV ÷ total category ACV</strong><p>Weighted availability; digital marketplaces use eligible assortment coverage.</p></article>
+        <article class="method-card"><span>RETAIL CONVERSION</span><strong>Orders ÷ product-detail sessions</strong><p>Media CVR is reported separately as attributed orders ÷ media clicks.</p></article>
+        <article class="method-card"><span>CATEGORY SHARE</span><strong>Brand sales ÷ category sales</strong><p>Calculated within the same retailer, category, geography, and reporting period.</p></article>
+        <article class="method-card"><span>MEDIA EFFICIENCY</span><strong>ROAS = attributed sales ÷ spend</strong><p>CPC = spend ÷ clicks; CTR = clicks ÷ impressions; CVR = orders ÷ clicks.</p></article>
+      </div>
+      <div class="two-col wide-left methodology-row">
+        <article class="card"><p class="label">ATTRIBUTION-WINDOW ASSUMPTIONS</p><div class="table-wrap compact-table"><table><thead><tr><th>Tactic</th><th>Click window</th><th>View window</th><th>Credit rule</th></tr></thead><tbody><tr><td>Sponsored product</td><td>14 days</td><td>None</td><td>Last eligible retailer touch</td></tr><tr><td>Onsite display</td><td>14 days</td><td>1 day</td><td>Click supersedes view</td></tr><tr><td>Offsite display / video</td><td>7 days</td><td>1 day</td><td>Click supersedes view</td></tr><tr><td>Digital incentive</td><td>7 days</td><td>None</td><td>Redeemed attributed order</td></tr></tbody></table></div><p class="fineprint">Reporting is deduplicated within each retailer, not across retailers. Retailer-reported sales are directional until reconciled with internal sales and finance data.</p></article>
+        <article class="card callout-card"><p class="label">INTERPRETATION BOUNDARY</p><h3>Attributed sales are not automatically incremental sales.</h3><p>ROAS describes retailer-attributed return under the stated windows. A causal lift claim would require a randomized holdout, geo experiment, matched-market design, or another credible counterfactual.</p></article>
+      </div>
+      <article class="card"><p class="label">SEPARATING MEDIA FROM COMMERCIAL CONFOUNDERS</p><div class="decomposition"><div><b>1 · Establish baseline</b><p>Compare retailer × SKU × week against an eight-week pre-period and the matched year-ago week.</p></div><div><b>2 · Availability</b><p>Remove weeks with material out-of-stocks; model changes in weighted distribution and eligible assortment.</p></div><div><b>3 · Price and promotion</b><p>Control for average selling price, discount depth, couponing, feature/display, and promotion timing.</p></div><div><b>4 · Seasonality</b><p>Account for holidays, retailer events, category seasonality, and common category-level shocks.</p></div><div><b>5 · Media contribution</b><p>Read the remaining media-associated lift against exposed/holdout or matched markets; otherwise label it descriptive, not causal.</p></div></div><div class="formula-strip"><b>Observed sales change</b><span>= baseline + distribution + price/promotion + seasonality + media-associated residual</span></div></article>
+      <div class="decision-matrix"><article class="decision-rule invest"><span>INVEST</span><h3>Scale with guardrails</h3><ul><li>ROAS ≥ 4.0× for two weekly reads</li><li>CVR declines no more than 10% as spend rises</li><li>No material tracking, inventory, or distribution issue</li><li>Increase budget in 15–25% increments</li></ul></article><article class="decision-rule test"><span>TEST</span><h3>Buy the next piece of evidence</h3><ul><li>ROAS 2.5–3.9× or promising segment lift</li><li>Attribution, creative, or audience uncertainty remains</li><li>Predefine KPI, control, four-week window, and $10K cap</li><li>Require ≥15% CVR lift to graduate</li></ul></article><article class="decision-rule stop"><span>STOP</span><h3>Pause or redesign</h3><ul><li>ROAS &lt; 2.0× for two weekly reads after QA</li><li>Spend pace &gt;110% without proportional sales</li><li>Broken tracking, severe overlap, or out-of-stock rate &gt;10%</li><li>Document cause and restart criteria before relaunch</li></ul></article></div>
+    </section>
+
+    <section id="approach" class="panel" aria-labelledby="approach-title">
+      <div class="section-head"><div><p class="eyebrow">MY RECOMMENDED APPROACH</p><h2 id="approach-title">Manage the engagement as one decision system.</h2></div><p class="section-intro">The work should move from aligned questions to controlled measurement, decisive optimization, and documented learning.</p></div>
+      <ol class="approach-list"><li><span>01</span><div><h3>Align the decision</h3><p>Define the business question, owner, decision date, KPI hierarchy, retailer constraints, and what action each possible finding would trigger.</p></div></li><li><span>02</span><div><h3>Build a reliable measurement plan</h3><p>Reconcile definitions across retailer portals, media partners, and internal reporting; document attribution windows, data latency, exclusions, and source-of-truth rules.</p></div></li><li><span>03</span><div><h3>Run workstreams visibly</h3><p>Maintain owners, milestones, dependencies, approvals, budget pacing, risks, and escalation triggers across insights, retail, media, creative, and agency partners.</p></div></li><li><span>04</span><div><h3>Interrogate the “why”</h3><p>Move from headline KPIs into retailer, product, audience, placement, and creative cuts; test whether weak results reflect measurement, availability, relevance, or conversion friction.</p></div></li><li><span>05</span><div><h3>Recommend with decision rules</h3><p>Separate invest, test, and stop recommendations; quantify expected tradeoffs, define guardrails, and state what evidence would change the recommendation.</p></div></li><li><span>06</span><div><h3>Close the learning loop</h3><p>Track implementation, compare realized outcomes with the hypothesis, capture lessons, and feed them into the next retail and creative planning cycle.</p></div></li></ol>
+    </section>
+  </main>
+
+  <footer><p>Michael Farzinpour · Independent portfolio simulation · October 2026</p><p>All data and brand results are fictional and created solely to demonstrate analytical and project-management judgment.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>

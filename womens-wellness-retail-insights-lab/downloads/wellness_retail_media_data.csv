@@ -1,0 +1,11 @@
+period,retailer,product,tactic,placement,audience,sales_usd,units,distribution_pct,conversion_pct,category_share_pct,spend_usd,roas,cpc_usd,ctr_pct,cvr_pct,data_status
+Q2,Target,FloraGuard,Onsite Display,Onsite,Daily Wellness Maintainers,1270000,42333,86,8.2,12.4,95000,4.8,1.12,0.91,8.4,Synthetic
+Q2,Walmart,CycleEase,Offsite Video,Offsite,Cycle Support Seekers,1050000,37500,81,6.9,9.8,105000,2.6,1.68,0.54,4.1,Synthetic
+Q2,CVS,CycleEase,Offsite Display,Offsite,Cycle Support Seekers,610000,21786,74,4.8,7.1,70000,1.7,2.01,0.41,2.9,Synthetic
+Q2,Amazon,FloraGuard,Sponsored Product,Onsite,Daily Wellness Maintainers,1680000,56000,100,11.7,16.2,145000,5.7,0.86,1.38,12.1,Synthetic
+Q2,Instacart,DigestDaily,Digital Incentive,Onsite,Convenience-First Shoppers,490000,17500,58,10.4,5.9,85000,4.3,1.05,1.12,10.8,Synthetic
+Q1,Target,FloraGuard,Onsite Display,Onsite,Daily Wellness Maintainers,1120000,38621,82,7.5,11.2,90000,4.4,1.17,0.83,7.7,Synthetic
+Q1,Walmart,CycleEase,Offsite Video,Offsite,Cycle Support Seekers,1010000,36727,79,7.1,9.5,100000,2.9,1.55,0.58,4.5,Synthetic
+Q1,CVS,CycleEase,Offsite Display,Offsite,Cycle Support Seekers,680000,24727,72,5.7,7.7,65000,2.2,1.77,0.49,3.7,Synthetic
+Q1,Amazon,FloraGuard,Sponsored Product,Onsite,Daily Wellness Maintainers,1490000,51379,100,10.9,15.0,135000,5.2,0.91,1.24,11.4,Synthetic
+Q1,Instacart,DigestDaily,Digital Incentive,Onsite,Convenience-First Shoppers,410000,15185,52,9.3,5.1,80000,3.8,1.12,0.98,9.6,Synthetic
