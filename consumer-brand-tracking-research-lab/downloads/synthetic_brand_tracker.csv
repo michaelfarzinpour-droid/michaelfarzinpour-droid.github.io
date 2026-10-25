@@ -1,0 +1,17 @@
+wave,brand,segment,unweighted_n,weight,unaided_awareness,consideration,preference,purchase_intent,advocacy,primary_open_text_theme
+W1,Northstar,All,150,1.02,31,24,18,21,19,Setup friction
+W2,Northstar,All,150,1.01,34,26,19,23,21,Setup friction
+W3,Northstar,All,150,0.99,38,29,20,25,23,Value uncertainty
+W4,Northstar,All,150,1.00,43,32,21,28,27,Setup friction
+W1,Orbit,All,150,0.98,45,35,27,30,29,Product design
+W2,Orbit,All,150,1.00,46,36,27,31,30,Product design
+W3,Orbit,All,150,1.02,47,37,28,31,32,Data trust
+W4,Orbit,All,150,1.00,48,38,29,33,33,Product design
+W1,Vela,All,150,1.01,27,22,17,18,16,Value uncertainty
+W2,Vela,All,150,0.99,30,23,18,20,18,Value uncertainty
+W3,Vela,All,150,1.00,32,25,19,22,19,Support experience
+W4,Vela,All,150,1.00,34,27,21,24,21,Support experience
+W1,Nova,All,150,1.00,20,15,11,12,10,Product design
+W2,Nova,All,150,1.00,22,17,12,14,11,Product design
+W3,Nova,All,150,1.00,24,18,13,15,12,Value uncertainty
+W4,Nova,All,150,1.00,25,20,14,16,14,Value uncertainty

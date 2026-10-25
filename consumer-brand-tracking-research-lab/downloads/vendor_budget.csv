@@ -1,0 +1,7 @@
+line_item,owner_or_vendor,budget_usd,forecast_usd,variance_usd,status,dependency
+Questionnaire and programming,Internal research,9500,9500,0,On track,Written client approval
+Sample Wave 4,Vendor A,22000,21100,900,On track,Final quotas
+Booster sample,Vendor B,6000,6900,-900,Watch,Quality remediation
+Data processing,Hub partner,8500,8200,300,On track,Validated completes
+Analysis and reporting,Internal research,18000,17000,1000,On track,Final tables
+Executive workshop,Strategy lead,4500,3500,1000,On track,Story signoff

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive synthetic-data simulation of multi-wave consumer brand tracking and research program management.">
+  <title>Consumer Brand Tracking & Research Management Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <div class="brandmark" aria-hidden="true">CB</div>
+    <div>
+      <p class="eyebrow">Independent portfolio simulation · Synthetic data</p>
+      <h1>Consumer Brand Tracking &amp; Research Management Lab</h1>
+      <p class="lede">A decision-focused demonstration of how I would lead a complex custom research program from kickoff through executive delivery.</p>
+    </div>
+    <div class="header-actions">
+      <a class="button secondary" href="downloads/synthetic_brand_tracker.csv" download>Download data</a>
+      <button class="button primary" data-go="presentation">Open final presentation</button>
+    </div>
+  </header>
+
+  <div class="disclosure" role="note">
+    <strong>Scope and integrity:</strong> All brands, respondents, vendors, budgets, findings, and client scenarios are fictional. The analysis demonstrates method and judgment; it does not represent commercial client work or real market performance.
+  </div>
+
+  <nav class="section-nav" aria-label="Lab sections">
+    <button class="nav-tab active" data-section="overview">Overview</button>
+    <button class="nav-tab" data-section="tracker">Brand tracker</button>
+    <button class="nav-tab" data-section="design">Research design</button>
+    <button class="nav-tab" data-section="fieldwork">Fieldwork &amp; quality</button>
+    <button class="nav-tab" data-section="management">Program management</button>
+    <button class="nav-tab" data-section="open-text">Open-text validation</button>
+    <button class="nav-tab" data-section="views">Audience views</button>
+    <button class="nav-tab" data-section="presentation">Final presentation</button>
+    <button class="nav-tab" data-section="approach">My recommended approach</button>
+  </nav>
+
+  <main id="main">
+    <section id="overview" class="panel active" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <div><p class="kicker">Program command center</p><h2 id="overview-title">Four waves. One accountable research story.</h2></div>
+        <p>The fictional client, Northstar Mobile, needs to know whether its brand is gaining meaningful momentum—and what to do next.</p>
+      </div>
+      <div class="metrics-grid">
+        <article class="metric"><span>Tracker cadence</span><strong>4 quarterly waves</strong><small>W1–W4, fixed core questionnaire</small></article>
+        <article class="metric"><span>Completed interviews</span><strong>2,400</strong><small>600 per wave before weighting</small></article>
+        <article class="metric"><span>Competitive set</span><strong>4 brands</strong><small>Northstar, Orbit, Vela, Nova</small></article>
+        <article class="metric"><span>AI/manual agreement</span><strong>86%</strong><small>100-record validation sample</small></article>
+      </div>
+      <div class="two-col">
+        <article class="card accent-card">
+          <p class="card-label">Decision brief</p>
+          <h3>Northstar is building familiarity, but not enough preference.</h3>
+          <p>Unaided awareness rose across the tracker while preference stayed comparatively flat. The central question is whether the gap reflects weak differentiation, pricing friction, or onboarding concerns.</p>
+          <button class="text-button" data-go="tracker">Interrogate the signal →</button>
+        </article>
+        <article class="card">
+          <p class="card-label">Research architecture</p>
+          <ul class="clean-list">
+            <li><strong>Core tracker:</strong> stable metrics for trend integrity</li>
+            <li><strong>Rotating module:</strong> message and concept diagnostics</li>
+            <li><strong>Open text:</strong> manual codebook plus AI-assisted synthesis</li>
+            <li><strong>Delivery:</strong> analyst, client, and executive views</li>
+          </ul>
+        </article>
+      </div>
+      <div class="deliverables-row">
+        <a href="downloads/questionnaire.html" target="_blank">Questionnaire</a>
+        <a href="downloads/sampling_and_weighting_plan.html" target="_blank">Sampling &amp; weighting plan</a>
+        <a href="downloads/vendor_budget.csv" download>Budget tracker</a>
+        <a href="downloads/synthetic_brand_tracker.csv" download>Synthetic tracker data</a>
+        <button class="linklike" data-go="presentation">Executive story</button>
+      </div>
+    </section>
+
+    <section id="tracker" class="panel" aria-labelledby="tracker-title">
+      <div class="section-heading">
+        <div><p class="kicker">Analytics workbench</p><h2 id="tracker-title">Trend, segment, and competitive-brand analysis</h2></div>
+        <p>Change the metric and segment. Significance markers compare Wave 4 with Wave 3 at the 95% confidence level using simulated independent-proportion tests.</p>
+      </div>
+      <div class="control-bar">
+        <label>Metric<select id="metricSelect"><option value="awareness">Unaided awareness</option><option value="consideration">Consideration</option><option value="preference">Preference</option><option value="intent">Purchase intent</option><option value="advocacy">Advocacy</option></select></label>
+        <label>Segment<select id="segmentSelect"><option value="all">All consumers</option><option value="genz">Gen Z</option><option value="millennial">Millennials</option><option value="switchers">Category switchers</option><option value="owners">Current Northstar owners</option></select></label>
+        <label>View<select id="chartMode"><option value="trend">Four-wave trend</option><option value="competition">Wave 4 competitive view</option></select></label>
+      </div>
+      <div class="chart-layout">
+        <article class="card chart-card"><div id="chart" class="chart" aria-live="polite"></div></article>
+        <aside class="card insight-card">
+          <p class="card-label">Analyst readout</p>
+          <h3 id="insightTitle">Awareness improved, but the funnel narrows.</h3>
+          <p id="insightText">Northstar's unaided awareness reaches 43% in Wave 4, up significantly from 38% in Wave 3. Preference does not rise at the same rate, so the business should test differentiation before increasing broad-reach media.</p>
+          <div class="stat-callout"><span>W4 vs W3</span><strong id="deltaStat">+5 pts*</strong><small>* p &lt; .05, simulated</small></div>
+        </aside>
+      </div>
+      <div class="table-wrap"><table id="crosstabTable"><caption>SPSS-style Wave 4 crosstab</caption><thead><tr><th>Brand</th><th>All</th><th>Gen Z</th><th>Millennials</th><th>Switchers</th><th>Owners</th><th>Sig. vs W3</th></tr></thead><tbody></tbody></table></div>
+      <p class="method-note"><strong>Interpretation rule:</strong> Statistical significance is treated as a diagnostic, not a strategy. Decisions also consider effect size, trend consistency, segment relevance, and questionnaire or fieldwork changes.</p>
+    </section>
+
+    <section id="design" class="panel" aria-labelledby="design-title">
+      <div class="section-heading"><div><p class="kicker">Study design</p><h2 id="design-title">Questionnaire, sample, quotas, and weighting</h2></div><p>The design keeps the tracker stable while allowing controlled learning modules.</p></div>
+      <div class="three-col">
+        <article class="card"><p class="card-label">Core instrument · 12 minutes</p><h3>Stable measures</h3><ol class="number-list"><li>Category screening and usage</li><li>Unaided and aided awareness</li><li>Consideration and preference</li><li>Purchase intent and advocacy</li><li>Brand imagery and experience</li></ol></article>
+        <article class="card"><p class="card-label">Rotating module · 3 minutes</p><h3>Wave-specific learning</h3><ol class="number-list"><li>W1 baseline category needs</li><li>W2 message diagnostics</li><li>W3 concept evaluation</li><li>W4 onboarding friction</li></ol></article>
+        <article class="card"><p class="card-label">Quality guardrails</p><h3>Before launch</h3><ol class="number-list"><li>Client objective crosswalk</li><li>Survey logic and mobile QA</li><li>Soft launch at n=60</li><li>Terminating-path review</li><li>Banner and output test</li></ol></article>
+      </div>
+      <div class="two-col wide-left">
+        <article class="card">
+          <h3>Sampling plan and quotas</h3>
+          <div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Target</th><th>Monitoring rule</th></tr></thead><tbody><tr><td>Total completes</td><td>600 / wave</td><td>Pause at 25%, 50%, 80% for quality review</td></tr><tr><td>Age</td><td>18–29: 25%; 30–44: 35%; 45–60: 25%; 61+: 15%</td><td>±3 pts soft quota; hard close at +5</td></tr><tr><td>Gender</td><td>Balanced to category profile</td><td>Daily variance check</td></tr><tr><td>Region</td><td>Northeast 18%; Midwest 21%; South 38%; West 23%</td><td>Vendor pacing by region</td></tr><tr><td>Category status</td><td>Owners 45%; switchers 30%; prospects 25%</td><td>Do not backfill with low-incidence cells</td></tr></tbody></table></div>
+        </article>
+        <article class="card">
+          <h3>Weighting assumptions</h3>
+          <p>Rim weights align age × gender, region, and category status to a fictional category profile. Weight caps are 0.40 and 2.50.</p>
+          <dl class="definition-list"><div><dt>Efficiency</dt><dd>84%</dd></div><div><dt>Effective base</dt><dd>504</dd></div><div><dt>Largest cell adjustment</dt><dd>1.42×</dd></div><div><dt>Reporting rule</dt><dd>Show unweighted bases</dd></div></dl>
+          <p class="method-note">Sensitivity reporting compares weighted and unweighted results; findings that reverse direction are flagged, not hidden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="fieldwork" class="panel" aria-labelledby="fieldwork-title">
+      <div class="section-heading"><div><p class="kicker">Fieldwork control room</p><h2 id="fieldwork-title">Quality monitoring and escalation</h2></div><p>Review the simulated issue, choose a response, and see how the decision affects timeline, cost, and data integrity.</p></div>
+      <div class="metrics-grid compact"><article class="metric"><span>Completes</span><strong>462 / 600</strong><small>77% complete</small></article><article class="metric warning"><span>Median LOI</span><strong>9.1 min</strong><small>Target: 11–13 min</small></article><article class="metric warning"><span>Duplicate-device flags</span><strong>4.8%</strong><small>Threshold: 2.0%</small></article><article class="metric"><span>Quota variance</span><strong>2.6 pts</strong><small>Within tolerance</small></article></div>
+      <div class="scenario-grid">
+        <article class="card alert-card"><p class="card-label">Issue escalation · Day 5</p><h3>Vendor B's overnight completes show a speed and duplication spike.</h3><p>Twenty-eight records meet at least two review conditions: completion under one-third median LOI, duplicate device fingerprint, inconsistent brand knowledge, or failed open-end coherence.</p><fieldset><legend>Select the next action</legend><label class="choice"><input type="radio" name="response" value="continue"> Continue fielding and remove records at close</label><label class="choice"><input type="radio" name="response" value="pause"> Pause Vendor B, quarantine records, and request traffic-source documentation</label><label class="choice"><input type="radio" name="response" value="terminate"> Terminate Vendor B and replace the entire allocation</label></fieldset><button id="applyDecision" class="button primary">Apply decision</button></article>
+        <article class="card"><p class="card-label">Decision impact</p><div id="decisionResult" class="decision-result"><h3>Awaiting your decision</h3><p>Use the evidence, escalation thresholds, and client commitments—not instinct alone.</p></div><h4>Escalation path</h4><ol class="timeline"><li><span>1</span>Document the signal and affected batch</li><li><span>2</span>Notify project lead and operations owner</li><li><span>3</span>Pause only the implicated source</li><li><span>4</span>Agree replacement, cost, and timeline</li><li><span>5</span>Record disposition and client impact</li></ol></article>
+      </div>
+      <div class="table-wrap"><table><caption>Data-quality rule set</caption><thead><tr><th>Check</th><th>Threshold</th><th>Action</th><th>Owner</th></tr></thead><tbody><tr><td>Speeding</td><td>&lt; 33% median LOI</td><td>Review with second indicator</td><td>Analyst</td></tr><tr><td>Duplicate device</td><td>Any confirmed match</td><td>Quarantine and vendor query</td><td>Fieldwork lead</td></tr><tr><td>Straightlining</td><td>90% identical scale responses</td><td>Inspect grid and open ends</td><td>Analyst</td></tr><tr><td>Open-end coherence</td><td>Blank, copied, or nonsensical</td><td>Manual review; document reason</td><td>QA reviewer</td></tr></tbody></table></div>
+    </section>
+
+    <section id="management" class="panel" aria-labelledby="management-title">
+      <div class="section-heading"><div><p class="kicker">Engagement management</p><h2 id="management-title">Concurrent workstreams, dependencies, risks, and cost</h2></div><p>The operating plan makes ownership visible before a delay becomes a surprise.</p></div>
+      <div class="workstream-board" id="workstreamBoard"></div>
+      <div class="two-col wide-left">
+        <article class="card"><h3>Milestones and dependencies</h3><div class="gantt" id="gantt"></div></article>
+        <article class="card"><h3>Risk register</h3><div id="riskList" class="risk-list"></div></article>
+      </div>
+      <article class="card"><div class="card-header"><div><p class="card-label">Commercial control</p><h3>Simulated budget and vendor tracker</h3></div><strong id="budgetStatus" class="status-chip">$1,800 under plan</strong></div><div class="table-wrap"><table id="budgetTable"><thead><tr><th>Line item</th><th>Owner/vendor</th><th>Budget</th><th>Forecast</th><th>Variance</th><th>Status</th></tr></thead><tbody></tbody><tfoot><tr><th colspan="2">Total</th><th id="budgetTotal"></th><th id="forecastTotal"></th><th id="varianceTotal"></th><th>On track</th></tr></tfoot></table></div><p class="method-note">This is a fictional planning exercise, not evidence of real commercial budget ownership.</p></article>
+    </section>
+
+    <section id="open-text" class="panel" aria-labelledby="text-title">
+      <div class="section-heading"><div><p class="kicker">AI with human control</p><h2 id="text-title">Open-text synthesis and validation</h2></div><p>AI accelerates pattern discovery; the documented manual codebook remains the reference standard.</p></div>
+      <div class="metrics-grid compact"><article class="metric"><span>Feedback records</span><strong>240</strong><small>Four waves</small></article><article class="metric"><span>Validation sample</span><strong>100</strong><small>Stratified by wave</small></article><article class="metric"><span>Exact agreement</span><strong>86%</strong><small>Manual vs AI primary theme</small></article><article class="metric"><span>Escalated records</span><strong>14</strong><small>Reviewed, not auto-resolved</small></article></div>
+      <div class="two-col">
+        <article class="card"><h3>Theme codebook</h3><div class="theme-list"><button class="theme active" data-theme="setup">Setup friction <span>31%</span></button><button class="theme" data-theme="value">Value uncertainty <span>24%</span></button><button class="theme" data-theme="trust">Data trust <span>19%</span></button><button class="theme" data-theme="support">Support experience <span>15%</span></button><button class="theme" data-theme="design">Product design <span>11%</span></button></div><div id="themeDetail" class="theme-detail"></div></article>
+        <article class="card"><h3>Validation matrix</h3><div class="matrix" aria-label="Manual versus AI classification matrix"><div></div><b>AI match</b><b>AI mismatch</b><b>Manual clear</b><strong>82</strong><strong>8</strong><b>Manual ambiguous</b><strong>4</strong><strong>6</strong></div><h4>Escalation rule</h4><p>Review every mismatch, multi-theme comment, low-confidence output, and theme that would materially change a recommendation. Preserve the source verbatim and decision note.</p></article>
+      </div>
+      <article class="card"><h3>Record-level review</h3><div id="verbatimReview" class="verbatim-review"></div></article>
+    </section>
+
+    <section id="views" class="panel" aria-labelledby="views-title">
+      <div class="section-heading"><div><p class="kicker">Audience-centered delivery</p><h2 id="views-title">One evidence base, three decision views</h2></div><p>Switch perspectives to see how detail, emphasis, and recommended action change without changing the underlying facts.</p></div>
+      <div class="view-switcher" role="tablist"><button class="view-button active" data-view="executive">Executive</button><button class="view-button" data-view="client">Client team</button><button class="view-button" data-view="analyst">Analyst</button></div>
+      <div id="viewContent" class="audience-view"></div>
+    </section>
+
+    <section id="presentation" class="panel" aria-labelledby="presentation-title">
+      <div class="section-heading"><div><p class="kicker">Final delivery</p><h2 id="presentation-title">Executive-ready presentation</h2></div><p>A six-slide storyline moves from the business question to evidence, implications, and action.</p></div>
+      <div class="deck-shell">
+        <div class="deck-progress"><span id="slideCounter">1 / 6</span><div><button id="prevSlide" aria-label="Previous slide">←</button><button id="nextSlide" aria-label="Next slide">→</button></div></div>
+        <article id="slide" class="slide" aria-live="polite"></article>
+      </div>
+      <div class="deliverables-row"><button class="linklike" onclick="window.print()">Print / save presentation</button><a href="downloads/executive_storyboard.html" target="_blank">Open storyboard</a><a href="downloads/synthetic_brand_tracker.csv" download>Download supporting data</a></div>
+    </section>
+
+    <section id="approach" class="panel" aria-labelledby="approach-title">
+      <div class="section-heading"><div><p class="kicker">My recommended approach</p><h2 id="approach-title">Manage the decision, not only the study.</h2></div><p>I would make the business decision, research choices, quality controls, and communication cadence explicit from the beginning.</p></div>
+      <div class="approach-steps">
+        <article><span>01</span><h3>Kickoff around the decision</h3><p>Define the business decision, stakeholders, success criteria, non-negotiable tracker measures, and open questions. Convert them into a decision-to-questionnaire crosswalk.</p></article>
+        <article><span>02</span><h3>Lock the operating plan</h3><p>Assign owners, milestones, dependencies, quality thresholds, escalation paths, vendor expectations, budget checkpoints, and client update cadence before fielding.</p></article>
+        <article><span>03</span><h3>Protect trend integrity</h3><p>Hold the core instrument, sample frame, quota logic, and weighting approach stable. Document every change and test whether it could explain movement.</p></article>
+        <article><span>04</span><h3>Interrogate the signal</h3><p>Move from headline to segment, competitor, funnel stage, and open text. Test significance and sensitivity, then separate observed evidence from interpretation.</p></article>
+        <article><span>05</span><h3>Build the story with the client</h3><p>Use working sessions to pressure-test implications. Tailor analyst, client, and executive views while keeping one auditable evidence base.</p></article>
+        <article><span>06</span><h3>Close with action and learning</h3><p>Document decisions, owners, dates, and follow-up measures. Carry the learning agenda into the next wave and conduct a brief after-action review.</p></article>
+      </div>
+      <article class="card final-note"><h3>What I would bring</h3><p>Disciplined instrument design, hands-on quantitative analysis, transparent QA, careful AI validation, concise writing, and the habit of turning ambiguous evidence into a decision-ready narrative. The lab is applied preparation—not a substitute for commercial tracking leadership.</p></article>
+    </section>
+  </main>
+
+  <footer><span>Michael Farzinpour · Independent portfolio simulation · October 2026</span><span>No affiliation with NIQ or any real brand</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
