@@ -1,0 +1,18 @@
+field,definition,source,rule
+school_id,NCES school identifier,CRDC COMBOKEY / CCD NCESSCH,"String, zero-padded to 12 digits"
+lea_state,State or jurisdiction abbreviation,CRDC LEA_STATE,As reported
+lea_name,Local education agency name,CRDC LEA_NAME,As reported
+school_name,School name,CRDC SCH_NAME,As reported
+grade_12_offered,School offers grade 12,CCD G_12_OFFERED,Analysis universe requires Yes
+ap_access,School offers at least one AP course,CRDC SCH_APCOURSES,1 if positive; 0 for -9 not applicable/skipped; other special codes missing
+ap_courses,Number of AP courses offered,CRDC SCH_APCOURSES,Negative reserve codes converted to missing
+total_enrollment,Total reported enrollment,CRDC TOT_ENR_M/F/X,Sum of nonnegative reported components
+ap_participants,Students enrolled in one or more AP courses,CRDC TOT_APENR_M/F/X,Sum of nonnegative reported components
+ap_participation_rate,AP participants divided by total enrollment,Derived,Descriptive; not a causal effect
+pct_hi,Hispanic or Latino enrollment share,CRDC SCH_ENR_HI_*,Reported count divided by total enrollment
+pct_bl,Black or African American enrollment share,CRDC SCH_ENR_BL_*,Reported count divided by total enrollment
+pct_as,Asian enrollment share,CRDC SCH_ENR_AS_*,Reported count divided by total enrollment
+pct_el,English learner enrollment share,CRDC TOT_ELENR_*,Reported count divided by total enrollment
+pct_idea,IDEA enrollment share,CRDC TOT_IDEAENR_*,Reported count divided by total enrollment
+charter,Charter school indicator,CCD CHARTER_TEXT,"1 = Yes, 0 otherwise"
+virtual,Virtual school indicator,CRDC SCH_VIRT_IND,"1 = Yes, 0 otherwise"

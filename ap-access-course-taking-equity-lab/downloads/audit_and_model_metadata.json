@@ -1,0 +1,31 @@
+{
+  "crdc_ap_rows": 97094,
+  "crdc_unique_school_ids": 97094,
+  "enrollment_matched": 97094,
+  "characteristics_matched": 97094,
+  "ccd_matched": 94382,
+  "ccd_unmatched": 2712,
+  "ccd_match_rate": 0.972068304941603,
+  "grade_12_school_rows": 24872,
+  "states_and_jurisdictions": 52,
+  "ap_access_known": 24871,
+  "ap_access_missing": 1,
+  "enrollment_known": 24856,
+  "ap_participant_count_known": 13345,
+  "model_n": 17989,
+  "bootstrap_reps_completed": 150,
+  "outcome": "School offers at least one AP course",
+  "model": "School-level logistic regression with state-cluster bootstrap confidence intervals",
+  "interpretation": "Associational, not causal",
+  "national": {
+    "schools": 24872,
+    "schools_with_known_access": 24871,
+    "schools_with_ap": 13345,
+    "ap_access_rate": 0.5365686944634313,
+    "access_ci_low": 0.5303660477142761,
+    "access_ci_high": 0.5427600460816336,
+    "total_enrollment": 16684087,
+    "ap_participants": 3016886,
+    "ap_participation_rate": 0.1808241589725587
+  }
+}

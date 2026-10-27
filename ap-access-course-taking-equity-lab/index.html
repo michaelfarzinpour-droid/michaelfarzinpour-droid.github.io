@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An independent, reproducible analysis of AP course access using 2023–24 CRDC and NCES CCD public data." />
+  <title>AP Access & Course-Taking Equity Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to analysis</a>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="AP Access Lab home">
+      <span class="brand-mark">A</span><span>AP Access Lab</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#explorer">Explorer</a><a href="#equity">Equity</a><a href="#methods">Methods</a><a href="#downloads">Downloads</a>
+    </nav>
+    <a class="button small" href="downloads/ap_access_equity_research_memo.pdf">Research memo ↓</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="overview">
+      <div class="eyebrow">REAL PUBLIC DATA · 2023–24</div>
+      <h1>Who has a school-level pathway into <em>Advanced Placement?</em></h1>
+      <p class="lede">A district-facing research lab linking federal civil-rights data with the NCES school directory to examine AP course access, participation, and equity—with uncertainty and limitations kept visible.</p>
+      <div class="hero-actions">
+        <a class="button" href="#explorer">Explore districts</a>
+        <a class="text-link" href="#methods">Audit the pipeline <span>→</span></a>
+      </div>
+      <div class="disclosure"><strong>Independent portfolio project.</strong> Not affiliated with or endorsed by the College Board, the U.S. Department of Education, or NCES. “AP” is used descriptively.</div>
+      <div class="hero-grid">
+        <article class="kpi"><span>Grade-12 schools</span><strong id="kpiSchools">—</strong><small>primary analytic universe</small></article>
+        <article class="kpi accent"><span>Offer ≥1 AP course</span><strong id="kpiAccess">—</strong><small id="kpiCI">—</small></article>
+        <article class="kpi"><span>Reported AP participants</span><strong id="kpiParticipants">—</strong><small id="kpiParticipation">—</small></article>
+        <article class="kpi"><span>CRDC → CCD match</span><strong id="kpiMatch">—</strong><small id="kpiUnmatched">—</small></article>
+      </div>
+    </section>
+
+    <section class="insight-band" aria-label="Key interpretation">
+      <div><span class="index">01</span><h2>Start with access.</h2></div>
+      <p>A national percentage is a screening signal, not a verdict. School size, staffing, state policy, local course structures, and alternative advanced pathways all shape what the number can mean.</p>
+      <div class="mini-chart" id="nationalGauge" role="img" aria-label="National AP access gauge"></div>
+    </section>
+
+    <section class="section explorer" id="explorer">
+      <div class="section-head">
+        <div><span class="index">02</span><p class="kicker">District explorer</p><h2>Move from national signal to local question.</h2></div>
+        <p>Select a state, then a district. Confidence intervals expand when few schools are observed—an important warning against over-reading small-n estimates.</p>
+      </div>
+      <div class="controls">
+        <label>State or jurisdiction<select id="stateSelect"></select></label>
+        <label>District<select id="districtSelect"></select></label>
+      </div>
+      <div class="explorer-grid">
+        <article class="panel focus">
+          <div class="panel-label">Selected geography</div>
+          <h3 id="selectedName">United States</h3>
+          <div class="big-number" id="selectedRate">—</div>
+          <p id="selectedCI">—</p>
+          <div class="interval" aria-label="Confidence interval"><span id="intervalBar"></span><i id="intervalPoint"></i></div>
+          <dl class="stats-row">
+            <div><dt>Schools</dt><dd id="selectedSchools">—</dd></div>
+            <div><dt>Offer AP</dt><dd id="selectedAPSchools">—</dd></div>
+            <div><dt>Participation</dt><dd id="selectedParticipation">—</dd></div>
+            <div><dt>CCD match</dt><dd id="selectedMatch">—</dd></div>
+          </dl>
+        </article>
+        <article class="panel">
+          <div class="panel-label">State comparison</div>
+          <h3>Access across states</h3>
+          <div id="stateBars" class="bars" aria-label="AP access by state"></div>
+        </article>
+      </div>
+      <div class="note">District rows aggregate schools whose CRDC LEA name and identifier align in the linked files. Confirm local identifiers and source records before using an estimate for decisions.</div>
+    </section>
+
+    <section class="section dark" id="equity">
+      <div class="section-head light">
+        <div><span class="index">03</span><p class="kicker">Equity lens</p><h2>Participation share versus enrollment share.</h2></div>
+        <p>The gap below is descriptive: a group’s share of reported AP participants minus its share of total enrollment. It surfaces questions; it does not identify causes.</p>
+      </div>
+      <div class="equity-layout">
+        <div id="equityChart" class="diverging" aria-label="Representation gaps by race and ethnicity"></div>
+        <aside class="interpretation">
+          <span class="panel-label">How to read it</span>
+          <p><b>Left of zero</b> means the group makes up a smaller share of reported AP participants than of enrollment.</p>
+          <p><b>Right of zero</b> means the group makes up a larger share.</p>
+          <hr />
+          <p class="small">Reported sex-component counts are summed only when nonnegative. Unavailable or suppressed components can understate totals.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="model">
+      <div class="section-head">
+        <div><span class="index">04</span><p class="kicker">Model & robustness</p><h2>Associations, not causal effects.</h2></div>
+        <p>A school-level logistic regression uses state-cluster bootstrap intervals. Continuous predictors are standardized, so each odds ratio reflects a one-standard-deviation difference.</p>
+      </div>
+      <div class="model-grid">
+        <article class="panel"><div class="panel-label">Odds ratios · 95% interval</div><div id="forestPlot" class="forest"></div></article>
+        <article class="panel"><div class="panel-label">Sensitivity analysis</div><div class="table-wrap"><table><thead><tr><th>Universe / outcome</th><th>Schools</th><th>Access</th><th>95% CI</th></tr></thead><tbody id="sensitivityRows"></tbody></table></div></article>
+      </div>
+    </section>
+
+    <section class="section pipeline" id="methods">
+      <div class="section-head">
+        <div><span class="index">05</span><p class="kicker">Transparent pipeline</p><h2>Every exclusion and join stays visible.</h2></div>
+        <p>COMBOKEY and NCESSCH are standardized as 12-character identifiers. CRDC files join one-to-one; the CRDC-to-CCD join is left-sided so unmatched records remain auditable.</p>
+      </div>
+      <div class="flow" id="flow"></div>
+      <div class="methods-grid">
+        <article><h3>Universe</h3><p>Schools matched to CCD and marked as offering grade 12. The primary outcome is at least one reported AP course.</p></article>
+        <article><h3>Special values</h3><p>Negative CRDC reserve codes are not counts. Within the grade-12 universe, −9 is treated as no AP offering; exceptional codes remain missing.</p></article>
+        <article><h3>Uncertainty</h3><p>Access rates include Wilson 95% confidence intervals. Model uncertainty comes from 150 bootstrap replications clustered by state.</p></article>
+        <article><h3>Guardrail</h3><p>The dashboard is a screening and inquiry tool—not a school ranking or a causal evaluation of AP.</p></article>
+      </div>
+    </section>
+
+    <section class="section approach">
+      <div class="section-head">
+        <div><span class="index">06</span><p class="kicker">My recommended approach</p><h2>Validate. Diagnose. Co-design. Monitor.</h2></div>
+        <p>The analysis is most useful when it initiates a disciplined conversation with district partners rather than substituting for one.</p>
+      </div>
+      <ol class="steps">
+        <li><span>1</span><div><h3>Validate the signal</h3><p>Confirm IDs, definitions, suppression rules, confidence intervals, course catalogs, and local records.</p></div></li>
+        <li><span>2</span><div><h3>Diagnose the opportunity</h3><p>Examine subjects, seats, staffing, prerequisites, scheduling, counseling, demand, and alternative pathways.</p></div></li>
+        <li><span>3</span><div><h3>Co-design a response</h3><p>Define the decision, feasible intervention, owner, timeline, and equity guardrails with stakeholders.</p></div></li>
+        <li><span>4</span><div><h3>Monitor and learn</h3><p>Predefine leading measures, review dates, and stop / adjust / scale rules before implementation.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section downloads" id="downloads">
+      <div class="section-head">
+        <div><span class="index">07</span><p class="kicker">Reproducibility package</p><h2>Inspect the evidence, not just the interface.</h2></div>
+        <p>The package includes the cleaned analytic file, summaries, model tables, a memo, the data dictionary, and the Python pipeline.</p>
+      </div>
+      <div class="download-grid">
+        <a href="downloads/ap_access_equity_research_memo.pdf"><b>Research memo</b><span>PDF · findings, methods, recommendations</span><i>↓</i></a>
+        <a href="downloads/ap_access_school_level.csv"><b>School-level analytic file</b><span>CSV · cleaned linked data</span><i>↓</i></a>
+        <a href="downloads/ap_access_district_summary.csv"><b>District summary</b><span>CSV · access, participation, confidence intervals</span><i>↓</i></a>
+        <a href="downloads/data_dictionary.csv"><b>Data dictionary</b><span>CSV · sources and transformation rules</span><i>↓</i></a>
+        <a href="downloads/model_results.csv"><b>Model & sensitivity results</b><span>CSV · odds ratios and uncertainty</span><i>↓</i></a>
+        <a href="downloads/analysis.py"><b>Reproducible analysis</b><span>Python · complete transformation pipeline</span><i>↓</i></a>
+        <a href="downloads/pipeline_documentation.md"><b>Pipeline documentation</b><span>Markdown · joins, codes, missingness</span><i>↓</i></a>
+        <a href="downloads/ap_access_state_summary.csv"><b>State summary</b><span>CSV · state-level estimates</span><i>↓</i></a>
+      </div>
+    </section>
+
+    <section class="sources">
+      <p><b>Official sources:</b> 2023–24 U.S. Department of Education Civil Rights Data Collection (Advanced Placement, Enrollment, School Characteristics); 2023–24 NCES Common Core of Data Public School Directory.</p>
+      <p>Prepared as an independent portfolio demonstration by Michael Farzinpour, PhD · October 2026.</p>
+    </section>
+  </main>
+  <script src="dashboard_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
