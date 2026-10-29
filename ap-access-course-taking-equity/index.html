@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AP access and course-taking equity research project using 2023-24 CRDC and NCES public school data, with a clearly labeled synthetic dashboard implementation sample.">
+  <title>AP Access and Course-Taking Equity | Michael Farzinpour</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="identity" href="../">Michael Farzinpour <span>Education data and research</span></a>
+      <nav aria-label="Project navigation">
+        <a href="#findings">Findings</a>
+        <a href="#explorer">Dashboard</a>
+        <a href="#methods">Methods</a>
+        <a href="#downloads">Downloads</a>
+        <a href="../">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div>
+        <p class="eyebrow">Independent real-data education research project · October 2026</p>
+        <h1>Who gets access to advanced coursework?</h1>
+        <p class="lede">This project links 2023–24 Civil Rights Data Collection and NCES Common Core of Data school files to examine whether schools serving grade 12 report offering at least one Advanced Placement course.</p>
+        <div class="actions">
+          <a class="button primary" href="#findings">Review the evidence</a>
+          <a class="button secondary" href="#explorer">Explore the implementation demo</a>
+        </div>
+      </div>
+      <aside class="boundary" aria-label="Data boundary">
+        <p class="boundary-label">Data boundary</p>
+        <h2>Real findings, clearly separated from the prototype.</h2>
+        <p>The headline findings and linkage counts come from public CRDC and NCES files. The filterable dashboard below uses a <strong>synthetic 240-school implementation sample</strong> to demonstrate model structure, measures, filters, and QA without presenting generated rows as real schools.</p>
+      </aside>
+    </section>
+
+    <section class="paper" id="findings">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Real public-data analysis</p>
+            <h2>National linkage and access findings</h2>
+          </div>
+          <p class="section-note">Descriptive, school-level evidence—not student transcripts or causal estimates.</p>
+        </div>
+        <div class="kpi-grid real-kpis">
+          <article><span>Source records standardized</span><strong>97,094</strong><small>CRDC and NCES school records</small></article>
+          <article><span>Matched to NCES</span><strong>94,382</strong><small>97.2% linkage rate</small></article>
+          <article><span>Grade-12 schools analyzed</span><strong>24,872</strong><small>After documented scope rules</small></article>
+          <article><span>Reported AP access</span><strong>53.7%</strong><small>At least one AP course</small></article>
+        </div>
+        <div class="finding-grid">
+          <article class="range-card">
+            <p class="card-label">State-level range</p>
+            <h3>21.4% to 86.3%</h3>
+            <div class="range-track" aria-label="State-level AP access ranged from 21.4 percent to 86.3 percent">
+              <span class="range-fill"></span>
+              <span class="range-min">21.4%</span>
+              <span class="range-max">86.3%</span>
+            </div>
+            <p>The variation is a prompt for deeper district and policy research. It does not, by itself, identify why access differs.</p>
+          </article>
+          <article class="interpretation">
+            <p class="card-label">What the analysis supports</p>
+            <h3>Access is uneven enough to warrant targeted follow-up.</h3>
+            <p>Regression and state-cluster bootstrap confidence intervals were used to examine demographic and school-level differences while respecting the clustered structure of the aggregate school data.</p>
+            <p class="caution"><strong>Interpretation limit:</strong> observed associations do not establish that school characteristics caused AP availability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard shell" id="explorer">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Interactive implementation demonstration</p>
+          <h2>Filter a synthetic school model</h2>
+        </div>
+        <span class="synthetic-badge">Synthetic data · 240 fictional schools</span>
+      </div>
+      <p class="dashboard-intro">Use the controls to inspect how a district-facing dashboard could respond to stakeholder questions. Every school, district, state name, and value in this module is generated for demonstration.</p>
+
+      <div class="filter-panel" aria-label="Dashboard filters">
+        <label>State
+          <select id="state-filter"><option value="All">All states</option></select>
+        </label>
+        <label>District
+          <select id="district-filter"><option value="All">All districts</option></select>
+        </label>
+        <label>Locale
+          <select id="locale-filter"><option value="All">All locales</option></select>
+        </label>
+        <label>Underrepresented enrollment
+          <select id="urm-filter"><option value="All">All bands</option></select>
+        </label>
+        <button id="reset-filters" type="button">Reset filters</button>
+      </div>
+
+      <p id="filter-summary" class="filter-summary" aria-live="polite"></p>
+      <div class="kpi-grid demo-kpis">
+        <article><span>Schools</span><strong id="kpi-schools">240</strong><small>Visible synthetic records</small></article>
+        <article><span>AP-offering schools</span><strong id="kpi-offering">129</strong><small>Model measure</small></article>
+        <article><span>AP access rate</span><strong id="kpi-access">53.8%</strong><small>Offering schools ÷ schools</small></article>
+        <article><span>NCES match rate</span><strong id="kpi-match">97.1%</strong><small>Prototype QA measure</small></article>
+      </div>
+
+      <div class="chart-grid">
+        <article class="chart-card">
+          <div class="chart-title"><h3>AP access by state</h3><span>synthetic model</span></div>
+          <div id="state-bars" class="bars"></div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-title"><h3>AP and grade-12 enrollment</h3><span>by underrepresented-enrollment band</span></div>
+          <div id="band-bars" class="bars grouped"></div>
+          <div class="legend"><span><i class="ap-dot"></i>AP enrollment</span><span><i class="grade-dot"></i>Grade-12 enrollment</span></div>
+        </article>
+      </div>
+
+      <div class="table-card">
+        <div class="chart-title"><h3>School-level exception view</h3><span>first 12 visible records</span></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>School</th><th>District</th><th>Locale</th><th>AP courses</th><th>AP enrollment</th><th>QA status</th></tr></thead>
+            <tbody id="school-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper" id="methods">
+      <div class="shell">
+        <div class="section-head"><div><p class="eyebrow">Reproducible workflow</p><h2>Methods, validation, and limitations</h2></div></div>
+        <div class="method-grid">
+          <article><span>01</span><h3>Scope and keys</h3><p>Standardize school and district identifiers, retain a documented grade-12 school universe, and preserve source fields needed for audit.</p></article>
+          <article><span>02</span><h3>Link and diagnose</h3><p>Join CRDC and NCES records, report the 97.2% match rate, and retain a 2,712-record unmatched file rather than silently discarding non-matches.</p></article>
+          <article><span>03</span><h3>Apply QA rules</h3><p>Document duplicates, exclusions, suppressed values, missingness, logical inconsistencies, and source lineage in a validation log and data dictionary.</p></article>
+          <article><span>04</span><h3>Analyze and communicate</h3><p>Estimate descriptive gaps, regression associations, and cluster-bootstrap intervals; pair findings with plain-language limits and follow-up questions.</p></article>
+        </div>
+        <div class="limits">
+          <h3>Important limitations</h3>
+          <ul>
+            <li>The real-data analysis is school-level and aggregate; it does not contain student transcripts, course sequences, or longitudinal outcomes.</li>
+            <li>“Access” means the school reported at least one AP course. It does not measure seat availability, course quality, student eligibility, enrollment, completion, or exam performance.</li>
+            <li>Suppressed and missing values require documented treatment; unmatched records may differ systematically from matched records.</li>
+            <li>Differences across states, locales, and demographic composition are descriptive or associational—not causal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads shell" id="downloads">
+      <div>
+        <p class="eyebrow">Implementation materials</p>
+        <h2>Inspect the Power BI-ready prototype</h2>
+        <p>The downloadable implementation package includes the synthetic model, DAX measures, Power Query logic, refresh and QA documentation, and a dashboard preview. It is a build specification, not a compiled PBIX file.</p>
+      </div>
+      <div class="download-grid">
+        <a href="files/AP_Access_PowerBI_Implementation_Package.zip" download><strong>Implementation package</strong><span>ZIP · model, measures, query, QA notes</span></a>
+        <a href="files/AP_Access_PowerBI_Ready_Model.xlsx" download><strong>Power BI-ready model</strong><span>XLSX · synthetic implementation sample</span></a>
+        <a href="files/AP_Access_PowerBI_Dashboard_Preview.png"><strong>Dashboard preview</strong><span>PNG · view the prototype layout</span></a>
+        <a href="files/SchoolData.csv" download><strong>Synthetic school table</strong><span>CSV · 240 fictional school rows</span></a>
+      </div>
+      <p class="source-note">Public source families used for the real-data analysis: <a href="https://civilrightsdata.ed.gov/data">U.S. Department of Education Civil Rights Data Collection</a> and <a href="https://nces.ed.gov/ccd/">NCES Common Core of Data</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell"><div><strong>Michael Farzinpour, PhD</strong><span>Education research · data quality · accessible reporting</span></div><a href="../">Return to the main portfolio</a></div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
