@@ -299,7 +299,7 @@ $('proposalCsv').onclick=()=>{const d=proposalCalc();const rows=['deliverable,qu
 $('proposalReset').onclick=()=>{scope=scopeDefs.map(d=>({...d}));$('proposalClient').value='Regional Postsecondary Learning Partnership';$('proposalLength').value='6';$('rateLead').value='110';$('rateWriter').value='85';$('rateDesign').value='95';$('proposalBuffer').value='15';renderProposal()};
 const oldFullPacket=fullPacket;
 fullPacket=function(){return oldFullPacket()+'\n\nCOMPLETE STRATEGIC COMMUNICATIONS BRIEF\n'+briefText()+'\n\nSTAKEHOLDER FEEDBACK MEMO\n'+stakeholderMemoText()+'\n\nILLUSTRATIVE DRAFT PROPOSAL\n'+proposalText()};
-$('deliverables').onclick=null;
+
 renderBrief();renderStakeholders();renderProposal();
 renderClaims();renderAudience();renderCampaign();renderWorkflow();renderDecision();renderAnalytics();updateProgress();
 </script>
