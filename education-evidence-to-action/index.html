@@ -7,12 +7,28 @@
 <style>
 :root{--navy:#14243b;--ink:#22324a;--muted:#627087;--blue:#2363a6;--pale:#eff5fb;--teal:#10796d;--bg:#f5f7fb;--line:#dfe6ef;--white:#fff;--gold:#b37423;--red:#a64040;--r:13px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,select,input{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #e3ad47;outline-offset:3px}a{color:#175c9a}header{background:var(--navy);color:#fff;padding:26px max(22px,calc((100vw - 1250px)/2)) 22px}header .strap{color:#a9c6df;text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:800}header h1{font-size:clamp(25px,3vw,38px);line-height:1.12;margin:8px 0 9px;max-width:800px}header p{color:#d8e2ee;max-width:890px;margin:0 0 16px}.head-meta{display:flex;gap:8px;flex-wrap:wrap}.head-meta span{border:1px solid #4a6079;padding:4px 10px;border-radius:100px;font-size:12px;color:#dbe9f6}.shell{max-width:1250px;margin:auto;display:grid;grid-template-columns:226px minmax(0,1fr);gap:22px;padding:22px}.sidebar{align-self:start;position:sticky;top:18px;background:white;border:1px solid var(--line);border-radius:var(--r);padding:14px}.sidebar .nav-title{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:800;padding:8px}.nav{display:flex;flex-direction:column;gap:3px}.nav button{width:100%;text-align:left;border:0;background:transparent;padding:10px;border-radius:8px;color:#40536b}.nav button[aria-current="page"]{background:#e8f2fc;color:#154c7f;font-weight:750}.nav button:hover{background:#edf3f8}.status{padding:13px;margin-top:16px;background:#f2f7f8;border-radius:9px;font-size:12px}.status strong{display:block;color:#235a57;margin-bottom:4px}.content{min-width:0}.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-bottom:18px;box-shadow:0 2px 8px #20364a05}.panel h2{font-size:24px;line-height:1.2;margin:0 0 8px;color:var(--navy)}.panel h3{font-size:17px;margin:22px 0 9px}.subtle{color:var(--muted)}.tiny{font-size:12px;color:var(--muted)}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--blue);margin-bottom:9px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.tile{background:#f8fafc;border:1px solid var(--line);padding:17px;border-radius:10px}.tile h3{margin:4px 0 7px}.tile .big{font-size:29px;line-height:1.15;font-weight:800;color:var(--navy)}.alert{background:#fff8e9;border-left:4px solid var(--gold);padding:13px 16px;border-radius:6px;margin:16px 0;color:#654a22}.good{background:#eaf7f1;border-left:4px solid #23866c;padding:13px 16px;border-radius:6px}.danger{background:#fff0ee;border-left:4px solid #bb5651;padding:13px 16px;border-radius:6px}.btn{border:1px solid #b7cbde;color:#185184;background:#fff;border-radius:8px;padding:9px 14px;font-weight:700}.btn:hover{background:#eff5fb}.btn.primary{background:var(--blue);color:white;border-color:var(--blue)}.btn.primary:hover{background:#194d85}.btn:disabled{opacity:.48;cursor:not-allowed}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.field{display:block;font-weight:700;font-size:13px;margin:12px 0 6px}.select{width:100%;padding:10px 12px;border:1px solid #becbd9;border-radius:8px;background:white;color:var(--ink)}.prose{max-width:860px}.progress{height:8px;background:#e6edf4;border-radius:9px;overflow:hidden}.progress div{height:100%;background:#2d8277;transition:width .3s}.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.doc{border:1px solid var(--line);background:#fff;padding:23px;border-radius:8px}.doc .doc-meta{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;font-weight:800}.doc h3{font-size:22px;line-height:1.2;margin:10px 0}.doc ul{padding-left:20px}.choice{display:block;width:100%;text-align:left;background:#fff;border:1px solid #ccd9e5;border-radius:9px;padding:12px 14px;margin:8px 0;color:var(--ink)}.choice:hover{border-color:var(--blue);background:#f3f8ff}.choice.selected{border-color:var(--blue);background:#eaf4ff}.choice.correct{border-color:#41917c;background:#eefaf5}.score{font-weight:800;color:var(--teal)}.steps{display:flex;gap:8px;flex-wrap:wrap}.step{font-size:12px;border-radius:6px;background:#f0f3f7;padding:5px 9px}.step.done{background:#e3f4ed;color:#206650}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}.metric{background:#f6f9fc;border:1px solid var(--line);border-radius:10px;padding:15px}.metric strong{font-size:24px;display:block;color:var(--navy)}.metric span{font-size:12px;color:var(--muted)}.chart{display:flex;align-items:end;gap:12px;height:195px;border-bottom:1px solid #bac8d4;padding:14px 9px 0;margin-top:8px}.barwrap{flex:1;min-width:0;display:flex;align-items:center;flex-direction:column;justify-content:flex-end;height:100%;gap:5px}.bar{width:100%;max-width:90px;background:#4b86c0;border-radius:5px 5px 0 0;min-height:4px}.bar.teal{background:#42a190}.chart-label{text-align:center;font-size:11px;line-height:1.1;color:var(--muted);min-height:27px}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f5f8fc;color:#40536b}.pill{display:inline-block;border:1px solid #b9d6d1;background:#effaf7;color:#24685d;padding:3px 8px;border-radius:100px;font-size:11px;font-weight:700}.pill.warning{border-color:#e9d2a4;background:#fff9ec;color:#855c18}.checkline{display:flex;gap:9px;align-items:flex-start;margin:10px 0}.checkline input{margin-top:5px;accent-color:#266c9f}.timeline{display:grid;gap:10px}.timeline article{padding:13px;border-left:3px solid #4c88be;background:#f8fafc}.timeline strong{display:block}.footer{padding:14px 28px 30px;color:var(--muted);font-size:12px;max-width:1250px;margin:auto}.hidden{display:none!important}pre{white-space:pre-wrap}.divider{border:0;border-top:1px solid var(--line);margin:20px 0}@media(max-width:900px){.shell{display:block;padding:12px}.sidebar{position:static;margin-bottom:14px}.nav{flex-direction:row;overflow-x:auto}.nav button{min-width:130px;text-align:center}.grid,.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:550px){.panel{padding:17px}.grid,.grid.two,.compare,.metrics{grid-template-columns:1fr}.shell{padding:9px}.doc{padding:15px}header{padding:22px 18px}.chart{gap:5px}.chart-label{font-size:10px}}@media print{header,.sidebar,.actions,.footer,.no-print{display:none!important}.shell{display:block;padding:0}.panel{border:0;box-shadow:none;padding:0}.hidden{display:block!important}body{background:white;color:black}}
+
+.addon-lead{background:linear-gradient(120deg,#eef5fc,#f5fbfa);border:1px solid #cbdde9;padding:17px;border-radius:12px;margin:12px 0 19px}
+.addon-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+.addon-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.addon-input{width:100%;border:1px solid #c8d4e0;padding:10px;border-radius:8px;background:white;color:#22324a;min-width:0}
+.addon-label{display:block;font-weight:650;margin:9px 0 4px}
+.addon-sheet{background:white;border:1px solid #cbd6e3;box-shadow:0 5px 22px #14243b0b;padding:27px;border-radius:7px;margin:16px auto;max-width:780px}
+.addon-sheet h3{color:#183a62;border-bottom:2px solid #d5e6f2;padding-bottom:9px}
+.addon-sheet h4{color:#24527b;margin-bottom:5px}
+.addon-sheet p{margin:6px 0 12px}
+.addon-sheet ul{margin-top:6px}
+.addon-small{color:#63748b;font-size:12px}
+.addon-answer{background:#f0f7fa;border-left:4px solid #267a91;padding:13px;margin-top:12px}
+.addon-controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.addon-result{font-weight:700;color:#10796d}
+@media(max-width:700px){.addon-row,.addon-three{grid-template-columns:1fr}.addon-sheet{padding:15px}}
 </style>
 </head>
 <body>
 <header><div class="strap">Independent portfolio work sample · 2026</div><h1>Education Evidence to Action</h1><p>An interactive strategic communications and research dissemination lab for education systems and policy. Move from research findings to audience-centered messages, coordinated workflows, and measurable outreach.</p><div class="head-meta"><span>Fictional scenario</span><span>Synthetic metrics</span><span>Research integrity first</span><span>Not affiliated with AIR or any education institution</span></div></header>
 <div class="shell">
-<aside class="sidebar" aria-label="Simulation navigation"><div class="nav-title">Explore the lab</div><nav class="nav" id="nav"><button data-view="overview" aria-current="page">01 · Overview</button><button data-view="evidence">02 · Evidence desk</button><button data-view="audiences">03 · Audience studio</button><button data-view="campaign">04 · Campaign planner</button><button data-view="workflow">05 · Editorial workflow</button><button data-view="decisions">06 · Decision lab</button><button data-view="analytics">07 · Performance</button><button data-view="deliverables">08 · Deliverables</button><button data-view="methods">09 · Methods & limits</button></nav><div class="status"><strong>Portfolio demonstration</strong>All organizations, people, study findings, campaign outcomes, and KPI values in this lab are fictional or simulated. No real-world impact is claimed.<div class="progress" style="margin-top:10px"><div id="progressBar" style="width:0%"></div></div><div id="progressText" style="margin-top:6px">0 of 5 planning steps completed</div></div></aside>
+<aside class="sidebar" aria-label="Simulation navigation"><div class="nav-title">Explore the lab</div><nav class="nav" id="nav"><button data-view="overview" aria-current="page">01 · Overview</button><button data-view="evidence">02 · Evidence desk</button><button data-view="audiences">03 · Audience studio</button><button data-view="campaign">04 · Campaign planner</button><button data-view="workflow">05 · Editorial workflow</button><button data-view="decisions">06 · Decision lab</button><button data-view="analytics">07 · Performance</button><button data-view="deliverables">08 · Deliverables</button><button data-view="brief">09 · Complete brief</button><button data-view="stakeholders">10 · Stakeholder feedback</button><button data-view="proposal">11 · Proposal studio</button><button data-view="methods">12 · Methods & limits</button></nav><div class="status"><strong>Portfolio demonstration</strong>All organizations, people, study findings, campaign outcomes, and KPI values in this lab are fictional or simulated. No real-world impact is claimed.<div class="progress" style="margin-top:10px"><div id="progressBar" style="width:0%"></div></div><div id="progressText" style="margin-top:6px">0 of 5 planning steps completed</div></div></aside>
 <main class="content" id="main">
 <section class="panel view" data-panel="overview"><div class="eyebrow">Scenario brief</div><h2>Communicate the evidence. Protect its meaning.</h2><p class="prose">You are the communications lead at a <strong>fictional education research consortium</strong> preparing to release a student persistence study. Your assignment is to reach district-to-college transition partners, postsecondary leaders, policymakers, practitioners, and students without implying causation from observational findings.</p><div class="grid"><div class="tile"><div class="big">2,400</div><div class="tiny">synthetic learner records</div><h3>Research foundation</h3><p>Six fictional community colleges, illustrative student groups, and transparent uncertainty.</p></div><div class="tile"><div class="big">4</div><div class="tiny">distinct audiences</div><h3>Message architecture</h3><p>Translate one evidence base into appropriately differentiated products.</p></div><div class="tile"><div class="big">6</div><div class="tiny">campaign weeks</div><h3>Delivery and learning</h3><p>Coordinate review, publish materials, measure engagement, and adapt.</p></div></div><div class="alert"><strong>Ethical boundary:</strong> Findings and campaign results are intentionally synthetic. The case demonstrates communications judgment and work-product design—not verified student outcomes or a completed client campaign.</div><h3>Simulation workflow</h3><div class="timeline"><article><strong>1. Examine the evidence</strong>Read the methodological guardrails and choose a research-safe claim.</article><article><strong>2. Set audience priorities</strong>Choose an audience and generate an audience-specific communications product.</article><article><strong>3. Plan dissemination</strong>Set the campaign objective, channel mix, and six-week deliverables.</article><article><strong>4. Resolve editorial trade-offs</strong>Work through research review, client feedback, accessibility, and approval.</article><article><strong>5. Evaluate and adapt</strong>Analyze illustrative performance and make a recommendation for the next cycle.</article></div><div class="actions"><button class="btn primary" data-goto="evidence">Begin with the evidence →</button><button class="btn" id="overviewDownload">Download full work-sample packet</button></div></section>
 <section class="panel view hidden" data-panel="evidence"><div class="eyebrow">Step 1 · Source interpretation</div><h2>Evidence desk</h2><p>All figures here are <strong>invented for this case</strong> and do not represent findings from a real study. Choose the claim that can be responsibly communicated.</p><div class="grid"><div class="tile"><span class="tiny">Synthetic illustrative persistence rate</span><div class="big">64%</div><p>Part-time learner group</p></div><div class="tile"><span class="tiny">Synthetic illustrative persistence rate</span><div class="big">76%</div><p>Full-time learner group</p></div><div class="tile"><span class="tiny">Descriptive gap</span><div class="big">12 pp</div><p>Difference in percentage points, not a causal effect</p></div></div><h3>Technical note</h3><p>This fictional retrospective observational example uses simulated records from six colleges. Group composition, enrollment patterns, socioeconomic conditions, institutional services, and unobserved variables may confound the relationship. No causal design or counterfactual is established. The group comparison should not be treated as a policy effect estimate.</p><h3>Select a public claim</h3><div id="claimOptions"></div><div id="claimFeedback" aria-live="polite"></div><div class="actions"><button class="btn primary" id="acceptClaim" disabled>Approve claim and continue →</button></div></section>
@@ -22,6 +38,43 @@
 <section class="panel view hidden" data-panel="decisions"><div class="eyebrow">Applied communications judgment</div><h2>Decision lab</h2><p>Three realistic dilemmas test scientific integrity, stakeholder relationships, and performance interpretation.</p><div class="row" id="decisionStatus"></div><div class="tile" id="decisionQuestion"></div><div id="decisionChoices" style="margin-top:12px"></div><div id="decisionFeedback" aria-live="polite"></div><div class="actions"><button class="btn primary" id="nextDecision" disabled>Next scenario →</button><button class="btn" id="restartDecisions">Restart scenarios</button></div></section>
 <section class="panel view hidden" data-panel="analytics"><div class="eyebrow">Step 5 · Campaign measurement</div><h2>Communications performance</h2><p>Illustrative six-week performance data are <strong>synthetic</strong>. These metrics demonstrate monitoring and decision logic, not actual dissemination results.</p><div class="grid two"><div><label class="field" for="segment">Audience segment</label><select class="select" id="segment"><option value="all">All audiences</option><option value="leaders">College leaders</option><option value="policy">Policymakers</option><option value="practitioners">Practitioners</option><option value="students">Students and families</option></select></div><div><label class="field" for="metric">Primary chart metric</label><select class="select" id="metric"><option value="views">Landing-page visits</option><option value="downloads">Brief downloads</option><option value="registrations">Webinar registrations</option></select></div></div><div class="metrics" id="metricCards"></div><h3>Weekly trend</h3><div class="chart" id="trendChart" role="img" aria-label="Weekly illustrative performance bar chart"></div><div class="tablewrap" id="segmentTable"></div><h3>Interpretation and recommended adjustment</h3><div id="interpretation"></div><div class="actions"><button class="btn primary" id="saveAdjustment">Save recommended adjustment</button><button class="btn" id="downloadData">Download synthetic KPI data (.csv)</button></div></section>
 <section class="panel view hidden" data-panel="deliverables"><div class="eyebrow">Portfolio artifacts</div><h2>Deliverables and export center</h2><p>Download a complete work-sample packet or its individual components. These are reproducible from your current selections, and all disclose their simulated nature.</p><div class="grid two"><div class="tile"><h3>Audience products</h3><p>Audience-specific one-page brief, social post, stakeholder email, and infographic copy.</p><button class="btn" id="allProducts">Download all audience copy (.txt)</button></div><div class="tile"><h3>Dissemination strategy</h3><p>Six-week editorial schedule, objective, channel rationale, and KPI framework.</p><button class="btn" id="planExport">Download campaign plan (.txt)</button></div><div class="tile"><h3>Review and decision log</h3><p>Approval checkpoints, scenario outcomes, and integrity safeguards.</p><button class="btn" id="reviewExport">Download review log (.txt)</button></div><div class="tile"><h3>Metrics and analysis</h3><p>Segmented synthetic campaign data and interpretation.</p><button class="btn" id="csvExport">Download metrics (.csv)</button></div></div><div class="actions"><button class="btn primary" id="fullExport">Download complete portfolio packet (.txt)</button><button class="btn" id="print">Print / save current page</button></div><h3>Suggested résumé entry</h3><div class="doc"><strong>Education Research Dissemination & Strategic Communications Lab | Independent Portfolio Simulation | 2026</strong><ul><li>Designed an interactive fictional education-policy communications case translating illustrative student-persistence findings into audience-specific briefs, digital content, stakeholder messaging, and a six-week dissemination plan.</li><li>Modeled editorial reviews, accessibility checks, channel strategy, and performance evaluation using clearly labeled synthetic engagement metrics and documented research-integrity guardrails.</li></ul></div></section>
+
+<section class="panel view hidden" data-panel="brief">
+<div class="eyebrow">New · Research-to-action deliverable</div><h2>Complete communications brief</h2>
+<p>Build an evidence-sensitive communications strategy brief from the same fictional learner-persistence scenario. The polished preview updates with your campaign choices, and exports as a standalone HTML document suitable for printing or saving as PDF.</p>
+<div class="addon-lead"><strong>Editorial standard:</strong> Distinguish the synthetic descriptive comparison from causal evidence. The brief contains a complete executive summary, audience map, messaging architecture, channel rationale, production schedule, measurement framework, risks, and approval gates.</div>
+<div class="addon-row">
+<div><label class="addon-label" for="briefAudience">Priority audience</label><select class="select" id="briefAudience"><option value="leaders">College leaders</option><option value="policy">Education policymakers</option><option value="practitioners">Student-support practitioners</option><option value="students">Students and families</option></select></div>
+<div><label class="addon-label" for="briefAim">Communications goal</label><select class="select" id="briefAim"><option value="awareness">Awareness</option><option value="understanding">Accurate understanding</option><option value="use">Evidence-informed discussion</option></select></div>
+</div>
+<div id="briefPreview" class="addon-sheet" aria-live="polite"></div>
+<div class="addon-controls"><button class="btn primary" id="briefExport">Download designed brief (.html)</button><button class="btn" id="briefTextExport">Download plain-text brief (.txt)</button></div>
+<p class="addon-small">Standalone HTML export includes print styling; open it in a browser and choose Print → Save as PDF. All example metrics and organizations are fictional.</p>
+</section>
+<section class="panel view hidden" data-panel="stakeholders">
+<div class="eyebrow">New · Advisory judgment and stakeholder management</div><h2>Stakeholder feedback resolution</h2>
+<p>Three fictional stakeholders request revisions to a release. Select a response for each, inspect the trade-offs, and produce a documented resolution memo. Each choice remains editable.</p>
+<div id="stakeholderCards"></div>
+<div class="addon-sheet" id="stakeholderMemo" aria-live="polite"></div>
+<div class="addon-controls"><button class="btn primary" id="stakeholderExport">Download decision and resolution memo (.txt)</button><button class="btn" id="stakeholderReset">Reset feedback exercise</button></div>
+</section>
+<section class="panel view hidden" data-panel="proposal">
+<div class="eyebrow">New · Business development and proposal planning</div><h2>Proposal-development studio</h2>
+<p>Scope an illustrative research dissemination assignment, allocate responsibilities, and calculate effort and a planning-only labor estimate. Edit quantities and hours to see a live work plan. This does not represent AIR pricing or an actual client bid.</p>
+<div class="addon-row"><div><label class="addon-label" for="proposalClient">Fictional client</label><input id="proposalClient" class="addon-input" value="Regional Postsecondary Learning Partnership" maxlength="90"></div><div><label class="addon-label" for="proposalLength">Project duration</label><select class="select" id="proposalLength"><option value="6">6 weeks</option><option value="8">8 weeks</option><option value="10">10 weeks</option><option value="12">12 weeks</option></select></div></div>
+<h3>Deliverable scope</h3>
+<div class="tablewrap"><table><thead><tr><th>Deliverable</th><th>Quantity</th><th>Hours / unit</th><th>Subtotal</th></tr></thead><tbody id="proposalItems"></tbody></table></div>
+<h3>Staffing and effort assumptions</h3><p class="addon-small">Illustrative blended hourly rates are planning assumptions only; no client, employee, or organizational rates are represented.</p>
+<div class="addon-three">
+<div><label class="addon-label" for="rateLead">Communications lead · $/h</label><input class="addon-input" type="number" min="0" max="500" step="5" value="110" id="rateLead"></div>
+<div><label class="addon-label" for="rateWriter">Writer / editor · $/h</label><input class="addon-input" type="number" min="0" max="500" step="5" value="85" id="rateWriter"></div>
+<div><label class="addon-label" for="rateDesign">Digital / design · $/h</label><input class="addon-input" type="number" min="0" max="500" step="5" value="95" id="rateDesign"></div>
+</div>
+<div><label class="addon-label" for="proposalBuffer">Review / contingency allowance (%)</label><input class="addon-input" type="number" min="0" max="50" step="5" value="15" id="proposalBuffer" style="max-width:130px"></div>
+<div id="proposalTotals" class="addon-lead" aria-live="polite"></div>
+<h3>Draft statement of work</h3><div id="proposalPreview" class="addon-sheet"></div>
+<div class="addon-controls"><button class="btn primary" id="proposalExport">Download draft proposal (.txt)</button><button class="btn" id="proposalCsv">Download effort budget (.csv)</button><button class="btn" id="proposalReset">Reset assumptions</button></div>
+</section>
 <section class="panel view hidden" data-panel="methods"><div class="eyebrow">Transparency and scope</div><h2>Methods, limitations, and portfolio attribution</h2><p><strong>Creator:</strong> Michael Farzinpour, PhD, MCM, MA. Independent portfolio demonstration, 2026.</p><h3>Data provenance</h3><p>The fictional student case (2,400 records, six fictional colleges, 64% and 76% subgroup persistence rates) is an illustrative narrative dataset, not a real empirical result. Campaign metrics are deterministic synthetic values created for demonstration. They are not actual outreach results, and their magnitude does not validate any campaign.</p><h3>Analytic boundary</h3><p>The simulated comparison does not adjust for confounding, quantify causal impact, establish statistically significant differences, or identify interventions that improve persistence. It is intentionally used to demonstrate responsible wording and audience adaptation.</p><h3>Professional-experience boundary</h3><p>Campaign leadership, review steps, stakeholders, and evaluation choices are fictional exercises, not paid client experience, implementation at AIR, or work completed on behalf of a school or college. No individual student data, personally identifiable information, or operational agency data are used.</p><h3>Accessibility features</h3><p>Semantic navigation, descriptive form labels, keyboard-operable controls, live feedback announcements, visible focus indicators, high-contrast text, and responsive layouts. This demonstration has not undergone a formal WCAG conformance audit or assistive-technology testing.</p><h3>Design rationale</h3><p>The project prioritizes claim fidelity, audience relevance, structured review, measurable objectives, and explicit separation between communication outputs and downstream policy effects. It avoids equating reach or downloads with adoption, learning, or changes in student outcomes.</p><h3>Deployment</h3><p>Host this single file as <code>index.html</code> on GitHub Pages. It requires no server, login, build step, external fonts, third-party libraries, or network calls. Changes remain in browser memory for the current session; use exports to retain work.</p></section>
 </main></div><div class="footer">Education Evidence to Action · Independent portfolio simulation · © 2026 Michael Farzinpour · Fictional case and synthetic metrics · No AIR affiliation or endorsement</div>
 <script>
@@ -67,8 +120,187 @@ function download(filename,content,mime='text/plain;charset=utf-8'){const blob=n
 function allProductsText(){return Object.keys(audiences).map(a=>['brief','social','email','infographic'].map(f=>productText(a,f)).join('\n\n'+'='.repeat(55)+'\n\n')).join('\n\n'+'#'.repeat(55)+'\n\n')}
 function reviewsText(){return `SIMULATED APPROVAL LOG\n${gates.map((g,i)=>`${i+1}. ${g.name} — ${g.owner} — ${i<state.gate?'simulated approval recorded':'pending'}`).join('\n')}\n\nDECISION LAB\n${situations.map((s,i)=>`${i+1}. ${s.label}\n${s.question}\nSelected: ${state.answers[i]===undefined?'Not answered':s.options[state.answers[i]]}\nEvidence-aligned answer: ${s.options[s.answer]}`).join('\n\n')}\n\nDisclaimer: No actual reviewers, client approvals, or campaigns were involved.`}
 function csvText(){const rows=['week,audience,landing_page_visits,brief_downloads,webinar_registrations,source'];for(const w of weekly){for(const [k,p] of Object.entries(share))rows.push(`${w.week},${k},${scaled(w.views,p)},${scaled(w.downloads,p)},${scaled(w.registrations,p)},synthetic_portfolio_simulation`)}return rows.join('\n')+'\n'}
-function fullPacket(){return `EDUCATION EVIDENCE TO ACTION — COMPLETE PORTFOLIO PACKET\nMichael Farzinpour | 2026 | Independent fictional simulation, not affiliated with AIR\n\nOVERVIEW\nAn evidence-sensitive education research communications simulation based on an entirely fictional persistence comparison (2,400 illustrative learners at six fictional colleges). All communications metrics are synthetic.\n\nAUDIENCE PRODUCT — CURRENT CONFIGURATION\n${productText()}\n\nCAMPAIGN PLAN\n${campaignText()}\n\nEDITORIAL & DECISION RECORD\n${reviewsText()}\n\nPERFORMANCE SUMMARY\nVisits: ${sum('views')}; brief downloads: ${sum('downloads')}; webinar registrations: ${sum('registrations')}. Data are simulated; download and engagement values do not establish comprehension or policy use.\n\nQUALITY AND CLAIM LIMITS\nNo observational subgroup difference is described as causal. No actual schools, students, clients, employees, or campaign participants are represented. The project shows portfolio design and strategic reasoning rather than professional deployment.\n\nLINK\nhttps://michaelfarzinpour-droid.github.io/ (site root; exact project URL available only after deployment).`}
+function fullPacket(){return `EDUCATION EVIDENCE TO ACTION — COMPLETE PORTFOLIO PACKET\nMichael Farzinpour | 2026 | Independent fictional simulation, not affiliated with AIR\n\nOVERVIEW\nAn evidence-sensitive education research communications simulation based on an entirely fictional persistence comparison (2,400 illustrative learners at six fictional colleges). All communications metrics are synthetic.\n\nAUDIENCE PRODUCT — CURRENT CONFIGURATION\n${productText()}\n\nCAMPAIGN PLAN\n${campaignText()}\n\nEDITORIAL & DECISION RECORD\n${reviewsText()}\n\nPERFORMANCE SUMMARY\nVisits: ${sum('views')}; brief downloads: ${sum('downloads')}; webinar registrations: ${sum('registrations')}. Data are simulated; download and engagement values do not establish comprehension or policy use.\n\nQUALITY AND CLAIM LIMITS\nNo observational subgroup difference is described as causal. No actual schools, students, clients, employees, or campaign participants are represented. The project shows portfolio design and strategic reasoning rather than professional deployment.\n\nLINK\nhttps://michaelfarzinpour-droid.github.io/ (published project URL: https://michaelfarzinpour-droid.github.io/education-evidence-to-action/).`}
 $('downloadProduct').onclick=()=>download(`education_${state.audience}_${state.format}.txt`,productText());$('downloadPlan').onclick=()=>download('education_dissemination_plan.txt',campaignText());$('downloadData').onclick=()=>download('education_campaign_synthetic_metrics.csv',csvText(),'text/csv;charset=utf-8');$('allProducts').onclick=()=>download('education_audience_communications_products.txt',allProductsText());$('planExport').onclick=()=>download('education_dissemination_plan.txt',campaignText());$('reviewExport').onclick=()=>download('education_editorial_review_log.txt',reviewsText());$('csvExport').onclick=()=>download('education_campaign_synthetic_metrics.csv',csvText(),'text/csv;charset=utf-8');$('fullExport').onclick=()=>download('education_complete_portfolio_packet.txt',fullPacket());$('overviewDownload').onclick=()=>download('education_complete_portfolio_packet.txt',fullPacket());$('print').onclick=()=>window.print();
+
+/* Three additional independent portfolio work samples */
+const labUrl='https://michaelfarzinpour-droid.github.io/education-evidence-to-action/';
+function briefData(){
+ const a=$('briefAudience').value,o=$('briefAim').value,x=audiences[a],obj=objectives[o];
+ return {audience:x.name,aim:$('briefAim').selectedOptions[0].text,headline:x.headline,focus:x.focus,action:x.action,metric:obj.metric,criterion:obj.criterion};
+}
+function briefText(){
+ const x=briefData();
+ return `EDUCATION EVIDENCE TO ACTION
+COMMUNICATIONS & DISSEMINATION BRIEF
+INDEPENDENT FICTIONAL PORTFOLIO WORK SAMPLE | 2026 | MICHAEL FARZINPOUR
+Priority audience: ${x.audience} | Communication objective: ${x.aim}
+
+EXECUTIVE SUMMARY
+A fictional retrospective observational example compares persistence among part-time (64%) and full-time (76%) learners across six fictional colleges and 2,400 illustrative synthetic learner records. The descriptive difference is 12 percentage points; it is NOT an estimated causal effect. This communications plan translates the illustrative finding into accessible products without attributing the gap to enrollment intensity or claiming that any intervention works. The immediate objective is ${x.aim.toLowerCase()} among ${x.audience.toLowerCase()}.
+
+SOURCE EVIDENCE & INTERPRETIVE BOUNDARIES
+Illustrative finding: 64% vs 76% persistence; 12 percentage-point descriptive gap. The data and colleges are fictional. No real study, inference estimates, counterfactual, or adjustment for confounding is provided. Student mix, institutional context, and other factors may account for differences. Reach, downloads, and event participation do not establish understanding, uptake, or improved student outcomes.
+
+AUDIENCE & STAKEHOLDER MAP
+Primary audience: ${x.audience}. Other audiences: policymakers (evidence requirements); college leaders (institutional diagnosis); practitioners (support questions); students/families (plain-language interpretation). Internal fictional stakeholders: research lead (methods and claims), communications lead (messaging, channels and scheduling), accessibility/editorial reviewer (quality), project sponsor (approval and outreach).
+
+MESSAGE ARCHITECTURE
+Main message: In this fictional example, part-time learners had a lower observed persistence rate than full-time learners; further analysis is needed to explain why.
+Audience headline: ${x.headline}
+Relevance: ${x.focus}
+Recommended action: ${x.action}
+Forbidden inference: Part-time enrollment caused non-persistence, or a specific support program will close the gap.
+Plain-language callout: 'A difference between groups is not proof of what caused the difference.'
+
+PRODUCTS & CHANNEL RATIONALE
+Research landing page and accessible PDF/HTML brief: canonical source, methods, FAQ, downloadable graphics.
+Targeted partner email: prioritized distribution to ${x.audience.toLowerCase()} with relevant context and a specific next step.
+Professional social post: accurate headline and short link to methods.
+Partner webinar: Q&A with a fictional research lead; record common questions for FAQ revision.
+Accessible infographic: 64%, 76% and 12 percentage points with prominent synthetic/descriptive labels.
+All products should have descriptive headings, alt text, readable contrast, keyboard-accessible links, clear source labeling, and accessible alternatives.
+
+SIX-WEEK IMPLEMENTATION SCHEDULE
+Week 1 — Confirm research limits, objectives, audience segments and content inventory.
+Week 2 — Draft brief, infographic, web copy, stakeholder email and FAQ; assign owners.
+Week 3 — Researcher validation, plain-language and accessibility review, sponsor sign-off.
+Week 4 — Publish landing page and distribute segmented email and social materials.
+Week 5 — Host partner discussion; respond to questions; monitor segment-specific reach.
+Week 6 — Prepare analytics readout, lessons learned and next-iteration recommendations.
+
+MEASURES, TARGETS AND DECISION RULES
+Primary measure: ${x.metric}.
+Decision rule: ${x.criterion}
+Illustrative planning targets (not observed results): publish 5 accessible assets; obtain documented approvals before launch; conduct 1 partner briefing; assess each priority audience and the clarity of descriptive-versus-causal messaging. Set realistic numeric reach targets only after establishing baseline channel data.
+Monitoring: tagged referral channels, landing visits, brief downloads, webinar registrations, comprehension check and follow-up interviews. Avoid treating clicks as evidence use or outcomes.
+
+RISKS & MITIGATIONS
+Overclaiming → sign-off on every numerical claim by the fictional research lead.
+Unequal audience reach → segment reports and revise distribution after a monitored test.
+Accessibility gaps → independent review and non-visual alternative formats.
+Late approvals → decision log, explicit change control and contingency time.
+Misinterpreted metrics → report denominators, audience definitions and measurement limits.
+
+GOVERNANCE & SUCCESS CRITERIA
+Content owner: fictional communications lead; scientific reviewer: fictional research lead; sponsor: fictional education project director; final publication only after editorial, accessibility and client reviews. Success is defined by accurately published products, documented audience engagement and a credible follow-up learning plan—not proven policy adoption or student persistence impact.
+
+ATTRIBUTION
+Created by Michael Farzinpour as an independent portfolio simulation. Synthetic data, fictional organizations, no AIR affiliation, no real client implementation.
+${labUrl}`;
+}
+function renderBrief(){
+ $('briefPreview').innerHTML='<div class="addon-small">INDEPENDENT PORTFOLIO WORK SAMPLE · 2026 · FICTIONAL CASE</div><h3>Communications & dissemination brief</h3>'+briefText().split('\n\n').slice(1,-1).map(z=>{const p=z.split('\n');return '<section><h4>'+safe(p[0])+'</h4><p style="white-space:pre-wrap">'+safe(p.slice(1).join('\n'))+'</p></section>'}).join('')+'<p class="addon-small">All findings and organizations are synthetic; no AIR affiliation.</p>';
+}
+function briefHtml(){
+ const markup=$('briefPreview').innerHTML;
+ return '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Communications Brief | Education Evidence to Action</title><style>body{font:15px/1.55 Arial,sans-serif;color:#243449;max-width:780px;margin:35px auto;padding:0 25px}h3{font-size:25px;color:#163d69;border-bottom:3px solid #a1c7dd;padding-bottom:10px}h4{font-size:15px;color:#1c527d;margin:19px 0 5px}p{margin:5px 0 10px}.addon-small{color:#56687a;font-size:12px}@media print{body{margin:0;max-width:none;padding:0}section{break-inside:avoid}h4{break-after:avoid}}</style></head><body>'+markup+'</body></html>';
+}
+$('briefAudience').onchange=renderBrief;$('briefAim').onchange=renderBrief;
+$('briefExport').onclick=()=>download('education_communications_strategy_brief.html',briefHtml(),'text/html;charset=utf-8');
+$('briefTextExport').onclick=()=>download('education_communications_strategy_brief.txt',briefText());
+const stakeholderDefs=[
+ {who:'Research director',request:'Replace the cautious headline with “Part-time enrollment drives student dropout” to make the story more memorable.',options:['Accept the headline to generate attention.','Offer an engaging but descriptive alternative, noting that this observational example cannot establish causation.','Remove the key finding from every product.'],best:1,why:['Overstates what the fictional comparison can establish.','Preserves an accessible message while protecting the evidence.','Overcorrects and makes useful descriptive evidence unavailable.'],resolution:'Use: “Persistence differs across enrollment groups; further analysis is needed to understand why.” Obtain research sign-off.'},
+ {who:'Communications manager',request:'Move the release forward by two days, skipping final accessibility and source verification.',options:['Release now and quietly correct errors later.','Confirm critical reviews cannot be skipped; offer a staged launch with approved assets first and an updated schedule.','Cancel the six-week campaign.'],best:1,why:['Creates avoidable quality and trust risks.','Balances delivery needs with review controls, decision transparency and accessible publication.','Unnecessarily abandons the campaign instead of re-scoping.'],resolution:'Keep required review gates; publish only verified, accessible materials, document the revised timeline and owner.'},
+ {who:'Education client',request:'Show the 12-point gap as evidence that the client’s advising initiative improved student persistence.',options:['Add that impact claim to the press release.','Explain that no intervention effect was measured, offer a neutral findings statement and propose a separate impact-evaluation question.','Reject all client feedback without discussion.'],best:1,why:['There is no intervention test or causal estimate.','Protects the client relationship while distinguishing a useful next research question from existing evidence.','Does not help resolve the underlying communications and evaluation needs.'],resolution:'Say: “The illustrative subgroup pattern warrants further investigation.” Do not attribute the gap to advising; scope future evaluation.'}
+];
+let stakeholderAnswers=[null,null,null];
+function stakeholderMemoText(){
+ let lines=['STAKEHOLDER FEEDBACK & RESOLUTION MEMO','Independent fictional communications simulation | Michael Farzinpour | 2026','Purpose: resolve conflicting stakeholder requests without overstating research evidence.',''];
+ stakeholderDefs.forEach((s,i)=>{const a=stakeholderAnswers[i];lines.push((i+1)+'. '+s.who.toUpperCase(),'Request: '+s.request,'Selected response: '+(a===null?'Not selected':s.options[a]),'Assessment: '+(a===null?'Pending':s.why[a]),'Recommended resolution: '+s.resolution,'Owner/action: communications lead proposes; research lead validates claims; sponsor confirms timing and distribution.','')});
+ lines.push('Release rule: no unverified causal claims, missed accessibility gates or undocumented sign-off.','This is a fictional exercise; no actual client, research director or communications manager was consulted.');
+ return lines.join('\n');
+}
+function renderStakeholders(){
+ $('stakeholderCards').innerHTML=stakeholderDefs.map((s,i)=>'<article class="tile" style="margin:12px 0"><div class="eyebrow">Stakeholder '+(i+1)+' of 3</div><h3>'+safe(s.who)+'</h3><p>'+safe(s.request)+'</p>'+s.options.map((o,j)=>'<button class="choice '+(stakeholderAnswers[i]===j?'selected':'')+'" data-stake="'+i+'" data-stakechoice="'+j+'">'+safe(o)+'</button>').join('')+(stakeholderAnswers[i]===null?'':'<div class="'+(stakeholderAnswers[i]===s.best?'good':'alert')+'" role="status"><strong>'+(stakeholderAnswers[i]===s.best?'Evidence-aligned response':'Reconsider the trade-off')+'</strong><p>'+safe(s.why[stakeholderAnswers[i]])+'</p><strong>Suggested resolution:</strong> '+safe(s.resolution)+'</div>')+'</article>').join('');
+ document.querySelectorAll('[data-stake]').forEach(b=>b.onclick=()=>{stakeholderAnswers[+b.dataset.stake]=+b.dataset.stakechoice;renderStakeholders()});
+ const n=stakeholderAnswers.filter(x=>x!==null).length,aligned=stakeholderAnswers.filter((x,i)=>x===stakeholderDefs[i].best).length;
+ $('stakeholderMemo').innerHTML='<h3>Decision record</h3><p>'+n+' of 3 responses recorded; '+aligned+' evidence-aligned choices.</p><p class="addon-small">The memo export includes all three requests, your decisions, and recommended resolutions.</p><p>Proposed escalation path: communications lead → research validation → accessibility/editorial review → sponsor authorization → monitored release.</p>';
+}
+$('stakeholderExport').onclick=()=>download('education_stakeholder_resolution_memo.txt',stakeholderMemoText());
+$('stakeholderReset').onclick=()=>{stakeholderAnswers=[null,null,null];renderStakeholders()};
+const scopeDefs=[
+ {name:'Research-to-action briefs',qty:2,hours:10,role:'writer'},
+ {name:'Accessible infographics',qty:2,hours:8,role:'design'},
+ {name:'Stakeholder email and social package',qty:1,hours:12,role:'writer'},
+ {name:'Landing page and methods FAQ',qty:1,hours:18,role:'design'},
+ {name:'Partner webinar preparation',qty:1,hours:14,role:'lead'},
+ {name:'Campaign performance readout',qty:1,hours:12,role:'lead'}
+];
+let scope=scopeDefs.map(d=>({...d}));
+function bounded(v,min,max){const x=Number(v);return Number.isFinite(x)?Math.min(max,Math.max(min,x)):min}
+function money(v){return '
+</script>
+</body></html>+v.toLocaleString('en-US',{maximumFractionDigits:0})}
+function proposalCalc(){
+ const rates={lead:bounded($('rateLead').value,0,500),writer:bounded($('rateWriter').value,0,500),design:bounded($('rateDesign').value,0,500)};
+ const buffer=bounded($('proposalBuffer').value,0,50)/100;
+ const entries=scope.map((s,i)=>({...s,qty:bounded(s.qty,0,20),hours:bounded(s.hours,0,200),effort:bounded(s.qty,0,20)*bounded(s.hours,0,200),rate:rates[s.role]}));
+ const hours=entries.reduce((a,b)=>a+b.effort,0),base=entries.reduce((a,b)=>a+b.effort*b.rate,0),total=base*(1+buffer);
+ return {entries,hours,base,total,buffer,rates};
+}
+function proposalText(){
+ const d=proposalCalc(),client=($('proposalClient').value.trim()||'Fictional education partner').slice(0,90),weeks=+$('proposalLength').value;
+ return `ILLUSTRATIVE STATEMENT OF WORK — EDUCATION RESEARCH DISSEMINATION
+INDEPENDENT FICTIONAL PORTFOLIO SIMULATION | MICHAEL FARZINPOUR | 2026
+Client: ${client}
+Period: ${weeks} weeks
+Purpose: Translate fictional observational student-persistence findings into accessible, audience-specific communications, coordinate quality and approvals, and evaluate illustrative engagement without asserting policy or student impact.
+
+SCOPE & DELIVERABLE ASSUMPTIONS
+${d.entries.map(e=>e.name+': '+e.qty+' units × '+e.hours+' hours = '+e.effort+' hours | '+e.role+' | '+money(e.effort*e.rate)).join('\n')}
+
+WORKSTREAMS & ACCOUNTABILITY
+Communications lead (fictional): sponsor consultation, message architecture, review/escalation, partner convening and reporting.
+Writer/editor (fictional): briefs, stakeholder copy, editorial style, plain language, fact checking.
+Digital/design (fictional): infographic production, accessible HTML, landing page and QA.
+Research advisor (fictional stakeholder, not separately costed): source validation and methods approval.
+Client sponsor (fictional stakeholder, not separately costed): scope, outreach approval and acceptance.
+Rates are user-editable illustrative planning assumptions, not employer billing rates. Roles are planning placeholders, not actual employees.
+
+SCHEDULE & DEPENDENCIES
+Weeks 1–2: kickoff, audience/stakeholder map, claim verification, draft message matrix and content plan.
+Weeks 2–4: draft and revise products, conduct review and accessibility checks; release requires sign-offs.
+Weeks 4–${weeks}: publish approved products, convene partners and monitor segmented communications data.
+Final week: client readout, lessons learned, next steps and handoff.
+Dependencies: approved evidence summary before drafting; researcher review before publication; accessibility validation before release; sufficient baseline for numerical KPI targets.
+Schedule is illustrative and should be rephased for duration and scope changes.
+
+ASSUMPTIONS & EXCLUSIONS
+Assumes source findings and contacts are supplied; no new primary data collection, causal analysis, paid advertising, procurement, translation, video production or actual client deployment is included. Production estimates may need revision after discovery and accessibility testing. There is no formal AIR affiliation.
+
+ESTIMATED EFFORT & COST (ILLUSTRATIVE)
+Base effort: ${d.hours} hours.
+Base labor estimate: ${money(d.base)}.
+Review/contingency allowance: ${(d.buffer*100).toFixed(0)}% (${money(d.total-d.base)}).
+Planning-only total estimate: ${money(d.total)}.
+Not a quote, fixed fee, bid, or market-verified pricing.
+
+ACCEPTANCE AND QUALITY
+Deliverables accepted when claim-check, client sign-off, accessibility review, link QA and source attribution are recorded. Performance readout should separate reach, comprehension and evidence use; modeled downloads are not proof of adoption.
+
+RISK & CHANGE CONTROL
+Escalate unsupported impact claims, delayed approvals, insufficient audience coverage and unplanned deliverables. Document changes to scope, hours, acceptance dates and assumptions before approval.
+
+ATTRIBUTION
+All organizations, staffing assumptions, outcomes and prices are fictional. This is independent demonstration work.
+${labUrl}`;
+}
+function renderProposal(){
+ const d=proposalCalc();
+ $('proposalItems').innerHTML=d.entries.map((e,i)=>'<tr><td>'+safe(e.name)+'<div class="addon-small">Owner: '+e.role+'</div></td><td><input aria-label="Quantity for '+safe(e.name)+'" data-scope="'+i+'" data-key="qty" class="addon-input" style="max-width:85px" type="number" min="0" max="20" step="1" value="'+e.qty+'"></td><td><input aria-label="Hours per unit for '+safe(e.name)+'" data-scope="'+i+'" data-key="hours" class="addon-input" style="max-width:95px" type="number" min="0" max="200" step="1" value="'+e.hours+'"></td><td>'+e.effort+' h</td></tr>').join('');
+ document.querySelectorAll('[data-scope]').forEach(el=>el.onchange=()=>{scope[+el.dataset.scope][el.dataset.key]=bounded(el.value,0,el.dataset.key==='qty'?20:200);renderProposal()});
+ $('proposalTotals').innerHTML='<strong>'+d.hours+' estimated base hours · '+money(d.total)+' illustrative total</strong><p>Base labor '+money(d.base)+' + '+(d.buffer*100).toFixed(0)+'% review/contingency ('+money(d.total-d.base)+'). Assumed roles and hourly rates are fictional.</p>';
+ $('proposalPreview').innerHTML='<div class="addon-small">DRAFT SCOPE | NOT A CLIENT PROPOSAL OR AIR PRICING</div><h3>'+safe($('proposalClient').value||'Fictional education partner')+'</h3><p><strong>Duration:</strong> '+safe($('proposalLength').value)+' weeks · <strong>Base effort:</strong> '+d.hours+' hours</p><h4>Scope</h4><ul>'+d.entries.filter(e=>e.qty>0).map(e=>'<li>'+safe(e.name)+': '+e.qty+' deliverable(s), '+e.effort+' hours ('+e.role+')</li>').join('')+'</ul><h4>Illustrative budget</h4><p>'+money(d.total)+' including review allowance</p><h4>Dependencies & acceptance</h4><p>Research and sponsor approvals, accessible publication checks, documented changes, segmented analytics and final handoff.</p>';
+}
+['proposalClient','proposalLength','rateLead','rateWriter','rateDesign','proposalBuffer'].forEach(id=>$(id).addEventListener('input',renderProposal));
+$('proposalExport').onclick=()=>download('education_dissemination_draft_proposal.txt',proposalText());
+$('proposalCsv').onclick=()=>{const d=proposalCalc();const rows=['deliverable,quantity,hours_per_unit,role,rate_usd_per_hour,total_hours,estimated_usd'];d.entries.forEach(e=>rows.push('"'+e.name.replace(/"/g,'""')+'",'+e.qty+','+e.hours+','+e.role+','+e.rate+','+e.effort+','+(e.effort*e.rate)));rows.push('TOTAL,,,,,'+d.hours+','+d.total.toFixed(2));download('education_proposal_effort_budget.csv',rows.join('\n'),'text/csv;charset=utf-8')};
+$('proposalReset').onclick=()=>{scope=scopeDefs.map(d=>({...d}));$('proposalClient').value='Regional Postsecondary Learning Partnership';$('proposalLength').value='6';$('rateLead').value='110';$('rateWriter').value='85';$('rateDesign').value='95';$('proposalBuffer').value='15';renderProposal()};
+const oldFullPacket=fullPacket;
+fullPacket=function(){return oldFullPacket()+'\n\nCOMPLETE STRATEGIC COMMUNICATIONS BRIEF\n'+briefText()+'\n\nSTAKEHOLDER FEEDBACK MEMO\n'+stakeholderMemoText()+'\n\nILLUSTRATIVE DRAFT PROPOSAL\n'+proposalText()};
+$('deliverables').onclick=null;
+renderBrief();renderStakeholders();renderProposal();
 renderClaims();renderAudience();renderCampaign();renderWorkflow();renderDecision();renderAnalytics();updateProgress();
 </script>
 </body></html>
