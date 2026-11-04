@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc"><title id="title">Understanding student persistence: illustrative part-time 64 percent and full-time 76 percent</title><desc id="desc">An independently created infographic using fictional synthetic examples. The full-time group shows a 76 percent persistence rate, versus 64 percent for the part-time group, a descriptive difference of 12 percentage points. The comparison does not show that enrollment intensity causes persistence or that any intervention is effective.</desc>
+<rect x="0" y="0" width="1200" height="1600" rx="0" fill="#f6f8fb" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="1200" height="337" rx="0" fill="#142b49" stroke="none" stroke-width="0"/>
+<rect x="0" y="337" width="1200" height="10" rx="0" fill="#17a394" stroke="none" stroke-width="0"/>
+<text x="72" y="76" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700" fill="#88dacd" text-anchor="start" letter-spacing="2">EDUCATION EVIDENCE TO ACTION</text>
+<text x="72" y="153" font-family="DejaVu Sans,Arial,sans-serif" font-size="57" font-weight="750" fill="#ffffff" text-anchor="start" >Understanding</text>
+<text x="72" y="225" font-family="DejaVu Sans,Arial,sans-serif" font-size="57" font-weight="750" fill="#ffffff" text-anchor="start" >Student Persistence</text>
+<text x="72" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#dae9f3" text-anchor="start" >What the evidence shows — and what it doesn’t</text>
+<rect x="70" y="385" width="1060" height="118" rx="18" fill="#e5eef6" stroke="none" stroke-width="0"/>
+<text x="96" y="426" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="750" fill="#245477" text-anchor="start" >THE RESEARCH QUESTION</text>
+<text x="96" y="465" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" font-weight="600" fill="#19334f" text-anchor="start" >How do persistence rates differ across enrollment groups?</text>
+<rect x="70" y="545" width="505" height="370" rx="22" fill="#e2f0fb" stroke="none" stroke-width="0"/>
+<rect x="625" y="545" width="505" height="370" rx="22" fill="#e3f4ee" stroke="none" stroke-width="0"/>
+<text x="109" y="610" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="750" fill="#215b87" text-anchor="start" >PART-TIME STUDENTS</text>
+<text x="662" y="610" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="750" fill="#116d5c" text-anchor="start" >FULL-TIME STUDENTS</text>
+<text x="105" y="760" font-family="DejaVu Sans,Arial,sans-serif" font-size="116" font-weight="800" fill="#174d77" text-anchor="start" >64%</text>
+<text x="660" y="760" font-family="DejaVu Sans,Arial,sans-serif" font-size="116" font-weight="800" fill="#0c654b" text-anchor="start" >76%</text>
+<rect x="105" y="794" width="430" height="28" rx="14" fill="#b7d1e3" stroke="none" stroke-width="0"/>
+<rect x="105" y="794" width="275" height="28" rx="14" fill="#216c9f" stroke="none" stroke-width="0"/>
+<rect x="660" y="794" width="430" height="28" rx="14" fill="#c1ded1" stroke="none" stroke-width="0"/>
+<rect x="660" y="794" width="327" height="28" rx="14" fill="#16785c" stroke="none" stroke-width="0"/>
+<text x="108" y="867" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="500" fill="#305777" text-anchor="start" >Illustrative persistence rate</text>
+<text x="660" y="867" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="500" fill="#285e4b" text-anchor="start" >Illustrative persistence rate</text>
+<rect x="70" y="953" width="1060" height="187" rx="18" fill="#fff3d9" stroke="none" stroke-width="0"/>
+<text x="108" y="1037" font-family="DejaVu Sans,Arial,sans-serif" font-size="83" font-weight="800" fill="#173653" text-anchor="start" >12</text>
+<text x="262" y="1010" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="750" fill="#7a5729" text-anchor="start" >PERCENTAGE-POINT</text>
+<text x="262" y="1046" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#7a5729" text-anchor="start" >DESCRIPTIVE DIFFERENCE</text>
+<text x="108" y="1102" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="500" fill="#594b39" text-anchor="start" >76% minus 64% = 12 percentage points</text>
+<rect x="70" y="1180" width="1060" height="199" rx="18" fill="#ffffff" stroke="#ccd9e5" stroke-width="2"/>
+<text x="105" y="1237" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="750" fill="#183c5b" text-anchor="start" >WHAT THE COMPARISON MEANS</text>
+<text x="105" y="1291" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="500" fill="#2c455e" text-anchor="start" >The fictional full-time group has a higher observed rate.</text>
+<text x="105" y="1332" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="750" fill="#9b443b" text-anchor="start" >That does NOT establish what caused the difference.</text>
+<rect x="70" y="1413" width="1060" height="120" rx="16" fill="#eaf2f8" stroke="none" stroke-width="0"/>
+<text x="96" y="1456" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="750" fill="#225474" text-anchor="start" >ABOUT THESE DATA</text>
+<text x="96" y="1490" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="500" fill="#334f67" text-anchor="start" >All figures are synthetic and illustrative — not findings from AIR or a real study.</text>
+<text x="74" y="1572" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="500" fill="#64748b" text-anchor="start" >Independent education-policy communications portfolio work sample  •  2026</text>
+</svg>
