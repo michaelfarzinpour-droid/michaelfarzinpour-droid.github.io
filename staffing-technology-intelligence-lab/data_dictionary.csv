@@ -1,0 +1,13 @@
+field,type,definition,source_or_rule,unit
+id,string,Synthetic firm ID S001–S360,"unique, generated",firm record
+size,category,Small / Mid-market / Enterprise,synthetic selection,firm record
+vertical,category,IT / Healthcare / Industrial / Professional,synthetic selection,firm record
+region,category,West / Midwest / South / Northeast,synthetic selection,firm record
+ats,binary,ATS/CRM use (0/1),synthetic Bernoulli probability,firm record
+jobads,binary,Job advertising use (0/1),synthetic Bernoulli probability,firm record
+sourcing,binary,Sourcing automation use (0/1),synthetic Bernoulli probability,firm record
+screen,binary,Screening use (0/1),synthetic Bernoulli probability,firm record
+vms,binary,VMS use (0/1),synthetic Bernoulli probability,firm record
+back,binary,Payroll/back office use (0/1),synthetic Bernoulli probability,firm record
+ai,binary,AI use (0/1),synthetic Bernoulli probability,firm record
+constraint,category,Integration / Cost / Data quality / Staff training / Privacy / governance,synthetic random selection,firm record
