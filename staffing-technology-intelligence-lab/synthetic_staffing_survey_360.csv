@@ -1,0 +1,361 @@
+id,size,vertical,region,ats,jobads,sourcing,screen,vms,back,ai,constraint
+S001,Small,IT,West,1,1,1,1,0,0,0,Integration
+S002,Small,Industrial,South,1,1,0,0,0,0,0,Cost
+S003,Small,Healthcare,Northeast,1,0,0,1,0,0,0,Cost
+S004,Small,IT,South,0,0,0,0,1,1,0,Data quality
+S005,Mid-market,Healthcare,South,1,1,0,1,0,0,0,Privacy / governance
+S006,Small,IT,Midwest,1,0,0,0,0,0,0,Privacy / governance
+S007,Mid-market,Industrial,South,1,1,1,1,0,1,1,Integration
+S008,Mid-market,Professional,Midwest,1,1,1,0,0,0,1,Data quality
+S009,Small,Professional,West,0,1,0,0,0,1,0,Privacy / governance
+S010,Mid-market,IT,South,1,0,0,1,1,1,1,Cost
+S011,Small,Healthcare,Northeast,1,1,0,0,0,0,0,Integration
+S012,Small,Healthcare,West,1,0,0,0,0,0,0,Privacy / governance
+S013,Small,Healthcare,South,1,1,0,0,0,0,1,Data quality
+S014,Enterprise,IT,West,1,0,1,1,0,0,1,Privacy / governance
+S015,Mid-market,IT,Northeast,1,0,0,0,1,0,0,Cost
+S016,Small,IT,South,1,0,1,1,0,0,1,Staff training
+S017,Small,IT,Midwest,0,1,0,0,0,1,0,Data quality
+S018,Small,Professional,South,0,1,0,0,0,0,0,Integration
+S019,Small,Industrial,Midwest,1,1,1,1,0,0,0,Integration
+S020,Mid-market,Industrial,South,1,1,1,0,0,1,0,Integration
+S021,Small,Healthcare,West,0,1,1,1,1,0,0,Privacy / governance
+S022,Small,Healthcare,South,1,1,1,0,1,0,0,Cost
+S023,Mid-market,Healthcare,South,1,0,0,0,1,1,0,Data quality
+S024,Enterprise,Industrial,South,0,0,1,1,0,1,1,Integration
+S025,Mid-market,Professional,Midwest,1,0,0,0,1,1,0,Privacy / governance
+S026,Small,Healthcare,South,0,1,1,1,0,0,0,Cost
+S027,Mid-market,Industrial,Midwest,0,0,1,0,0,1,1,Cost
+S028,Mid-market,Industrial,Northeast,1,1,0,1,0,1,1,Privacy / governance
+S029,Enterprise,Professional,South,1,1,1,1,1,0,1,Privacy / governance
+S030,Mid-market,Healthcare,Midwest,1,0,1,1,1,1,1,Staff training
+S031,Mid-market,Healthcare,Northeast,0,0,1,0,1,0,1,Staff training
+S032,Enterprise,Professional,West,1,1,0,0,1,0,1,Cost
+S033,Mid-market,Industrial,Northeast,1,0,0,1,1,1,1,Cost
+S034,Small,Industrial,Northeast,0,1,1,0,0,0,0,Privacy / governance
+S035,Mid-market,Professional,Northeast,1,0,0,1,0,0,0,Privacy / governance
+S036,Mid-market,Industrial,Midwest,1,1,0,1,0,1,0,Data quality
+S037,Enterprise,Healthcare,Midwest,1,1,0,0,0,0,0,Integration
+S038,Small,Industrial,South,1,0,0,1,0,0,0,Data quality
+S039,Mid-market,IT,South,1,1,0,0,0,1,1,Integration
+S040,Small,Professional,South,0,0,0,0,0,0,0,Cost
+S041,Mid-market,IT,South,1,1,1,1,1,0,0,Staff training
+S042,Small,Professional,Northeast,1,1,0,0,1,0,0,Data quality
+S043,Mid-market,Professional,Midwest,1,1,1,0,0,1,0,Privacy / governance
+S044,Enterprise,Professional,South,1,1,0,0,1,1,0,Integration
+S045,Enterprise,IT,Midwest,1,1,1,1,1,0,1,Privacy / governance
+S046,Small,Industrial,Northeast,1,1,1,1,0,1,0,Cost
+S047,Mid-market,Professional,South,1,1,0,0,0,1,0,Integration
+S048,Small,Healthcare,Northeast,0,0,0,0,0,0,0,Data quality
+S049,Enterprise,Professional,Northeast,1,0,0,0,1,1,1,Privacy / governance
+S050,Mid-market,IT,West,1,0,0,0,1,0,0,Cost
+S051,Enterprise,Industrial,West,1,1,1,0,0,1,0,Privacy / governance
+S052,Mid-market,Healthcare,South,1,0,1,0,0,1,1,Data quality
+S053,Enterprise,Industrial,Midwest,1,1,1,0,0,1,1,Cost
+S054,Small,IT,South,1,0,0,0,1,0,1,Data quality
+S055,Small,Healthcare,South,0,1,0,0,1,1,0,Integration
+S056,Small,Industrial,West,1,0,0,1,0,1,1,Cost
+S057,Enterprise,Professional,Northeast,1,1,0,1,0,1,0,Data quality
+S058,Mid-market,Healthcare,Midwest,0,1,0,1,0,1,0,Cost
+S059,Enterprise,IT,West,1,1,1,0,1,1,1,Cost
+S060,Small,Healthcare,West,0,0,1,0,0,0,0,Integration
+S061,Enterprise,IT,Northeast,1,0,1,1,1,1,1,Integration
+S062,Small,Healthcare,Midwest,1,0,0,1,1,1,0,Staff training
+S063,Small,Healthcare,Northeast,0,0,0,1,0,0,0,Staff training
+S064,Small,IT,Northeast,0,0,1,0,0,0,0,Data quality
+S065,Small,Professional,West,0,0,0,0,0,0,0,Data quality
+S066,Mid-market,Industrial,Northeast,0,1,0,0,0,0,0,Data quality
+S067,Small,Healthcare,Northeast,1,0,0,0,0,0,0,Cost
+S068,Small,Industrial,South,0,1,0,1,0,1,0,Data quality
+S069,Small,IT,West,0,1,0,1,0,0,0,Cost
+S070,Enterprise,Professional,Northeast,1,1,1,0,0,1,0,Staff training
+S071,Small,Industrial,Northeast,1,0,0,0,0,1,0,Privacy / governance
+S072,Mid-market,IT,West,0,0,0,0,1,1,0,Staff training
+S073,Mid-market,Industrial,South,1,1,0,0,0,1,1,Privacy / governance
+S074,Small,Industrial,West,1,1,0,1,0,0,0,Staff training
+S075,Mid-market,Professional,West,1,1,1,0,0,1,0,Data quality
+S076,Small,Industrial,South,0,0,0,0,1,1,1,Cost
+S077,Small,Industrial,South,1,0,0,0,0,1,0,Integration
+S078,Small,Industrial,Midwest,1,0,0,0,0,1,0,Cost
+S079,Mid-market,Healthcare,Northeast,1,1,0,1,1,0,0,Privacy / governance
+S080,Small,IT,West,1,1,1,0,0,1,0,Privacy / governance
+S081,Mid-market,Industrial,South,0,1,0,0,0,1,0,Cost
+S082,Mid-market,Professional,Northeast,1,0,1,0,1,1,1,Data quality
+S083,Small,Professional,Midwest,0,0,1,0,0,1,0,Integration
+S084,Small,Professional,Midwest,0,0,0,0,1,0,0,Data quality
+S085,Small,IT,West,0,1,0,1,0,0,0,Integration
+S086,Small,Professional,West,1,1,0,1,0,1,0,Staff training
+S087,Small,Industrial,West,0,1,0,0,0,0,0,Staff training
+S088,Small,Healthcare,West,1,1,0,0,0,0,0,Staff training
+S089,Small,Industrial,South,1,1,0,0,0,0,0,Staff training
+S090,Mid-market,Industrial,South,1,1,1,1,0,0,1,Integration
+S091,Small,Professional,Northeast,0,0,1,1,0,1,0,Data quality
+S092,Small,IT,Midwest,1,1,1,0,0,0,0,Privacy / governance
+S093,Small,Professional,Northeast,1,1,0,1,0,0,0,Data quality
+S094,Mid-market,IT,Midwest,1,1,0,1,0,0,1,Staff training
+S095,Mid-market,Professional,South,0,0,0,0,0,1,1,Privacy / governance
+S096,Small,Professional,Midwest,0,0,0,1,0,1,1,Data quality
+S097,Mid-market,Healthcare,South,1,0,0,1,0,1,1,Staff training
+S098,Small,Industrial,Midwest,1,0,1,1,1,1,1,Data quality
+S099,Small,Healthcare,Northeast,1,0,0,0,0,0,0,Data quality
+S100,Enterprise,Industrial,Midwest,1,1,1,1,0,0,0,Integration
+S101,Enterprise,Industrial,South,1,0,1,0,0,1,0,Integration
+S102,Mid-market,Professional,Northeast,1,1,0,0,1,1,0,Data quality
+S103,Mid-market,Professional,Midwest,0,0,1,0,0,0,1,Staff training
+S104,Small,IT,South,1,0,1,0,0,1,1,Staff training
+S105,Mid-market,Healthcare,Midwest,1,1,1,1,1,1,1,Privacy / governance
+S106,Mid-market,Professional,Northeast,1,0,0,1,1,1,0,Staff training
+S107,Small,Healthcare,Midwest,0,0,0,1,0,0,0,Integration
+S108,Small,IT,Midwest,0,0,0,0,0,0,0,Staff training
+S109,Small,IT,Northeast,0,0,1,0,1,1,1,Integration
+S110,Small,Professional,Midwest,0,0,1,0,1,1,1,Integration
+S111,Mid-market,Industrial,Northeast,0,0,0,0,1,1,0,Data quality
+S112,Small,Industrial,South,1,1,0,1,0,0,0,Integration
+S113,Small,Professional,Northeast,1,0,1,0,0,0,0,Cost
+S114,Enterprise,Professional,South,1,1,1,1,1,1,1,Data quality
+S115,Enterprise,IT,Midwest,1,1,1,1,0,0,1,Data quality
+S116,Small,IT,West,1,1,0,0,0,0,0,Privacy / governance
+S117,Mid-market,Industrial,Midwest,1,0,1,0,0,0,1,Data quality
+S118,Small,Healthcare,South,0,1,0,1,1,0,0,Staff training
+S119,Small,IT,South,0,0,0,0,1,0,1,Integration
+S120,Small,Professional,Northeast,0,0,0,0,0,0,0,Data quality
+S121,Small,Healthcare,Midwest,1,1,0,0,0,1,0,Staff training
+S122,Small,IT,Northeast,1,1,0,0,0,0,0,Integration
+S123,Small,Professional,Midwest,1,1,1,0,0,0,1,Privacy / governance
+S124,Mid-market,Healthcare,Northeast,1,1,1,1,0,0,1,Privacy / governance
+S125,Enterprise,Industrial,Midwest,0,1,0,1,0,0,0,Data quality
+S126,Small,Professional,Midwest,0,1,0,0,0,0,0,Privacy / governance
+S127,Small,Professional,South,1,1,1,0,0,0,0,Data quality
+S128,Small,IT,South,1,1,0,0,0,1,0,Data quality
+S129,Small,Professional,South,1,1,0,0,0,0,1,Integration
+S130,Small,Healthcare,Northeast,1,1,0,1,0,0,0,Staff training
+S131,Small,Healthcare,West,1,1,0,0,1,0,0,Cost
+S132,Enterprise,Industrial,South,1,1,1,1,1,1,0,Cost
+S133,Mid-market,IT,Midwest,1,0,0,0,0,0,1,Privacy / governance
+S134,Small,Healthcare,South,1,1,0,1,0,1,0,Data quality
+S135,Enterprise,Healthcare,South,0,0,0,1,1,0,0,Cost
+S136,Mid-market,Professional,Northeast,0,1,0,1,0,1,1,Privacy / governance
+S137,Mid-market,Professional,West,1,1,0,0,0,0,0,Integration
+S138,Small,Professional,Midwest,1,0,0,1,0,0,0,Data quality
+S139,Small,Professional,Midwest,1,0,0,1,0,1,0,Data quality
+S140,Mid-market,Professional,Northeast,1,1,1,1,1,1,0,Staff training
+S141,Small,IT,Midwest,1,0,1,0,0,1,0,Integration
+S142,Enterprise,Industrial,Midwest,1,0,1,0,0,1,1,Data quality
+S143,Mid-market,Healthcare,West,1,1,0,1,1,1,0,Staff training
+S144,Mid-market,Healthcare,Northeast,0,0,1,0,0,1,1,Cost
+S145,Mid-market,Healthcare,West,1,1,1,0,0,1,1,Privacy / governance
+S146,Small,Industrial,Northeast,1,1,1,0,1,0,0,Staff training
+S147,Enterprise,IT,West,0,1,0,1,0,0,0,Cost
+S148,Small,Industrial,West,0,1,0,0,0,0,0,Data quality
+S149,Small,IT,South,1,1,1,1,0,0,1,Privacy / governance
+S150,Small,Healthcare,South,1,1,1,1,1,0,1,Privacy / governance
+S151,Enterprise,Professional,Midwest,1,1,1,1,1,0,1,Data quality
+S152,Small,Healthcare,Northeast,0,0,0,1,0,0,0,Integration
+S153,Small,IT,Midwest,0,1,1,1,0,0,0,Data quality
+S154,Mid-market,Industrial,West,0,1,1,1,1,0,0,Privacy / governance
+S155,Small,Professional,South,0,1,0,1,0,1,0,Data quality
+S156,Small,Professional,Northeast,1,0,0,0,0,0,0,Cost
+S157,Enterprise,IT,Midwest,0,0,1,0,0,1,0,Staff training
+S158,Mid-market,Industrial,South,0,1,0,1,0,1,0,Cost
+S159,Small,Healthcare,West,0,0,0,0,0,1,0,Data quality
+S160,Small,Professional,Midwest,1,1,0,1,1,0,1,Privacy / governance
+S161,Small,Industrial,South,0,0,1,1,0,0,0,Privacy / governance
+S162,Mid-market,Healthcare,Midwest,1,1,1,1,1,0,0,Data quality
+S163,Small,Healthcare,West,1,0,0,0,0,0,0,Integration
+S164,Small,Industrial,Midwest,1,1,0,0,0,0,0,Privacy / governance
+S165,Small,IT,South,0,1,0,0,0,0,0,Staff training
+S166,Mid-market,Healthcare,Northeast,1,1,0,0,0,1,1,Integration
+S167,Enterprise,IT,South,1,1,0,1,1,1,0,Integration
+S168,Small,Healthcare,West,0,1,0,0,0,1,1,Cost
+S169,Enterprise,IT,Midwest,1,0,0,1,0,1,0,Integration
+S170,Mid-market,Professional,Northeast,1,0,0,0,1,0,0,Cost
+S171,Enterprise,Professional,South,1,0,0,1,1,1,0,Data quality
+S172,Mid-market,Professional,South,1,1,1,1,1,1,0,Cost
+S173,Small,IT,Northeast,1,0,1,1,0,1,1,Data quality
+S174,Small,Industrial,Northeast,1,0,0,1,0,1,1,Privacy / governance
+S175,Small,Industrial,West,0,1,0,1,1,0,1,Cost
+S176,Mid-market,Professional,Northeast,1,1,1,0,0,0,0,Integration
+S177,Enterprise,Professional,South,1,1,1,1,0,1,1,Staff training
+S178,Small,Healthcare,Northeast,0,0,0,1,0,0,0,Cost
+S179,Mid-market,Industrial,West,0,1,1,1,1,0,1,Privacy / governance
+S180,Mid-market,Professional,South,0,0,0,1,1,0,0,Cost
+S181,Small,Professional,West,0,0,0,0,0,1,0,Cost
+S182,Mid-market,IT,Midwest,1,0,0,1,0,1,0,Integration
+S183,Small,Healthcare,Northeast,1,0,1,1,0,0,0,Staff training
+S184,Enterprise,Healthcare,Northeast,1,1,1,1,0,1,0,Data quality
+S185,Enterprise,Industrial,Northeast,1,1,0,0,1,1,0,Privacy / governance
+S186,Enterprise,Industrial,Northeast,1,1,1,0,1,1,1,Cost
+S187,Mid-market,Healthcare,South,1,1,1,0,0,1,0,Staff training
+S188,Small,IT,Midwest,0,1,1,1,0,0,1,Integration
+S189,Mid-market,Healthcare,Northeast,0,1,1,1,0,1,1,Staff training
+S190,Mid-market,IT,Midwest,0,0,1,1,0,1,0,Privacy / governance
+S191,Small,Industrial,South,1,1,0,0,0,1,0,Privacy / governance
+S192,Mid-market,Professional,Northeast,0,1,0,0,1,1,1,Data quality
+S193,Small,Healthcare,Northeast,1,1,0,0,0,0,0,Data quality
+S194,Mid-market,Professional,Northeast,1,0,0,0,1,1,1,Privacy / governance
+S195,Small,Healthcare,South,1,0,0,0,0,0,1,Data quality
+S196,Small,Industrial,Northeast,1,0,0,0,0,0,0,Privacy / governance
+S197,Small,Industrial,Midwest,1,0,0,0,0,0,0,Cost
+S198,Small,Healthcare,Northeast,1,1,0,0,0,1,0,Integration
+S199,Small,IT,South,1,1,0,0,0,1,1,Staff training
+S200,Enterprise,Industrial,South,1,1,0,0,0,0,1,Privacy / governance
+S201,Mid-market,Professional,South,1,0,0,0,0,0,0,Cost
+S202,Small,Professional,South,1,0,1,1,0,0,0,Privacy / governance
+S203,Mid-market,IT,Northeast,0,0,0,1,0,0,1,Data quality
+S204,Enterprise,Professional,South,1,1,0,0,0,1,1,Integration
+S205,Small,Professional,South,0,1,1,0,0,1,0,Staff training
+S206,Mid-market,IT,Northeast,1,1,0,0,0,0,0,Staff training
+S207,Mid-market,Industrial,Midwest,1,1,0,0,0,1,1,Cost
+S208,Mid-market,Professional,Midwest,1,1,0,0,1,1,1,Cost
+S209,Small,Industrial,Northeast,1,0,0,0,0,0,0,Integration
+S210,Small,Healthcare,Northeast,1,0,0,0,0,0,0,Integration
+S211,Mid-market,Industrial,Northeast,1,1,1,1,0,0,1,Privacy / governance
+S212,Enterprise,IT,South,1,1,1,1,0,1,1,Data quality
+S213,Enterprise,IT,South,1,0,0,0,1,1,1,Data quality
+S214,Small,Healthcare,West,1,0,0,1,0,1,0,Integration
+S215,Enterprise,IT,South,1,1,0,1,0,1,1,Integration
+S216,Small,Professional,West,1,0,0,0,0,0,0,Data quality
+S217,Enterprise,Industrial,South,1,1,0,1,0,0,0,Data quality
+S218,Small,Industrial,Midwest,1,0,0,0,1,1,0,Staff training
+S219,Small,Professional,South,0,1,1,0,0,0,1,Staff training
+S220,Small,Industrial,West,0,1,1,0,1,1,1,Cost
+S221,Small,Professional,Midwest,0,1,0,1,0,1,0,Cost
+S222,Enterprise,Industrial,South,1,1,0,1,0,1,0,Cost
+S223,Small,IT,Midwest,0,1,0,0,0,0,0,Integration
+S224,Small,Industrial,South,1,0,0,0,0,0,1,Data quality
+S225,Mid-market,Industrial,Northeast,1,1,0,1,0,0,1,Cost
+S226,Small,Industrial,Northeast,0,1,0,0,0,0,0,Integration
+S227,Small,IT,Northeast,1,0,0,0,0,0,0,Integration
+S228,Small,Industrial,West,1,0,1,0,0,0,0,Data quality
+S229,Small,Healthcare,Midwest,0,1,0,1,0,1,1,Staff training
+S230,Small,Healthcare,West,0,0,0,0,0,0,0,Integration
+S231,Small,IT,West,1,1,0,1,0,0,0,Staff training
+S232,Small,Healthcare,Northeast,1,1,1,0,1,1,0,Cost
+S233,Small,Industrial,Midwest,1,1,0,1,1,0,1,Data quality
+S234,Mid-market,Professional,West,1,1,0,0,0,0,0,Data quality
+S235,Small,Industrial,Midwest,0,1,0,0,0,0,0,Data quality
+S236,Small,Professional,Northeast,1,1,0,1,0,1,0,Integration
+S237,Enterprise,Industrial,West,0,0,0,1,0,0,0,Data quality
+S238,Mid-market,Healthcare,Midwest,1,1,1,1,0,0,0,Integration
+S239,Small,IT,West,0,1,0,0,0,1,1,Data quality
+S240,Small,Industrial,Midwest,0,0,0,1,0,0,0,Data quality
+S241,Enterprise,Healthcare,Northeast,1,1,0,1,0,1,1,Staff training
+S242,Small,Professional,West,1,0,1,0,0,1,1,Data quality
+S243,Enterprise,Professional,Midwest,1,1,1,1,1,0,0,Cost
+S244,Mid-market,IT,South,0,0,1,1,1,1,1,Cost
+S245,Mid-market,Healthcare,South,1,1,1,1,0,1,0,Staff training
+S246,Mid-market,IT,West,0,1,1,1,0,0,1,Cost
+S247,Small,Professional,Midwest,1,0,0,0,0,0,0,Data quality
+S248,Small,Professional,Midwest,1,1,0,0,0,0,0,Privacy / governance
+S249,Small,Healthcare,West,0,0,1,0,0,1,0,Cost
+S250,Small,IT,West,0,0,0,0,1,1,0,Integration
+S251,Small,Industrial,Northeast,1,1,0,0,0,1,1,Data quality
+S252,Small,Professional,Midwest,1,0,0,1,0,0,0,Cost
+S253,Small,Industrial,Midwest,1,0,0,1,0,1,1,Privacy / governance
+S254,Small,Professional,South,1,1,1,0,0,0,0,Staff training
+S255,Enterprise,Professional,West,1,1,1,0,0,0,1,Privacy / governance
+S256,Mid-market,Healthcare,South,1,1,0,0,1,1,0,Cost
+S257,Small,Industrial,West,1,0,0,0,1,0,0,Data quality
+S258,Enterprise,Professional,Northeast,1,1,1,1,0,1,1,Integration
+S259,Small,Healthcare,West,0,1,0,0,1,1,1,Integration
+S260,Mid-market,Professional,Northeast,1,0,1,0,0,0,0,Privacy / governance
+S261,Mid-market,Industrial,Northeast,1,0,1,0,0,0,1,Cost
+S262,Enterprise,Healthcare,West,1,1,1,1,1,1,1,Integration
+S263,Small,Healthcare,Northeast,0,1,0,0,1,1,1,Staff training
+S264,Small,Industrial,West,0,0,0,0,0,1,1,Data quality
+S265,Small,Professional,West,1,0,0,0,0,0,0,Integration
+S266,Mid-market,Healthcare,South,1,0,0,0,1,1,0,Cost
+S267,Small,Industrial,West,0,1,0,1,0,1,0,Staff training
+S268,Mid-market,Industrial,West,0,1,0,0,0,1,0,Cost
+S269,Small,Industrial,Northeast,0,0,1,0,0,0,0,Data quality
+S270,Small,IT,Northeast,1,1,0,0,0,0,1,Staff training
+S271,Mid-market,IT,Northeast,0,1,0,1,0,0,1,Privacy / governance
+S272,Small,Industrial,West,0,1,0,0,0,1,0,Cost
+S273,Small,Industrial,Midwest,1,1,0,1,1,1,1,Privacy / governance
+S274,Small,Industrial,South,0,0,0,0,0,1,0,Privacy / governance
+S275,Enterprise,Professional,South,1,1,0,1,1,0,1,Cost
+S276,Small,Healthcare,West,1,1,0,1,0,1,1,Data quality
+S277,Enterprise,IT,West,1,1,1,0,0,1,1,Integration
+S278,Mid-market,IT,South,0,1,1,1,1,0,0,Integration
+S279,Mid-market,Industrial,Midwest,1,1,0,1,1,1,0,Cost
+S280,Small,IT,West,1,1,0,0,0,1,0,Cost
+S281,Small,Professional,Northeast,1,1,1,0,0,0,0,Cost
+S282,Small,IT,Midwest,1,0,0,1,0,1,0,Integration
+S283,Mid-market,Industrial,Northeast,0,1,0,1,0,1,0,Cost
+S284,Mid-market,Industrial,West,1,0,0,0,0,1,0,Cost
+S285,Small,Industrial,West,1,1,0,0,1,1,0,Privacy / governance
+S286,Enterprise,IT,Midwest,1,1,1,0,0,0,0,Staff training
+S287,Mid-market,Healthcare,West,1,1,0,0,0,1,0,Privacy / governance
+S288,Small,Industrial,Northeast,0,1,0,1,0,1,1,Privacy / governance
+S289,Mid-market,Professional,Northeast,0,0,1,0,0,1,0,Staff training
+S290,Mid-market,IT,Northeast,1,1,0,0,0,0,1,Staff training
+S291,Small,Industrial,South,1,1,0,0,0,1,0,Privacy / governance
+S292,Mid-market,Professional,West,1,1,0,0,0,1,1,Cost
+S293,Small,Industrial,West,0,1,0,0,0,1,0,Integration
+S294,Enterprise,Industrial,West,1,1,1,1,0,1,0,Integration
+S295,Small,Industrial,Northeast,1,0,0,0,0,0,0,Cost
+S296,Mid-market,IT,Northeast,1,1,1,1,0,0,0,Data quality
+S297,Mid-market,Healthcare,Northeast,0,0,1,1,0,1,0,Integration
+S298,Small,Healthcare,South,1,0,0,0,0,1,1,Integration
+S299,Small,IT,Northeast,1,0,1,0,1,0,1,Data quality
+S300,Enterprise,Healthcare,Northeast,1,0,0,1,0,1,0,Integration
+S301,Mid-market,Healthcare,Midwest,1,1,0,0,0,0,1,Staff training
+S302,Enterprise,IT,Midwest,1,1,1,1,1,1,1,Data quality
+S303,Enterprise,IT,Midwest,1,1,1,0,1,1,1,Cost
+S304,Small,Industrial,West,1,1,0,0,0,0,0,Data quality
+S305,Small,Professional,South,1,1,0,0,0,0,0,Integration
+S306,Enterprise,Industrial,South,1,1,1,1,0,1,1,Privacy / governance
+S307,Enterprise,IT,Midwest,0,0,0,1,1,0,1,Cost
+S308,Small,Industrial,West,0,0,0,0,0,1,0,Privacy / governance
+S309,Small,IT,Northeast,0,0,0,0,0,0,0,Cost
+S310,Small,IT,West,1,1,1,0,0,1,1,Data quality
+S311,Small,IT,West,1,1,0,1,0,0,0,Integration
+S312,Enterprise,Healthcare,South,1,1,1,0,1,0,1,Staff training
+S313,Enterprise,Industrial,South,0,1,0,1,0,0,0,Cost
+S314,Small,Healthcare,West,0,0,0,0,0,0,1,Integration
+S315,Small,Professional,Northeast,1,1,0,0,0,0,0,Cost
+S316,Small,Healthcare,West,0,1,0,0,1,1,0,Staff training
+S317,Small,Healthcare,Northeast,0,0,1,0,0,0,0,Integration
+S318,Mid-market,Industrial,South,1,0,0,0,1,1,0,Integration
+S319,Small,Industrial,West,1,0,0,1,0,0,0,Privacy / governance
+S320,Small,Professional,Midwest,1,0,1,0,1,1,0,Integration
+S321,Small,Industrial,Northeast,0,1,0,1,0,1,0,Data quality
+S322,Small,IT,West,0,0,1,0,0,0,1,Staff training
+S323,Small,IT,South,1,1,0,1,0,1,0,Integration
+S324,Mid-market,IT,Midwest,1,1,0,1,1,1,0,Staff training
+S325,Small,Professional,Northeast,0,0,1,0,1,0,0,Privacy / governance
+S326,Small,Healthcare,West,1,1,0,0,1,0,1,Integration
+S327,Mid-market,Healthcare,South,1,1,1,0,1,1,0,Integration
+S328,Mid-market,Industrial,Northeast,1,1,0,1,0,0,0,Privacy / governance
+S329,Small,Healthcare,Northeast,1,1,0,0,0,1,0,Privacy / governance
+S330,Small,Industrial,South,0,0,0,0,0,0,0,Data quality
+S331,Small,IT,Midwest,0,0,0,0,0,0,1,Privacy / governance
+S332,Small,Healthcare,Northeast,0,0,0,1,1,1,0,Privacy / governance
+S333,Enterprise,Industrial,South,0,1,1,0,1,1,0,Data quality
+S334,Small,Industrial,Midwest,0,1,1,1,1,0,0,Privacy / governance
+S335,Enterprise,IT,South,1,1,0,1,0,1,1,Staff training
+S336,Mid-market,IT,South,1,1,0,0,0,1,0,Integration
+S337,Enterprise,IT,West,1,1,1,0,0,1,0,Integration
+S338,Enterprise,Professional,Northeast,1,0,1,0,0,1,1,Staff training
+S339,Enterprise,Industrial,Midwest,1,1,1,1,0,0,0,Cost
+S340,Mid-market,Healthcare,West,0,1,0,1,0,0,0,Cost
+S341,Mid-market,Industrial,Midwest,0,1,1,1,0,0,1,Staff training
+S342,Mid-market,IT,Midwest,1,0,1,0,0,1,0,Cost
+S343,Small,Industrial,Midwest,1,1,1,1,0,0,1,Data quality
+S344,Small,Professional,Midwest,0,1,0,0,0,0,0,Data quality
+S345,Small,Professional,Midwest,0,1,1,1,0,1,0,Data quality
+S346,Small,Healthcare,Northeast,1,0,1,1,1,0,1,Data quality
+S347,Mid-market,IT,Midwest,1,0,1,0,0,1,1,Cost
+S348,Enterprise,IT,Northeast,1,1,1,0,0,1,1,Privacy / governance
+S349,Mid-market,IT,Northeast,0,1,0,0,0,0,1,Staff training
+S350,Mid-market,Professional,Midwest,1,0,1,0,0,0,1,Data quality
+S351,Mid-market,Industrial,West,0,0,0,0,1,1,0,Data quality
+S352,Mid-market,IT,South,0,0,1,0,1,1,0,Data quality
+S353,Small,Healthcare,West,1,1,0,1,1,0,1,Integration
+S354,Small,Healthcare,South,1,0,1,1,0,0,1,Data quality
+S355,Enterprise,Professional,West,0,1,1,1,1,1,0,Data quality
+S356,Small,Professional,West,0,0,1,0,0,1,0,Cost
+S357,Mid-market,Healthcare,West,1,1,1,0,0,1,0,Cost
+S358,Small,Industrial,Midwest,1,0,1,0,0,0,0,Data quality
+S359,Mid-market,Professional,West,1,0,0,1,1,1,1,Data quality
+S360,Small,IT,West,0,0,0,1,1,0,0,Data quality
