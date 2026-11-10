@@ -8,7 +8,8 @@ Original dashboard: audience segmentation, creative testing, tracking, scenario 
 **Important:** Original modules show curated illustrative scenario percentages with no supporting respondent records. The new Evidence module explicitly presents a *separate* synthetic companion study whose results derive from reproducible CSVs. Do not claim the two sets of numbers are one coherent fielded study.
 
 ## Reproduction
-- Python 3 standard library only: `python analysis/generate_data.py` regenerates public-deployment synthetic microdata from the frozen one-decimal aggregate targets. This reconstruction is distinct from the stochastic generator in the original downloaded ZIP.\n- `python analysis/reproduce_analysis.py` confirms counts, percentages, differences and approximate CI bounds.
+- Python 3 standard library only: `python analysis/generate_data.py` regenerates public-deployment synthetic microdata from the frozen one-decimal aggregate targets. This reconstruction is distinct from the stochastic generator in the original downloaded ZIP.
+- `python analysis/reproduce_analysis.py` confirms counts, percentages, differences and approximate CI bounds.
 - Tracking: 9,600 reconstructed synthetic records; creative test: 2,400 reconstructed synthetic records. Values are illustrative and generated to agree with published summary margins.
 - Data files and research protocols in `data/` and `research_docs/`.
 - Read `research_docs/executive_narrative.md` for the public executive strategy readout. The 11-slide PowerPoint remains in the complete ZIP shared in the conversation, not on this public site.\n
