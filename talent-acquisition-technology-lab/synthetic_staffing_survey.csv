@@ -1,0 +1,1000 @@
+firm_id,region,firm_size,specialization,tech_maturity,ats_integration,ai_adoption,revenue_growth,recruiter_productivity_index,fraud_controls,survey_complete,top_barrier
+F0001,Midwest,Small (1–49),Professional Services,3,0,0,0,27.3,0,1,Privacy / security
+F0002,West,Mid (50–249),Industrial,3,0,0,1,33.5,1,1,Privacy / security
+F0003,Midwest,Mid (50–249),Industrial,1,0,0,1,16.9,0,1,Data quality
+F0004,South,Mid (50–249),IT,3,0,1,1,21.1,0,1,Cost
+F0005,Northeast,Small (1–49),Healthcare,3,1,0,1,31.7,0,1,Cost
+F0006,Northeast,Small (1–49),Healthcare,3,0,0,1,23.3,1,1,Data quality
+F0007,Northeast,Small (1–49),Industrial,2,1,1,0,37.1,0,1,Data quality
+F0008,Northeast,Small (1–49),Industrial,1,0,0,0,16.4,0,0,
+F0009,West,Mid (50–249),Healthcare,1,0,0,0,10.7,0,0,
+F0010,South,Small (1–49),Professional Services,4,1,0,1,30.2,0,1,Integration
+F0011,Northeast,Small (1–49),Professional Services,3,1,1,0,14.2,0,1,Integration
+F0012,South,Small (1–49),IT,3,0,0,1,13.4,0,1,Change management
+F0013,Midwest,Mid (50–249),Healthcare,3,0,0,0,36.8,1,1,Data quality
+F0014,Midwest,Large (250+),Industrial,3,0,1,1,34.4,0,1,Cost
+F0015,Northeast,Mid (50–249),IT,4,0,1,1,22.5,0,0,
+F0016,South,Small (1–49),IT,3,0,1,0,44.8,0,0,
+F0017,Midwest,Mid (50–249),Professional Services,2,1,0,1,33.9,0,0,
+F0018,South,Small (1–49),Professional Services,4,0,0,1,23.9,0,1,Change management
+F0019,South,Small (1–49),Industrial,5,1,1,1,52.9,0,1,Cost
+F0020,Midwest,Small (1–49),Industrial,3,1,0,1,34.7,0,1,Data quality
+F0021,Northeast,Small (1–49),Industrial,1,0,1,1,12.2,0,1,Data quality
+F0022,Northeast,Small (1–49),Professional Services,4,1,1,1,32.3,1,1,Integration
+F0023,South,Mid (50–249),IT,3,1,1,1,45.0,0,1,Cost
+F0024,West,Small (1–49),Professional Services,2,1,1,0,44.1,1,1,Data quality
+F0025,Midwest,Mid (50–249),IT,3,0,0,1,28.7,1,1,Integration
+F0026,Northeast,Large (250+),IT,3,1,1,0,42.2,0,1,Cost
+F0027,South,Small (1–49),IT,4,0,0,1,37.7,0,1,Cost
+F0028,Northeast,Small (1–49),Professional Services,5,0,1,1,35.4,1,1,Data quality
+F0029,West,Mid (50–249),Industrial,5,1,1,1,37.5,1,1,Cost
+F0030,Midwest,Small (1–49),Industrial,1,0,0,0,11.1,0,1,Integration
+F0031,South,Mid (50–249),Industrial,3,0,0,1,25.1,0,1,Cost
+F0032,Midwest,Large (250+),IT,3,1,1,1,25.0,0,1,Change management
+F0033,West,Mid (50–249),Healthcare,3,1,1,0,41.5,1,1,Privacy / security
+F0034,West,Small (1–49),IT,1,0,0,1,23.6,0,1,Data quality
+F0035,West,Small (1–49),IT,5,1,0,1,48.2,0,1,Cost
+F0036,West,Mid (50–249),Industrial,1,0,0,0,39.0,0,0,
+F0037,West,Small (1–49),Professional Services,3,0,1,1,35.1,0,1,Cost
+F0038,Midwest,Mid (50–249),IT,5,0,1,1,31.2,0,1,Cost
+F0039,Northeast,Mid (50–249),Healthcare,1,0,0,1,5.7,0,1,Integration
+F0040,South,Mid (50–249),Industrial,4,1,1,0,41.2,0,1,Integration
+F0041,Northeast,Mid (50–249),Healthcare,1,0,0,1,12.3,0,1,Change management
+F0042,West,Mid (50–249),Healthcare,4,1,1,1,50.0,0,1,Cost
+F0043,South,Small (1–49),Healthcare,2,0,0,1,26.6,0,0,
+F0044,Midwest,Small (1–49),Professional Services,1,0,0,0,7.0,1,0,
+F0045,South,Mid (50–249),Healthcare,3,0,0,1,26.2,0,1,Data quality
+F0046,Midwest,Small (1–49),Healthcare,4,1,0,0,31.3,1,0,
+F0047,Northeast,Small (1–49),Professional Services,4,1,0,0,29.7,0,1,Data quality
+F0048,Northeast,Small (1–49),IT,1,0,0,0,30.1,0,1,Change management
+F0049,Midwest,Small (1–49),Professional Services,1,0,1,0,22.6,0,1,Integration
+F0050,Midwest,Mid (50–249),IT,4,1,1,1,41.4,0,1,Integration
+F0051,Midwest,Small (1–49),Healthcare,2,0,0,0,21.7,0,1,Cost
+F0052,Northeast,Large (250+),IT,3,0,0,1,32.3,0,1,Change management
+F0053,Northeast,Small (1–49),Professional Services,1,0,0,1,16.9,0,1,Privacy / security
+F0054,South,Mid (50–249),Healthcare,4,1,1,1,44.8,1,1,Integration
+F0055,West,Large (250+),IT,3,1,1,0,33.8,0,1,Data quality
+F0056,South,Large (250+),Industrial,2,0,0,0,11.5,0,1,Data quality
+F0057,South,Large (250+),Professional Services,1,0,1,1,9.9,0,0,
+F0058,Northeast,Small (1–49),Healthcare,1,1,0,0,31.5,0,1,Integration
+F0059,West,Small (1–49),Healthcare,3,1,1,1,28.5,0,1,Integration
+F0060,Northeast,Large (250+),Healthcare,3,1,0,1,31.0,0,1,Integration
+F0061,West,Small (1–49),IT,1,0,0,1,18.4,0,1,Integration
+F0062,Midwest,Small (1–49),IT,5,1,1,1,47.2,1,1,Integration
+F0063,West,Mid (50–249),Industrial,5,1,1,1,39.1,0,1,Data quality
+F0064,South,Mid (50–249),Professional Services,1,1,0,0,11.2,0,1,Cost
+F0065,South,Small (1–49),IT,4,1,0,1,34.3,0,1,Data quality
+F0066,South,Small (1–49),Healthcare,1,0,0,0,9.5,1,0,
+F0067,Midwest,Mid (50–249),Healthcare,2,1,1,0,45.0,0,0,
+F0068,Midwest,Mid (50–249),Professional Services,3,1,0,0,17.3,0,0,
+F0069,West,Small (1–49),IT,3,0,1,1,24.8,0,1,Integration
+F0070,South,Large (250+),Professional Services,4,1,1,0,29.8,1,1,Data quality
+F0071,Midwest,Mid (50–249),Professional Services,4,1,1,0,33.6,0,0,
+F0072,Midwest,Mid (50–249),IT,1,0,0,1,18.3,0,1,Cost
+F0073,Midwest,Mid (50–249),Industrial,3,1,0,1,38.6,0,1,Integration
+F0074,Northeast,Mid (50–249),Professional Services,1,0,0,0,10.1,0,1,Integration
+F0075,Northeast,Mid (50–249),IT,4,0,0,1,32.6,0,1,Integration
+F0076,West,Small (1–49),Professional Services,1,0,0,0,18.1,0,0,
+F0077,West,Small (1–49),Professional Services,2,0,0,0,24.0,1,1,Data quality
+F0078,Midwest,Mid (50–249),IT,3,0,1,1,32.4,0,1,Cost
+F0079,Midwest,Small (1–49),Industrial,4,1,1,1,41.7,1,0,
+F0080,West,Mid (50–249),Healthcare,5,1,0,1,38.8,0,1,Data quality
+F0081,West,Mid (50–249),Industrial,3,1,1,0,44.6,1,1,Change management
+F0082,Northeast,Mid (50–249),Industrial,4,1,1,1,37.4,1,0,
+F0083,West,Small (1–49),Professional Services,4,0,0,0,29.0,0,1,Integration
+F0084,West,Mid (50–249),Healthcare,2,1,0,1,29.4,0,0,
+F0085,West,Mid (50–249),Industrial,3,0,0,1,40.7,0,1,Data quality
+F0086,West,Small (1–49),Industrial,2,0,0,0,27.4,0,1,Data quality
+F0087,West,Mid (50–249),Industrial,3,1,1,1,30.1,1,0,
+F0088,South,Small (1–49),Healthcare,3,0,0,1,15.9,0,1,Cost
+F0089,Northeast,Mid (50–249),Industrial,5,1,1,1,38.5,1,1,Privacy / security
+F0090,West,Large (250+),Industrial,2,1,0,0,36.1,0,0,
+F0091,South,Large (250+),Industrial,4,1,1,1,38.4,0,1,Integration
+F0092,Midwest,Large (250+),IT,5,1,1,0,38.1,0,0,
+F0093,South,Small (1–49),IT,4,1,1,1,45.5,1,1,Privacy / security
+F0094,Midwest,Mid (50–249),IT,2,0,1,0,18.6,0,1,Privacy / security
+F0095,Midwest,Small (1–49),Industrial,3,0,0,1,27.3,0,1,Privacy / security
+F0096,South,Mid (50–249),Industrial,5,1,1,0,44.3,0,1,Change management
+F0097,Northeast,Large (250+),Professional Services,4,1,1,1,27.4,0,1,Integration
+F0098,South,Mid (50–249),IT,4,1,1,1,31.0,0,1,Integration
+F0099,Northeast,Small (1–49),Industrial,4,0,1,1,31.6,0,0,
+F0100,South,Small (1–49),Industrial,2,0,0,0,25.8,1,0,
+F0101,Midwest,Small (1–49),Industrial,1,0,0,1,4.0,1,1,Integration
+F0102,South,Small (1–49),Industrial,3,0,1,0,28.2,0,0,
+F0103,Northeast,Mid (50–249),Professional Services,2,0,1,1,18.9,0,1,Integration
+F0104,Midwest,Small (1–49),Industrial,5,1,1,1,50.5,1,1,Data quality
+F0105,South,Large (250+),Healthcare,3,0,0,1,24.2,0,1,Data quality
+F0106,West,Small (1–49),Professional Services,1,0,0,0,11.8,0,1,Privacy / security
+F0107,Midwest,Mid (50–249),IT,3,0,0,1,17.8,0,0,
+F0108,West,Mid (50–249),IT,5,1,0,1,45.6,1,1,Change management
+F0109,Northeast,Mid (50–249),Healthcare,3,1,0,0,31.3,0,1,Data quality
+F0110,Midwest,Large (250+),Healthcare,3,1,1,1,36.9,0,1,Change management
+F0111,South,Mid (50–249),Professional Services,3,1,1,0,39.0,1,1,Data quality
+F0112,South,Mid (50–249),Professional Services,3,0,1,1,33.3,0,1,Data quality
+F0113,Midwest,Mid (50–249),IT,4,0,0,0,24.7,0,1,Cost
+F0114,Midwest,Large (250+),Professional Services,4,1,0,1,38.7,1,1,Change management
+F0115,Midwest,Mid (50–249),Healthcare,2,0,1,0,23.4,0,1,Cost
+F0116,Northeast,Mid (50–249),Professional Services,2,0,1,0,15.2,0,0,
+F0117,West,Small (1–49),IT,3,0,1,1,23.6,0,1,Change management
+F0118,South,Small (1–49),Healthcare,4,1,1,1,42.8,1,0,
+F0119,Northeast,Small (1–49),Industrial,2,1,0,0,31.1,0,1,Integration
+F0120,Midwest,Mid (50–249),IT,4,1,0,1,40.6,0,1,Integration
+F0121,Midwest,Small (1–49),IT,3,0,0,1,31.6,1,1,Integration
+F0122,West,Large (250+),Industrial,4,0,0,0,34.1,0,1,Data quality
+F0123,Northeast,Large (250+),Professional Services,4,1,1,1,33.7,0,1,Integration
+F0124,South,Mid (50–249),Healthcare,2,0,0,0,13.2,0,1,Change management
+F0125,Midwest,Large (250+),Healthcare,3,0,0,1,31.2,1,1,Change management
+F0126,South,Small (1–49),Professional Services,5,1,0,1,49.8,0,1,Change management
+F0127,Midwest,Mid (50–249),IT,1,0,0,0,15.6,0,1,Cost
+F0128,South,Small (1–49),Professional Services,2,0,0,0,23.7,1,1,Data quality
+F0129,Midwest,Mid (50–249),Healthcare,4,1,0,1,44.5,1,1,Integration
+F0130,South,Small (1–49),Industrial,1,0,0,1,23.2,0,0,
+F0131,West,Small (1–49),Industrial,1,1,1,1,23.8,0,1,Cost
+F0132,Northeast,Small (1–49),Healthcare,4,0,0,1,41.6,1,1,Change management
+F0133,Northeast,Small (1–49),Industrial,2,0,0,0,27.8,1,1,Change management
+F0134,West,Mid (50–249),Industrial,2,1,0,1,33.7,0,1,Data quality
+F0135,Northeast,Large (250+),IT,4,1,1,1,30.8,1,1,Cost
+F0136,Midwest,Small (1–49),IT,3,0,1,1,35.7,1,1,Cost
+F0137,West,Large (250+),Healthcare,4,0,1,1,44.3,0,1,Integration
+F0138,Northeast,Large (250+),Professional Services,3,1,0,0,35.4,0,1,Change management
+F0139,West,Mid (50–249),Healthcare,4,1,0,0,51.4,1,1,Data quality
+F0140,West,Small (1–49),IT,4,0,1,1,37.3,1,1,Change management
+F0141,South,Small (1–49),Professional Services,2,0,0,0,19.3,0,1,Change management
+F0142,Northeast,Large (250+),Healthcare,4,1,1,0,48.5,1,1,Data quality
+F0143,Northeast,Mid (50–249),IT,1,0,0,0,14.8,1,1,Privacy / security
+F0144,Northeast,Mid (50–249),Professional Services,2,1,1,0,25.3,0,1,Cost
+F0145,South,Large (250+),Industrial,3,1,1,0,34.1,1,1,Data quality
+F0146,South,Small (1–49),Professional Services,5,1,0,1,62.7,0,1,Integration
+F0147,South,Mid (50–249),Healthcare,3,0,1,1,34.9,0,1,Data quality
+F0148,West,Large (250+),Healthcare,1,0,1,1,25.4,1,1,Data quality
+F0149,West,Small (1–49),Industrial,3,0,1,0,34.0,0,0,
+F0150,West,Mid (50–249),Professional Services,3,0,1,0,37.7,0,1,Integration
+F0151,South,Small (1–49),IT,4,1,1,0,30.8,0,1,Cost
+F0152,Northeast,Small (1–49),Healthcare,3,0,0,1,30.6,0,1,Data quality
+F0153,West,Small (1–49),Industrial,5,1,1,1,57.3,1,1,Data quality
+F0154,Northeast,Small (1–49),IT,2,1,1,1,29.8,1,1,Cost
+F0155,South,Large (250+),IT,2,1,1,1,37.6,0,1,Integration
+F0156,Midwest,Small (1–49),Professional Services,2,0,0,1,16.9,1,0,
+F0157,Northeast,Large (250+),Healthcare,5,1,1,0,50.6,0,1,Privacy / security
+F0158,Northeast,Mid (50–249),Industrial,2,0,1,0,27.2,0,1,Cost
+F0159,South,Large (250+),Professional Services,4,1,1,1,52.5,0,1,Change management
+F0160,South,Large (250+),Healthcare,3,1,1,0,36.6,1,0,
+F0161,West,Mid (50–249),Healthcare,5,1,1,1,48.1,1,1,Data quality
+F0162,South,Mid (50–249),Professional Services,3,0,0,0,29.7,0,1,Integration
+F0163,Midwest,Large (250+),IT,4,1,1,1,43.0,1,1,Data quality
+F0164,West,Small (1–49),Healthcare,4,0,1,0,41.1,0,1,Integration
+F0165,Midwest,Mid (50–249),Professional Services,3,1,0,1,39.0,0,1,Integration
+F0166,South,Small (1–49),Healthcare,2,0,0,1,28.8,0,1,Cost
+F0167,Northeast,Mid (50–249),Healthcare,3,1,0,0,29.7,0,1,Data quality
+F0168,West,Large (250+),Professional Services,5,1,1,1,42.7,0,1,Integration
+F0169,West,Small (1–49),IT,2,0,1,0,19.0,1,0,
+F0170,South,Large (250+),IT,4,1,1,1,31.6,0,1,Integration
+F0171,South,Mid (50–249),Professional Services,4,1,1,1,40.0,0,1,Integration
+F0172,South,Mid (50–249),Industrial,3,1,1,0,35.3,0,1,Data quality
+F0173,Northeast,Small (1–49),Professional Services,2,0,0,0,22.7,1,1,Cost
+F0174,West,Small (1–49),Healthcare,5,1,1,1,50.0,0,1,Change management
+F0175,South,Small (1–49),Professional Services,3,0,0,1,20.5,1,0,
+F0176,Northeast,Small (1–49),Professional Services,4,1,1,1,38.3,1,1,Change management
+F0177,West,Small (1–49),IT,3,0,0,0,34.3,0,1,Data quality
+F0178,South,Mid (50–249),Healthcare,2,1,1,0,32.9,1,1,Change management
+F0179,Northeast,Mid (50–249),Industrial,2,1,0,0,43.7,0,1,Data quality
+F0180,South,Small (1–49),IT,4,1,0,1,40.0,0,0,
+F0181,Midwest,Small (1–49),Industrial,2,1,0,0,28.8,0,1,Data quality
+F0182,Northeast,Large (250+),Industrial,1,0,0,0,13.4,0,1,Integration
+F0183,South,Small (1–49),Healthcare,1,0,0,1,15.6,0,1,Integration
+F0184,Northeast,Small (1–49),Healthcare,3,0,0,0,29.7,0,1,Integration
+F0185,West,Small (1–49),IT,4,1,1,1,43.2,0,0,
+F0186,Northeast,Large (250+),IT,3,1,0,0,44.6,1,1,Data quality
+F0187,West,Large (250+),Professional Services,4,1,1,1,37.5,0,1,Privacy / security
+F0188,South,Mid (50–249),Healthcare,4,1,1,1,30.4,1,1,Change management
+F0189,Northeast,Small (1–49),Industrial,5,0,1,1,50.6,0,1,Cost
+F0190,Northeast,Small (1–49),IT,2,0,0,1,21.7,0,1,Data quality
+F0191,Midwest,Mid (50–249),Healthcare,3,1,0,1,32.0,0,0,
+F0192,West,Small (1–49),Industrial,2,1,0,1,23.4,0,1,Privacy / security
+F0193,South,Large (250+),Industrial,4,1,1,1,41.8,1,1,Cost
+F0194,Midwest,Small (1–49),IT,4,1,1,0,51.0,0,0,
+F0195,Midwest,Small (1–49),Professional Services,5,1,1,1,49.9,1,0,
+F0196,Midwest,Mid (50–249),Industrial,3,0,0,1,25.5,0,1,Integration
+F0197,Midwest,Small (1–49),Professional Services,2,1,0,1,33.3,0,1,Integration
+F0198,West,Small (1–49),Industrial,2,0,0,1,21.0,0,1,Integration
+F0199,Northeast,Large (250+),Industrial,1,0,0,0,25.5,0,1,Integration
+F0200,Northeast,Large (250+),Industrial,5,1,0,1,45.6,1,1,Change management
+F0201,Northeast,Small (1–49),Healthcare,5,1,1,1,53.6,1,1,Change management
+F0202,Midwest,Small (1–49),Healthcare,2,0,0,1,35.3,0,1,Data quality
+F0203,South,Small (1–49),Industrial,3,1,1,1,49.3,0,1,Data quality
+F0204,Midwest,Mid (50–249),Healthcare,2,1,0,0,19.8,1,1,Cost
+F0205,Midwest,Small (1–49),Professional Services,3,0,0,1,40.1,0,1,Data quality
+F0206,West,Mid (50–249),Professional Services,3,0,0,0,29.9,0,1,Change management
+F0207,South,Mid (50–249),Professional Services,3,0,1,0,27.4,0,1,Change management
+F0208,Northeast,Small (1–49),IT,3,1,0,0,24.7,0,1,Change management
+F0209,Northeast,Large (250+),Healthcare,2,1,0,0,19.6,0,0,
+F0210,South,Large (250+),Professional Services,2,0,0,0,16.2,0,1,Integration
+F0211,South,Large (250+),Healthcare,4,1,1,1,33.8,0,1,Privacy / security
+F0212,West,Large (250+),Healthcare,4,1,0,0,44.2,0,1,Privacy / security
+F0213,Midwest,Small (1–49),Healthcare,5,1,1,1,43.5,1,1,Integration
+F0214,South,Mid (50–249),IT,2,0,0,1,26.5,0,1,Change management
+F0215,West,Mid (50–249),Healthcare,2,1,1,0,25.3,0,0,
+F0216,Midwest,Mid (50–249),IT,3,1,1,1,42.0,1,1,Data quality
+F0217,West,Small (1–49),Industrial,4,1,0,1,33.2,1,1,Data quality
+F0218,Midwest,Large (250+),IT,2,0,0,0,29.0,1,1,Integration
+F0219,West,Mid (50–249),Professional Services,3,1,0,0,32.2,1,0,
+F0220,South,Mid (50–249),Professional Services,4,1,1,1,43.5,0,1,Data quality
+F0221,Midwest,Small (1–49),Industrial,4,1,0,1,33.9,0,1,Integration
+F0222,Midwest,Small (1–49),Industrial,3,0,0,0,30.5,0,1,Cost
+F0223,West,Small (1–49),Industrial,4,1,1,0,44.6,0,1,Data quality
+F0224,West,Small (1–49),Industrial,1,0,0,1,10.5,0,0,
+F0225,Midwest,Large (250+),Industrial,2,0,0,0,24.7,1,0,
+F0226,Northeast,Small (1–49),Industrial,5,1,1,0,50.3,1,1,Integration
+F0227,Northeast,Small (1–49),Industrial,3,1,0,1,31.0,1,1,Change management
+F0228,South,Mid (50–249),Industrial,2,0,1,1,18.8,1,0,
+F0229,South,Small (1–49),Healthcare,1,0,0,0,21.4,0,1,Privacy / security
+F0230,Midwest,Small (1–49),Healthcare,2,0,0,0,15.5,0,1,Cost
+F0231,South,Large (250+),Healthcare,5,1,1,1,36.0,0,1,Privacy / security
+F0232,Northeast,Small (1–49),IT,3,1,1,1,23.3,0,1,Change management
+F0233,Midwest,Mid (50–249),Industrial,3,0,1,1,23.8,0,1,Cost
+F0234,Midwest,Large (250+),Industrial,3,0,1,1,28.6,0,1,Integration
+F0235,Midwest,Mid (50–249),Industrial,5,0,0,1,28.7,1,0,
+F0236,Northeast,Small (1–49),Industrial,2,1,1,0,25.7,0,1,Data quality
+F0237,Midwest,Small (1–49),IT,4,0,0,1,29.7,0,1,Cost
+F0238,Northeast,Small (1–49),IT,1,0,0,0,3.8,0,1,Integration
+F0239,West,Mid (50–249),Industrial,3,1,1,0,44.9,0,1,Change management
+F0240,West,Small (1–49),Industrial,5,1,1,1,49.5,0,1,Cost
+F0241,West,Small (1–49),Industrial,3,1,0,1,29.2,1,1,Data quality
+F0242,Midwest,Small (1–49),Industrial,4,1,1,0,26.7,0,1,Cost
+F0243,South,Mid (50–249),Professional Services,4,1,1,1,43.7,0,1,Data quality
+F0244,Midwest,Large (250+),IT,1,1,0,0,28.1,0,1,Data quality
+F0245,West,Small (1–49),IT,3,0,0,0,22.1,0,1,Data quality
+F0246,Midwest,Large (250+),Industrial,2,0,1,1,8.5,0,1,Integration
+F0247,Midwest,Small (1–49),Professional Services,2,1,0,0,26.2,1,1,Data quality
+F0248,Midwest,Small (1–49),IT,1,0,0,1,2.3,0,1,Change management
+F0249,Midwest,Large (250+),IT,2,1,0,1,30.3,0,1,Change management
+F0250,Northeast,Mid (50–249),IT,3,1,1,0,47.7,1,1,Cost
+F0251,Midwest,Mid (50–249),Healthcare,1,0,1,1,10.0,0,1,Privacy / security
+F0252,West,Mid (50–249),Industrial,2,0,0,0,26.7,0,0,
+F0253,South,Small (1–49),IT,3,0,0,0,38.9,0,0,
+F0254,West,Mid (50–249),Healthcare,3,1,1,0,48.6,0,1,Privacy / security
+F0255,West,Mid (50–249),IT,1,0,0,0,14.1,0,0,
+F0256,South,Small (1–49),IT,4,1,0,0,48.9,0,1,Integration
+F0257,Midwest,Small (1–49),Industrial,1,0,0,0,14.2,1,1,Data quality
+F0258,Northeast,Large (250+),Professional Services,3,1,1,1,40.4,1,1,Change management
+F0259,West,Mid (50–249),Industrial,5,0,1,1,47.5,1,1,Integration
+F0260,Northeast,Small (1–49),Professional Services,4,0,0,1,32.6,0,1,Integration
+F0261,Midwest,Small (1–49),IT,2,1,1,1,37.4,0,1,Integration
+F0262,Northeast,Small (1–49),Professional Services,4,0,0,1,41.6,0,1,Privacy / security
+F0263,Midwest,Small (1–49),Industrial,3,0,0,1,27.9,1,1,Integration
+F0264,Midwest,Large (250+),Industrial,3,1,1,1,27.7,0,1,Privacy / security
+F0265,South,Small (1–49),Healthcare,3,0,1,0,24.4,1,1,Change management
+F0266,Midwest,Small (1–49),Healthcare,3,1,0,1,24.0,0,1,Integration
+F0267,Midwest,Large (250+),Professional Services,4,1,1,1,42.2,1,1,Change management
+F0268,Northeast,Large (250+),Professional Services,5,1,1,0,56.5,1,1,Privacy / security
+F0269,West,Mid (50–249),Healthcare,5,0,1,1,45.3,0,1,Privacy / security
+F0270,Northeast,Mid (50–249),Professional Services,3,0,1,1,24.7,0,1,Integration
+F0271,South,Small (1–49),IT,2,0,0,1,23.8,0,1,Data quality
+F0272,South,Large (250+),Industrial,2,1,0,0,33.0,0,1,Cost
+F0273,South,Small (1–49),Industrial,3,0,1,1,29.4,0,1,Integration
+F0274,Midwest,Small (1–49),Industrial,2,0,0,1,21.8,0,1,Integration
+F0275,Midwest,Large (250+),Healthcare,5,1,1,1,43.7,1,1,Data quality
+F0276,Northeast,Small (1–49),Professional Services,4,1,1,0,39.4,0,0,
+F0277,West,Mid (50–249),Professional Services,4,1,1,1,56.9,0,1,Change management
+F0278,Northeast,Mid (50–249),Healthcare,2,1,0,0,26.2,0,1,Change management
+F0279,South,Small (1–49),Healthcare,4,0,1,1,40.2,1,1,Data quality
+F0280,Northeast,Mid (50–249),Industrial,4,0,1,1,28.1,0,1,Integration
+F0281,Midwest,Small (1–49),IT,3,0,0,1,13.9,0,1,Privacy / security
+F0282,Midwest,Small (1–49),IT,2,0,0,0,22.3,0,1,Cost
+F0283,Northeast,Small (1–49),Industrial,4,0,1,1,24.8,0,0,
+F0284,Northeast,Small (1–49),Professional Services,2,0,0,1,22.6,0,1,Cost
+F0285,Midwest,Small (1–49),IT,3,0,0,0,20.0,1,1,Data quality
+F0286,West,Small (1–49),Industrial,5,1,1,0,54.1,0,0,
+F0287,Midwest,Small (1–49),Industrial,2,0,1,0,16.2,0,0,
+F0288,West,Small (1–49),Professional Services,4,0,1,1,33.2,0,1,Data quality
+F0289,Midwest,Small (1–49),Professional Services,5,1,1,1,48.3,0,1,Data quality
+F0290,South,Mid (50–249),IT,3,0,0,1,32.2,0,1,Data quality
+F0291,Northeast,Small (1–49),Healthcare,3,0,1,1,28.5,0,1,Change management
+F0292,Northeast,Small (1–49),Healthcare,2,0,0,0,18.7,1,0,
+F0293,Northeast,Small (1–49),IT,1,1,0,1,26.2,0,1,Data quality
+F0294,South,Small (1–49),IT,3,1,1,0,46.3,0,1,Privacy / security
+F0295,West,Small (1–49),Industrial,3,0,0,0,20.0,0,1,Data quality
+F0296,Northeast,Mid (50–249),Healthcare,4,1,1,1,33.4,1,1,Integration
+F0297,Midwest,Small (1–49),Healthcare,4,1,1,0,38.6,1,1,Data quality
+F0298,West,Small (1–49),IT,4,1,1,1,37.2,0,1,Data quality
+F0299,South,Small (1–49),IT,3,1,0,1,37.9,1,1,Change management
+F0300,Northeast,Small (1–49),IT,2,0,0,0,12.9,0,1,Cost
+F0301,Northeast,Small (1–49),Industrial,3,1,1,0,26.3,0,1,Cost
+F0302,Northeast,Large (250+),Professional Services,2,0,0,1,22.6,0,1,Privacy / security
+F0303,West,Small (1–49),IT,3,1,0,0,28.0,1,0,
+F0304,South,Small (1–49),Healthcare,3,0,0,0,26.3,0,1,Data quality
+F0305,Northeast,Large (250+),IT,5,1,1,0,42.1,1,1,Data quality
+F0306,West,Small (1–49),Industrial,4,1,1,0,39.9,0,1,Cost
+F0307,Midwest,Small (1–49),Healthcare,4,1,1,1,43.6,0,1,Change management
+F0308,Midwest,Mid (50–249),IT,5,1,1,1,55.9,0,0,
+F0309,West,Small (1–49),Healthcare,4,1,0,0,41.7,0,1,Change management
+F0310,West,Small (1–49),IT,1,0,1,0,15.1,0,0,
+F0311,South,Large (250+),Professional Services,5,1,1,1,50.9,0,1,Cost
+F0312,South,Mid (50–249),Professional Services,2,0,0,0,13.6,0,1,Cost
+F0313,South,Small (1–49),Industrial,4,0,0,0,37.5,0,1,Data quality
+F0314,Midwest,Small (1–49),IT,2,0,0,1,16.5,0,1,Integration
+F0315,West,Small (1–49),IT,3,0,0,1,26.1,0,1,Privacy / security
+F0316,Midwest,Small (1–49),Professional Services,4,0,1,0,39.3,0,1,Data quality
+F0317,Midwest,Mid (50–249),Professional Services,4,0,0,1,34.9,0,1,Cost
+F0318,West,Small (1–49),Industrial,4,0,0,0,39.0,0,0,
+F0319,Midwest,Small (1–49),IT,3,0,0,0,15.1,1,1,Data quality
+F0320,Northeast,Small (1–49),Industrial,3,0,1,1,28.5,0,1,Integration
+F0321,Midwest,Small (1–49),Healthcare,5,1,0,1,45.9,1,1,Integration
+F0322,Midwest,Mid (50–249),Industrial,2,1,0,1,39.3,1,1,Cost
+F0323,South,Mid (50–249),Healthcare,3,1,1,1,41.0,1,1,Cost
+F0324,West,Small (1–49),IT,3,0,1,1,26.4,0,1,Cost
+F0325,Northeast,Small (1–49),Healthcare,3,1,0,0,39.4,1,1,Cost
+F0326,Midwest,Large (250+),Industrial,3,0,0,1,31.6,0,1,Change management
+F0327,West,Mid (50–249),Healthcare,4,1,1,1,43.7,0,1,Integration
+F0328,West,Small (1–49),Professional Services,3,1,0,1,33.9,0,1,Data quality
+F0329,Northeast,Mid (50–249),Professional Services,3,1,1,0,30.9,0,0,
+F0330,Northeast,Small (1–49),Professional Services,4,1,1,1,43.0,1,1,Data quality
+F0331,South,Small (1–49),Professional Services,2,0,0,1,10.0,1,1,Privacy / security
+F0332,Midwest,Small (1–49),Healthcare,3,0,1,0,36.2,0,1,Data quality
+F0333,South,Mid (50–249),Healthcare,2,1,0,1,25.8,0,1,Cost
+F0334,South,Small (1–49),IT,3,0,1,1,29.7,1,0,
+F0335,Northeast,Small (1–49),Professional Services,2,1,1,1,39.6,0,0,
+F0336,Midwest,Small (1–49),Professional Services,3,0,0,1,39.8,0,1,Cost
+F0337,Northeast,Small (1–49),IT,4,1,1,1,34.1,0,1,Cost
+F0338,Northeast,Large (250+),Industrial,3,1,1,1,45.4,1,1,Cost
+F0339,Northeast,Small (1–49),Industrial,2,0,0,0,32.3,0,1,Data quality
+F0340,South,Small (1–49),Professional Services,2,1,0,1,29.1,1,0,
+F0341,Midwest,Small (1–49),Industrial,2,0,1,0,28.9,1,1,Change management
+F0342,West,Small (1–49),Industrial,4,1,1,1,51.8,0,1,Cost
+F0343,Northeast,Small (1–49),IT,5,1,1,0,57.3,0,1,Cost
+F0344,Midwest,Mid (50–249),Professional Services,3,1,0,0,29.2,0,1,Cost
+F0345,Northeast,Small (1–49),IT,3,1,1,0,34.5,1,1,Change management
+F0346,Northeast,Small (1–49),Healthcare,1,0,0,0,19.8,0,1,Data quality
+F0347,Midwest,Mid (50–249),Industrial,4,1,1,0,37.1,0,1,Integration
+F0348,Midwest,Small (1–49),Professional Services,1,0,0,1,21.4,1,1,Change management
+F0349,West,Mid (50–249),IT,5,1,1,1,51.1,1,1,Privacy / security
+F0350,South,Small (1–49),Healthcare,2,0,0,0,42.7,1,0,
+F0351,Northeast,Small (1–49),Industrial,2,0,1,1,41.7,0,1,Privacy / security
+F0352,Midwest,Large (250+),Industrial,2,1,0,0,18.0,0,0,
+F0353,Northeast,Small (1–49),Industrial,4,1,1,1,38.4,0,1,Integration
+F0354,West,Mid (50–249),IT,3,1,0,0,26.1,0,0,
+F0355,South,Mid (50–249),Healthcare,3,0,1,1,20.2,0,1,Cost
+F0356,Northeast,Small (1–49),Professional Services,3,1,1,1,41.9,0,1,Integration
+F0357,South,Mid (50–249),Industrial,4,0,1,1,23.6,1,1,Integration
+F0358,South,Small (1–49),Professional Services,2,0,0,0,25.4,0,0,
+F0359,Midwest,Mid (50–249),IT,3,1,1,1,42.0,1,1,Change management
+F0360,Midwest,Mid (50–249),Healthcare,2,0,1,1,19.9,0,1,Integration
+F0361,Northeast,Small (1–49),Industrial,2,0,1,1,21.8,0,1,Cost
+F0362,West,Small (1–49),Professional Services,1,0,0,0,15.9,0,0,
+F0363,West,Mid (50–249),Industrial,5,0,1,0,42.1,0,1,Integration
+F0364,Midwest,Small (1–49),IT,5,1,0,1,48.3,0,1,Data quality
+F0365,Northeast,Large (250+),Professional Services,3,1,1,0,34.8,0,1,Integration
+F0366,Northeast,Small (1–49),IT,3,0,0,1,28.4,0,1,Change management
+F0367,Northeast,Mid (50–249),Industrial,2,1,0,0,22.6,1,1,Data quality
+F0368,Northeast,Small (1–49),Healthcare,3,1,1,1,31.8,0,1,Cost
+F0369,Northeast,Mid (50–249),Professional Services,4,0,1,1,37.1,1,1,Cost
+F0370,West,Small (1–49),Industrial,4,1,1,1,42.6,1,1,Data quality
+F0371,Midwest,Mid (50–249),Healthcare,3,1,0,1,25.1,1,0,
+F0372,West,Small (1–49),Healthcare,1,0,1,0,22.0,0,0,
+F0373,Northeast,Small (1–49),Industrial,2,0,1,0,18.4,1,1,Change management
+F0374,Midwest,Small (1–49),IT,2,1,1,0,44.4,0,1,Data quality
+F0375,Midwest,Large (250+),Healthcare,4,1,1,0,46.9,0,1,Cost
+F0376,Midwest,Small (1–49),IT,1,0,0,1,26.7,0,0,
+F0377,South,Large (250+),Industrial,3,1,0,0,31.9,0,1,Cost
+F0378,Northeast,Mid (50–249),Industrial,4,1,0,1,43.2,1,1,Cost
+F0379,Northeast,Small (1–49),Professional Services,2,1,0,0,26.2,0,1,Change management
+F0380,Northeast,Small (1–49),Healthcare,1,0,0,0,13.0,0,1,Privacy / security
+F0381,Northeast,Small (1–49),Industrial,4,0,1,1,48.8,0,1,Data quality
+F0382,South,Small (1–49),IT,2,0,0,0,29.1,0,1,Integration
+F0383,Midwest,Large (250+),Professional Services,4,1,1,1,42.1,0,1,Integration
+F0384,South,Large (250+),Healthcare,4,1,0,1,45.3,0,1,Integration
+F0385,South,Large (250+),Industrial,3,1,1,0,41.9,0,1,Cost
+F0386,South,Large (250+),Professional Services,4,1,0,0,45.6,0,1,Change management
+F0387,Midwest,Small (1–49),Healthcare,1,0,0,0,23.2,0,1,Privacy / security
+F0388,Northeast,Mid (50–249),Healthcare,3,0,0,0,17.4,0,1,Data quality
+F0389,West,Small (1–49),Professional Services,3,0,0,0,23.9,0,1,Privacy / security
+F0390,West,Mid (50–249),IT,2,0,0,0,18.6,1,0,
+F0391,Midwest,Small (1–49),Healthcare,4,1,1,1,10.0,0,1,Cost
+F0392,Midwest,Small (1–49),IT,3,0,0,0,28.9,1,1,Cost
+F0393,Northeast,Mid (50–249),Industrial,3,0,0,1,29.4,1,1,Integration
+F0394,Northeast,Mid (50–249),Industrial,2,0,0,1,18.9,0,1,Integration
+F0395,South,Mid (50–249),IT,1,0,0,1,14.4,0,1,Data quality
+F0396,Northeast,Small (1–49),Professional Services,2,0,0,0,34.1,0,1,Data quality
+F0397,West,Small (1–49),Healthcare,1,0,1,1,30.2,0,1,Data quality
+F0398,Midwest,Small (1–49),IT,2,1,1,0,24.3,0,0,
+F0399,Midwest,Mid (50–249),Healthcare,2,1,1,1,20.0,1,1,Data quality
+F0400,West,Mid (50–249),Professional Services,4,1,1,1,52.3,0,1,Change management
+F0401,South,Large (250+),IT,3,1,0,1,24.6,1,1,Change management
+F0402,West,Small (1–49),Professional Services,3,0,1,1,38.9,0,1,Data quality
+F0403,West,Mid (50–249),Industrial,3,0,0,1,24.1,1,0,
+F0404,Northeast,Small (1–49),Professional Services,5,1,1,1,41.1,0,1,Data quality
+F0405,South,Small (1–49),IT,2,1,1,0,35.3,0,1,Integration
+F0406,South,Mid (50–249),IT,1,0,0,0,29.4,0,1,Integration
+F0407,South,Mid (50–249),IT,2,0,0,1,11.0,1,1,Integration
+F0408,Northeast,Small (1–49),Healthcare,3,0,1,0,34.3,0,0,
+F0409,Northeast,Mid (50–249),Industrial,5,1,1,1,43.8,0,1,Data quality
+F0410,West,Small (1–49),Professional Services,3,1,0,0,26.8,0,1,Data quality
+F0411,West,Mid (50–249),Professional Services,2,0,0,0,33.0,0,1,Integration
+F0412,Midwest,Small (1–49),IT,4,0,1,1,46.9,1,0,
+F0413,Northeast,Small (1–49),Industrial,5,1,1,1,49.3,1,1,Privacy / security
+F0414,Midwest,Mid (50–249),Healthcare,3,1,1,1,38.7,0,1,Cost
+F0415,South,Small (1–49),Industrial,1,1,1,0,25.2,0,0,
+F0416,South,Large (250+),Industrial,3,1,0,1,37.2,0,1,Integration
+F0417,West,Small (1–49),IT,5,1,0,1,35.8,0,0,
+F0418,West,Small (1–49),Professional Services,2,0,0,0,21.6,0,1,Cost
+F0419,West,Small (1–49),Industrial,3,0,1,1,27.1,0,1,Integration
+F0420,Midwest,Small (1–49),Professional Services,2,0,0,1,16.2,1,1,Data quality
+F0421,South,Small (1–49),Industrial,5,1,1,1,46.2,0,0,
+F0422,Midwest,Small (1–49),Healthcare,4,0,0,1,35.9,0,1,Change management
+F0423,Northeast,Small (1–49),IT,1,0,0,0,24.7,0,0,
+F0424,South,Mid (50–249),IT,1,0,0,0,20.9,0,1,Integration
+F0425,South,Mid (50–249),Industrial,2,0,1,1,24.4,1,1,Change management
+F0426,West,Mid (50–249),Professional Services,5,1,1,0,41.5,1,1,Privacy / security
+F0427,Midwest,Small (1–49),IT,1,0,0,0,13.1,0,1,Change management
+F0428,West,Mid (50–249),Professional Services,2,0,1,0,19.5,1,1,Cost
+F0429,Midwest,Small (1–49),Industrial,4,1,1,1,46.7,1,1,Data quality
+F0430,Midwest,Mid (50–249),IT,1,0,1,0,28.0,0,1,Integration
+F0431,Midwest,Large (250+),IT,2,1,0,0,28.9,1,1,Change management
+F0432,Northeast,Small (1–49),IT,4,1,1,1,47.9,0,1,Change management
+F0433,Midwest,Small (1–49),IT,4,0,1,0,43.0,1,1,Cost
+F0434,Midwest,Small (1–49),IT,2,1,1,0,35.0,0,0,
+F0435,Northeast,Large (250+),Industrial,3,1,1,1,48.6,1,1,Data quality
+F0436,Midwest,Small (1–49),Healthcare,3,1,1,1,45.8,0,0,
+F0437,West,Small (1–49),Industrial,2,0,1,0,20.7,0,0,
+F0438,Midwest,Small (1–49),Industrial,2,0,0,0,17.7,0,0,
+F0439,West,Mid (50–249),Healthcare,2,0,0,0,30.7,1,1,Data quality
+F0440,West,Mid (50–249),Industrial,4,0,0,1,31.8,1,1,Privacy / security
+F0441,Midwest,Mid (50–249),IT,4,1,1,1,41.8,0,0,
+F0442,Midwest,Mid (50–249),IT,3,0,1,0,36.1,1,0,
+F0443,Northeast,Mid (50–249),Professional Services,5,1,1,0,38.5,1,1,Change management
+F0444,Northeast,Mid (50–249),IT,1,1,0,0,15.4,0,1,Cost
+F0445,Midwest,Mid (50–249),Healthcare,1,1,0,1,23.1,0,1,Data quality
+F0446,Midwest,Small (1–49),Industrial,4,1,1,1,48.2,0,1,Change management
+F0447,Midwest,Small (1–49),Industrial,3,0,0,0,26.9,1,1,Data quality
+F0448,Midwest,Mid (50–249),Professional Services,1,0,0,1,12.3,0,1,Privacy / security
+F0449,South,Small (1–49),Healthcare,5,1,1,1,47.2,1,1,Integration
+F0450,South,Small (1–49),IT,1,0,1,1,26.0,0,0,
+F0451,Northeast,Large (250+),Professional Services,2,0,1,0,30.9,1,0,
+F0452,Midwest,Mid (50–249),IT,1,0,0,1,25.8,0,1,Integration
+F0453,West,Large (250+),Industrial,1,0,0,0,27.4,0,1,Data quality
+F0454,West,Large (250+),Professional Services,3,1,1,1,24.9,0,1,Cost
+F0455,West,Small (1–49),Healthcare,1,1,1,1,16.2,0,1,Cost
+F0456,Northeast,Mid (50–249),Industrial,1,0,0,0,21.3,0,0,
+F0457,South,Large (250+),Industrial,3,1,1,1,31.7,0,1,Integration
+F0458,South,Small (1–49),Professional Services,2,1,1,0,25.6,0,1,Cost
+F0459,West,Small (1–49),Industrial,4,0,0,1,34.0,0,0,
+F0460,West,Mid (50–249),Healthcare,5,1,1,1,36.5,1,1,Cost
+F0461,West,Mid (50–249),IT,2,0,0,0,19.0,0,1,Data quality
+F0462,South,Mid (50–249),IT,3,0,0,1,30.1,1,1,Change management
+F0463,South,Mid (50–249),IT,2,0,0,1,28.4,0,1,Cost
+F0464,West,Mid (50–249),Professional Services,1,0,0,1,9.5,0,0,
+F0465,West,Small (1–49),IT,3,1,0,0,39.2,0,1,Integration
+F0466,Midwest,Small (1–49),Professional Services,2,0,0,0,14.9,0,1,Cost
+F0467,West,Small (1–49),Healthcare,4,0,0,0,27.8,0,1,Cost
+F0468,South,Small (1–49),Industrial,2,0,0,0,18.2,0,0,
+F0469,Northeast,Mid (50–249),Industrial,3,1,1,1,33.1,0,1,Integration
+F0470,West,Mid (50–249),Professional Services,4,1,0,1,39.1,1,0,
+F0471,Midwest,Mid (50–249),Industrial,2,0,1,0,31.0,0,1,Data quality
+F0472,West,Large (250+),Industrial,3,0,1,1,29.3,1,1,Data quality
+F0473,Midwest,Large (250+),Healthcare,4,0,0,1,26.5,0,1,Cost
+F0474,West,Small (1–49),IT,4,1,1,1,51.6,0,0,
+F0475,South,Mid (50–249),Professional Services,3,0,1,0,19.2,0,1,Cost
+F0476,Northeast,Large (250+),IT,2,0,1,0,29.7,0,1,Data quality
+F0477,South,Large (250+),IT,3,1,0,1,33.6,1,1,Cost
+F0478,Northeast,Large (250+),Healthcare,2,0,1,1,31.0,0,1,Data quality
+F0479,West,Mid (50–249),Industrial,3,1,0,0,25.0,1,1,Integration
+F0480,Midwest,Small (1–49),Industrial,2,0,0,1,20.1,0,1,Data quality
+F0481,West,Small (1–49),IT,3,0,1,1,26.2,0,1,Cost
+F0482,West,Small (1–49),IT,2,1,1,0,33.7,0,1,Change management
+F0483,West,Mid (50–249),Healthcare,4,1,1,1,39.5,1,1,Integration
+F0484,South,Small (1–49),IT,3,1,0,1,25.0,0,1,Data quality
+F0485,West,Mid (50–249),Professional Services,3,1,0,1,29.8,0,1,Integration
+F0486,South,Mid (50–249),IT,5,1,1,1,46.5,0,1,Data quality
+F0487,South,Small (1–49),IT,4,1,1,0,32.3,0,1,Integration
+F0488,Midwest,Small (1–49),Professional Services,4,1,0,1,29.5,1,1,Data quality
+F0489,Midwest,Large (250+),Industrial,2,1,1,0,44.6,0,1,Data quality
+F0490,South,Large (250+),Industrial,3,1,0,1,30.6,0,1,Integration
+F0491,South,Small (1–49),Industrial,4,1,1,1,43.1,1,1,Data quality
+F0492,Midwest,Mid (50–249),Professional Services,4,0,0,1,32.2,1,1,Cost
+F0493,Northeast,Small (1–49),Industrial,3,1,1,1,24.2,0,0,
+F0494,West,Small (1–49),Industrial,1,0,0,0,28.2,0,1,Privacy / security
+F0495,South,Large (250+),Professional Services,2,0,0,0,31.1,0,1,Change management
+F0496,South,Small (1–49),Professional Services,3,0,1,0,23.5,0,1,Data quality
+F0497,Northeast,Small (1–49),Professional Services,1,0,0,0,19.5,0,1,Integration
+F0498,Northeast,Mid (50–249),Healthcare,2,0,0,0,18.7,1,1,Change management
+F0499,Northeast,Small (1–49),Healthcare,4,0,0,1,20.9,0,0,
+F0500,West,Small (1–49),Healthcare,4,1,0,1,23.1,1,1,Cost
+F0501,Midwest,Large (250+),Industrial,2,1,0,0,24.0,0,1,Change management
+F0502,West,Mid (50–249),IT,1,1,1,0,31.6,0,1,Integration
+F0503,Midwest,Large (250+),Industrial,2,0,0,0,26.0,0,1,Data quality
+F0504,South,Small (1–49),Professional Services,3,0,1,1,34.8,1,1,Cost
+F0505,Northeast,Small (1–49),Professional Services,4,1,0,0,39.9,0,0,
+F0506,West,Large (250+),Professional Services,5,1,1,1,49.6,0,1,Change management
+F0507,Midwest,Small (1–49),Industrial,5,0,0,0,33.4,0,1,Privacy / security
+F0508,Midwest,Large (250+),Industrial,4,1,1,1,29.4,0,1,Integration
+F0509,Midwest,Mid (50–249),IT,4,1,1,0,35.9,0,1,Data quality
+F0510,South,Small (1–49),IT,1,0,0,0,9.4,0,1,Cost
+F0511,South,Mid (50–249),Healthcare,2,0,0,1,14.8,0,1,Data quality
+F0512,West,Small (1–49),Industrial,2,0,0,0,23.8,1,0,
+F0513,South,Small (1–49),Industrial,4,0,0,1,33.7,0,1,Cost
+F0514,South,Mid (50–249),Industrial,4,1,0,1,50.0,0,1,Data quality
+F0515,West,Small (1–49),Healthcare,3,0,1,0,18.0,0,1,Integration
+F0516,Northeast,Small (1–49),Healthcare,2,0,0,1,35.7,0,1,Data quality
+F0517,South,Large (250+),Healthcare,3,1,1,1,39.3,0,0,
+F0518,South,Large (250+),IT,1,0,0,0,16.5,0,1,Cost
+F0519,South,Small (1–49),Professional Services,3,1,1,0,46.7,1,0,
+F0520,South,Small (1–49),Industrial,3,0,0,0,18.4,1,1,Change management
+F0521,West,Mid (50–249),Healthcare,5,0,0,0,35.1,0,1,Data quality
+F0522,Midwest,Mid (50–249),Professional Services,1,1,1,1,26.9,0,1,Data quality
+F0523,Northeast,Mid (50–249),IT,1,0,0,0,27.4,1,1,Data quality
+F0524,Midwest,Mid (50–249),IT,1,0,0,0,8.1,0,1,Integration
+F0525,West,Large (250+),Healthcare,2,1,0,1,28.6,0,1,Cost
+F0526,Northeast,Large (250+),Professional Services,1,0,1,1,18.4,0,1,Integration
+F0527,Midwest,Small (1–49),Industrial,2,1,1,0,26.7,0,1,Cost
+F0528,Northeast,Small (1–49),Industrial,3,0,1,1,27.4,1,1,Integration
+F0529,South,Small (1–49),Industrial,3,1,0,0,28.8,1,1,Integration
+F0530,Midwest,Large (250+),Healthcare,3,0,1,1,22.2,1,1,Cost
+F0531,Midwest,Mid (50–249),IT,4,0,0,1,26.0,1,0,
+F0532,Northeast,Mid (50–249),IT,3,1,0,0,30.6,1,1,Privacy / security
+F0533,South,Large (250+),Professional Services,4,1,1,1,32.2,0,1,Cost
+F0534,South,Small (1–49),Healthcare,1,0,0,1,19.3,1,1,Integration
+F0535,Midwest,Mid (50–249),IT,2,1,1,0,25.9,1,1,Cost
+F0536,South,Mid (50–249),IT,3,0,0,0,31.0,0,1,Integration
+F0537,West,Small (1–49),Professional Services,3,0,1,0,30.7,1,1,Integration
+F0538,Northeast,Mid (50–249),Healthcare,4,0,1,0,40.7,0,1,Change management
+F0539,West,Small (1–49),Professional Services,2,0,0,1,25.4,1,0,
+F0540,Midwest,Mid (50–249),Healthcare,2,0,1,1,35.4,1,0,
+F0541,South,Large (250+),Professional Services,4,1,1,0,34.9,0,1,Change management
+F0542,West,Large (250+),Industrial,3,1,0,1,45.2,0,1,Integration
+F0543,South,Small (1–49),Healthcare,4,1,0,0,40.3,1,1,Change management
+F0544,Northeast,Small (1–49),IT,2,1,0,0,31.8,0,0,
+F0545,West,Mid (50–249),Healthcare,2,0,1,0,26.6,0,1,Privacy / security
+F0546,West,Small (1–49),IT,5,1,1,1,45.2,1,1,Change management
+F0547,Midwest,Mid (50–249),Industrial,3,0,1,1,26.0,1,1,Cost
+F0548,West,Small (1–49),Industrial,2,0,0,0,18.9,0,0,
+F0549,Midwest,Large (250+),Professional Services,5,1,1,1,39.8,1,1,Data quality
+F0550,Midwest,Large (250+),IT,4,1,1,0,38.1,1,1,Integration
+F0551,West,Large (250+),Industrial,2,0,1,1,27.8,0,1,Data quality
+F0552,Northeast,Mid (50–249),Healthcare,3,0,0,1,20.2,0,1,Change management
+F0553,Northeast,Large (250+),Healthcare,3,1,1,1,49.3,0,1,Privacy / security
+F0554,Midwest,Small (1–49),IT,2,0,1,1,30.0,1,1,Cost
+F0555,South,Small (1–49),Industrial,5,1,1,1,40.5,0,1,Integration
+F0556,Northeast,Large (250+),Healthcare,1,0,1,0,19.6,0,1,Change management
+F0557,South,Small (1–49),Professional Services,1,0,0,0,16.4,0,0,
+F0558,Midwest,Small (1–49),Industrial,1,0,1,0,21.9,0,1,Cost
+F0559,Northeast,Mid (50–249),Industrial,3,1,0,1,26.4,1,1,Integration
+F0560,Midwest,Mid (50–249),Professional Services,4,1,0,1,31.2,1,1,Privacy / security
+F0561,Midwest,Small (1–49),Professional Services,4,0,1,1,30.8,0,1,Integration
+F0562,South,Small (1–49),IT,5,0,1,1,46.3,1,1,Data quality
+F0563,Northeast,Mid (50–249),Healthcare,1,0,0,0,-1.3,0,0,
+F0564,West,Large (250+),Professional Services,1,0,1,0,16.3,0,0,
+F0565,Northeast,Small (1–49),Professional Services,2,0,1,0,29.1,1,1,Cost
+F0566,Midwest,Mid (50–249),Healthcare,2,1,1,0,29.8,1,0,
+F0567,West,Mid (50–249),IT,4,0,1,1,33.1,1,1,Cost
+F0568,West,Mid (50–249),Healthcare,3,1,1,1,33.3,0,1,Cost
+F0569,West,Small (1–49),Healthcare,5,1,1,1,47.0,1,1,Privacy / security
+F0570,West,Mid (50–249),Industrial,3,1,1,0,41.9,0,1,Data quality
+F0571,Northeast,Mid (50–249),Industrial,3,0,0,1,24.6,1,1,Data quality
+F0572,West,Small (1–49),Industrial,3,1,0,1,33.1,1,1,Data quality
+F0573,Northeast,Mid (50–249),IT,4,1,1,1,37.6,1,1,Change management
+F0574,South,Large (250+),Healthcare,4,1,1,1,40.9,0,1,Change management
+F0575,Northeast,Small (1–49),Healthcare,1,0,1,1,18.9,0,1,Change management
+F0576,Northeast,Small (1–49),IT,4,0,1,1,28.5,1,1,Change management
+F0577,Northeast,Small (1–49),IT,4,0,0,0,36.3,1,1,Data quality
+F0578,Northeast,Mid (50–249),Industrial,2,0,0,1,22.7,1,1,Privacy / security
+F0579,Midwest,Small (1–49),Professional Services,3,1,1,1,41.2,1,1,Data quality
+F0580,South,Small (1–49),Healthcare,1,0,0,0,17.2,0,1,Cost
+F0581,West,Small (1–49),Healthcare,3,1,1,0,42.1,1,1,Cost
+F0582,Northeast,Mid (50–249),Industrial,3,1,0,0,32.0,0,1,Data quality
+F0583,South,Small (1–49),Healthcare,3,0,1,1,34.9,1,0,
+F0584,Midwest,Mid (50–249),IT,1,1,1,1,20.0,1,0,
+F0585,West,Mid (50–249),Professional Services,2,0,1,0,34.4,1,1,Integration
+F0586,Northeast,Mid (50–249),IT,3,0,0,0,31.6,0,1,Integration
+F0587,Midwest,Mid (50–249),Professional Services,4,1,1,0,45.2,1,1,Data quality
+F0588,West,Small (1–49),Professional Services,5,0,0,0,46.1,0,1,Change management
+F0589,West,Large (250+),Healthcare,1,0,1,1,23.7,0,1,Data quality
+F0590,West,Large (250+),IT,3,1,1,1,38.7,0,1,Change management
+F0591,South,Mid (50–249),IT,2,0,1,0,28.1,1,1,Privacy / security
+F0592,South,Mid (50–249),Healthcare,3,0,1,1,26.9,0,1,Integration
+F0593,Midwest,Mid (50–249),IT,3,1,0,1,40.6,0,1,Cost
+F0594,West,Small (1–49),IT,3,0,0,0,24.2,0,1,Integration
+F0595,South,Small (1–49),Industrial,5,1,0,1,35.6,0,1,Data quality
+F0596,Northeast,Mid (50–249),Industrial,3,1,1,0,27.3,1,1,Cost
+F0597,Midwest,Small (1–49),IT,4,1,1,1,42.0,0,1,Integration
+F0598,South,Large (250+),Professional Services,2,1,1,1,39.4,0,1,Privacy / security
+F0599,Northeast,Small (1–49),Professional Services,2,0,1,1,33.9,0,0,
+F0600,South,Small (1–49),Professional Services,3,0,1,0,25.9,1,1,Change management
+F0601,Midwest,Small (1–49),Professional Services,3,0,0,1,28.2,0,1,Integration
+F0602,Midwest,Large (250+),Professional Services,3,1,1,0,33.2,0,0,
+F0603,Midwest,Large (250+),IT,2,0,0,0,32.6,0,1,Change management
+F0604,Midwest,Mid (50–249),Professional Services,2,0,1,1,31.0,1,1,Privacy / security
+F0605,Midwest,Large (250+),Industrial,3,0,0,1,30.1,0,0,
+F0606,Midwest,Small (1–49),Professional Services,3,1,0,1,36.8,1,1,Change management
+F0607,West,Mid (50–249),Healthcare,4,1,1,1,26.0,1,1,Data quality
+F0608,West,Small (1–49),Industrial,2,0,0,1,17.5,0,1,Data quality
+F0609,Northeast,Small (1–49),Professional Services,5,0,0,1,38.8,0,1,Cost
+F0610,West,Large (250+),IT,5,1,1,1,52.7,0,1,Change management
+F0611,Midwest,Mid (50–249),Healthcare,5,1,0,1,56.3,1,1,Change management
+F0612,West,Mid (50–249),IT,3,1,0,0,33.2,0,1,Cost
+F0613,Midwest,Large (250+),IT,3,0,0,0,30.1,0,1,Cost
+F0614,Northeast,Small (1–49),Healthcare,4,0,1,0,30.9,1,1,Change management
+F0615,South,Small (1–49),Industrial,3,1,0,0,28.9,0,1,Cost
+F0616,Northeast,Small (1–49),IT,4,1,1,1,40.3,0,1,Privacy / security
+F0617,South,Small (1–49),Professional Services,5,1,1,1,42.8,1,1,Cost
+F0618,Midwest,Mid (50–249),Professional Services,4,1,1,1,29.4,0,1,Data quality
+F0619,Northeast,Small (1–49),Industrial,1,0,0,1,2.5,0,1,Data quality
+F0620,West,Small (1–49),IT,4,1,0,1,30.2,0,0,
+F0621,West,Mid (50–249),Industrial,3,1,1,1,35.1,0,1,Integration
+F0622,South,Mid (50–249),IT,5,1,1,1,44.3,0,1,Integration
+F0623,West,Large (250+),Industrial,2,0,0,0,31.9,0,1,Integration
+F0624,South,Small (1–49),Healthcare,2,0,1,0,32.0,0,1,Integration
+F0625,West,Mid (50–249),Professional Services,2,1,0,1,38.3,1,1,Data quality
+F0626,Midwest,Mid (50–249),Professional Services,5,1,1,1,56.0,1,1,Privacy / security
+F0627,Northeast,Mid (50–249),Healthcare,1,0,0,0,24.9,0,1,Data quality
+F0628,West,Mid (50–249),Healthcare,5,0,0,0,42.2,1,1,Change management
+F0629,South,Large (250+),Industrial,3,1,0,0,30.6,0,1,Cost
+F0630,West,Mid (50–249),Healthcare,1,0,0,1,23.7,0,1,Cost
+F0631,South,Small (1–49),IT,3,0,0,0,29.4,0,1,Change management
+F0632,West,Large (250+),Healthcare,3,1,1,1,37.8,1,1,Privacy / security
+F0633,Midwest,Small (1–49),IT,5,1,1,0,51.4,0,1,Data quality
+F0634,West,Mid (50–249),Professional Services,2,0,1,0,23.1,0,1,Privacy / security
+F0635,South,Small (1–49),IT,4,1,1,1,39.3,0,0,
+F0636,West,Mid (50–249),Industrial,1,0,0,1,0.2,0,1,Cost
+F0637,West,Mid (50–249),IT,4,1,0,1,35.8,1,1,Integration
+F0638,West,Mid (50–249),IT,4,0,1,1,40.2,1,1,Data quality
+F0639,South,Small (1–49),Healthcare,2,0,1,1,25.9,0,1,Cost
+F0640,West,Small (1–49),Industrial,1,0,0,0,18.6,1,0,
+F0641,West,Small (1–49),Professional Services,5,1,1,1,53.9,0,1,Data quality
+F0642,Northeast,Mid (50–249),IT,4,1,1,0,46.8,1,1,Integration
+F0643,South,Small (1–49),IT,3,1,0,1,36.9,0,1,Cost
+F0644,Midwest,Small (1–49),IT,1,1,0,1,31.3,1,1,Data quality
+F0645,South,Large (250+),Healthcare,2,1,0,0,33.1,0,1,Privacy / security
+F0646,Midwest,Small (1–49),Industrial,2,0,0,0,18.1,0,1,Change management
+F0647,Northeast,Small (1–49),Healthcare,5,0,1,1,46.5,1,1,Integration
+F0648,West,Mid (50–249),IT,4,1,1,0,46.1,1,1,Privacy / security
+F0649,Midwest,Mid (50–249),Healthcare,3,1,1,0,32.9,0,1,Change management
+F0650,South,Small (1–49),Industrial,1,0,1,1,9.2,1,1,Data quality
+F0651,South,Small (1–49),Industrial,4,1,0,1,41.8,0,1,Cost
+F0652,Northeast,Mid (50–249),Healthcare,2,0,1,1,20.0,0,1,Integration
+F0653,South,Large (250+),Professional Services,4,1,0,1,27.0,0,1,Cost
+F0654,Northeast,Large (250+),IT,2,0,0,0,36.5,1,1,Integration
+F0655,Northeast,Small (1–49),Healthcare,4,1,0,1,49.1,1,0,
+F0656,West,Small (1–49),Healthcare,3,0,1,0,34.3,0,1,Cost
+F0657,Northeast,Large (250+),Industrial,3,0,0,1,21.8,0,1,Privacy / security
+F0658,South,Mid (50–249),Healthcare,3,1,0,1,36.1,0,1,Privacy / security
+F0659,South,Mid (50–249),Professional Services,5,0,1,1,43.0,1,1,Integration
+F0660,West,Large (250+),Healthcare,1,1,1,1,36.5,0,0,
+F0661,Midwest,Mid (50–249),Healthcare,4,1,0,0,34.6,1,0,
+F0662,Midwest,Large (250+),Professional Services,4,0,1,0,41.9,0,1,Data quality
+F0663,West,Small (1–49),Professional Services,4,1,1,1,40.7,0,0,
+F0664,West,Small (1–49),Healthcare,4,0,0,1,25.0,0,1,Change management
+F0665,Midwest,Mid (50–249),Healthcare,5,0,1,1,44.9,0,1,Integration
+F0666,Midwest,Mid (50–249),Professional Services,3,1,0,0,37.8,0,0,
+F0667,Midwest,Small (1–49),IT,3,0,0,1,35.4,0,0,
+F0668,West,Mid (50–249),Industrial,3,0,0,1,30.9,0,1,Change management
+F0669,South,Large (250+),IT,2,1,1,0,28.6,1,0,
+F0670,South,Small (1–49),Healthcare,3,1,0,0,33.2,1,1,Data quality
+F0671,Northeast,Large (250+),Healthcare,3,1,1,1,45.2,0,1,Data quality
+F0672,Northeast,Mid (50–249),IT,1,0,0,0,16.4,0,1,Integration
+F0673,South,Small (1–49),Healthcare,4,1,1,1,45.7,0,1,Data quality
+F0674,West,Small (1–49),Industrial,2,0,0,0,14.4,0,1,Integration
+F0675,Midwest,Mid (50–249),Industrial,3,0,1,0,39.8,1,1,Data quality
+F0676,Northeast,Large (250+),Industrial,3,1,1,1,38.0,1,1,Data quality
+F0677,South,Small (1–49),Professional Services,5,1,1,0,47.7,0,1,Privacy / security
+F0678,Midwest,Small (1–49),IT,1,1,1,0,40.3,0,0,
+F0679,South,Small (1–49),Healthcare,4,1,1,1,46.4,0,1,Change management
+F0680,Northeast,Small (1–49),IT,3,0,1,0,28.8,0,1,Data quality
+F0681,South,Mid (50–249),Professional Services,3,1,1,0,27.7,0,1,Data quality
+F0682,Midwest,Mid (50–249),Professional Services,2,1,1,1,42.4,0,1,Cost
+F0683,Midwest,Mid (50–249),Professional Services,5,0,1,1,39.8,0,1,Cost
+F0684,Northeast,Small (1–49),Healthcare,2,0,0,0,27.6,1,0,
+F0685,South,Small (1–49),IT,2,0,1,0,17.4,0,1,Integration
+F0686,West,Large (250+),Industrial,4,0,0,0,27.9,0,1,Privacy / security
+F0687,South,Mid (50–249),Industrial,3,1,1,1,31.1,1,1,Integration
+F0688,Midwest,Mid (50–249),Healthcare,3,1,1,0,42.2,0,1,Integration
+F0689,West,Large (250+),Industrial,3,0,0,0,18.8,0,1,Cost
+F0690,Northeast,Small (1–49),Industrial,4,1,1,0,43.6,0,1,Privacy / security
+F0691,West,Large (250+),IT,2,0,1,1,29.6,0,0,
+F0692,South,Mid (50–249),Healthcare,1,0,0,0,28.1,0,1,Integration
+F0693,South,Large (250+),IT,2,0,1,0,22.3,0,1,Change management
+F0694,West,Mid (50–249),Industrial,1,0,0,0,13.1,1,1,Data quality
+F0695,South,Large (250+),Professional Services,3,0,1,0,27.3,1,1,Data quality
+F0696,Northeast,Mid (50–249),Professional Services,4,0,0,1,20.0,0,1,Data quality
+F0697,South,Mid (50–249),IT,2,1,1,0,30.8,0,1,Integration
+F0698,South,Mid (50–249),IT,3,1,0,1,25.2,0,1,Integration
+F0699,Northeast,Small (1–49),IT,2,0,1,1,21.2,0,1,Cost
+F0700,South,Mid (50–249),Healthcare,3,0,0,0,34.9,1,1,Data quality
+F0701,South,Small (1–49),IT,3,0,0,1,24.9,1,1,Integration
+F0702,Northeast,Small (1–49),IT,1,0,0,0,30.5,0,1,Change management
+F0703,Midwest,Mid (50–249),IT,2,1,1,0,28.6,0,1,Integration
+F0704,Northeast,Large (250+),Professional Services,1,0,0,0,10.8,0,1,Change management
+F0705,South,Mid (50–249),Professional Services,3,0,0,1,44.1,0,1,Data quality
+F0706,South,Mid (50–249),Healthcare,2,1,1,0,32.8,0,1,Privacy / security
+F0707,West,Mid (50–249),Professional Services,3,0,0,1,21.9,0,0,
+F0708,South,Small (1–49),Industrial,4,0,1,0,45.4,1,1,Change management
+F0709,South,Small (1–49),Healthcare,4,1,0,1,36.6,0,1,Cost
+F0710,Northeast,Mid (50–249),IT,4,0,0,0,34.2,0,1,Change management
+F0711,West,Small (1–49),Industrial,4,1,0,1,38.3,0,1,Integration
+F0712,South,Large (250+),Healthcare,3,1,1,0,48.1,1,1,Integration
+F0713,South,Small (1–49),Healthcare,2,0,1,1,21.5,0,1,Data quality
+F0714,South,Mid (50–249),Industrial,3,1,1,0,26.9,0,1,Integration
+F0715,West,Large (250+),Healthcare,4,0,1,1,40.7,0,1,Integration
+F0716,South,Small (1–49),Healthcare,3,0,1,1,36.8,0,1,Data quality
+F0717,Northeast,Small (1–49),Professional Services,5,1,0,1,45.3,1,1,Data quality
+F0718,Northeast,Small (1–49),Industrial,3,1,1,1,40.3,0,1,Privacy / security
+F0719,Midwest,Small (1–49),Professional Services,1,0,1,1,12.7,0,1,Integration
+F0720,Northeast,Mid (50–249),Industrial,3,0,1,0,25.8,1,1,Integration
+F0721,South,Small (1–49),Professional Services,3,1,1,1,38.0,1,1,Cost
+F0722,Northeast,Mid (50–249),Healthcare,2,0,1,1,27.1,0,0,
+F0723,South,Mid (50–249),Industrial,5,1,0,1,54.4,0,1,Change management
+F0724,Northeast,Large (250+),Professional Services,3,0,1,1,23.3,1,1,Change management
+F0725,West,Small (1–49),IT,1,0,0,0,24.8,1,0,
+F0726,South,Mid (50–249),IT,2,1,0,0,31.2,1,1,Data quality
+F0727,Midwest,Small (1–49),IT,3,0,0,0,25.6,0,0,
+F0728,Midwest,Large (250+),Healthcare,2,1,0,1,28.1,0,1,Data quality
+F0729,Northeast,Small (1–49),Industrial,4,0,1,1,30.7,1,1,Cost
+F0730,Northeast,Small (1–49),IT,1,0,0,0,15.6,0,1,Integration
+F0731,West,Large (250+),Industrial,2,1,1,1,34.0,0,1,Data quality
+F0732,South,Small (1–49),IT,5,1,1,0,48.7,0,1,Integration
+F0733,Northeast,Mid (50–249),Healthcare,3,1,0,1,2.8,0,1,Data quality
+F0734,Midwest,Mid (50–249),IT,4,1,0,0,39.7,0,1,Change management
+F0735,Midwest,Small (1–49),Industrial,2,0,0,1,21.2,1,1,Data quality
+F0736,South,Small (1–49),Professional Services,3,0,0,0,30.4,0,0,
+F0737,Midwest,Mid (50–249),Industrial,5,1,1,0,37.6,1,1,Privacy / security
+F0738,South,Mid (50–249),IT,3,1,1,0,36.1,0,0,
+F0739,South,Small (1–49),Professional Services,3,0,0,1,29.5,0,1,Change management
+F0740,West,Mid (50–249),Industrial,5,0,1,0,37.4,0,1,Change management
+F0741,Midwest,Mid (50–249),Healthcare,3,1,1,0,39.2,0,1,Integration
+F0742,South,Mid (50–249),Healthcare,4,1,1,0,46.4,0,0,
+F0743,Midwest,Large (250+),Professional Services,3,1,0,1,41.3,1,1,Data quality
+F0744,Northeast,Small (1–49),IT,2,1,0,1,17.5,1,1,Data quality
+F0745,Midwest,Small (1–49),Professional Services,1,1,1,1,36.6,0,1,Change management
+F0746,Northeast,Mid (50–249),Professional Services,1,1,0,1,19.3,0,1,Change management
+F0747,Northeast,Small (1–49),Industrial,2,0,1,1,31.0,0,1,Data quality
+F0748,South,Mid (50–249),Professional Services,1,0,0,0,21.2,1,0,
+F0749,West,Mid (50–249),Healthcare,2,0,0,1,27.4,0,1,Data quality
+F0750,West,Mid (50–249),Professional Services,4,1,1,0,39.5,1,0,
+F0751,West,Large (250+),Professional Services,4,1,0,1,45.3,0,0,
+F0752,Northeast,Large (250+),Professional Services,1,1,0,1,21.6,0,1,Integration
+F0753,Midwest,Small (1–49),Professional Services,1,1,0,0,29.5,0,0,
+F0754,Northeast,Mid (50–249),Professional Services,4,0,1,0,37.4,1,1,Cost
+F0755,South,Mid (50–249),Healthcare,4,1,1,0,39.0,1,1,Cost
+F0756,South,Small (1–49),Healthcare,2,0,1,1,15.7,1,1,Change management
+F0757,West,Mid (50–249),IT,2,1,1,1,43.3,0,1,Cost
+F0758,Midwest,Mid (50–249),IT,1,1,1,0,19.5,0,1,Data quality
+F0759,South,Large (250+),IT,2,0,0,1,22.9,0,1,Integration
+F0760,Midwest,Small (1–49),Professional Services,1,0,0,0,12.4,0,1,Data quality
+F0761,Northeast,Small (1–49),Industrial,5,1,0,0,36.0,0,1,Data quality
+F0762,Northeast,Mid (50–249),Industrial,4,1,1,1,37.8,0,1,Privacy / security
+F0763,Northeast,Small (1–49),IT,3,0,0,0,27.5,0,1,Integration
+F0764,South,Large (250+),Professional Services,1,0,0,0,21.0,0,1,Data quality
+F0765,West,Small (1–49),Professional Services,4,1,1,1,31.9,0,1,Integration
+F0766,Midwest,Mid (50–249),Industrial,4,1,1,1,40.2,1,1,Cost
+F0767,Northeast,Mid (50–249),Healthcare,4,0,0,1,41.4,0,1,Data quality
+F0768,Northeast,Small (1–49),Industrial,3,0,0,0,28.2,0,1,Cost
+F0769,South,Mid (50–249),Healthcare,5,1,1,1,48.5,1,1,Privacy / security
+F0770,Midwest,Large (250+),Healthcare,2,1,0,0,8.4,1,1,Cost
+F0771,South,Small (1–49),Professional Services,4,0,0,1,32.4,0,0,
+F0772,West,Large (250+),IT,3,0,0,1,17.0,0,1,Integration
+F0773,West,Small (1–49),IT,4,0,1,0,41.1,0,1,Data quality
+F0774,Northeast,Mid (50–249),IT,1,1,0,1,20.5,0,1,Data quality
+F0775,Midwest,Small (1–49),Professional Services,4,1,1,1,39.2,1,1,Data quality
+F0776,Midwest,Mid (50–249),IT,3,0,1,1,20.2,0,1,Data quality
+F0777,Midwest,Mid (50–249),Healthcare,3,0,0,0,30.9,0,1,Data quality
+F0778,South,Mid (50–249),Industrial,2,0,1,0,26.4,0,1,Data quality
+F0779,Northeast,Large (250+),Industrial,2,0,1,1,18.6,0,0,
+F0780,Midwest,Mid (50–249),Healthcare,4,0,0,0,32.9,0,1,Data quality
+F0781,West,Small (1–49),Industrial,4,0,0,1,30.5,1,1,Data quality
+F0782,Midwest,Small (1–49),Industrial,3,0,0,0,16.6,1,0,
+F0783,Northeast,Mid (50–249),Professional Services,2,0,0,0,33.9,0,1,Data quality
+F0784,Midwest,Large (250+),Industrial,1,1,1,0,30.2,1,1,Integration
+F0785,South,Small (1–49),Professional Services,1,0,0,0,14.9,0,0,
+F0786,Northeast,Small (1–49),IT,5,1,1,1,44.4,1,1,Data quality
+F0787,Midwest,Small (1–49),Industrial,1,0,0,0,24.0,0,0,
+F0788,Midwest,Large (250+),Industrial,1,1,0,1,35.8,1,0,
+F0789,West,Small (1–49),IT,1,0,0,0,21.5,0,1,Cost
+F0790,Midwest,Large (250+),Industrial,4,0,0,1,32.4,0,1,Change management
+F0791,Midwest,Small (1–49),Healthcare,3,1,1,0,39.8,0,1,Integration
+F0792,Midwest,Small (1–49),Healthcare,1,0,0,1,18.6,0,0,
+F0793,Midwest,Large (250+),IT,5,1,1,0,46.2,0,1,Change management
+F0794,Northeast,Small (1–49),Professional Services,1,0,0,0,9.2,0,1,Cost
+F0795,Midwest,Small (1–49),Healthcare,3,1,1,0,49.0,1,1,Cost
+F0796,South,Small (1–49),Healthcare,3,0,0,1,20.5,0,1,Integration
+F0797,South,Small (1–49),IT,1,0,0,0,12.3,0,1,Integration
+F0798,West,Large (250+),Industrial,2,0,1,1,28.5,0,1,Cost
+F0799,South,Mid (50–249),IT,5,1,1,1,53.3,1,1,Integration
+F0800,West,Large (250+),Professional Services,4,1,1,1,51.2,0,1,Data quality
+F0801,West,Large (250+),Industrial,3,1,1,1,40.2,1,1,Integration
+F0802,South,Mid (50–249),IT,4,0,1,1,37.2,0,0,
+F0803,West,Small (1–49),IT,4,1,1,1,55.2,0,1,Data quality
+F0804,Northeast,Small (1–49),Industrial,3,1,1,0,43.0,0,1,Integration
+F0805,Northeast,Small (1–49),IT,5,1,0,1,35.8,0,1,Integration
+F0806,Midwest,Small (1–49),Healthcare,2,1,1,1,28.6,0,1,Data quality
+F0807,West,Small (1–49),Professional Services,2,0,1,0,15.9,0,1,Data quality
+F0808,South,Small (1–49),Industrial,5,1,0,1,31.1,0,1,Data quality
+F0809,South,Large (250+),IT,1,1,0,1,24.6,0,1,Integration
+F0810,South,Mid (50–249),Professional Services,5,1,1,0,60.5,0,1,Change management
+F0811,Midwest,Large (250+),Healthcare,2,1,1,1,33.7,0,1,Privacy / security
+F0812,Northeast,Mid (50–249),Industrial,4,1,0,1,40.1,0,1,Data quality
+F0813,Midwest,Small (1–49),Professional Services,2,0,1,1,29.6,1,1,Integration
+F0814,Midwest,Large (250+),IT,2,1,0,1,40.7,0,1,Data quality
+F0815,West,Mid (50–249),Industrial,2,0,1,0,39.0,1,1,Integration
+F0816,South,Small (1–49),Industrial,2,0,1,1,24.5,1,1,Integration
+F0817,Midwest,Small (1–49),IT,5,1,1,1,45.2,0,1,Data quality
+F0818,Northeast,Small (1–49),IT,3,0,1,1,21.3,1,1,Change management
+F0819,West,Large (250+),IT,1,0,0,1,19.9,0,1,Cost
+F0820,Midwest,Small (1–49),IT,1,0,0,0,24.9,0,0,
+F0821,Northeast,Small (1–49),Industrial,5,1,1,1,47.1,0,1,Cost
+F0822,South,Mid (50–249),Professional Services,4,0,1,0,35.4,0,1,Privacy / security
+F0823,Northeast,Small (1–49),Healthcare,1,0,0,0,14.0,0,1,Cost
+F0824,South,Mid (50–249),IT,4,1,1,1,41.8,0,1,Cost
+F0825,Midwest,Small (1–49),Professional Services,3,1,1,1,45.8,0,1,Change management
+F0826,Midwest,Mid (50–249),Industrial,4,1,0,1,42.5,0,0,
+F0827,West,Small (1–49),Professional Services,4,0,1,0,28.1,0,1,Cost
+F0828,Northeast,Small (1–49),Healthcare,2,1,0,0,34.6,0,1,Cost
+F0829,South,Mid (50–249),Industrial,5,1,1,1,42.5,0,1,Integration
+F0830,Northeast,Mid (50–249),Healthcare,4,0,0,1,42.4,0,1,Data quality
+F0831,South,Small (1–49),IT,4,1,1,1,45.2,0,1,Change management
+F0832,South,Large (250+),IT,3,0,0,1,29.2,1,1,Cost
+F0833,South,Small (1–49),Industrial,5,1,1,1,45.8,0,1,Integration
+F0834,Midwest,Mid (50–249),IT,4,1,0,0,54.6,0,1,Cost
+F0835,Midwest,Small (1–49),Professional Services,3,1,1,1,47.5,1,1,Privacy / security
+F0836,Northeast,Small (1–49),Industrial,1,1,1,0,23.2,1,1,Integration
+F0837,West,Large (250+),Healthcare,2,1,1,1,31.3,0,0,
+F0838,South,Small (1–49),Professional Services,4,0,0,0,33.4,0,1,Data quality
+F0839,West,Mid (50–249),IT,4,1,1,0,52.0,1,1,Integration
+F0840,West,Small (1–49),Industrial,3,1,1,1,37.1,0,1,Integration
+F0841,South,Small (1–49),IT,1,0,0,0,24.2,1,1,Data quality
+F0842,Midwest,Small (1–49),Healthcare,1,0,1,1,27.9,1,0,
+F0843,Midwest,Mid (50–249),Industrial,2,0,0,0,27.8,0,1,Integration
+F0844,South,Large (250+),Healthcare,2,0,1,0,14.1,1,1,Integration
+F0845,West,Small (1–49),Healthcare,3,1,0,1,31.5,0,1,Change management
+F0846,Northeast,Mid (50–249),Healthcare,2,0,0,1,22.8,0,1,Privacy / security
+F0847,Northeast,Small (1–49),IT,1,0,0,0,9.9,0,1,Data quality
+F0848,South,Mid (50–249),Professional Services,3,0,0,1,13.0,1,1,Data quality
+F0849,Midwest,Mid (50–249),Industrial,5,1,1,0,46.1,1,1,Privacy / security
+F0850,South,Small (1–49),Industrial,2,0,0,0,23.2,1,0,
+F0851,West,Mid (50–249),Industrial,3,1,1,0,37.2,0,1,Data quality
+F0852,Midwest,Large (250+),Healthcare,2,0,0,1,20.2,1,1,Cost
+F0853,South,Mid (50–249),Professional Services,4,0,1,0,33.8,1,1,Integration
+F0854,South,Mid (50–249),Industrial,4,1,0,1,35.1,0,1,Cost
+F0855,West,Mid (50–249),Industrial,3,0,0,0,26.0,0,1,Change management
+F0856,Midwest,Small (1–49),Professional Services,3,0,0,0,26.2,1,1,Cost
+F0857,South,Small (1–49),Professional Services,5,1,1,0,42.8,1,1,Data quality
+F0858,West,Mid (50–249),Professional Services,2,0,1,0,30.7,1,1,Change management
+F0859,West,Large (250+),Professional Services,3,1,1,1,35.8,1,1,Integration
+F0860,Midwest,Small (1–49),Healthcare,2,0,1,0,11.2,0,1,Change management
+F0861,West,Mid (50–249),Industrial,2,0,0,1,10.2,1,1,Privacy / security
+F0862,Northeast,Small (1–49),IT,2,0,1,1,22.3,0,1,Data quality
+F0863,South,Small (1–49),Professional Services,1,1,1,0,6.5,0,1,Cost
+F0864,Northeast,Large (250+),IT,4,1,0,1,36.0,0,1,Integration
+F0865,South,Small (1–49),Industrial,4,0,0,1,36.4,0,1,Change management
+F0866,South,Large (250+),Professional Services,2,1,0,1,15.2,0,1,Cost
+F0867,South,Mid (50–249),Healthcare,2,1,0,1,37.5,0,1,Privacy / security
+F0868,West,Mid (50–249),Professional Services,3,1,1,0,40.3,1,0,
+F0869,Midwest,Small (1–49),Professional Services,3,0,1,1,44.2,0,1,Integration
+F0870,Northeast,Mid (50–249),Healthcare,2,0,0,0,25.5,0,1,Integration
+F0871,Northeast,Mid (50–249),Healthcare,4,1,1,0,45.3,0,1,Change management
+F0872,Northeast,Mid (50–249),Industrial,4,1,1,1,35.6,0,1,Data quality
+F0873,Midwest,Small (1–49),Healthcare,3,1,0,1,37.0,0,1,Data quality
+F0874,West,Large (250+),Healthcare,4,1,1,1,51.5,1,1,Privacy / security
+F0875,South,Small (1–49),Healthcare,2,1,0,0,19.8,0,1,Change management
+F0876,West,Mid (50–249),Industrial,4,0,0,1,35.0,0,1,Integration
+F0877,West,Small (1–49),Professional Services,2,0,0,1,13.3,0,1,Change management
+F0878,Northeast,Large (250+),Industrial,3,1,0,0,39.8,0,0,
+F0879,South,Small (1–49),IT,4,1,0,1,46.4,0,1,Change management
+F0880,Midwest,Small (1–49),Industrial,1,0,0,0,18.7,0,1,Privacy / security
+F0881,Northeast,Small (1–49),Professional Services,4,0,0,1,41.9,1,1,Integration
+F0882,Midwest,Mid (50–249),Industrial,4,1,0,0,42.7,0,1,Integration
+F0883,South,Large (250+),Professional Services,4,1,1,1,50.8,0,1,Change management
+F0884,South,Mid (50–249),Professional Services,2,0,1,0,35.8,0,1,Data quality
+F0885,Northeast,Small (1–49),Industrial,3,0,0,0,17.2,0,0,
+F0886,South,Large (250+),Professional Services,5,0,1,1,31.6,0,1,Privacy / security
+F0887,South,Large (250+),Professional Services,1,0,0,0,10.8,0,1,Privacy / security
+F0888,Midwest,Small (1–49),Healthcare,4,1,1,1,48.3,1,1,Data quality
+F0889,Northeast,Mid (50–249),IT,4,0,0,0,31.9,1,1,Data quality
+F0890,West,Mid (50–249),Healthcare,2,0,0,0,20.7,0,0,
+F0891,Northeast,Large (250+),Professional Services,4,1,1,0,42.6,0,1,Cost
+F0892,Midwest,Mid (50–249),Professional Services,3,1,0,0,34.0,0,1,Change management
+F0893,South,Mid (50–249),Industrial,4,1,1,1,39.2,0,1,Privacy / security
+F0894,West,Small (1–49),Professional Services,4,0,1,0,40.2,1,1,Privacy / security
+F0895,South,Small (1–49),Industrial,3,1,1,0,43.3,1,1,Integration
+F0896,South,Small (1–49),Professional Services,5,1,1,0,43.5,1,1,Data quality
+F0897,Northeast,Small (1–49),Professional Services,4,1,0,1,44.2,0,1,Cost
+F0898,Midwest,Small (1–49),Professional Services,2,0,0,0,25.9,1,1,Data quality
+F0899,Northeast,Mid (50–249),Healthcare,4,0,0,1,35.6,0,1,Integration
+F0900,Midwest,Mid (50–249),Professional Services,1,0,0,0,11.9,0,0,
+F0901,Midwest,Small (1–49),IT,1,0,0,0,8.3,0,1,Change management
+F0902,West,Small (1–49),IT,2,1,0,1,25.7,0,0,
+F0903,Northeast,Mid (50–249),Industrial,4,1,1,1,53.7,1,1,Integration
+F0904,Northeast,Small (1–49),Healthcare,3,1,0,1,33.4,1,1,Integration
+F0905,West,Mid (50–249),Industrial,1,0,1,0,9.5,0,1,Cost
+F0906,West,Mid (50–249),Industrial,2,0,1,1,30.9,0,1,Cost
+F0907,South,Large (250+),Industrial,1,0,1,0,23.7,1,1,Integration
+F0908,Midwest,Small (1–49),IT,1,0,0,0,20.6,1,1,Data quality
+F0909,Midwest,Small (1–49),Healthcare,2,1,0,0,26.9,0,0,
+F0910,West,Small (1–49),Healthcare,1,0,1,1,22.2,1,1,Cost
+F0911,West,Small (1–49),Industrial,5,1,1,1,49.4,0,0,
+F0912,Northeast,Mid (50–249),Industrial,3,0,1,1,27.2,1,1,Change management
+F0913,Northeast,Large (250+),IT,3,1,0,1,43.5,0,0,
+F0914,West,Mid (50–249),Professional Services,2,0,1,1,29.3,1,1,Change management
+F0915,Midwest,Mid (50–249),Industrial,2,1,0,0,36.3,0,1,Integration
+F0916,South,Large (250+),Healthcare,3,0,0,1,16.2,0,1,Privacy / security
+F0917,South,Mid (50–249),Industrial,4,1,0,1,33.1,0,1,Cost
+F0918,Northeast,Small (1–49),IT,2,1,1,1,38.2,1,1,Cost
+F0919,West,Mid (50–249),Healthcare,3,0,0,1,21.4,1,1,Cost
+F0920,Northeast,Small (1–49),Healthcare,2,1,0,0,45.4,0,1,Cost
+F0921,Northeast,Mid (50–249),Professional Services,2,0,0,0,24.9,1,1,Change management
+F0922,Northeast,Small (1–49),Industrial,3,1,1,0,33.0,0,1,Cost
+F0923,Northeast,Mid (50–249),Healthcare,4,1,0,1,39.2,1,0,
+F0924,Midwest,Mid (50–249),Healthcare,2,0,0,1,24.1,0,1,Change management
+F0925,Midwest,Mid (50–249),Industrial,5,0,0,1,41.1,0,1,Change management
+F0926,South,Small (1–49),Professional Services,5,1,1,1,51.5,1,0,
+F0927,South,Mid (50–249),Industrial,2,0,0,0,14.9,1,1,Data quality
+F0928,West,Small (1–49),IT,2,0,0,0,26.5,0,0,
+F0929,Northeast,Small (1–49),Professional Services,3,1,0,1,44.5,1,0,
+F0930,Northeast,Mid (50–249),IT,1,0,0,1,10.1,0,1,Privacy / security
+F0931,Midwest,Large (250+),Healthcare,5,0,0,1,34.6,1,1,Data quality
+F0932,Northeast,Mid (50–249),Healthcare,4,0,1,0,40.9,1,1,Cost
+F0933,West,Small (1–49),IT,4,1,0,1,46.9,0,1,Privacy / security
+F0934,West,Large (250+),IT,3,0,0,1,19.3,0,1,Privacy / security
+F0935,West,Large (250+),IT,5,1,1,1,41.8,1,1,Integration
+F0936,South,Small (1–49),IT,2,1,0,0,27.2,0,0,
+F0937,South,Small (1–49),Industrial,4,1,1,0,41.7,1,1,Integration
+F0938,Northeast,Small (1–49),Industrial,4,0,1,1,36.0,0,1,Data quality
+F0939,Midwest,Mid (50–249),Industrial,4,1,1,0,54.3,0,0,
+F0940,West,Mid (50–249),IT,4,1,1,1,31.1,0,1,Data quality
+F0941,Midwest,Mid (50–249),Industrial,3,1,0,0,45.5,0,1,Change management
+F0942,Midwest,Small (1–49),Healthcare,3,1,1,0,53.0,0,1,Data quality
+F0943,South,Mid (50–249),IT,4,1,1,0,45.7,0,1,Change management
+F0944,Midwest,Mid (50–249),Healthcare,2,0,0,1,27.6,0,1,Cost
+F0945,Northeast,Large (250+),IT,5,1,1,1,36.8,1,1,Data quality
+F0946,South,Small (1–49),Healthcare,2,0,1,1,22.6,0,1,Integration
+F0947,South,Mid (50–249),Professional Services,5,0,0,0,49.1,1,1,Data quality
+F0948,Midwest,Small (1–49),IT,3,1,0,0,37.0,0,1,Data quality
+F0949,Northeast,Small (1–49),Professional Services,5,1,1,0,57.7,1,1,Data quality
+F0950,Midwest,Small (1–49),Professional Services,4,1,0,1,28.4,0,1,Integration
+F0951,South,Large (250+),Healthcare,3,1,0,0,35.4,0,1,Cost
+F0952,West,Small (1–49),IT,3,0,1,1,27.2,0,1,Data quality
+F0953,West,Small (1–49),Professional Services,4,1,1,0,41.7,0,1,Change management
+F0954,South,Mid (50–249),Professional Services,1,0,1,1,19.2,0,0,
+F0955,South,Large (250+),Industrial,2,0,0,0,26.2,0,1,Integration
+F0956,West,Small (1–49),Industrial,4,1,1,1,43.9,1,1,Change management
+F0957,South,Mid (50–249),Healthcare,3,1,1,0,39.9,0,0,
+F0958,Northeast,Small (1–49),IT,2,0,0,1,15.7,0,1,Change management
+F0959,South,Small (1–49),Healthcare,3,0,0,0,19.8,0,0,
+F0960,West,Small (1–49),Professional Services,1,1,1,1,20.4,1,1,Change management
+F0961,Northeast,Small (1–49),IT,5,1,0,1,41.3,0,0,
+F0962,West,Large (250+),Healthcare,1,1,1,0,17.9,0,1,Change management
+F0963,South,Mid (50–249),IT,2,0,1,1,28.5,1,1,Cost
+F0964,South,Large (250+),Professional Services,5,1,1,1,51.1,1,1,Cost
+F0965,South,Mid (50–249),Industrial,5,0,1,1,33.5,1,1,Cost
+F0966,Northeast,Mid (50–249),Professional Services,2,1,0,1,27.2,0,1,Change management
+F0967,Northeast,Mid (50–249),Industrial,2,0,0,0,17.1,0,1,Integration
+F0968,South,Mid (50–249),Healthcare,3,0,1,0,37.7,1,1,Change management
+F0969,Northeast,Small (1–49),Professional Services,5,0,0,0,38.8,0,1,Integration
+F0970,West,Small (1–49),IT,5,0,0,1,31.8,0,1,Data quality
+F0971,West,Small (1–49),Industrial,5,1,1,0,55.4,1,1,Data quality
+F0972,West,Mid (50–249),IT,4,1,1,1,49.0,0,1,Data quality
+F0973,South,Mid (50–249),Industrial,2,1,0,0,33.5,1,1,Cost
+F0974,South,Mid (50–249),Healthcare,2,1,1,0,39.5,0,1,Data quality
+F0975,South,Large (250+),IT,3,0,1,1,27.5,1,0,
+F0976,Midwest,Mid (50–249),IT,5,1,1,0,42.0,0,1,Cost
+F0977,Midwest,Mid (50–249),IT,2,0,0,1,21.7,0,1,Integration
+F0978,West,Small (1–49),Professional Services,5,0,1,1,41.9,1,1,Change management
+F0979,Midwest,Mid (50–249),Industrial,3,1,1,1,32.5,0,1,Data quality
+F0980,Midwest,Small (1–49),IT,2,0,0,1,22.8,0,1,Change management
+F0981,Northeast,Mid (50–249),Healthcare,1,0,0,1,15.7,0,1,Cost
+F0982,Northeast,Large (250+),Healthcare,5,0,1,1,42.3,0,1,Integration
+F0983,West,Small (1–49),Healthcare,2,0,1,0,25.9,0,0,
+F0984,Midwest,Small (1–49),Professional Services,4,0,1,0,45.5,0,1,Change management
+F0985,South,Mid (50–249),IT,3,0,1,0,28.6,1,1,Cost
+F0986,West,Large (250+),Healthcare,3,1,0,1,42.2,0,1,Change management
+F0987,South,Small (1–49),IT,3,1,1,0,35.9,0,1,Cost
+F0988,Midwest,Small (1–49),Industrial,2,0,1,1,21.7,0,1,Data quality
+F0989,West,Large (250+),Professional Services,1,1,1,0,31.1,0,1,Cost
+F0990,West,Large (250+),IT,1,0,1,1,19.4,1,1,Data quality
+F0991,Northeast,Small (1–49),Industrial,3,0,1,1,21.0,0,1,Data quality
+F0992,Midwest,Mid (50–249),Healthcare,4,0,1,1,40.1,1,1,Cost
+F0993,South,Mid (50–249),Professional Services,1,0,0,0,12.2,0,1,Integration
+F0994,Northeast,Large (250+),Industrial,3,1,0,1,28.5,0,1,Integration
+F0995,Midwest,Mid (50–249),Healthcare,1,0,0,1,22.2,0,1,Cost
+F0996,West,Small (1–49),Industrial,2,0,0,1,13.1,0,1,Data quality
+F0997,West,Small (1–49),Industrial,2,0,1,0,14.7,0,1,Cost
+F0998,Midwest,Large (250+),IT,4,1,1,0,40.1,0,1,Privacy / security
+F0999,South,Small (1–49),IT,4,1,0,0,52.2,0,1,Change management
