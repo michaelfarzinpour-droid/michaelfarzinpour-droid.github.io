@@ -1,0 +1,7 @@
+Requirement ID,Fictional investigator need,Type,Priority,Proposed pathway,Owner to consult,Dependency,Acceptance criteria,Status
+R-01,Define cohort and outcome criteria,Research,High,Investigator intake,Investigator,Protocol scope,Documented cohort and window,Open
+R-02,Obtain initial cohort feasibility count,Data,High,Approved feasibility consultation,Data service owner,R-01,Permitted aggregate result with limitations,Pending review
+R-03,Assess access to individual-level longitudinal records,Governance,High,Data access consultation,Authorized data owner,Approvals and role requirements,Formal access decision by authorized team,Not approved
+R-04,Collect follow-up survey responses,Technology,Medium,Data capture consultation,Data capture specialist,Study design and appropriate approvals,Configuration and access plan,Discovery
+R-05,Identify approved analysis and storage environment,Security,High,Research computing consultation,Research IT and security,R-03,Documented appropriate environment and approved workflow,Pending review
+R-06,Document external collaborator access question,Governance,High,Compliance referral,Privacy/compliance/data owner,Recipient and purpose details,Recorded institutional determination,Escalated
