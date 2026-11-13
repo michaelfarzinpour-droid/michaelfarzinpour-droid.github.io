@@ -31,3 +31,17 @@ These resources are general background; the case pathways and ownership terms ar
 
 ## Portfolio résumé description (use after verifying the project)
 Developed an interactive, fictional research informatics service-coordination simulation with 12 decision points spanning investigator requirements gathering, data-service selection, sensitive-data escalation, handoff tracking, and synthetic KPI-based process improvement; produced six downloadable operational work samples.
+## Advanced workflow studio (November 2026 update)
+
+Open [the branching investigator workflow studio](workflow-studio.html) from the main lab. This additional interactive module lets visitors:
+
+- Enter a fictional investigator's research objective, cohort/time window, minimum data elements, requested milestone, owner, and reported approval status.
+- Evaluate essential intake completeness and see an explicitly hypothetical clarification delay if key fields are missing.
+- Choose among three service-routing decisions, with a fictional rework consequence for mismatched paths.
+- Handle a sensitive external-records request by documenting an appropriate authorized governance referral rather than granting access.
+- Generate and download a requirements matrix (CSV), decision/handoff log (Markdown), and case summary (Markdown) from their actual inputs and selections.
+- Restart the case and compare process outcomes. User inputs remain in browser memory and are not sent to a backend by this static page.
+
+### Important interpretation
+
+The workflow studio is an **independent, fictional educational demonstration**. Its +2-day intake and +3-day routing penalties are declared designer-defined assumptions, **not UCLA service time estimates or empirically validated effects**. Selection feedback shows a preferred educational route, not formal policies, compliance conclusions, actual service availability, or authority to access or transfer patient data. Never enter real PHI or confidential research information. The existing 12-question decision lab, synthetic 60-ticket analytics dashboard, and six fixed sample work products remain available.
