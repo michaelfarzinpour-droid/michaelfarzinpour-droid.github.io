@@ -1,0 +1,5 @@
+Ticket,Fictional task,Coordinator,Decision owner,Status,Dependency,Next action,Next check-in criterion,Completion evidence
+SIM-001,Clarify diabetes feasibility cohort,Research program analyst,Investigator,Waiting on researcher,Missing cohort definition,Request inclusion criteria and study window,After investigator reply,Accepted intake record
+SIM-001,Confirm permitted feasibility pathway,Research program analyst,Data service owner,In progress,Final cohort definition,Obtain consultation and routing decision,After service-owner review,Recorded service path
+SIM-015,Assess secure analysis environment,Research program analyst,Security and research IT,Escalated,Data access approval pending,Clarify storage compute and access requirements,At security consultation,Documented environment decision
+SIM-036,Review external data sharing,Research program analyst,Compliance and data owner,Waiting on service owner,Recipient and purpose details,Convene compliance consultation,On formal determination,Recorded decision without implying authorization
