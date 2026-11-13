@@ -1,0 +1,5 @@
+Risk ID,Fictional issue,Impact,Likelihood,Trigger,Mitigation or next action,Accountable next-contact team,Status,Escalation condition
+SEC-01,Proposed personal-cloud placement of individual-level data,High,Medium,Investigator proposes unreviewed transfer,Stop proposed transfer and obtain institutional review,Security/privacy/data owner,Open,Transfer attempted before determination
+GOV-01,External collaborator request without established authorization,High,Medium,Recipient requests records,Confirm purpose recipient elements and route decision,Compliance/privacy/data owner,Awaiting review,Unresolved at decision checkpoint
+OPS-01,Competing teams lack handoff ownership,Medium,High,No named owner for two check-ins,Convene triage with explicit next action and follow-up date,Research informatics coordinator,Open,Ownership unresolved by follow-up
+REQ-01,Incomplete cohort criteria could cause rework,Medium,High,Missing inclusion criteria,Use structured intake and investigator clarification,Investigator and analyst,Open,Milestone slips
