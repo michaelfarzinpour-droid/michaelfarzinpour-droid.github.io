@@ -1,39 +1,48 @@
-# Completed example communications packages
+# Communications packages — original fictional examples
 
-**Independent fictional portfolio exercise — not NASA/JPL work, reviewed science findings, or agency-approved releases.**
+These are **illustrative, unapproved** drafts developed for a self-directed portfolio simulation, not NASA/JPL content. Each includes a proposed message, public explainer, social copy, original SVG illustration concept, and release conditions. The interactive lab offers SVG downloads and editable producer notes.
 
-## Planetary science | Rover sample-analysis milestone
-**Proposed headline:** Rover observations suggest a possible mineral signature; analysis continues.
+## 1. Planetary science · Rover mineral-signal update
 
-**Web story:** In this fictional scenario, a rover has detected a preliminary instrument signal in a rock sample. Its interpretation awaits further calibration and scientific review. The example illustrates how to convey a promising signal without asserting that microbes existed.
+**Scientific boundary:** A fabricated preliminary instrument signal may be consistent with a mineral signature. No confirmed mineral interpretation or evidence of microbial life.
 
-**Social:** A possible mineral signal—not a confirmed discovery. Further calibration is needed in this fictional rover scenario.
+**Proposed headline:** Rover team evaluates preliminary mineral signal.
 
-**Creative brief:** Draft a conceptual observation → calibration → interpretation diagram. Clearly label illustrative visuals and hold annotated images until a technical reviewer verifies the claims.
+**Proposed website copy:** A rover instrument has returned an initial signal in a fictional rock-sample scenario. The observation may be consistent with a mineral signature, but calibration and expert interpretation are incomplete. Investigators would need to compare alternative explanations before sharing a definitive conclusion. This proposed educational update illustrates the difference between an observation and a confirmed scientific finding. It does not establish evidence of life.
 
-**Release dependency:** Hypothetical source-fact review, graphic approval and accessibility checks.
+**Social copy:** A rover signal can raise a question without answering it. In this fictional scenario, further calibration is needed before interpreting a possible mineral signature.
 
-## Earth science | Regional surface-temperature explainer
-**Proposed headline:** Understanding a regional temperature dataset—and its limits.
+**Original infographic:** Three stages—observation, calibration, expert interpretation—with the caveat *No evidence of life established*. The figure is conceptual, not a measured instrument readout.
 
-**Web story:** A limited regional observation can help audiences ask questions about a local pattern, but an accurate explainer must state geographic coverage, measurement units, observation dates, baseline and uncertainty. None of those numerical values is supplied in this fictional exercise. It cannot establish the cause of worldwide temperature trends.
+**Handoff:** Request primary source validation and a science-review gate for annotated art. Check alt text and captions. Phase independently cleared text, but hold unresolved graphics.
 
-**Social:** A useful regional temperature map needs clear units, dates, context, uncertainty and an honest visual scale.
+## 2. Earth science · Regional surface-temperature explainer
 
-**Creative brief:** Proposed annotated map with a fair legend, documented scale, contextual footnotes, descriptive alt text and an accessible data table. Hold data-dependent visual content until source details are documented.
+**Scientific boundary:** No verified map period, units, geographic scope, baseline, uncertainty, numerical measurements or attribution claim.
 
-**Release dependency:** Verified data definitions, scale QA, technical wording and visual accessibility.
+**Proposed headline:** How to read a regional surface-temperature map.
 
-## Astrophysics | Candidate-galaxy multimedia package
-**Proposed headline:** A candidate distant galaxy invites further study.
+**Proposed website copy:** A regional satellite-derived temperature illustration may be useful for education if viewers can identify its geographic scope, time period, units, scale and uncertainty. In this fictional exercise those underlying values have not yet been verified, so no actual measurements or observed warming trend are presented. A regional snapshot alone cannot establish global causes. The editorial objective is to explain how to interpret such products responsibly.
 
-**Web story:** A fictional observatory team is studying a candidate distant galaxy. Its estimated distance is preliminary and may change as analyses continue. This proposed explainer describes how astronomers investigate such candidates without claiming an oldest-ever or most-distant record.
+**Social copy:** Before sharing a temperature map, ask: where, when, in what units, compared with what baseline, and with what uncertainty?
 
-**Social:** How do scientists investigate a candidate distant galaxy? The provisional distance estimate may change with further study.
+**Original SVG concept:** A stylized map template with prominent placeholders for region, date, units, baseline and uncertainty; not real spatial data.
 
-**Creative brief:** Conceptual 30-second animation: 0–6s question, 6–14s schematic observation, 14–23s illustrated spectrum, 23–30s qualified finding and next steps. Include captions, transcript, visual description and technical review checkpoints.
+**Handoff:** Validate the provenance table, make the scale honest and explain uncertainty. Require accessible legend, tabular alternative and technical review before any data-specific public image.
 
-**Release dependency:** Fact-checked narration, no unsupported superlatives, accessibility review and agency clearance in any real campaign.
+## 3. Astrophysics · Candidate distant-galaxy multimedia
 
-## General measures
-Operational success: intake completeness, on-time asset handoff, review revisions, documented approvals and accessibility checks. Potential public impact measures: unique visitors and comprehension checks, **not observed or estimated for this portfolio exercise**.
+**Scientific boundary:** The galaxy, observations, redshift and distance are fictional and provisional. No oldest-ever or distance-record claim is substantiated.
+
+**Proposed headline:** What a candidate distant galaxy can teach us.
+
+**Proposed website copy:** In this fictional scenario, researchers are investigating a possible distant galaxy. Preliminary spectral information can guide follow-up questions, but the distance estimate requires additional analysis. An explanatory animation can show how scientists move from observations to tested interpretations. The story does not claim a record-setting galaxy or report a real discovery.
+
+**Social copy:** A candidate distant galaxy invites new questions. This fictional explainer shows why follow-up analysis matters before distance claims become headlines.
+
+**Original four-frame storyboard:** 0–6 seconds: question; 6–14 seconds: schematic observation; 14–23 seconds: illustrated spectral concept; 23–30 seconds: qualified interpretation and next steps.
+
+**Handoff:** Include narration script, reviewed terminology, captions, transcript, alternate description and targeted reapproval if a spectral label changes. This is a storyboard, **not an actual animated video**.
+
+## Shared project constraints
+The 24 model decisions explore deadlines, resource trade-offs, stakeholder feedback, technical corrections and accessibility. No simulated release gates should be mistaken for NASA/JPL authorization. In a real campaign all claims would require source checks, designated technical review and organizational approval.
