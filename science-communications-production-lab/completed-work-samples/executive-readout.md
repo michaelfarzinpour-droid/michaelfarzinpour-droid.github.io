@@ -1,18 +1,35 @@
-# Executive readout — fictional production exercise
+# Version 2 executive readout — independent fictional science communications lab
 
-**Scope:** Three hypothetical science communication assignments in planetary science, Earth science and astrophysics.
+## Executive summary
+An interactive portfolio work sample models coordination among scientific, editorial, creative and release stakeholders for three fictional scenarios: rover mineral-signal interpretation, a regional surface-temperature map and candidate distant-galaxy storytelling. The site adds decision consequences, review dependencies, original illustrations, and inspectable process measures.
 
-**Model pathway:** 12 selected best-practice decisions (60 of 60 possible points by design); 12 fictional production milestones represented as complete in the exercise; six claim reviews (two revisions, one rejection, three conditional source-check approvals). These are **illustrative values, not measured employment performance, real approvals, or published campaign results**.
+## Sample scope
+| Deliverable | Count | Limitation |
+|---|---:|---|
+| Contextual decisions | 24 | Instructional branching alternatives, not validated measures of professional performance |
+| Dependent milestones | 15 | Statuses are fictional; no real on-time observations |
+| Original SVG visual concepts | 3 | Conceptual—not mission media, production video, or measured scientific graphics |
+| Claim review checks | 6 | No actual scientists or release authorities participated |
+| Scenario communications packages | 3 | Hypothetical short drafts; real verification and approval would remain necessary |
 
-## Operational findings
-1. **Intake:** Resolve ambiguous scope by documenting audience, deliverables, evidence, ownership, timing and sign-off path.
-2. **Scientific integrity:** Preliminary mineral signatures do not establish life; limited regional temperature data do not prove global causation; provisional distance estimates do not justify galaxy record claims.
-3. **Creative direction:** Give designers and video producers approved statements, visual references, shot sequences, caveats and checkpoints without pretending to produce finished media.
-4. **Deadline decisions:** Hold unreconciled technical assets; phase only independently cleared material and document changes.
-5. **Accessibility:** Require descriptive alternatives, fair visual scales, captions, transcripts and review before release.
-6. **Measurement:** Track delivery and review quality first; define unique reach and optional comprehension measures if a real campaign occurs. Impressions alone cannot establish understanding or trust.
+## Operational judgment tested
+1. **Intake and scope:** Clarify audience, owner, deliverables, evidence, deadline and approvals from an ambiguous request.
+2. **Scientific integrity:** Prevent preliminary mineral signals from being described as life; avoid causal inferences from an unverified regional map; withhold galaxy record claims pending validation.
+3. **Production direction:** Provide design briefs and an original diagram/storyboard with clear limitations and educational purpose.
+4. **Dependencies and changes:** Flag premature handoff and review a changed claim after graphics and copy have diverged.
+5. **Accessibility:** Plan alt text, captions, transcripts and data-table equivalents.
+6. **Reporting:** Distinguish fictional project completion/status metrics from actual campaign impact.
 
-## Important limitations
-All scenarios, status updates, team roles and content were created for this portfolio demonstration. No independent scientist validated the fabricated scenario facts, no NASA/JPL authority approved content and there is no measured audience response. Formal release of real science communications would need source verification, accessibility review and organizational clearance.
+## Method of KPI calculation
+- **Milestones completed** = number of fictional rows whose status is `Complete`, divided by 15.
+- **Dependency conflicts** = completed rows whose immediate predecessor row is not complete.
+- **Decision coverage** = visitor-entered decisions divided by 24.
+- **Reference alignment** = visitor selections matching example decisions divided by 24.
+- **Review coverage** = six claim checks with a selected disposition.
+- **Potentially ready packages** = scenarios with all five rows complete and example accuracy/accessibility metrics at least 60/100. This is only an instructional threshold, not actual clearance.
+- The interface intentionally avoids treating this as real on-time delivery, audience reach or public understanding.
 
-This exercise is a work sample of structured communication judgment, **not a replacement for real-world management of multimedia teams**.
+## Remaining limitations
+No real source data or validated NASA/JPL event was used; no professional media team was managed; no agency release was approved; no user behavior was observed. Website persistence is local to the user's browser and can be disabled or cleared. Scoring weights are arbitrary instructional values. The downloadable illustrations and media briefs are prototypes, not completed production assets.
+
+**Bottom line:** This version more concretely demonstrates project-management reasoning and multimedia direction while preserving the distinction between independent simulation and employment experience.
