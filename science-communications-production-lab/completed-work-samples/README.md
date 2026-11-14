@@ -1,12 +1,19 @@
-# Completed fictional science communications work samples
+# Science Communications Production Lab — version 2
 
-This folder supports the [interactive Science Communications Production Lab](../).
+[Launch the interactive lab](../)
 
-**Independent fictional exercise. Not affiliated with, commissioned by, or endorsed by NASA or JPL.** No real scientific findings, agency clearances, audience metrics, media campaigns, or professional production oversight are claimed.
+**Independent fictional portfolio exercise, not affiliated with or endorsed by NASA/JPL.** No real agency mission, observation, technical review, approved release, campaign performance or professional production oversight is claimed.
 
-## Model deliverables
-- [Executive readout](executive-readout.md): interpretation of the 12/12 model decisions, 12 fictional milestones, and 6 review dispositions.
-- [Communications package](communications-packages.md): three fictional science story drafts, social updates, creative production briefs, and release dependencies.
-- On the interactive lab page, export editable CSV decision logs, a 12-milestone tracker and scientific-review worksheet.
+## What the interactive lab contains
 
-The 60/60 example decision score is an instructional model, **not evidence of professional competency measured by NASA/JPL**.
+- **24 consequential decisions** across three invented planetary, Earth science, and astrophysics communications assignments, with different resource, accuracy, stakeholder and accessibility consequences.
+- **15 dependent production milestones** (five per case), including editable statuses and conflict flags for out-of-order completion. The board begins planned, rather than falsely showing visitor completion.
+- **Three original, downloadable SVG conceptual visuals**: observation-to-interpretation infographic, regional surface-temperature map template with unverified data labels, and 30-second four-frame astrophysics storyboard.
+- Science source limitations, **six review dispositions**, producer's notes, persistent browser state, and exports for decision logs, production tracker, executive readout, creative package, SVG and full JSON state.
+- An explicit simulated KPI framework; counts measure interaction with fictional exercises and **not observed on-time campaign delivery, public learning, or mission approval**.
+
+## Model work samples
+- [Communications packages](communications-packages.md) — proposed creative briefs, headlines, web drafts and social copy
+- [Executive readout](executive-readout.md) — method, example trade-offs, metrics, review requirements and limitations
+
+The teaching model includes 24 reference decisions, but those are example pathways **not a validated personnel assessment**. The site initially records zero participant selections and zero completed board milestones.
