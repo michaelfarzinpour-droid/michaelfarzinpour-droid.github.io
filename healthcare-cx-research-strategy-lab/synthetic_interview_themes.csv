@@ -1,0 +1,25 @@
+interview_id,segment,journey_stage,coded_theme,illustrative_paraphrase,provenance
+I01,Independent pharmacy,Ordering portal,Duplicate entry,Completing recurring orders requires reentering information.,Invented scenario text; not participant testimony
+I02,Regional pharmacy group,Ordering portal,Error recovery,An error message does not explain how to finish the order.,Invented scenario text; not participant testimony
+I03,Specialty clinic,Delivery status,Visibility gap,Teams need a reliable status update before a shipment arrives.,Invented scenario text; not participant testimony
+I04,Health system,Delivery status,Exception alerts,Late shipments are easier to manage with proactive alerts.,Invented scenario text; not participant testimony
+I05,Independent pharmacy,Account support,Handoff friction,Reexplaining a problem during a handoff increases effort.,Invented scenario text; not participant testimony
+I06,Regional pharmacy group,Returns and credits,Resolution opacity,Staff cannot tell where a credit request stands.,Invented scenario text; not participant testimony
+I07,Specialty clinic,Ordering portal,Duplicate entry,Completing recurring orders requires reentering information.,Invented scenario text; not participant testimony
+I08,Health system,Ordering portal,Error recovery,An error message does not explain how to finish the order.,Invented scenario text; not participant testimony
+I09,Independent pharmacy,Delivery status,Visibility gap,Teams need a reliable status update before a shipment arrives.,Invented scenario text; not participant testimony
+I10,Regional pharmacy group,Delivery status,Exception alerts,Late shipments are easier to manage with proactive alerts.,Invented scenario text; not participant testimony
+I11,Specialty clinic,Account support,Handoff friction,Reexplaining a problem during a handoff increases effort.,Invented scenario text; not participant testimony
+I12,Health system,Returns and credits,Resolution opacity,Staff cannot tell where a credit request stands.,Invented scenario text; not participant testimony
+I13,Independent pharmacy,Ordering portal,Duplicate entry,Completing recurring orders requires reentering information.,Invented scenario text; not participant testimony
+I14,Regional pharmacy group,Ordering portal,Error recovery,An error message does not explain how to finish the order.,Invented scenario text; not participant testimony
+I15,Specialty clinic,Delivery status,Visibility gap,Teams need a reliable status update before a shipment arrives.,Invented scenario text; not participant testimony
+I16,Health system,Delivery status,Exception alerts,Late shipments are easier to manage with proactive alerts.,Invented scenario text; not participant testimony
+I17,Independent pharmacy,Account support,Handoff friction,Reexplaining a problem during a handoff increases effort.,Invented scenario text; not participant testimony
+I18,Regional pharmacy group,Returns and credits,Resolution opacity,Staff cannot tell where a credit request stands.,Invented scenario text; not participant testimony
+I19,Specialty clinic,Ordering portal,Duplicate entry,Completing recurring orders requires reentering information.,Invented scenario text; not participant testimony
+I20,Health system,Ordering portal,Error recovery,An error message does not explain how to finish the order.,Invented scenario text; not participant testimony
+I21,Independent pharmacy,Delivery status,Visibility gap,Teams need a reliable status update before a shipment arrives.,Invented scenario text; not participant testimony
+I22,Regional pharmacy group,Delivery status,Exception alerts,Late shipments are easier to manage with proactive alerts.,Invented scenario text; not participant testimony
+I23,Specialty clinic,Account support,Handoff friction,Reexplaining a problem during a handoff increases effort.,Invented scenario text; not participant testimony
+I24,Health system,Returns and credits,Resolution opacity,Staff cannot tell where a credit request stands.,Invented scenario text; not participant testimony
