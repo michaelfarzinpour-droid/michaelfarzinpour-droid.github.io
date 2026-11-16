@@ -1,29 +1,36 @@
-# Planetary Mission Communications & Creative Production Lab
+# Planetary Mission Communications & Creative Production Lab 2.0
 
-**Independent portfolio project by Michael Farzinpour — November 16, 2026.** This is a fictional work sample, not a NASA/JPL product or endorsement.
+**Independent fictional work sample by Michael Farzinpour, November 2026.** Not a NASA or JPL project, contract, endorsement, or record of actual mission operations.
 
-## Open or publish
+## Deploy
 
-Open `index.html` in a browser. No build tools, API keys, or dependencies required.
+This is a single-file static website. Place `index.html` and this `README.md` under `planetary-mission-communications-lab/` on the GitHub Pages site repository. No installation, external scripts, cookies, analytics collection, data services or API tokens are required.
 
-For GitHub Pages, place `index.html` in a repository directory named `planetary-mission-communications-lab/` (or in a standalone GitHub Pages repository). If using a portfolio repository's existing Pages deployment, link to `https://michaelfarzinpour-droid.github.io/planetary-mission-communications-lab/` **only after verifying the page was actually deployed**.
+Expected public page: https://michaelfarzinpour-droid.github.io/planetary-mission-communications-lab/
 
-## What to explore
+## What's new in 2.0
 
-1. **Simulation:** Six branching, scored fictional decisions; downloadable debrief.
-2. **Production tracker:** Nine user-checkable tasks and a fictional release gate.
-3. **Campaign assets:** Original concept copy, infographic specification, video storyboard, downloadable brief.
-4. **Measurement:** Explicitly synthetic KPI examples, channel filter and CSV export.
-5. **Methods & sources:** NASA citations, editorial guardrails, project limitations.
+1. Six scenario decisions, with conditional descriptions, issues, revision requirements and illustrative scores.
+2. A production workflow with nine assets, fictional owners and due days, dependencies, editable statuses, locked approvals and a simulated audit log.
+3. Three conflicting fictional stakeholder conversations with alternative resolutions; unresolved factual and accessibility concerns prevent selected approvals.
+4. A complete original web explainer, three social messages, accessible infographic prototype and five-shot narration/storyboard specification.
+5. Scenario-adjusted *synthetic* web, social and video statistics, target comparisons, interpretations, and CSV export. Adjustments are invented decision logic, not empirical effects.
+6. A seventh command-center exercise, forcing coordinated response to a fictional unapproved time claim in video/social assets.
+7. Downloadable creative packet, debrief, review memo, tracker CSV, simulated KPI CSV, and complete record.
 
-Decisions are held in page memory for the current browser session; refreshing resets the simulation. Task completion is only a toy interaction, not evidence of actual delivery.
+## Boundaries
 
-## Content integrity
+All fictional roles, timing constraints, business decisions, approvals, scores, campaign metrics, and incidents are clearly labeled. Public mission background comes from these authoritative NASA resources:
+- https://science.nasa.gov/mission/europa-clipper/
+- https://science.nasa.gov/mission/europa-clipper/mission-timeline/
+- https://science.nasa.gov/mission/europa-clipper/mission-faq/
 
-Official sources linked from the page include NASA's Europa Clipper timeline, FAQ, mission overview and planetary missions program. The Earth flyby is **planned**, not a completed event as of project creation on November 16, 2026. The scenario is illustrative; NASA/JPL participation, professional credits and approvals are not claimed.
+Verify official dates and any operational facts before real-world use. The schematic does not represent actual orbital geometry. No NASA personnel reviewed or approved this work. Use controls to explore the scenario; the browser session does not persist between refreshes.
 
-## Suggested résumé entry
+## Review checklist
 
-**Planetary Mission Communications & Creative Production Lab — Independent Portfolio Project | Fictional Simulation | 2026**
-- Built an interactive six-decision planetary mission communications simulation covering stakeholder intake, story development, creative handoffs, scientific review, change management, and illustrative campaign reporting; grounded mission facts in official NASA sources.
-- Developed original draft web and social copy, an infographic specification, a captioned-video storyboard, a nine-checkpoint production tracker, and an expressly synthetic KPI dashboard; distinguished fictional work from NASA/JPL operations.
+- Complete six decisions, observing issues and changed scenario-adjusted data.
+- Test approval dependencies and release blocks before and after reviewer resolutions.
+- Open the complete creative drafts, infographic and storyboard.
+- Resolve the command center; reapprove affected tasks before the fictional release gate can become ready.
+- Export debrief, tracker and KPIs and verify that every output is labeled simulated.
