@@ -1,0 +1,601 @@
+respondent_id,segment,region,portal_issue,delivery_delay,first_contact_resolution,csat_1_5,ease_1_7,recommend_0_10,primary_friction
+R0001,Independent pharmacy,Central,0,0,0,4,7,7,Delivery status
+R0002,Health system,East,0,0,1,4,6,7,Returns and credits
+R0003,Independent pharmacy,East,0,0,1,5,5,10,Delivery status
+R0004,Regional pharmacy group,East,0,0,1,5,7,9,Account support
+R0005,Regional pharmacy group,Central,1,0,0,4,5,4,Account support
+R0006,Health system,West,0,1,0,3,5,8,Delivery status
+R0007,Independent pharmacy,East,0,0,1,5,6,10,Delivery status
+R0008,Independent pharmacy,Central,1,0,1,5,4,8,Ordering portal
+R0009,Health system,East,0,0,0,3,7,7,Account support
+R0010,Specialty clinic,West,0,0,1,5,7,10,Ordering portal
+R0011,Regional pharmacy group,East,0,0,1,5,7,9,Ordering portal
+R0012,Independent pharmacy,East,0,0,1,5,7,9,Ordering portal
+R0013,Regional pharmacy group,East,0,0,1,4,7,7,Account support
+R0014,Specialty clinic,Central,1,1,1,2,4,5,Delivery status
+R0015,Specialty clinic,Central,1,0,1,3,5,4,Ordering portal
+R0016,Regional pharmacy group,Central,0,1,0,3,6,4,Delivery status
+R0017,Independent pharmacy,East,0,1,1,4,6,6,Account support
+R0018,Independent pharmacy,East,0,0,0,4,6,8,Account support
+R0019,Specialty clinic,East,0,0,1,5,7,10,Delivery status
+R0020,Independent pharmacy,West,0,0,1,5,7,10,Delivery status
+R0021,Independent pharmacy,Central,0,1,1,4,6,7,Delivery status
+R0022,Specialty clinic,Central,0,0,1,5,7,10,Returns and credits
+R0023,Regional pharmacy group,East,0,0,1,4,6,7,Ordering portal
+R0024,Regional pharmacy group,Central,0,0,0,5,6,9,Ordering portal
+R0025,Health system,Central,0,0,1,5,6,10,Account support
+R0026,Regional pharmacy group,Central,1,0,1,3,5,5,Account support
+R0027,Health system,East,1,0,1,4,5,7,Ordering portal
+R0028,Independent pharmacy,Central,1,0,0,3,6,6,Ordering portal
+R0029,Independent pharmacy,West,0,0,0,3,7,5,Returns and credits
+R0030,Health system,West,0,0,1,5,6,10,Returns and credits
+R0031,Independent pharmacy,East,0,0,1,5,7,10,Returns and credits
+R0032,Independent pharmacy,Central,0,0,1,5,7,9,Delivery status
+R0033,Independent pharmacy,West,1,1,0,3,4,4,Ordering portal
+R0034,Regional pharmacy group,East,0,0,1,4,6,9,Returns and credits
+R0035,Independent pharmacy,West,0,0,1,5,6,10,Delivery status
+R0036,Independent pharmacy,East,0,0,1,4,7,8,Account support
+R0037,Health system,West,0,0,0,3,7,5,Ordering portal
+R0038,Independent pharmacy,West,0,0,1,5,6,9,Ordering portal
+R0039,Regional pharmacy group,West,1,1,1,1,5,3,Ordering portal
+R0040,Specialty clinic,Central,1,0,0,4,5,9,Account support
+R0041,Regional pharmacy group,East,0,0,1,5,7,10,Returns and credits
+R0042,Health system,Central,1,0,1,3,4,6,Ordering portal
+R0043,Regional pharmacy group,East,1,0,1,3,4,5,Ordering portal
+R0044,Specialty clinic,West,0,0,1,5,7,10,Account support
+R0045,Independent pharmacy,Central,0,1,1,5,6,9,Delivery status
+R0046,Health system,West,1,0,0,3,5,5,Ordering portal
+R0047,Independent pharmacy,West,1,0,1,3,6,6,Ordering portal
+R0048,Specialty clinic,Central,0,1,1,3,5,8,Delivery status
+R0049,Independent pharmacy,East,0,0,1,5,5,8,Ordering portal
+R0050,Independent pharmacy,East,1,0,1,4,4,7,Ordering portal
+R0051,Health system,West,0,0,0,4,7,7,Returns and credits
+R0052,Specialty clinic,East,0,0,1,5,7,10,Ordering portal
+R0053,Independent pharmacy,East,0,0,0,3,7,6,Delivery status
+R0054,Regional pharmacy group,West,0,1,1,4,6,6,Ordering portal
+R0055,Health system,Central,0,0,1,5,7,10,Account support
+R0056,Independent pharmacy,Central,0,0,1,5,6,9,Ordering portal
+R0057,Independent pharmacy,Central,0,0,1,4,7,10,Account support
+R0058,Health system,Central,1,0,0,3,5,5,Ordering portal
+R0059,Health system,Central,0,0,1,5,7,8,Ordering portal
+R0060,Regional pharmacy group,Central,0,1,1,5,6,10,Delivery status
+R0061,Regional pharmacy group,West,0,1,1,4,5,5,Ordering portal
+R0062,Regional pharmacy group,West,1,0,1,3,5,8,Ordering portal
+R0063,Regional pharmacy group,Central,0,0,1,5,7,9,Returns and credits
+R0064,Health system,West,0,0,1,5,6,7,Returns and credits
+R0065,Specialty clinic,West,0,0,1,5,7,10,Ordering portal
+R0066,Regional pharmacy group,West,0,0,1,5,7,8,Account support
+R0067,Independent pharmacy,West,1,0,0,1,5,1,Returns and credits
+R0068,Regional pharmacy group,East,0,0,0,4,6,9,Delivery status
+R0069,Specialty clinic,West,0,0,0,4,7,7,Ordering portal
+R0070,Independent pharmacy,East,0,1,0,3,4,5,Delivery status
+R0071,Specialty clinic,West,1,0,1,4,5,10,Returns and credits
+R0072,Independent pharmacy,East,0,0,1,5,5,9,Delivery status
+R0073,Specialty clinic,East,0,1,1,4,5,8,Delivery status
+R0074,Specialty clinic,East,1,0,1,4,5,7,Ordering portal
+R0075,Health system,Central,0,0,1,5,7,9,Account support
+R0076,Specialty clinic,West,1,0,1,3,5,9,Ordering portal
+R0077,Independent pharmacy,East,1,1,1,3,4,6,Delivery status
+R0078,Regional pharmacy group,East,0,0,1,5,4,9,Account support
+R0079,Independent pharmacy,West,0,0,1,4,6,7,Ordering portal
+R0080,Regional pharmacy group,West,0,0,1,4,7,8,Delivery status
+R0081,Independent pharmacy,East,0,0,0,4,7,9,Ordering portal
+R0082,Specialty clinic,East,0,0,1,5,6,9,Ordering portal
+R0083,Independent pharmacy,East,0,1,0,4,5,6,Delivery status
+R0084,Specialty clinic,Central,0,0,1,4,6,8,Account support
+R0085,Independent pharmacy,Central,1,0,1,4,4,8,Ordering portal
+R0086,Specialty clinic,East,1,0,1,4,5,9,Ordering portal
+R0087,Health system,East,0,0,1,5,6,8,Ordering portal
+R0088,Specialty clinic,West,0,0,1,5,7,10,Returns and credits
+R0089,Regional pharmacy group,East,0,0,1,4,7,7,Account support
+R0090,Independent pharmacy,West,0,0,1,5,6,9,Account support
+R0091,Independent pharmacy,East,1,0,1,3,3,6,Ordering portal
+R0092,Specialty clinic,East,0,0,1,5,6,9,Account support
+R0093,Regional pharmacy group,West,0,0,0,4,7,9,Delivery status
+R0094,Health system,West,0,0,1,5,7,9,Delivery status
+R0095,Specialty clinic,West,0,1,1,4,4,7,Delivery status
+R0096,Independent pharmacy,Central,1,0,0,1,4,3,Ordering portal
+R0097,Independent pharmacy,Central,1,0,1,4,5,6,Account support
+R0098,Independent pharmacy,Central,0,0,1,5,7,10,Delivery status
+R0099,Health system,West,0,0,1,5,7,10,Account support
+R0100,Independent pharmacy,Central,0,0,1,4,7,6,Returns and credits
+R0101,Independent pharmacy,East,0,0,1,5,5,10,Account support
+R0102,Independent pharmacy,Central,0,0,1,5,7,9,Delivery status
+R0103,Regional pharmacy group,East,0,0,1,5,7,10,Returns and credits
+R0104,Health system,West,0,0,1,5,6,9,Delivery status
+R0105,Health system,East,0,0,1,5,5,8,Ordering portal
+R0106,Regional pharmacy group,East,0,1,1,5,6,10,Returns and credits
+R0107,Specialty clinic,East,0,1,1,4,4,6,Delivery status
+R0108,Independent pharmacy,West,0,0,1,5,6,10,Ordering portal
+R0109,Regional pharmacy group,West,0,0,1,5,6,10,Returns and credits
+R0110,Regional pharmacy group,West,0,0,1,3,7,6,Account support
+R0111,Regional pharmacy group,Central,0,1,1,5,6,9,Returns and credits
+R0112,Specialty clinic,Central,0,0,0,3,6,7,Returns and credits
+R0113,Independent pharmacy,West,0,0,1,5,7,10,Delivery status
+R0114,Specialty clinic,West,1,0,1,4,4,8,Returns and credits
+R0115,Independent pharmacy,Central,1,0,1,4,5,4,Ordering portal
+R0116,Independent pharmacy,Central,0,0,0,4,7,8,Ordering portal
+R0117,Independent pharmacy,West,0,0,1,4,6,8,Account support
+R0118,Specialty clinic,West,0,1,1,5,6,8,Delivery status
+R0119,Health system,Central,0,1,0,4,6,8,Returns and credits
+R0120,Regional pharmacy group,West,0,1,1,4,6,8,Delivery status
+R0121,Independent pharmacy,West,0,0,1,5,7,8,Delivery status
+R0122,Specialty clinic,East,0,0,1,5,6,10,Account support
+R0123,Health system,Central,0,0,1,5,6,8,Account support
+R0124,Independent pharmacy,East,0,0,1,5,5,10,Returns and credits
+R0125,Health system,West,1,1,1,3,3,5,Ordering portal
+R0126,Regional pharmacy group,East,0,0,1,4,6,10,Delivery status
+R0127,Independent pharmacy,East,0,0,1,5,6,10,Delivery status
+R0128,Regional pharmacy group,Central,1,1,0,1,3,4,Delivery status
+R0129,Specialty clinic,Central,1,1,0,1,2,4,Ordering portal
+R0130,Independent pharmacy,East,0,0,1,5,5,10,Returns and credits
+R0131,Independent pharmacy,East,0,1,1,3,5,4,Delivery status
+R0132,Independent pharmacy,East,0,0,1,5,7,10,Account support
+R0133,Independent pharmacy,West,1,0,1,5,6,8,Ordering portal
+R0134,Independent pharmacy,Central,0,0,0,5,7,10,Ordering portal
+R0135,Independent pharmacy,Central,0,0,1,5,6,9,Account support
+R0136,Health system,East,0,0,1,5,6,10,Ordering portal
+R0137,Specialty clinic,West,1,0,1,4,4,7,Ordering portal
+R0138,Regional pharmacy group,Central,0,0,0,4,7,8,Ordering portal
+R0139,Regional pharmacy group,Central,0,1,0,3,5,5,Delivery status
+R0140,Independent pharmacy,Central,1,0,1,3,4,5,Returns and credits
+R0141,Health system,West,1,0,1,4,4,7,Returns and credits
+R0142,Health system,East,0,0,1,5,7,10,Delivery status
+R0143,Regional pharmacy group,Central,0,0,0,4,7,7,Delivery status
+R0144,Regional pharmacy group,East,0,0,1,5,6,10,Returns and credits
+R0145,Health system,East,0,1,1,5,5,10,Delivery status
+R0146,Specialty clinic,West,1,1,1,4,4,8,Ordering portal
+R0147,Specialty clinic,East,0,0,0,4,7,9,Account support
+R0148,Regional pharmacy group,West,0,0,1,4,6,9,Account support
+R0149,Independent pharmacy,West,0,0,1,4,6,8,Ordering portal
+R0150,Health system,West,1,0,1,3,4,6,Ordering portal
+R0151,Regional pharmacy group,West,1,0,1,4,5,8,Ordering portal
+R0152,Independent pharmacy,Central,0,0,0,4,7,10,Account support
+R0153,Regional pharmacy group,West,0,0,0,4,6,7,Account support
+R0154,Independent pharmacy,East,0,0,0,5,7,10,Ordering portal
+R0155,Regional pharmacy group,East,0,0,1,4,6,8,Delivery status
+R0156,Specialty clinic,West,1,0,0,2,4,4,Ordering portal
+R0157,Specialty clinic,West,1,1,1,3,2,5,Ordering portal
+R0158,Independent pharmacy,West,0,0,0,4,6,7,Delivery status
+R0159,Independent pharmacy,Central,0,1,1,3,5,8,Delivery status
+R0160,Independent pharmacy,East,0,0,0,4,6,9,Returns and credits
+R0161,Health system,West,0,1,0,2,6,5,Delivery status
+R0162,Regional pharmacy group,Central,1,0,1,3,7,8,Returns and credits
+R0163,Health system,East,1,0,1,3,4,5,Account support
+R0164,Independent pharmacy,East,0,0,1,4,6,8,Delivery status
+R0165,Regional pharmacy group,Central,1,0,1,3,6,7,Ordering portal
+R0166,Independent pharmacy,West,0,0,1,5,6,9,Returns and credits
+R0167,Health system,Central,0,0,1,5,6,10,Delivery status
+R0168,Specialty clinic,West,1,0,0,4,6,8,Delivery status
+R0169,Specialty clinic,West,0,0,1,5,6,10,Account support
+R0170,Independent pharmacy,Central,0,1,0,4,6,7,Account support
+R0171,Health system,Central,0,0,1,5,5,10,Returns and credits
+R0172,Health system,East,0,0,1,5,7,10,Account support
+R0173,Regional pharmacy group,West,0,0,1,4,6,9,Delivery status
+R0174,Health system,East,0,1,1,4,5,7,Delivery status
+R0175,Independent pharmacy,Central,0,0,1,5,7,10,Returns and credits
+R0176,Independent pharmacy,East,0,0,1,5,6,9,Delivery status
+R0177,Independent pharmacy,West,0,0,1,5,6,8,Account support
+R0178,Specialty clinic,West,0,0,0,3,6,8,Ordering portal
+R0179,Specialty clinic,East,0,0,0,5,6,9,Account support
+R0180,Independent pharmacy,West,0,0,0,3,7,7,Ordering portal
+R0181,Health system,West,0,0,1,5,7,8,Account support
+R0182,Health system,West,0,0,1,4,7,9,Delivery status
+R0183,Independent pharmacy,West,1,1,1,3,3,5,Delivery status
+R0184,Specialty clinic,East,0,0,1,5,5,8,Ordering portal
+R0185,Independent pharmacy,West,1,0,1,3,4,6,Ordering portal
+R0186,Regional pharmacy group,Central,0,0,1,5,6,8,Account support
+R0187,Regional pharmacy group,East,1,0,1,3,5,6,Returns and credits
+R0188,Independent pharmacy,East,0,0,0,4,7,9,Ordering portal
+R0189,Specialty clinic,West,0,0,1,5,7,10,Ordering portal
+R0190,Specialty clinic,West,0,0,0,4,7,8,Account support
+R0191,Regional pharmacy group,West,0,0,1,4,7,8,Delivery status
+R0192,Regional pharmacy group,East,0,1,1,3,6,4,Account support
+R0193,Regional pharmacy group,Central,0,0,1,4,7,7,Returns and credits
+R0194,Independent pharmacy,Central,0,0,0,5,6,8,Ordering portal
+R0195,Independent pharmacy,Central,1,0,1,3,6,7,Ordering portal
+R0196,Regional pharmacy group,East,0,0,1,5,7,9,Ordering portal
+R0197,Health system,Central,0,0,1,5,6,9,Ordering portal
+R0198,Regional pharmacy group,West,0,0,1,5,7,8,Returns and credits
+R0199,Health system,Central,0,1,1,4,5,6,Delivery status
+R0200,Regional pharmacy group,West,0,0,1,5,5,9,Returns and credits
+R0201,Health system,West,0,0,1,4,6,6,Account support
+R0202,Regional pharmacy group,Central,0,1,1,5,5,8,Ordering portal
+R0203,Independent pharmacy,East,0,0,1,5,6,7,Returns and credits
+R0204,Regional pharmacy group,East,0,0,1,5,7,10,Returns and credits
+R0205,Independent pharmacy,West,1,1,1,3,4,6,Ordering portal
+R0206,Specialty clinic,Central,1,0,1,3,6,6,Ordering portal
+R0207,Independent pharmacy,West,0,0,1,5,5,7,Ordering portal
+R0208,Specialty clinic,Central,0,0,1,4,7,8,Account support
+R0209,Health system,Central,0,0,1,5,6,8,Returns and credits
+R0210,Health system,Central,0,0,1,4,6,6,Delivery status
+R0211,Independent pharmacy,East,0,0,1,5,7,10,Delivery status
+R0212,Independent pharmacy,East,0,0,1,5,5,10,Account support
+R0213,Regional pharmacy group,East,0,0,1,5,7,10,Ordering portal
+R0214,Independent pharmacy,East,0,0,1,5,7,10,Account support
+R0215,Independent pharmacy,East,0,0,1,5,5,9,Ordering portal
+R0216,Specialty clinic,West,1,0,1,3,5,5,Account support
+R0217,Regional pharmacy group,East,0,0,1,5,5,7,Returns and credits
+R0218,Independent pharmacy,East,0,1,0,3,6,4,Delivery status
+R0219,Independent pharmacy,West,0,0,1,5,6,7,Ordering portal
+R0220,Independent pharmacy,West,0,1,1,4,5,9,Delivery status
+R0221,Regional pharmacy group,Central,1,0,1,4,5,9,Ordering portal
+R0222,Regional pharmacy group,Central,1,0,0,3,4,5,Ordering portal
+R0223,Independent pharmacy,East,0,0,1,5,7,10,Delivery status
+R0224,Independent pharmacy,West,0,0,1,5,6,8,Returns and credits
+R0225,Independent pharmacy,West,1,0,0,3,4,6,Delivery status
+R0226,Regional pharmacy group,Central,0,0,1,5,7,9,Delivery status
+R0227,Regional pharmacy group,Central,0,0,1,5,7,10,Ordering portal
+R0228,Independent pharmacy,Central,1,0,0,3,5,7,Ordering portal
+R0229,Regional pharmacy group,East,0,1,0,3,7,5,Delivery status
+R0230,Specialty clinic,West,0,0,1,4,7,8,Ordering portal
+R0231,Regional pharmacy group,East,0,0,1,5,7,10,Delivery status
+R0232,Health system,Central,0,0,1,5,7,9,Account support
+R0233,Independent pharmacy,West,0,0,1,5,6,9,Delivery status
+R0234,Regional pharmacy group,East,0,0,1,5,6,10,Returns and credits
+R0235,Independent pharmacy,Central,0,0,1,5,6,7,Ordering portal
+R0236,Independent pharmacy,East,0,0,0,4,6,9,Account support
+R0237,Specialty clinic,Central,0,0,1,5,7,8,Account support
+R0238,Regional pharmacy group,West,1,0,0,3,5,7,Ordering portal
+R0239,Health system,West,0,0,0,4,7,8,Ordering portal
+R0240,Health system,East,0,1,1,5,7,10,Account support
+R0241,Regional pharmacy group,West,0,0,1,5,7,9,Ordering portal
+R0242,Health system,Central,1,0,1,4,5,6,Delivery status
+R0243,Independent pharmacy,East,0,0,1,5,5,9,Returns and credits
+R0244,Specialty clinic,East,1,1,0,2,3,3,Ordering portal
+R0245,Regional pharmacy group,West,1,1,1,3,3,6,Delivery status
+R0246,Independent pharmacy,Central,1,0,1,5,5,10,Ordering portal
+R0247,Regional pharmacy group,Central,0,0,1,5,6,10,Ordering portal
+R0248,Independent pharmacy,East,0,1,1,3,5,4,Delivery status
+R0249,Independent pharmacy,Central,0,0,1,5,7,10,Account support
+R0250,Specialty clinic,East,0,0,0,5,7,9,Account support
+R0251,Independent pharmacy,East,1,0,0,3,4,5,Ordering portal
+R0252,Health system,East,1,1,1,3,4,7,Ordering portal
+R0253,Independent pharmacy,West,0,0,1,5,7,10,Account support
+R0254,Specialty clinic,Central,1,0,1,3,5,7,Ordering portal
+R0255,Independent pharmacy,West,0,0,0,3,7,7,Returns and credits
+R0256,Independent pharmacy,East,0,0,1,5,6,9,Returns and credits
+R0257,Health system,Central,0,0,0,4,6,8,Account support
+R0258,Specialty clinic,Central,0,0,1,5,6,8,Returns and credits
+R0259,Regional pharmacy group,Central,0,0,1,5,7,8,Ordering portal
+R0260,Regional pharmacy group,Central,0,0,1,5,7,9,Returns and credits
+R0261,Independent pharmacy,West,1,1,0,2,4,3,Ordering portal
+R0262,Regional pharmacy group,East,1,0,1,4,5,6,Ordering portal
+R0263,Health system,West,0,0,1,5,7,10,Ordering portal
+R0264,Regional pharmacy group,Central,0,0,0,5,7,10,Ordering portal
+R0265,Health system,West,0,0,1,5,6,10,Ordering portal
+R0266,Specialty clinic,West,1,0,1,4,5,8,Ordering portal
+R0267,Independent pharmacy,Central,0,0,1,5,6,10,Delivery status
+R0268,Regional pharmacy group,West,0,0,1,5,6,10,Returns and credits
+R0269,Regional pharmacy group,West,0,1,0,2,5,3,Delivery status
+R0270,Independent pharmacy,Central,0,0,1,4,7,7,Returns and credits
+R0271,Specialty clinic,Central,0,0,1,4,6,6,Returns and credits
+R0272,Specialty clinic,East,1,0,1,4,5,7,Ordering portal
+R0273,Regional pharmacy group,East,0,0,0,3,7,4,Delivery status
+R0274,Regional pharmacy group,West,0,0,1,5,6,10,Ordering portal
+R0275,Specialty clinic,Central,1,0,1,4,5,8,Ordering portal
+R0276,Health system,West,0,0,1,5,5,8,Ordering portal
+R0277,Independent pharmacy,East,1,0,1,4,5,8,Ordering portal
+R0278,Health system,West,0,1,1,5,5,9,Delivery status
+R0279,Specialty clinic,Central,1,0,1,3,4,7,Ordering portal
+R0280,Independent pharmacy,West,0,0,1,4,7,8,Ordering portal
+R0281,Independent pharmacy,Central,1,0,1,5,4,9,Account support
+R0282,Regional pharmacy group,Central,0,0,1,5,6,10,Returns and credits
+R0283,Specialty clinic,Central,0,0,1,5,7,9,Returns and credits
+R0284,Independent pharmacy,West,0,0,1,5,7,10,Ordering portal
+R0285,Health system,Central,0,0,1,5,7,7,Ordering portal
+R0286,Health system,East,0,0,0,5,6,10,Returns and credits
+R0287,Specialty clinic,East,0,0,1,5,7,9,Delivery status
+R0288,Independent pharmacy,West,1,0,1,4,5,5,Delivery status
+R0289,Health system,Central,1,0,1,4,4,9,Ordering portal
+R0290,Specialty clinic,West,1,0,0,3,3,7,Ordering portal
+R0291,Regional pharmacy group,West,1,0,1,3,5,7,Ordering portal
+R0292,Specialty clinic,West,1,1,0,1,3,2,Ordering portal
+R0293,Independent pharmacy,East,1,0,0,2,4,3,Ordering portal
+R0294,Health system,West,0,0,1,5,7,9,Returns and credits
+R0295,Health system,East,0,0,1,5,7,10,Ordering portal
+R0296,Independent pharmacy,West,1,0,0,3,5,7,Ordering portal
+R0297,Independent pharmacy,Central,0,0,0,4,7,7,Account support
+R0298,Independent pharmacy,West,0,0,1,5,7,10,Ordering portal
+R0299,Regional pharmacy group,East,0,0,1,4,6,9,Returns and credits
+R0300,Independent pharmacy,East,1,0,1,3,4,8,Ordering portal
+R0301,Health system,East,0,0,1,4,7,7,Ordering portal
+R0302,Regional pharmacy group,East,0,0,1,4,7,9,Returns and credits
+R0303,Specialty clinic,East,0,0,0,4,7,7,Account support
+R0304,Specialty clinic,East,1,0,1,3,4,6,Ordering portal
+R0305,Health system,Central,0,0,1,5,5,8,Returns and credits
+R0306,Regional pharmacy group,East,0,1,1,5,6,9,Account support
+R0307,Specialty clinic,East,1,0,1,3,4,5,Ordering portal
+R0308,Specialty clinic,Central,1,0,1,5,6,9,Ordering portal
+R0309,Health system,Central,0,0,0,4,6,7,Returns and credits
+R0310,Specialty clinic,West,1,0,1,5,4,8,Ordering portal
+R0311,Independent pharmacy,East,1,0,1,5,4,9,Account support
+R0312,Independent pharmacy,East,0,0,1,4,6,8,Returns and credits
+R0313,Health system,West,0,1,1,5,6,10,Ordering portal
+R0314,Regional pharmacy group,Central,0,0,1,5,7,10,Delivery status
+R0315,Regional pharmacy group,Central,0,0,0,4,7,8,Returns and credits
+R0316,Independent pharmacy,East,0,0,1,3,7,6,Ordering portal
+R0317,Independent pharmacy,East,1,0,0,3,4,4,Ordering portal
+R0318,Independent pharmacy,East,0,0,1,5,6,10,Delivery status
+R0319,Independent pharmacy,East,0,0,1,5,6,9,Delivery status
+R0320,Health system,East,0,0,1,5,7,9,Delivery status
+R0321,Specialty clinic,Central,0,0,1,5,7,8,Account support
+R0322,Independent pharmacy,East,1,0,0,3,6,6,Delivery status
+R0323,Regional pharmacy group,East,0,0,0,5,6,9,Returns and credits
+R0324,Regional pharmacy group,East,0,0,1,4,4,9,Account support
+R0325,Specialty clinic,West,1,1,1,3,5,7,Ordering portal
+R0326,Specialty clinic,East,1,0,1,4,6,8,Account support
+R0327,Independent pharmacy,East,0,0,0,3,6,7,Delivery status
+R0328,Health system,East,0,0,1,4,6,9,Ordering portal
+R0329,Independent pharmacy,West,0,0,0,4,6,8,Ordering portal
+R0330,Health system,East,0,0,1,5,6,10,Ordering portal
+R0331,Independent pharmacy,Central,1,0,1,4,5,7,Delivery status
+R0332,Independent pharmacy,East,0,0,1,5,6,10,Account support
+R0333,Specialty clinic,West,0,0,1,4,7,9,Ordering portal
+R0334,Independent pharmacy,Central,0,1,1,4,6,6,Delivery status
+R0335,Specialty clinic,East,0,0,1,5,6,10,Account support
+R0336,Independent pharmacy,East,0,0,1,5,7,10,Returns and credits
+R0337,Specialty clinic,West,0,0,1,5,7,10,Ordering portal
+R0338,Independent pharmacy,West,1,0,1,3,4,6,Ordering portal
+R0339,Health system,Central,0,0,1,5,6,9,Ordering portal
+R0340,Independent pharmacy,East,0,0,1,3,6,8,Returns and credits
+R0341,Regional pharmacy group,West,0,0,1,4,7,9,Ordering portal
+R0342,Independent pharmacy,East,0,0,0,5,7,8,Ordering portal
+R0343,Health system,East,1,0,1,3,5,7,Delivery status
+R0344,Independent pharmacy,West,1,0,1,3,5,5,Ordering portal
+R0345,Regional pharmacy group,West,0,0,1,5,6,10,Account support
+R0346,Specialty clinic,West,0,1,1,4,5,7,Delivery status
+R0347,Specialty clinic,East,0,0,1,5,5,6,Delivery status
+R0348,Independent pharmacy,Central,0,1,1,4,5,7,Account support
+R0349,Regional pharmacy group,Central,0,0,0,4,7,8,Account support
+R0350,Health system,East,0,0,1,5,6,10,Account support
+R0351,Regional pharmacy group,Central,0,0,1,5,5,9,Account support
+R0352,Independent pharmacy,Central,1,0,1,4,5,7,Delivery status
+R0353,Specialty clinic,East,0,0,1,5,7,9,Account support
+R0354,Independent pharmacy,East,1,0,1,4,4,7,Ordering portal
+R0355,Specialty clinic,East,1,0,1,3,5,7,Delivery status
+R0356,Regional pharmacy group,East,0,1,1,3,4,7,Delivery status
+R0357,Specialty clinic,East,0,0,0,4,7,8,Returns and credits
+R0358,Regional pharmacy group,West,0,0,0,5,7,10,Delivery status
+R0359,Independent pharmacy,Central,1,0,0,3,4,5,Ordering portal
+R0360,Regional pharmacy group,West,1,1,1,2,2,4,Delivery status
+R0361,Health system,West,0,0,1,5,6,10,Ordering portal
+R0362,Independent pharmacy,West,1,0,1,5,5,10,Delivery status
+R0363,Health system,West,0,0,0,3,7,6,Account support
+R0364,Regional pharmacy group,Central,0,0,1,5,7,9,Ordering portal
+R0365,Regional pharmacy group,West,0,1,1,3,6,6,Returns and credits
+R0366,Health system,Central,0,0,0,4,6,6,Delivery status
+R0367,Regional pharmacy group,East,1,0,0,3,4,6,Ordering portal
+R0368,Independent pharmacy,East,0,0,1,5,6,10,Delivery status
+R0369,Health system,Central,0,0,1,5,6,8,Returns and credits
+R0370,Regional pharmacy group,East,1,0,1,3,6,4,Ordering portal
+R0371,Regional pharmacy group,Central,0,0,1,5,6,10,Delivery status
+R0372,Regional pharmacy group,Central,0,0,1,5,6,10,Returns and credits
+R0373,Regional pharmacy group,West,0,0,1,5,7,10,Delivery status
+R0374,Health system,East,0,0,1,5,6,10,Ordering portal
+R0375,Specialty clinic,East,0,0,0,4,6,7,Ordering portal
+R0376,Independent pharmacy,Central,0,0,1,5,7,6,Returns and credits
+R0377,Independent pharmacy,East,0,0,1,5,5,10,Returns and credits
+R0378,Specialty clinic,West,0,1,1,4,5,7,Delivery status
+R0379,Independent pharmacy,Central,0,0,0,5,7,9,Ordering portal
+R0380,Specialty clinic,Central,0,1,1,3,5,6,Delivery status
+R0381,Independent pharmacy,East,1,0,1,4,4,7,Ordering portal
+R0382,Independent pharmacy,Central,0,0,1,5,7,10,Returns and credits
+R0383,Health system,East,1,0,0,3,6,6,Returns and credits
+R0384,Regional pharmacy group,Central,0,1,0,3,6,5,Account support
+R0385,Health system,West,0,0,1,3,6,6,Ordering portal
+R0386,Health system,West,0,0,1,5,7,9,Delivery status
+R0387,Independent pharmacy,West,0,0,1,5,7,10,Ordering portal
+R0388,Regional pharmacy group,Central,1,0,1,4,5,6,Ordering portal
+R0389,Regional pharmacy group,East,0,0,1,5,7,9,Account support
+R0390,Health system,Central,0,0,1,5,7,10,Returns and credits
+R0391,Independent pharmacy,Central,1,1,1,3,4,5,Delivery status
+R0392,Regional pharmacy group,West,0,1,0,3,5,3,Ordering portal
+R0393,Regional pharmacy group,Central,0,0,1,5,6,9,Account support
+R0394,Regional pharmacy group,East,1,0,0,2,5,3,Ordering portal
+R0395,Independent pharmacy,West,0,1,1,3,4,7,Ordering portal
+R0396,Specialty clinic,West,0,1,1,3,6,5,Returns and credits
+R0397,Specialty clinic,West,0,0,0,4,7,6,Account support
+R0398,Health system,Central,1,0,0,2,5,4,Returns and credits
+R0399,Specialty clinic,East,0,1,1,5,4,9,Ordering portal
+R0400,Regional pharmacy group,Central,0,0,1,4,6,7,Returns and credits
+R0401,Independent pharmacy,West,1,0,1,4,6,7,Ordering portal
+R0402,Independent pharmacy,Central,1,0,0,3,6,5,Delivery status
+R0403,Independent pharmacy,Central,1,1,0,1,3,2,Ordering portal
+R0404,Independent pharmacy,East,0,0,0,3,7,5,Account support
+R0405,Regional pharmacy group,West,1,0,1,3,5,8,Ordering portal
+R0406,Independent pharmacy,East,0,0,1,4,5,7,Delivery status
+R0407,Independent pharmacy,East,1,0,0,3,4,6,Ordering portal
+R0408,Specialty clinic,East,0,0,1,5,7,9,Delivery status
+R0409,Regional pharmacy group,Central,0,1,1,4,6,6,Delivery status
+R0410,Specialty clinic,East,0,0,1,5,6,9,Returns and credits
+R0411,Health system,East,1,0,1,4,6,6,Delivery status
+R0412,Regional pharmacy group,Central,0,0,1,3,7,4,Account support
+R0413,Specialty clinic,East,0,0,1,5,7,10,Returns and credits
+R0414,Regional pharmacy group,West,1,0,1,3,2,6,Ordering portal
+R0415,Regional pharmacy group,Central,0,0,1,4,6,9,Ordering portal
+R0416,Regional pharmacy group,East,0,0,1,4,6,7,Returns and credits
+R0417,Specialty clinic,East,0,1,1,4,6,10,Delivery status
+R0418,Regional pharmacy group,West,0,0,1,4,7,8,Ordering portal
+R0419,Health system,West,1,0,1,5,4,10,Ordering portal
+R0420,Specialty clinic,Central,0,0,1,5,7,10,Delivery status
+R0421,Regional pharmacy group,West,0,0,1,5,6,10,Account support
+R0422,Specialty clinic,East,0,0,1,5,7,9,Returns and credits
+R0423,Specialty clinic,East,1,0,1,5,5,8,Ordering portal
+R0424,Independent pharmacy,East,0,0,0,4,6,8,Delivery status
+R0425,Health system,East,0,0,1,5,5,10,Delivery status
+R0426,Regional pharmacy group,East,0,1,1,4,5,6,Delivery status
+R0427,Independent pharmacy,East,1,0,0,3,6,6,Returns and credits
+R0428,Independent pharmacy,Central,0,0,1,5,7,10,Returns and credits
+R0429,Health system,Central,0,0,0,4,6,6,Returns and credits
+R0430,Independent pharmacy,West,0,1,1,4,6,8,Returns and credits
+R0431,Independent pharmacy,West,0,0,0,4,6,7,Delivery status
+R0432,Independent pharmacy,Central,0,0,1,4,6,6,Delivery status
+R0433,Independent pharmacy,East,1,0,1,3,6,6,Account support
+R0434,Independent pharmacy,West,1,1,0,2,4,5,Ordering portal
+R0435,Regional pharmacy group,East,0,0,1,5,6,10,Ordering portal
+R0436,Independent pharmacy,East,0,0,1,5,5,10,Account support
+R0437,Regional pharmacy group,Central,1,0,0,3,5,7,Ordering portal
+R0438,Independent pharmacy,Central,0,1,0,4,5,6,Returns and credits
+R0439,Independent pharmacy,West,0,0,0,4,6,8,Returns and credits
+R0440,Specialty clinic,West,1,0,1,4,6,9,Ordering portal
+R0441,Independent pharmacy,Central,1,0,1,4,4,8,Ordering portal
+R0442,Health system,West,1,0,1,4,6,7,Ordering portal
+R0443,Health system,Central,0,0,1,5,7,10,Returns and credits
+R0444,Specialty clinic,Central,0,0,1,5,7,10,Ordering portal
+R0445,Independent pharmacy,Central,0,0,0,4,7,8,Delivery status
+R0446,Regional pharmacy group,West,0,0,1,4,7,8,Delivery status
+R0447,Regional pharmacy group,West,0,0,1,5,6,10,Account support
+R0448,Independent pharmacy,West,0,1,1,4,5,7,Delivery status
+R0449,Independent pharmacy,Central,0,0,1,4,6,7,Ordering portal
+R0450,Specialty clinic,East,1,0,0,2,5,4,Account support
+R0451,Regional pharmacy group,Central,0,0,1,5,6,9,Ordering portal
+R0452,Health system,East,0,0,1,5,6,9,Returns and credits
+R0453,Independent pharmacy,East,1,0,0,2,6,5,Account support
+R0454,Specialty clinic,East,1,0,1,4,7,6,Delivery status
+R0455,Regional pharmacy group,East,0,0,0,4,6,7,Delivery status
+R0456,Independent pharmacy,Central,1,1,1,2,3,4,Ordering portal
+R0457,Specialty clinic,West,0,1,1,3,6,5,Ordering portal
+R0458,Independent pharmacy,East,0,0,1,5,6,8,Account support
+R0459,Regional pharmacy group,Central,0,0,0,5,6,10,Ordering portal
+R0460,Specialty clinic,East,0,0,1,4,7,8,Account support
+R0461,Independent pharmacy,West,0,0,1,4,5,7,Returns and credits
+R0462,Independent pharmacy,West,0,1,0,3,5,6,Returns and credits
+R0463,Regional pharmacy group,Central,0,0,1,5,6,10,Returns and credits
+R0464,Health system,Central,0,1,1,4,7,7,Account support
+R0465,Specialty clinic,Central,0,0,1,4,5,8,Delivery status
+R0466,Regional pharmacy group,West,0,0,0,4,6,6,Ordering portal
+R0467,Regional pharmacy group,Central,0,0,1,5,7,10,Delivery status
+R0468,Independent pharmacy,East,0,1,1,3,4,6,Delivery status
+R0469,Regional pharmacy group,West,0,0,1,5,6,10,Account support
+R0470,Independent pharmacy,Central,1,0,1,4,4,7,Ordering portal
+R0471,Health system,Central,0,0,1,5,6,10,Delivery status
+R0472,Health system,East,1,0,1,4,5,9,Ordering portal
+R0473,Independent pharmacy,West,0,1,0,4,5,7,Delivery status
+R0474,Health system,Central,1,0,1,3,5,5,Account support
+R0475,Regional pharmacy group,West,0,0,1,5,7,8,Delivery status
+R0476,Specialty clinic,West,0,1,1,4,6,8,Delivery status
+R0477,Regional pharmacy group,Central,0,0,1,4,6,6,Returns and credits
+R0478,Independent pharmacy,East,1,0,0,2,4,6,Ordering portal
+R0479,Health system,Central,1,0,0,2,3,5,Ordering portal
+R0480,Independent pharmacy,Central,0,0,1,5,6,9,Delivery status
+R0481,Health system,West,1,0,1,3,4,5,Account support
+R0482,Specialty clinic,West,0,0,1,4,7,10,Delivery status
+R0483,Specialty clinic,Central,0,1,0,3,5,7,Delivery status
+R0484,Independent pharmacy,Central,0,0,0,4,6,8,Ordering portal
+R0485,Specialty clinic,East,1,0,1,4,4,8,Ordering portal
+R0486,Specialty clinic,West,0,0,1,5,7,8,Delivery status
+R0487,Regional pharmacy group,West,0,0,1,4,7,8,Delivery status
+R0488,Specialty clinic,East,0,0,1,5,7,8,Ordering portal
+R0489,Independent pharmacy,East,1,0,1,4,4,8,Ordering portal
+R0490,Independent pharmacy,West,1,0,1,2,6,5,Returns and credits
+R0491,Independent pharmacy,Central,0,0,1,5,7,8,Returns and credits
+R0492,Health system,East,0,0,1,5,7,10,Delivery status
+R0493,Independent pharmacy,West,0,0,1,5,5,10,Account support
+R0494,Independent pharmacy,West,1,1,1,3,4,5,Delivery status
+R0495,Independent pharmacy,Central,0,0,1,5,7,9,Delivery status
+R0496,Specialty clinic,West,0,0,1,4,7,8,Delivery status
+R0497,Specialty clinic,East,1,0,0,3,5,3,Ordering portal
+R0498,Specialty clinic,East,0,1,1,4,5,8,Delivery status
+R0499,Independent pharmacy,East,0,1,1,4,5,8,Returns and credits
+R0500,Independent pharmacy,West,1,0,0,3,4,6,Returns and credits
+R0501,Specialty clinic,West,1,1,1,2,2,4,Ordering portal
+R0502,Regional pharmacy group,West,1,0,1,3,5,5,Ordering portal
+R0503,Regional pharmacy group,East,1,0,1,4,4,8,Ordering portal
+R0504,Health system,West,0,0,1,5,7,9,Ordering portal
+R0505,Regional pharmacy group,Central,0,0,1,4,6,7,Delivery status
+R0506,Independent pharmacy,East,1,0,1,3,4,4,Ordering portal
+R0507,Regional pharmacy group,East,0,0,1,5,7,10,Returns and credits
+R0508,Regional pharmacy group,East,0,0,1,5,6,10,Ordering portal
+R0509,Health system,Central,1,1,1,3,3,7,Ordering portal
+R0510,Independent pharmacy,East,0,0,1,4,7,6,Ordering portal
+R0511,Regional pharmacy group,Central,0,0,1,5,5,10,Returns and credits
+R0512,Specialty clinic,East,0,0,1,5,7,9,Account support
+R0513,Independent pharmacy,East,0,0,1,5,5,9,Ordering portal
+R0514,Regional pharmacy group,Central,0,0,1,5,7,9,Delivery status
+R0515,Health system,West,1,0,1,4,3,9,Ordering portal
+R0516,Regional pharmacy group,East,0,0,0,4,7,6,Delivery status
+R0517,Health system,West,1,0,0,4,5,6,Ordering portal
+R0518,Specialty clinic,East,1,1,1,3,5,6,Delivery status
+R0519,Independent pharmacy,West,0,1,1,4,4,9,Delivery status
+R0520,Independent pharmacy,West,0,0,1,5,7,9,Ordering portal
+R0521,Independent pharmacy,East,0,0,0,3,7,5,Account support
+R0522,Regional pharmacy group,East,0,0,0,4,6,7,Returns and credits
+R0523,Regional pharmacy group,West,0,0,1,4,7,6,Ordering portal
+R0524,Regional pharmacy group,East,0,0,1,5,7,10,Ordering portal
+R0525,Regional pharmacy group,West,0,1,0,3,7,4,Delivery status
+R0526,Health system,East,1,0,1,4,5,8,Ordering portal
+R0527,Health system,Central,0,0,0,4,7,8,Returns and credits
+R0528,Specialty clinic,Central,1,1,0,3,3,6,Ordering portal
+R0529,Regional pharmacy group,East,0,0,1,5,6,9,Account support
+R0530,Specialty clinic,East,0,0,1,5,7,10,Account support
+R0531,Independent pharmacy,East,1,1,1,3,4,7,Delivery status
+R0532,Health system,East,0,1,1,4,4,8,Delivery status
+R0533,Specialty clinic,West,0,1,1,3,5,8,Delivery status
+R0534,Specialty clinic,East,1,0,1,4,6,9,Returns and credits
+R0535,Independent pharmacy,West,0,0,1,5,6,8,Returns and credits
+R0536,Specialty clinic,East,0,0,1,5,7,10,Delivery status
+R0537,Specialty clinic,Central,1,1,0,1,4,2,Account support
+R0538,Health system,West,0,0,1,5,5,10,Account support
+R0539,Independent pharmacy,Central,1,0,1,3,5,5,Ordering portal
+R0540,Independent pharmacy,Central,1,0,1,4,6,7,Ordering portal
+R0541,Specialty clinic,East,0,0,1,4,5,8,Delivery status
+R0542,Regional pharmacy group,Central,0,0,1,5,7,8,Delivery status
+R0543,Independent pharmacy,West,1,0,0,3,5,6,Account support
+R0544,Regional pharmacy group,West,0,0,0,4,7,8,Ordering portal
+R0545,Independent pharmacy,East,0,1,1,4,5,8,Delivery status
+R0546,Specialty clinic,Central,0,1,1,3,5,6,Ordering portal
+R0547,Regional pharmacy group,West,0,1,1,5,4,9,Delivery status
+R0548,Specialty clinic,East,0,1,1,3,5,6,Returns and credits
+R0549,Regional pharmacy group,Central,0,0,1,4,7,7,Delivery status
+R0550,Health system,Central,0,0,1,5,7,9,Account support
+R0551,Independent pharmacy,West,0,1,1,5,6,8,Ordering portal
+R0552,Regional pharmacy group,Central,0,0,1,5,5,10,Ordering portal
+R0553,Specialty clinic,West,0,0,1,5,5,9,Delivery status
+R0554,Independent pharmacy,Central,0,0,1,4,5,8,Returns and credits
+R0555,Independent pharmacy,West,0,0,1,5,5,8,Delivery status
+R0556,Specialty clinic,East,0,0,0,3,7,6,Ordering portal
+R0557,Independent pharmacy,Central,0,0,1,5,7,8,Returns and credits
+R0558,Regional pharmacy group,West,0,1,1,4,6,6,Delivery status
+R0559,Specialty clinic,Central,0,0,1,5,7,9,Returns and credits
+R0560,Independent pharmacy,West,0,0,1,4,7,9,Account support
+R0561,Health system,West,1,0,1,3,4,5,Ordering portal
+R0562,Regional pharmacy group,East,0,0,1,5,6,8,Account support
+R0563,Specialty clinic,East,0,0,1,5,6,9,Delivery status
+R0564,Independent pharmacy,East,0,1,1,3,7,5,Ordering portal
+R0565,Specialty clinic,West,0,1,1,4,5,8,Delivery status
+R0566,Regional pharmacy group,West,0,0,1,4,7,7,Delivery status
+R0567,Regional pharmacy group,Central,0,1,1,4,6,10,Delivery status
+R0568,Health system,East,0,0,1,4,7,8,Returns and credits
+R0569,Independent pharmacy,Central,1,0,1,5,3,10,Ordering portal
+R0570,Specialty clinic,East,1,0,0,2,5,7,Ordering portal
+R0571,Regional pharmacy group,East,0,1,1,5,5,10,Delivery status
+R0572,Regional pharmacy group,East,1,0,0,3,4,6,Ordering portal
+R0573,Specialty clinic,Central,0,0,1,5,7,10,Delivery status
+R0574,Specialty clinic,Central,0,0,1,5,6,9,Returns and credits
+R0575,Independent pharmacy,Central,0,1,0,2,6,4,Account support
+R0576,Specialty clinic,West,0,0,0,4,6,7,Delivery status
+R0577,Regional pharmacy group,West,1,1,1,2,3,3,Ordering portal
+R0578,Regional pharmacy group,West,0,0,1,5,6,8,Delivery status
+R0579,Regional pharmacy group,East,0,0,1,5,7,10,Returns and credits
+R0580,Specialty clinic,East,0,0,1,5,7,9,Account support
+R0581,Independent pharmacy,West,0,0,0,3,7,6,Ordering portal
+R0582,Independent pharmacy,West,1,0,1,5,5,9,Ordering portal
+R0583,Specialty clinic,East,0,1,1,4,6,8,Delivery status
+R0584,Independent pharmacy,West,0,0,1,5,6,10,Ordering portal
+R0585,Independent pharmacy,Central,0,0,1,5,7,10,Ordering portal
+R0586,Independent pharmacy,East,0,0,1,5,6,8,Ordering portal
+R0587,Specialty clinic,East,0,0,1,5,7,10,Account support
+R0588,Independent pharmacy,West,1,0,1,4,6,8,Ordering portal
+R0589,Independent pharmacy,East,0,0,1,5,7,10,Returns and credits
+R0590,Health system,Central,0,0,1,5,7,10,Ordering portal
+R0591,Independent pharmacy,East,0,0,1,5,6,9,Returns and credits
+R0592,Specialty clinic,West,1,1,0,1,3,1,Ordering portal
+R0593,Health system,West,1,0,1,4,5,9,Delivery status
+R0594,Independent pharmacy,Central,0,0,1,5,6,10,Returns and credits
+R0595,Regional pharmacy group,Central,0,0,1,4,6,7,Delivery status
+R0596,Independent pharmacy,Central,1,1,1,4,2,6,Ordering portal
+R0597,Regional pharmacy group,Central,0,0,0,4,6,7,Returns and credits
+R0598,Independent pharmacy,Central,0,0,1,4,7,9,Ordering portal
+R0599,Regional pharmacy group,Central,0,0,1,4,7,9,Account support
+R0600,Regional pharmacy group,Central,0,0,1,5,7,10,Delivery status
