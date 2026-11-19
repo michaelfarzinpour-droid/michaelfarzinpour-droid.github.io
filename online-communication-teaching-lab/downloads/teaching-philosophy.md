@@ -1,0 +1,11 @@
+# Teaching philosophy: clear expectations, meaningful engagement, equitable support
+
+Independent fictional teaching work sample — Michael Farzinpour, PhD. Not an Excelsior University course or institutional rubric.
+
+My teaching starts with the learning outcomes. In an asynchronous communication course, students need an understandable path through approved readings, discussions, assignments, and assessment criteria. I would preserve the university's common course structure while bringing communication research and practical examples into announcements, discussion replies, and office-hour conversations.
+
+I view substantive engagement as more than posting reminders. A useful instructor response names a student’s idea, connects it to a course concept, and poses a question that helps the student apply or reconsider the idea. Feedback should be equally specific: identify what is working, cite a visible rubric criterion, and recommend an achievable revision. For public speaking, that can mean helping students organize claims and practice delivery without bypassing the oral communication outcome. For interpersonal communication, it can mean modeling listening, perception checking, and respectful disagreement.
+
+Student-centered teaching means recognizing different work schedules, prior academic experiences, and access needs while applying course policies consistently. I would offer predictable virtual office hours, accessible instructions and examples, private outreach when a student disengages, and referrals to approved support channels when appropriate. I would never promise unapproved grade changes or accommodations. I would promptly flag material errors, access barriers, and unresolved concerns to the designated academic or support contact.
+
+My relevant instructional experience includes serving as the standalone online instructor for Communication Studies 311 (Communication Technology Theory) and 113 (Small Group Communication) at the University of Arizona, with teaching-assistant experience across introductory communication, persuasion, and related courses. I have supported Canvas-based instruction and assessed oral presentations. The public-speaking mini-lesson and all student scenarios in this portfolio are independently created illustrations, not records of having taught a dedicated public-speaking course as instructor of record.
