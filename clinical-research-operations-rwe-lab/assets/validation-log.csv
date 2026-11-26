@@ -1,0 +1,80 @@
+query,record,field,issue,status
+S0001-A,S0001,age,Age outside protocol range,Open
+S0001-F,S0001,follow,Missing recorded follow-up despite source,Open
+S0044-F,S0044,follow,Missing recorded follow-up despite source,Open
+S0080-A,S0080,age,Age outside protocol range,Open
+S0087-F,S0087,follow,Missing recorded follow-up despite source,Open
+S0130-F,S0130,follow,Missing recorded follow-up despite source,Open
+S0159-A,S0159,age,Age outside protocol range,Open
+S0173-F,S0173,follow,Missing recorded follow-up despite source,Open
+S0216-F,S0216,follow,Missing recorded follow-up despite source,Open
+S0238-A,S0238,age,Age outside protocol range,Open
+S0259-F,S0259,follow,Missing recorded follow-up despite source,Open
+S0302-F,S0302,follow,Missing recorded follow-up despite source,Open
+S0317-A,S0317,age,Age outside protocol range,Open
+S0345-F,S0345,follow,Missing recorded follow-up despite source,Open
+S0388-F,S0388,follow,Missing recorded follow-up despite source,Open
+S0396-A,S0396,age,Age outside protocol range,Open
+S0431-F,S0431,follow,Missing recorded follow-up despite source,Open
+S0474-F,S0474,follow,Missing recorded follow-up despite source,Open
+S0475-A,S0475,age,Age outside protocol range,Open
+S0517-F,S0517,follow,Missing recorded follow-up despite source,Open
+S0554-A,S0554,age,Age outside protocol range,Open
+S0560-F,S0560,follow,Missing recorded follow-up despite source,Open
+S0603-F,S0603,follow,Missing recorded follow-up despite source,Open
+S0633-A,S0633,age,Age outside protocol range,Open
+S0646-F,S0646,follow,Missing recorded follow-up despite source,Open
+S0712-A,S0712,age,Age outside protocol range,Open
+S0791-A,S0791,age,Age outside protocol range,Open
+S0818-F,S0818,follow,Missing recorded follow-up despite source,Open
+S0861-F,S0861,follow,Missing recorded follow-up despite source,Open
+S0870-A,S0870,age,Age outside protocol range,Open
+S0947-F,S0947,follow,Missing recorded follow-up despite source,Open
+S0949-A,S0949,age,Age outside protocol range,Open
+S0990-F,S0990,follow,Missing recorded follow-up despite source,Open
+S1028-A,S1028,age,Age outside protocol range,Open
+S1033-F,S1033,follow,Missing recorded follow-up despite source,Open
+S1076-F,S1076,follow,Missing recorded follow-up despite source,Open
+S1107-A,S1107,age,Age outside protocol range,Open
+S1119-F,S1119,follow,Missing recorded follow-up despite source,Open
+S1162-F,S1162,follow,Missing recorded follow-up despite source,Open
+S1186-A,S1186,age,Age outside protocol range,Open
+S1205-F,S1205,follow,Missing recorded follow-up despite source,Open
+S1248-F,S1248,follow,Missing recorded follow-up despite source,Open
+S1265-A,S1265,age,Age outside protocol range,Open
+S1291-F,S1291,follow,Missing recorded follow-up despite source,Open
+S1334-F,S1334,follow,Missing recorded follow-up despite source,Open
+S1344-A,S1344,age,Age outside protocol range,Open
+S1420-F,S1420,follow,Missing recorded follow-up despite source,Open
+S1423-A,S1423,age,Age outside protocol range,Open
+S1463-F,S1463,follow,Missing recorded follow-up despite source,Open
+S1502-A,S1502,age,Age outside protocol range,Open
+S1506-F,S1506,follow,Missing recorded follow-up despite source,Open
+S1549-F,S1549,follow,Missing recorded follow-up despite source,Open
+S1581-A,S1581,age,Age outside protocol range,Open
+S1592-F,S1592,follow,Missing recorded follow-up despite source,Open
+S1635-F,S1635,follow,Missing recorded follow-up despite source,Open
+S1660-A,S1660,age,Age outside protocol range,Open
+S1739-A,S1739,age,Age outside protocol range,Open
+S1764-F,S1764,follow,Missing recorded follow-up despite source,Open
+S1807-F,S1807,follow,Missing recorded follow-up despite source,Open
+S1818-A,S1818,age,Age outside protocol range,Open
+S1850-F,S1850,follow,Missing recorded follow-up despite source,Open
+S1893-F,S1893,follow,Missing recorded follow-up despite source,Open
+S1897-A,S1897,age,Age outside protocol range,Open
+S1936-F,S1936,follow,Missing recorded follow-up despite source,Open
+S1976-A,S1976,age,Age outside protocol range,Open
+S1979-F,S1979,follow,Missing recorded follow-up despite source,Open
+S2022-F,S2022,follow,Missing recorded follow-up despite source,Open
+S2055-A,S2055,age,Age outside protocol range,Open
+S2065-F,S2065,follow,Missing recorded follow-up despite source,Open
+S2108-F,S2108,follow,Missing recorded follow-up despite source,Open
+S2134-A,S2134,age,Age outside protocol range,Open
+S2151-F,S2151,follow,Missing recorded follow-up despite source,Open
+S2194-F,S2194,follow,Missing recorded follow-up despite source,Open
+S2213-A,S2213,age,Age outside protocol range,Open
+S2237-F,S2237,follow,Missing recorded follow-up despite source,Open
+S2292-A,S2292,age,Age outside protocol range,Open
+S2323-F,S2323,follow,Missing recorded follow-up despite source,Open
+S2366-F,S2366,follow,Missing recorded follow-up despite source,Open
+S2371-A,S2371,age,Age outside protocol range,Open
