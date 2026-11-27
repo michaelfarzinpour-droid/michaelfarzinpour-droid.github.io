@@ -26,5 +26,18 @@ for(let i=7;i<mods.length;i++){let b=document.createElement('button');b.textCont
 // Replace the horizontal nav with wrapped navigation on wide screens.
 document.querySelector('nav').style.flexWrap='wrap';render();
 
-// GitHub Pages text-only transport of binary work products.
-document.addEventListener('click',async e=>{const a=e.target.closest('a[download]');if(!a)return;const f=a.getAttribute('href');if(!f||!(/\.(pptx|xlsx)$/.test(f)))return;e.preventDefault();try{let r=await fetch(f+'.b64');if(!r.ok)throw Error('File unavailable');let data=Uint8Array.from(atob((await r.text()).replace(/\s/g,'')),c=>c.charCodeAt(0));let u=URL.createObjectURL(new Blob([data],{type:f.endsWith('.pptx')?'application/vnd.openxmlformats-officedocument.presentationml.presentation':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}));let link=document.createElement('a');link.href=u;link.download=f.split('/').pop();link.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}catch(err){alert('Unable to download the file: '+err.message)}});
+// Prepare exact Office-file downloads as browser-local blob links.
+const officeCache=new Map();
+async function prepareOfficeLinks(){
+ for(const a of document.querySelectorAll('#view a[download]')){
+  let f=a.getAttribute('href');if(!f||!(/\.(pptx|xlsx)$/.test(f)))continue;
+  const name=f.split('/').pop();a.setAttribute('aria-disabled','true');
+  a.style.opacity='.65';const label=a.textContent;a.textContent=label+' (preparing…)';
+  a.onclick=e=>e.preventDefault();
+  try{
+   if(!officeCache.has(f))officeCache.set(f,(async()=>{const r=await fetch(f+'.b64');if(!r.ok)throw Error('File unavailable');const bytes=Uint8Array.from(atob((await r.text()).replace(/\s/g,'')),c=>c.charCodeAt(0));if(bytes[0]!==80||bytes[1]!==75)throw Error('Invalid Office payload');return URL.createObjectURL(new Blob([bytes],{type:f.endsWith('.pptx')?'application/vnd.openxmlformats-officedocument.presentationml.presentation':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}))})());
+   const url=await officeCache.get(f);if(!a.isConnected)continue;a.href=url;a.download=name;a.removeAttribute('aria-disabled');a.style.opacity='1';a.textContent=label+' (ready)';a.onclick=null;
+  }catch(e){officeCache.delete(f);if(a.isConnected)a.textContent=label+' (unavailable; reopen module to retry)'}
+ }
+}
+new MutationObserver(()=>{if(active===14)prepareOfficeLinks()}).observe(document.getElementById('view'),{childList:true});
