@@ -1,0 +1,2401 @@
+id,region,cohort,track,mentor,board,advocate,contact,permission,experience,invite,base
+A0001,West,2018,Public service,false,true,false,true,true,3,false,false
+A0002,Mountain,2018,Education,false,false,true,true,true,4,true,true
+A0003,South,2018,Other,true,false,true,false,false,1,false,true
+A0004,Midwest,2018,Other,false,true,false,false,true,1,false,true
+A0005,Northeast,2018,Private sector,true,false,false,false,true,4,true,false
+A0006,Mid-Atlantic,2018,Nonprofit,true,true,true,true,true,3,false,false
+A0007,West,2019,Private sector,false,false,false,true,true,0,false,true
+A0008,Mountain,2019,Nonprofit,false,false,false,true,false,6,false,false
+A0009,South,2019,Nonprofit,false,true,false,true,false,6,false,true
+A0010,Midwest,2019,Nonprofit,false,false,true,true,true,8,false,true
+A0011,Northeast,2019,Private sector,false,false,false,true,false,5,true,false
+A0012,Mid-Atlantic,2019,Private sector,false,false,false,true,false,1,true,false
+A0013,West,2020,Education,true,false,false,true,false,5,false,false
+A0014,Mountain,2020,Other,false,false,true,true,true,0,true,false
+A0015,South,2020,Nonprofit,false,false,false,true,true,4,false,true
+A0016,Midwest,2020,Public service,false,false,false,true,false,2,false,true
+A0017,Northeast,2020,Public service,false,false,false,true,false,4,true,false
+A0018,Mid-Atlantic,2020,Education,false,true,true,true,true,6,false,true
+A0019,West,2021,Other,true,false,false,true,false,3,false,false
+A0020,Mountain,2021,Private sector,false,false,true,true,false,3,true,true
+A0021,South,2021,Private sector,false,false,false,true,true,3,true,true
+A0022,Midwest,2021,Other,false,false,false,true,true,1,false,false
+A0023,Northeast,2021,Private sector,true,false,false,true,false,1,false,true
+A0024,Mid-Atlantic,2021,Private sector,true,false,false,true,true,1,true,true
+A0025,West,2022,Nonprofit,false,false,false,true,true,7,true,false
+A0026,Mountain,2022,Nonprofit,false,false,false,true,true,6,true,false
+A0027,South,2022,Education,false,false,false,true,false,7,false,true
+A0028,Midwest,2022,Other,true,false,true,true,true,8,false,true
+A0029,Northeast,2022,Nonprofit,false,true,false,true,true,3,false,true
+A0030,Mid-Atlantic,2022,Public service,true,false,false,true,false,1,true,true
+A0031,West,2023,Education,false,false,false,false,true,2,true,true
+A0032,Mountain,2023,Public service,false,true,false,false,true,0,false,false
+A0033,South,2023,Public service,true,false,false,false,true,5,false,true
+A0034,Midwest,2023,Other,false,false,false,true,false,8,false,true
+A0035,Northeast,2023,Education,true,false,false,true,true,3,true,true
+A0036,Mid-Atlantic,2023,Nonprofit,false,false,false,true,true,6,false,false
+A0037,West,2018,Nonprofit,false,true,false,false,true,6,false,false
+A0038,Mountain,2018,Private sector,false,true,false,false,true,1,false,true
+A0039,South,2018,Education,true,false,false,true,true,7,false,true
+A0040,Midwest,2018,Private sector,false,false,false,true,true,6,true,false
+A0041,Northeast,2018,Other,true,false,false,true,false,3,true,true
+A0042,Mid-Atlantic,2018,Education,false,false,false,true,false,5,false,false
+A0043,West,2019,Education,false,true,false,true,true,1,true,true
+A0044,Mountain,2019,Private sector,false,true,true,true,true,8,true,true
+A0045,South,2019,Nonprofit,false,false,true,true,true,6,false,true
+A0046,Midwest,2019,Nonprofit,false,false,false,true,false,5,false,true
+A0047,Northeast,2019,Nonprofit,true,false,false,true,false,8,true,true
+A0048,Mid-Atlantic,2019,Other,false,false,false,true,false,2,false,false
+A0049,West,2020,Public service,false,false,false,true,true,8,true,true
+A0050,Mountain,2020,Other,true,true,false,true,true,6,false,false
+A0051,South,2020,Nonprofit,false,true,false,true,true,2,true,true
+A0052,Midwest,2020,Nonprofit,false,false,false,true,true,5,true,true
+A0053,Northeast,2020,Other,false,false,true,true,false,0,false,false
+A0054,Mid-Atlantic,2020,Other,false,true,false,true,false,7,false,true
+A0055,West,2021,Nonprofit,true,false,false,true,false,4,false,true
+A0056,Mountain,2021,Private sector,false,false,false,true,true,2,false,true
+A0057,South,2021,Nonprofit,false,false,false,true,false,6,true,true
+A0058,Midwest,2021,Nonprofit,false,false,false,true,true,4,false,false
+A0059,Northeast,2021,Private sector,false,false,false,true,false,6,false,true
+A0060,Mid-Atlantic,2021,Nonprofit,false,true,true,true,false,2,true,true
+A0061,West,2022,Public service,false,false,false,true,true,1,true,true
+A0062,Mountain,2022,Nonprofit,false,false,false,true,true,7,false,true
+A0063,South,2022,Private sector,false,false,false,true,true,1,false,false
+A0064,Midwest,2022,Private sector,false,false,false,true,true,7,false,true
+A0065,Northeast,2022,Public service,false,false,true,true,false,7,true,true
+A0066,Mid-Atlantic,2022,Public service,true,false,false,true,true,8,true,true
+A0067,West,2023,Nonprofit,true,false,false,true,false,6,true,true
+A0068,Mountain,2023,Other,false,false,false,true,true,6,true,true
+A0069,South,2023,Public service,false,false,true,true,true,2,false,false
+A0070,Midwest,2023,Private sector,true,false,false,true,true,7,false,false
+A0071,Northeast,2023,Nonprofit,true,false,false,false,false,1,true,false
+A0072,Mid-Atlantic,2023,Private sector,false,false,false,true,true,0,true,true
+A0073,West,2018,Private sector,false,true,false,false,true,7,false,true
+A0074,Mountain,2018,Private sector,true,true,true,true,false,1,true,true
+A0075,South,2018,Education,false,true,false,true,true,3,false,true
+A0076,Midwest,2018,Education,false,true,true,true,true,6,true,false
+A0077,Northeast,2018,Nonprofit,true,true,false,true,false,7,true,false
+A0078,Mid-Atlantic,2018,Public service,false,false,false,true,true,1,true,false
+A0079,West,2019,Public service,false,false,true,true,true,2,true,false
+A0080,Mountain,2019,Public service,false,false,false,true,false,0,true,true
+A0081,South,2019,Private sector,false,false,false,true,false,5,false,true
+A0082,Midwest,2019,Nonprofit,false,false,false,true,true,4,false,false
+A0083,Northeast,2019,Nonprofit,false,true,true,true,false,2,false,true
+A0084,Mid-Atlantic,2019,Education,true,true,false,true,true,6,false,false
+A0085,West,2020,Nonprofit,false,false,false,true,true,5,false,true
+A0086,Mountain,2020,Private sector,false,true,false,true,false,2,true,false
+A0087,South,2020,Public service,false,false,false,true,true,3,true,false
+A0088,Midwest,2020,Education,false,false,false,true,true,5,true,false
+A0089,Northeast,2020,Private sector,false,false,false,true,true,7,false,true
+A0090,Mid-Atlantic,2020,Education,false,false,true,true,true,7,true,false
+A0091,West,2021,Nonprofit,false,false,true,true,false,4,true,true
+A0092,Mountain,2021,Private sector,false,false,false,true,true,0,false,true
+A0093,South,2021,Public service,false,false,false,true,false,4,false,true
+A0094,Midwest,2021,Private sector,true,false,false,true,true,0,false,false
+A0095,Northeast,2021,Education,true,false,false,true,false,2,false,true
+A0096,Mid-Atlantic,2021,Other,false,false,true,true,false,8,true,false
+A0097,West,2022,Public service,true,false,true,true,false,3,true,false
+A0098,Mountain,2022,Private sector,false,false,false,true,true,0,true,false
+A0099,South,2022,Nonprofit,false,false,false,true,true,4,true,false
+A0100,Midwest,2022,Other,false,true,false,true,true,5,false,true
+A0101,Northeast,2022,Private sector,true,false,false,true,false,5,true,false
+A0102,Mid-Atlantic,2022,Nonprofit,true,false,true,true,true,6,true,false
+A0103,West,2023,Education,false,false,false,true,true,0,true,true
+A0104,Mountain,2023,Public service,false,false,false,true,true,6,true,true
+A0105,South,2023,Public service,true,false,false,true,false,0,true,false
+A0106,Midwest,2023,Public service,false,false,false,true,false,3,false,true
+A0107,Northeast,2023,Education,false,true,false,true,true,0,false,true
+A0108,Mid-Atlantic,2023,Private sector,false,false,false,true,true,8,true,true
+A0109,West,2018,Nonprofit,false,true,true,false,true,3,false,true
+A0110,Mountain,2018,Public service,true,false,false,true,true,0,false,false
+A0111,South,2018,Public service,false,false,false,true,true,7,false,false
+A0112,Midwest,2018,Nonprofit,false,false,false,true,true,6,false,false
+A0113,Northeast,2018,Education,false,false,false,true,false,5,true,false
+A0114,Mid-Atlantic,2018,Education,false,false,false,true,true,6,true,true
+A0115,West,2019,Public service,false,false,false,true,true,3,true,true
+A0116,Mountain,2019,Other,false,false,false,true,true,6,true,true
+A0117,South,2019,Nonprofit,false,false,false,true,true,7,false,false
+A0118,Midwest,2019,Education,true,false,false,true,false,6,true,true
+A0119,Northeast,2019,Other,false,false,false,true,true,1,false,false
+A0120,Mid-Atlantic,2019,Other,false,false,false,true,true,6,true,true
+A0121,West,2020,Nonprofit,true,false,false,true,true,4,true,false
+A0122,Mountain,2020,Public service,false,false,false,true,true,2,false,true
+A0123,South,2020,Nonprofit,false,false,false,false,true,4,false,true
+A0124,Midwest,2020,Other,false,false,false,false,true,0,false,false
+A0125,Northeast,2020,Public service,false,false,false,false,false,1,false,false
+A0126,Mid-Atlantic,2020,Education,true,false,false,true,true,7,true,true
+A0127,West,2021,Other,false,false,false,true,true,3,false,true
+A0128,Mountain,2021,Nonprofit,false,false,false,true,true,0,true,false
+A0129,South,2021,Public service,false,false,false,true,true,5,false,true
+A0130,Midwest,2021,Education,false,false,false,true,true,5,true,false
+A0131,Northeast,2021,Other,false,false,false,true,false,1,true,false
+A0132,Mid-Atlantic,2021,Other,true,true,false,true,true,4,false,true
+A0133,West,2022,Public service,false,true,false,true,true,1,false,false
+A0134,Mountain,2022,Private sector,false,false,false,true,true,2,false,true
+A0135,South,2022,Public service,false,false,true,false,true,5,true,false
+A0136,Midwest,2022,Public service,false,false,false,true,true,1,true,false
+A0137,Northeast,2022,Public service,true,false,false,true,true,8,false,false
+A0138,Mid-Atlantic,2022,Education,true,false,false,false,true,3,true,true
+A0139,West,2023,Education,false,false,false,true,true,3,true,true
+A0140,Mountain,2023,Private sector,false,false,false,true,true,2,false,true
+A0141,South,2023,Other,false,false,false,true,true,8,false,false
+A0142,Midwest,2023,Private sector,false,false,false,true,true,7,false,true
+A0143,Northeast,2023,Private sector,false,false,true,true,false,0,true,false
+A0144,Mid-Atlantic,2023,Nonprofit,false,false,false,true,false,2,true,false
+A0145,West,2018,Nonprofit,true,false,true,true,true,3,false,true
+A0146,Mountain,2018,Nonprofit,true,false,true,true,true,5,false,true
+A0147,South,2018,Private sector,false,false,false,true,false,6,true,true
+A0148,Midwest,2018,Private sector,true,false,true,true,true,8,false,false
+A0149,Northeast,2018,Education,true,false,false,true,false,1,false,true
+A0150,Mid-Atlantic,2018,Private sector,false,false,false,true,false,5,false,true
+A0151,West,2019,Nonprofit,false,false,false,true,true,4,true,true
+A0152,Mountain,2019,Public service,false,false,true,true,true,3,true,false
+A0153,South,2019,Public service,true,false,false,true,true,6,true,false
+A0154,Midwest,2019,Education,false,false,false,true,true,5,true,false
+A0155,Northeast,2019,Nonprofit,false,false,false,false,false,5,true,false
+A0156,Mid-Atlantic,2019,Private sector,true,true,false,true,false,6,true,false
+A0157,West,2020,Public service,false,false,false,true,true,5,false,false
+A0158,Mountain,2020,Education,false,false,true,true,true,0,true,true
+A0159,South,2020,Nonprofit,false,false,false,true,false,6,false,false
+A0160,Midwest,2020,Public service,true,true,true,true,false,4,true,true
+A0161,Northeast,2020,Other,true,true,false,true,false,8,true,true
+A0162,Mid-Atlantic,2020,Other,false,false,false,true,false,8,true,false
+A0163,West,2021,Education,false,false,false,false,true,5,true,false
+A0164,Mountain,2021,Other,false,false,true,true,false,5,true,false
+A0165,South,2021,Private sector,false,false,false,true,false,6,true,false
+A0166,Midwest,2021,Other,false,false,true,true,true,3,false,true
+A0167,Northeast,2021,Private sector,false,true,true,true,true,3,true,true
+A0168,Mid-Atlantic,2021,Nonprofit,false,true,false,false,true,2,false,true
+A0169,West,2022,Private sector,false,false,false,true,false,7,false,true
+A0170,Mountain,2022,Private sector,true,false,false,true,true,3,false,false
+A0171,South,2022,Nonprofit,false,false,false,true,false,5,false,false
+A0172,Midwest,2022,Private sector,true,false,false,false,false,4,false,false
+A0173,Northeast,2022,Nonprofit,false,true,false,true,false,0,false,true
+A0174,Mid-Atlantic,2022,Private sector,false,false,false,true,false,4,true,true
+A0175,West,2023,Nonprofit,false,false,false,true,true,5,false,true
+A0176,Mountain,2023,Private sector,false,false,false,true,true,4,true,true
+A0177,South,2023,Other,true,false,false,true,false,8,true,true
+A0178,Midwest,2023,Nonprofit,false,false,true,false,true,1,true,false
+A0179,Northeast,2023,Private sector,false,true,true,true,true,3,true,false
+A0180,Mid-Atlantic,2023,Private sector,false,false,false,true,true,7,true,true
+A0181,West,2018,Nonprofit,false,false,true,true,true,8,true,true
+A0182,Mountain,2018,Education,false,false,false,true,false,4,false,true
+A0183,South,2018,Private sector,true,false,true,true,true,8,false,true
+A0184,Midwest,2018,Education,false,false,false,true,false,8,true,true
+A0185,Northeast,2018,Public service,false,false,false,true,true,1,false,true
+A0186,Mid-Atlantic,2018,Private sector,true,false,false,true,false,3,false,true
+A0187,West,2019,Private sector,false,false,false,false,false,5,true,true
+A0188,Mountain,2019,Private sector,false,true,true,true,true,0,false,true
+A0189,South,2019,Private sector,true,true,true,false,true,2,false,true
+A0190,Midwest,2019,Education,false,false,false,true,true,6,true,true
+A0191,Northeast,2019,Public service,true,false,true,false,true,2,false,false
+A0192,Mid-Atlantic,2019,Public service,false,true,false,false,false,8,false,false
+A0193,West,2020,Public service,true,false,false,true,false,5,false,false
+A0194,Mountain,2020,Nonprofit,true,false,false,false,true,3,true,false
+A0195,South,2020,Public service,false,true,false,true,true,5,false,true
+A0196,Midwest,2020,Public service,false,false,false,true,false,5,true,true
+A0197,Northeast,2020,Nonprofit,true,true,false,true,true,0,false,true
+A0198,Mid-Atlantic,2020,Private sector,false,true,false,true,false,7,true,false
+A0199,West,2021,Private sector,false,false,false,true,true,5,false,false
+A0200,Mountain,2021,Nonprofit,true,false,false,true,true,2,false,true
+A0201,South,2021,Public service,true,false,false,true,true,1,true,false
+A0202,Midwest,2021,Public service,false,false,false,false,false,2,false,true
+A0203,Northeast,2021,Other,false,false,false,true,false,8,true,true
+A0204,Mid-Atlantic,2021,Nonprofit,false,false,false,true,true,6,false,false
+A0205,West,2022,Education,false,false,false,true,true,8,true,true
+A0206,Mountain,2022,Public service,true,false,false,true,true,4,true,true
+A0207,South,2022,Education,true,true,true,true,true,6,false,true
+A0208,Midwest,2022,Nonprofit,true,false,false,true,true,4,false,false
+A0209,Northeast,2022,Private sector,false,false,false,true,true,8,true,false
+A0210,Mid-Atlantic,2022,Nonprofit,true,false,false,true,true,0,true,false
+A0211,West,2023,Private sector,true,false,true,true,false,4,true,true
+A0212,Mountain,2023,Public service,false,false,true,true,true,2,false,false
+A0213,South,2023,Public service,false,false,false,true,true,3,false,true
+A0214,Midwest,2023,Education,false,false,false,true,true,2,false,true
+A0215,Northeast,2023,Private sector,false,false,false,false,false,6,true,true
+A0216,Mid-Atlantic,2023,Education,false,false,false,true,false,8,true,true
+A0217,West,2018,Other,false,false,false,true,false,8,false,true
+A0218,Mountain,2018,Private sector,false,false,true,true,false,8,true,true
+A0219,South,2018,Other,false,true,false,true,false,3,true,true
+A0220,Midwest,2018,Nonprofit,false,false,false,true,true,4,false,true
+A0221,Northeast,2018,Other,true,false,true,true,true,6,true,true
+A0222,Mid-Atlantic,2018,Nonprofit,true,false,false,true,true,6,false,true
+A0223,West,2019,Other,false,false,false,true,false,3,false,true
+A0224,Mountain,2019,Private sector,false,true,false,true,true,2,true,true
+A0225,South,2019,Education,true,false,false,true,false,6,true,false
+A0226,Midwest,2019,Education,false,false,false,false,false,7,true,false
+A0227,Northeast,2019,Private sector,true,false,true,true,false,4,false,false
+A0228,Mid-Atlantic,2019,Nonprofit,false,false,false,true,true,5,true,true
+A0229,West,2020,Public service,false,false,false,true,true,1,false,true
+A0230,Mountain,2020,Other,false,false,false,true,true,8,true,true
+A0231,South,2020,Other,true,false,false,true,true,5,false,true
+A0232,Midwest,2020,Education,false,false,false,true,true,7,false,true
+A0233,Northeast,2020,Private sector,false,false,false,true,true,0,false,true
+A0234,Mid-Atlantic,2020,Public service,false,false,true,false,true,6,false,true
+A0235,West,2021,Public service,false,false,true,true,true,7,true,false
+A0236,Mountain,2021,Nonprofit,true,false,false,false,true,7,true,false
+A0237,South,2021,Public service,false,false,true,true,false,5,false,true
+A0238,Midwest,2021,Education,true,true,false,true,true,6,false,false
+A0239,Northeast,2021,Education,false,true,false,true,true,1,false,false
+A0240,Mid-Atlantic,2021,Nonprofit,true,true,false,true,false,2,false,false
+A0241,West,2022,Nonprofit,false,false,false,true,true,7,false,true
+A0242,Mountain,2022,Private sector,true,false,true,true,true,0,true,true
+A0243,South,2022,Other,false,true,true,true,false,7,false,false
+A0244,Midwest,2022,Education,true,false,false,true,true,4,false,false
+A0245,Northeast,2022,Private sector,false,false,false,true,true,3,true,true
+A0246,Mid-Atlantic,2022,Public service,true,false,false,true,false,3,true,true
+A0247,West,2023,Private sector,false,false,false,true,true,4,true,false
+A0248,Mountain,2023,Other,false,false,true,false,true,6,true,false
+A0249,South,2023,Public service,true,false,false,true,true,2,true,false
+A0250,Midwest,2023,Public service,false,false,false,true,true,8,true,false
+A0251,Northeast,2023,Other,true,false,false,true,false,5,false,false
+A0252,Mid-Atlantic,2023,Private sector,false,false,true,true,true,0,false,false
+A0253,West,2018,Public service,false,false,false,true,true,7,false,false
+A0254,Mountain,2018,Other,false,false,false,true,false,6,false,true
+A0255,South,2018,Nonprofit,false,false,true,true,true,5,false,true
+A0256,Midwest,2018,Nonprofit,true,false,false,true,false,6,true,true
+A0257,Northeast,2018,Public service,false,true,false,false,true,1,true,false
+A0258,Mid-Atlantic,2018,Public service,true,false,true,true,true,0,true,true
+A0259,West,2019,Nonprofit,false,false,true,true,true,0,false,false
+A0260,Mountain,2019,Education,true,false,false,true,true,5,false,false
+A0261,South,2019,Nonprofit,false,false,false,true,true,6,false,false
+A0262,Midwest,2019,Public service,false,false,false,true,true,4,true,true
+A0263,Northeast,2019,Private sector,false,false,false,true,true,8,false,true
+A0264,Mid-Atlantic,2019,Private sector,true,false,false,false,false,5,false,true
+A0265,West,2020,Public service,false,false,false,true,true,2,true,true
+A0266,Mountain,2020,Public service,false,false,false,false,true,8,false,true
+A0267,South,2020,Private sector,true,false,true,true,true,1,false,true
+A0268,Midwest,2020,Public service,false,false,false,true,false,8,false,true
+A0269,Northeast,2020,Education,false,false,true,true,true,5,true,true
+A0270,Mid-Atlantic,2020,Education,false,false,false,false,true,7,false,true
+A0271,West,2021,Public service,true,false,false,false,true,8,true,true
+A0272,Mountain,2021,Other,false,false,false,true,true,4,false,true
+A0273,South,2021,Education,false,false,false,true,true,3,true,true
+A0274,Midwest,2021,Private sector,false,false,false,true,true,3,false,true
+A0275,Northeast,2021,Private sector,false,false,false,true,true,8,false,false
+A0276,Mid-Atlantic,2021,Nonprofit,false,false,false,true,true,1,true,true
+A0277,West,2022,Education,true,true,false,true,false,5,false,false
+A0278,Mountain,2022,Education,false,false,false,true,true,1,false,true
+A0279,South,2022,Nonprofit,false,false,false,true,true,1,false,false
+A0280,Midwest,2022,Nonprofit,false,false,false,true,true,2,false,true
+A0281,Northeast,2022,Education,false,false,false,false,true,7,false,true
+A0282,Mid-Atlantic,2022,Education,true,false,true,true,false,1,true,true
+A0283,West,2023,Other,false,false,true,false,false,4,true,false
+A0284,Mountain,2023,Public service,true,false,true,false,false,5,false,true
+A0285,South,2023,Private sector,false,false,false,true,true,3,false,true
+A0286,Midwest,2023,Education,true,false,false,true,false,0,false,false
+A0287,Northeast,2023,Private sector,true,true,true,true,true,8,true,true
+A0288,Mid-Atlantic,2023,Education,false,true,false,true,false,0,false,false
+A0289,West,2018,Nonprofit,false,false,false,true,false,3,false,false
+A0290,Mountain,2018,Private sector,false,false,false,true,false,5,false,false
+A0291,South,2018,Private sector,true,false,true,false,true,8,false,true
+A0292,Midwest,2018,Other,false,false,false,true,false,0,true,false
+A0293,Northeast,2018,Nonprofit,false,false,true,true,true,0,true,false
+A0294,Mid-Atlantic,2018,Private sector,false,false,false,true,true,0,false,false
+A0295,West,2019,Nonprofit,true,false,false,true,false,0,false,true
+A0296,Mountain,2019,Private sector,false,false,false,false,true,7,false,false
+A0297,South,2019,Private sector,false,false,false,true,false,3,false,true
+A0298,Midwest,2019,Public service,false,true,false,false,false,0,true,true
+A0299,Northeast,2019,Public service,false,false,false,true,true,0,false,true
+A0300,Mid-Atlantic,2019,Education,false,false,false,true,true,2,true,true
+A0301,West,2020,Private sector,true,false,false,false,true,7,true,true
+A0302,Mountain,2020,Nonprofit,false,false,false,true,true,1,false,true
+A0303,South,2020,Public service,true,false,true,false,true,3,false,false
+A0304,Midwest,2020,Education,false,false,false,true,false,2,false,true
+A0305,Northeast,2020,Private sector,false,false,false,true,false,3,false,true
+A0306,Mid-Atlantic,2020,Nonprofit,true,false,false,false,true,5,true,false
+A0307,West,2021,Other,true,true,false,true,true,7,false,false
+A0308,Mountain,2021,Private sector,true,false,false,true,false,6,true,false
+A0309,South,2021,Other,false,false,false,true,false,6,true,true
+A0310,Midwest,2021,Private sector,true,false,false,true,true,4,false,true
+A0311,Northeast,2021,Public service,false,false,true,true,true,4,true,true
+A0312,Mid-Atlantic,2021,Education,false,true,false,true,false,6,true,false
+A0313,West,2022,Other,false,false,false,true,true,6,true,true
+A0314,Mountain,2022,Education,true,false,false,false,true,7,true,true
+A0315,South,2022,Nonprofit,false,false,false,false,false,2,false,true
+A0316,Midwest,2022,Private sector,false,false,false,true,true,0,true,true
+A0317,Northeast,2022,Nonprofit,true,false,false,true,true,4,false,true
+A0318,Mid-Atlantic,2022,Public service,false,false,false,true,true,5,false,false
+A0319,West,2023,Other,true,false,false,true,false,6,false,true
+A0320,Mountain,2023,Private sector,false,false,true,true,true,6,true,true
+A0321,South,2023,Public service,true,false,false,true,true,4,true,false
+A0322,Midwest,2023,Education,true,false,false,true,true,5,false,false
+A0323,Northeast,2023,Nonprofit,true,true,true,true,true,6,true,true
+A0324,Mid-Atlantic,2023,Private sector,false,false,false,true,true,7,false,true
+A0325,West,2018,Other,false,false,false,false,false,0,false,true
+A0326,Mountain,2018,Private sector,true,true,false,true,true,6,false,true
+A0327,South,2018,Public service,false,false,false,false,true,2,false,true
+A0328,Midwest,2018,Private sector,false,true,false,true,false,0,false,true
+A0329,Northeast,2018,Public service,false,false,false,true,false,2,true,true
+A0330,Mid-Atlantic,2018,Education,true,false,true,true,true,1,true,true
+A0331,West,2019,Public service,false,false,false,true,false,4,false,true
+A0332,Mountain,2019,Private sector,false,false,true,false,true,5,false,false
+A0333,South,2019,Nonprofit,true,false,false,true,false,1,true,false
+A0334,Midwest,2019,Nonprofit,false,false,false,true,true,8,true,true
+A0335,Northeast,2019,Private sector,false,true,true,true,false,5,false,true
+A0336,Mid-Atlantic,2019,Other,true,false,false,true,true,2,true,true
+A0337,West,2020,Private sector,false,false,false,true,false,1,false,true
+A0338,Mountain,2020,Nonprofit,false,true,false,true,false,3,false,true
+A0339,South,2020,Private sector,true,false,false,true,true,4,true,true
+A0340,Midwest,2020,Other,true,false,false,true,true,1,true,false
+A0341,Northeast,2020,Education,true,false,false,true,true,1,true,false
+A0342,Mid-Atlantic,2020,Other,false,false,false,true,false,5,false,true
+A0343,West,2021,Other,false,false,false,true,false,0,false,false
+A0344,Mountain,2021,Education,true,false,false,true,true,8,true,true
+A0345,South,2021,Other,true,false,false,true,true,1,false,false
+A0346,Midwest,2021,Public service,true,false,false,true,true,1,false,false
+A0347,Northeast,2021,Nonprofit,false,true,true,true,true,5,false,false
+A0348,Mid-Atlantic,2021,Education,false,false,false,true,true,3,false,true
+A0349,West,2022,Education,false,false,false,true,true,0,false,true
+A0350,Mountain,2022,Other,false,true,false,true,true,2,true,false
+A0351,South,2022,Education,false,false,false,true,false,0,true,true
+A0352,Midwest,2022,Nonprofit,false,false,false,true,true,6,true,false
+A0353,Northeast,2022,Education,false,false,true,true,true,2,true,true
+A0354,Mid-Atlantic,2022,Private sector,false,false,false,true,false,2,true,true
+A0355,West,2023,Education,true,false,false,true,false,7,false,false
+A0356,Mountain,2023,Education,true,false,false,false,true,4,false,true
+A0357,South,2023,Other,true,true,false,true,true,7,false,true
+A0358,Midwest,2023,Public service,false,false,false,true,false,4,false,false
+A0359,Northeast,2023,Private sector,true,false,false,true,true,6,false,false
+A0360,Mid-Atlantic,2023,Other,true,true,false,true,true,6,false,true
+A0361,West,2018,Nonprofit,false,false,false,false,true,0,true,false
+A0362,Mountain,2018,Public service,false,true,false,false,false,1,true,false
+A0363,South,2018,Nonprofit,false,false,true,true,true,3,true,true
+A0364,Midwest,2018,Private sector,false,false,false,true,false,1,true,false
+A0365,Northeast,2018,Education,false,false,false,true,false,7,false,false
+A0366,Mid-Atlantic,2018,Public service,true,false,true,false,true,1,true,false
+A0367,West,2019,Education,false,true,false,true,true,8,false,true
+A0368,Mountain,2019,Private sector,true,true,false,true,true,8,false,true
+A0369,South,2019,Education,false,false,false,true,true,1,true,true
+A0370,Midwest,2019,Private sector,true,false,false,true,true,4,true,true
+A0371,Northeast,2019,Education,true,false,false,true,false,5,true,true
+A0372,Mid-Atlantic,2019,Nonprofit,false,false,false,false,false,0,true,false
+A0373,West,2020,Education,false,false,false,true,false,3,true,false
+A0374,Mountain,2020,Public service,false,false,false,true,true,6,true,true
+A0375,South,2020,Education,false,false,false,true,false,0,true,true
+A0376,Midwest,2020,Nonprofit,true,true,true,false,true,3,true,false
+A0377,Northeast,2020,Other,false,false,false,true,true,5,false,true
+A0378,Mid-Atlantic,2020,Private sector,false,false,false,true,true,1,true,true
+A0379,West,2021,Public service,true,false,false,true,false,3,true,true
+A0380,Mountain,2021,Private sector,false,false,true,false,false,8,true,false
+A0381,South,2021,Private sector,false,false,true,true,true,7,true,true
+A0382,Midwest,2021,Public service,false,false,false,false,true,3,true,false
+A0383,Northeast,2021,Other,true,false,true,true,true,0,true,true
+A0384,Mid-Atlantic,2021,Education,false,false,false,true,true,5,true,true
+A0385,West,2022,Other,false,false,true,true,false,0,true,true
+A0386,Mountain,2022,Other,false,false,true,true,false,2,true,true
+A0387,South,2022,Public service,false,true,true,true,true,2,false,false
+A0388,Midwest,2022,Education,true,true,true,false,true,0,true,true
+A0389,Northeast,2022,Education,false,true,false,true,true,3,true,true
+A0390,Mid-Atlantic,2022,Nonprofit,true,false,false,true,true,5,false,false
+A0391,West,2023,Other,false,true,false,true,true,4,true,false
+A0392,Mountain,2023,Education,true,false,false,true,true,3,true,true
+A0393,South,2023,Other,false,false,false,true,true,1,false,false
+A0394,Midwest,2023,Private sector,false,false,false,true,true,6,true,false
+A0395,Northeast,2023,Other,false,false,false,true,false,4,true,true
+A0396,Mid-Atlantic,2023,Nonprofit,true,false,true,true,true,3,true,false
+A0397,West,2018,Other,false,false,true,false,false,3,false,false
+A0398,Mountain,2018,Education,true,false,true,true,true,4,true,true
+A0399,South,2018,Education,false,true,false,true,true,7,true,false
+A0400,Midwest,2018,Education,true,true,false,true,true,7,true,true
+A0401,Northeast,2018,Education,false,false,false,true,true,8,false,true
+A0402,Mid-Atlantic,2018,Education,false,true,false,true,true,1,true,false
+A0403,West,2019,Public service,false,false,false,true,true,6,false,true
+A0404,Mountain,2019,Public service,true,false,false,true,true,4,true,true
+A0405,South,2019,Private sector,false,true,false,false,true,7,false,false
+A0406,Midwest,2019,Nonprofit,false,false,false,true,true,5,false,true
+A0407,Northeast,2019,Education,false,false,false,true,true,1,false,false
+A0408,Mid-Atlantic,2019,Nonprofit,false,false,false,true,false,1,false,false
+A0409,West,2020,Education,false,false,false,true,true,5,false,false
+A0410,Mountain,2020,Private sector,false,false,false,true,true,8,true,false
+A0411,South,2020,Public service,false,false,false,false,true,2,true,true
+A0412,Midwest,2020,Other,false,false,false,false,false,1,false,true
+A0413,Northeast,2020,Other,false,false,false,true,true,6,false,true
+A0414,Mid-Atlantic,2020,Other,true,true,false,true,true,3,false,true
+A0415,West,2021,Other,false,false,true,true,false,2,false,false
+A0416,Mountain,2021,Nonprofit,false,false,false,true,true,4,true,false
+A0417,South,2021,Nonprofit,true,false,false,true,true,6,false,false
+A0418,Midwest,2021,Nonprofit,false,false,false,true,false,2,false,false
+A0419,Northeast,2021,Other,false,true,true,true,true,2,true,true
+A0420,Mid-Atlantic,2021,Private sector,false,true,false,true,true,6,false,true
+A0421,West,2022,Other,true,false,false,true,true,5,false,true
+A0422,Mountain,2022,Nonprofit,false,false,false,false,true,0,false,true
+A0423,South,2022,Education,true,true,false,true,false,8,false,true
+A0424,Midwest,2022,Nonprofit,true,false,false,true,true,6,false,false
+A0425,Northeast,2022,Public service,true,false,false,true,true,3,true,true
+A0426,Mid-Atlantic,2022,Public service,false,false,false,true,true,6,true,false
+A0427,West,2023,Public service,false,false,false,true,true,7,true,true
+A0428,Mountain,2023,Nonprofit,false,false,true,false,true,0,false,false
+A0429,South,2023,Public service,true,true,true,true,true,5,true,false
+A0430,Midwest,2023,Other,false,false,false,true,true,1,true,true
+A0431,Northeast,2023,Education,false,false,false,true,true,1,false,false
+A0432,Mid-Atlantic,2023,Private sector,true,true,false,true,false,6,true,false
+A0433,West,2018,Nonprofit,false,false,false,true,false,6,false,false
+A0434,Mountain,2018,Education,false,false,false,true,true,3,true,true
+A0435,South,2018,Public service,false,false,false,false,true,0,false,true
+A0436,Midwest,2018,Other,false,false,false,true,false,5,true,false
+A0437,Northeast,2018,Nonprofit,true,false,false,false,true,4,true,true
+A0438,Mid-Atlantic,2018,Nonprofit,false,false,true,true,true,8,false,false
+A0439,West,2019,Nonprofit,false,true,false,true,true,2,false,true
+A0440,Mountain,2019,Education,false,false,false,false,true,1,true,true
+A0441,South,2019,Private sector,false,false,false,true,true,8,true,false
+A0442,Midwest,2019,Other,true,false,true,true,true,3,false,true
+A0443,Northeast,2019,Private sector,true,true,false,false,false,4,false,true
+A0444,Mid-Atlantic,2019,Education,true,false,false,true,true,0,true,false
+A0445,West,2020,Public service,false,false,false,true,true,0,false,false
+A0446,Mountain,2020,Nonprofit,false,false,true,true,true,4,false,false
+A0447,South,2020,Nonprofit,false,false,false,true,true,5,false,true
+A0448,Midwest,2020,Education,true,false,false,true,true,5,true,true
+A0449,Northeast,2020,Nonprofit,false,true,false,false,true,7,true,false
+A0450,Mid-Atlantic,2020,Public service,true,false,false,false,false,1,false,true
+A0451,West,2021,Private sector,false,false,false,false,true,3,false,true
+A0452,Mountain,2021,Nonprofit,false,false,false,true,true,7,true,true
+A0453,South,2021,Other,false,true,false,true,true,7,true,false
+A0454,Midwest,2021,Nonprofit,false,false,false,true,true,7,false,true
+A0455,Northeast,2021,Education,false,false,true,true,false,1,false,true
+A0456,Mid-Atlantic,2021,Education,false,false,false,true,false,8,true,true
+A0457,West,2022,Other,false,false,false,true,true,7,false,false
+A0458,Mountain,2022,Education,false,false,false,false,true,7,true,true
+A0459,South,2022,Nonprofit,false,false,false,true,true,8,true,true
+A0460,Midwest,2022,Nonprofit,false,false,false,true,true,3,true,false
+A0461,Northeast,2022,Public service,true,false,false,true,false,2,false,false
+A0462,Mid-Atlantic,2022,Other,false,false,false,true,true,2,false,true
+A0463,West,2023,Education,false,false,false,false,true,2,true,false
+A0464,Mountain,2023,Nonprofit,false,false,true,true,false,0,true,true
+A0465,South,2023,Nonprofit,false,false,true,true,false,2,true,false
+A0466,Midwest,2023,Public service,true,false,false,false,false,8,false,true
+A0467,Northeast,2023,Education,true,false,false,true,true,6,true,false
+A0468,Mid-Atlantic,2023,Public service,true,true,true,true,false,5,false,true
+A0469,West,2018,Public service,false,true,false,true,true,1,false,true
+A0470,Mountain,2018,Other,false,false,false,false,false,4,true,true
+A0471,South,2018,Education,false,false,true,false,false,8,false,false
+A0472,Midwest,2018,Public service,false,false,true,true,false,8,false,false
+A0473,Northeast,2018,Nonprofit,true,false,false,true,true,1,true,true
+A0474,Mid-Atlantic,2018,Nonprofit,false,false,true,true,true,8,false,false
+A0475,West,2019,Other,false,false,false,false,true,7,true,false
+A0476,Mountain,2019,Other,true,false,false,true,true,2,false,true
+A0477,South,2019,Other,false,false,false,true,false,1,false,false
+A0478,Midwest,2019,Other,false,false,false,true,true,0,true,true
+A0479,Northeast,2019,Other,false,false,false,true,true,1,false,true
+A0480,Mid-Atlantic,2019,Private sector,true,false,false,false,true,3,true,true
+A0481,West,2020,Education,false,true,true,true,false,7,true,true
+A0482,Mountain,2020,Other,false,false,false,true,true,0,false,false
+A0483,South,2020,Private sector,true,false,false,false,false,1,true,true
+A0484,Midwest,2020,Public service,false,false,false,true,false,6,false,false
+A0485,Northeast,2020,Private sector,true,true,false,true,true,2,false,true
+A0486,Mid-Atlantic,2020,Nonprofit,false,true,false,false,true,6,false,false
+A0487,West,2021,Other,false,false,false,true,false,2,false,true
+A0488,Mountain,2021,Nonprofit,false,false,true,true,false,4,true,true
+A0489,South,2021,Public service,false,false,false,true,true,5,false,false
+A0490,Midwest,2021,Other,false,false,false,true,true,7,true,false
+A0491,Northeast,2021,Private sector,false,false,true,false,true,1,false,true
+A0492,Mid-Atlantic,2021,Nonprofit,false,true,false,true,false,3,true,true
+A0493,West,2022,Private sector,false,false,true,true,false,2,false,true
+A0494,Mountain,2022,Public service,true,false,true,true,true,0,false,true
+A0495,South,2022,Private sector,true,false,false,true,true,3,true,false
+A0496,Midwest,2022,Public service,true,false,true,true,false,1,true,true
+A0497,Northeast,2022,Education,false,false,true,true,true,8,true,true
+A0498,Mid-Atlantic,2022,Education,false,true,false,true,false,2,true,false
+A0499,West,2023,Nonprofit,false,false,false,false,false,2,true,true
+A0500,Mountain,2023,Private sector,false,false,false,true,true,6,true,true
+A0501,South,2023,Private sector,false,false,false,true,false,7,false,true
+A0502,Midwest,2023,Other,false,false,false,false,false,6,true,true
+A0503,Northeast,2023,Education,false,false,true,true,true,6,false,true
+A0504,Mid-Atlantic,2023,Private sector,true,false,true,true,false,6,true,false
+A0505,West,2018,Education,false,false,false,true,false,1,true,true
+A0506,Mountain,2018,Nonprofit,false,false,false,true,true,7,true,false
+A0507,South,2018,Private sector,false,false,false,true,true,4,true,true
+A0508,Midwest,2018,Other,true,false,true,false,true,1,false,true
+A0509,Northeast,2018,Education,false,false,true,false,true,4,false,false
+A0510,Mid-Atlantic,2018,Private sector,false,false,true,true,true,3,true,false
+A0511,West,2019,Education,true,false,true,true,true,8,false,false
+A0512,Mountain,2019,Nonprofit,false,false,true,false,true,6,false,true
+A0513,South,2019,Education,false,true,false,true,false,3,false,false
+A0514,Midwest,2019,Education,false,false,false,true,true,3,true,false
+A0515,Northeast,2019,Education,false,false,false,true,true,7,false,false
+A0516,Mid-Atlantic,2019,Nonprofit,false,false,false,true,false,8,false,false
+A0517,West,2020,Nonprofit,false,false,true,true,true,2,true,true
+A0518,Mountain,2020,Other,false,false,false,true,true,3,true,true
+A0519,South,2020,Private sector,true,false,false,true,false,1,true,false
+A0520,Midwest,2020,Public service,false,false,false,true,true,2,false,true
+A0521,Northeast,2020,Nonprofit,false,false,false,true,true,8,true,false
+A0522,Mid-Atlantic,2020,Private sector,false,false,false,true,false,4,true,true
+A0523,West,2021,Private sector,true,false,false,true,true,3,true,false
+A0524,Mountain,2021,Nonprofit,false,false,true,true,false,7,true,true
+A0525,South,2021,Education,true,true,true,true,true,7,false,true
+A0526,Midwest,2021,Private sector,false,false,false,true,true,5,true,false
+A0527,Northeast,2021,Public service,false,true,false,false,true,3,false,true
+A0528,Mid-Atlantic,2021,Private sector,false,false,false,true,false,1,false,false
+A0529,West,2022,Nonprofit,false,false,true,true,true,2,true,true
+A0530,Mountain,2022,Education,false,false,false,true,true,7,false,true
+A0531,South,2022,Other,false,false,true,true,false,5,false,false
+A0532,Midwest,2022,Public service,false,false,true,true,true,4,false,false
+A0533,Northeast,2022,Nonprofit,true,false,false,false,false,5,false,true
+A0534,Mid-Atlantic,2022,Other,true,false,true,true,true,8,false,false
+A0535,West,2023,Other,true,true,false,true,true,4,true,true
+A0536,Mountain,2023,Public service,false,false,false,true,true,0,false,true
+A0537,South,2023,Other,false,true,false,true,true,5,true,false
+A0538,Midwest,2023,Education,true,false,false,true,false,4,false,true
+A0539,Northeast,2023,Nonprofit,false,false,false,true,true,6,false,true
+A0540,Mid-Atlantic,2023,Other,false,false,false,true,true,8,true,true
+A0541,West,2018,Private sector,false,false,true,true,true,8,false,false
+A0542,Mountain,2018,Other,true,false,false,true,false,7,true,true
+A0543,South,2018,Private sector,false,true,true,true,true,6,true,true
+A0544,Midwest,2018,Private sector,false,false,true,true,false,1,false,false
+A0545,Northeast,2018,Nonprofit,true,false,true,true,true,1,false,true
+A0546,Mid-Atlantic,2018,Education,false,true,false,true,false,2,false,true
+A0547,West,2019,Public service,false,true,false,true,false,3,false,true
+A0548,Mountain,2019,Nonprofit,false,false,false,true,true,7,true,true
+A0549,South,2019,Other,false,false,true,true,true,3,false,true
+A0550,Midwest,2019,Education,true,false,false,true,true,8,true,true
+A0551,Northeast,2019,Nonprofit,false,false,false,true,true,7,false,false
+A0552,Mid-Atlantic,2019,Education,false,false,true,true,false,3,false,false
+A0553,West,2020,Public service,true,false,false,true,true,7,true,false
+A0554,Mountain,2020,Nonprofit,false,false,false,true,true,4,false,false
+A0555,South,2020,Nonprofit,false,false,false,true,false,0,false,true
+A0556,Midwest,2020,Other,false,true,false,true,false,2,true,true
+A0557,Northeast,2020,Other,false,false,false,true,false,7,true,true
+A0558,Mid-Atlantic,2020,Public service,false,false,false,false,true,6,false,false
+A0559,West,2021,Nonprofit,false,false,false,true,true,0,true,false
+A0560,Mountain,2021,Private sector,true,false,false,true,true,5,true,true
+A0561,South,2021,Other,false,false,false,true,true,8,false,true
+A0562,Midwest,2021,Public service,false,true,false,true,true,3,true,true
+A0563,Northeast,2021,Public service,false,false,false,true,true,0,true,false
+A0564,Mid-Atlantic,2021,Education,false,true,false,true,true,6,true,true
+A0565,West,2022,Nonprofit,false,false,true,true,true,0,true,false
+A0566,Mountain,2022,Other,true,false,true,true,true,5,true,false
+A0567,South,2022,Private sector,false,false,false,true,true,8,false,true
+A0568,Midwest,2022,Private sector,false,true,false,true,true,7,false,true
+A0569,Northeast,2022,Public service,false,false,true,true,true,7,false,false
+A0570,Mid-Atlantic,2022,Public service,false,false,false,true,true,5,true,false
+A0571,West,2023,Education,false,false,false,false,true,6,false,true
+A0572,Mountain,2023,Other,true,false,true,true,true,7,false,true
+A0573,South,2023,Nonprofit,false,true,false,true,false,5,false,true
+A0574,Midwest,2023,Public service,true,false,false,true,true,8,false,true
+A0575,Northeast,2023,Private sector,false,false,false,false,true,3,false,true
+A0576,Mid-Atlantic,2023,Education,true,false,false,true,false,6,true,true
+A0577,West,2018,Nonprofit,true,false,false,true,true,8,true,false
+A0578,Mountain,2018,Nonprofit,true,false,true,true,true,1,false,false
+A0579,South,2018,Education,false,false,false,true,true,3,false,true
+A0580,Midwest,2018,Nonprofit,true,false,false,true,true,8,false,true
+A0581,Northeast,2018,Education,true,false,false,true,true,0,false,true
+A0582,Mid-Atlantic,2018,Other,false,false,true,true,true,0,false,true
+A0583,West,2019,Nonprofit,false,false,false,true,true,2,false,false
+A0584,Mountain,2019,Other,false,false,false,true,true,4,false,true
+A0585,South,2019,Other,false,false,false,true,false,6,true,false
+A0586,Midwest,2019,Private sector,true,false,false,true,true,1,false,false
+A0587,Northeast,2019,Other,false,false,false,true,false,7,false,true
+A0588,Mid-Atlantic,2019,Other,false,false,true,false,true,7,false,true
+A0589,West,2020,Education,false,false,false,true,true,8,false,false
+A0590,Mountain,2020,Education,false,false,true,false,true,0,true,true
+A0591,South,2020,Private sector,true,false,false,true,true,0,false,true
+A0592,Midwest,2020,Education,false,false,false,true,true,8,false,true
+A0593,Northeast,2020,Private sector,false,false,false,false,false,4,true,false
+A0594,Mid-Atlantic,2020,Other,false,false,false,false,true,0,true,false
+A0595,West,2021,Other,false,false,false,false,true,6,true,false
+A0596,Mountain,2021,Education,true,false,true,true,false,7,false,false
+A0597,South,2021,Other,false,false,false,true,false,0,false,false
+A0598,Midwest,2021,Private sector,false,true,false,true,false,5,true,true
+A0599,Northeast,2021,Other,true,false,true,true,true,4,true,false
+A0600,Mid-Atlantic,2021,Nonprofit,false,false,true,true,true,6,false,false
+A0601,West,2022,Private sector,true,false,false,true,true,1,true,true
+A0602,Mountain,2022,Public service,true,false,false,false,true,5,true,false
+A0603,South,2022,Public service,true,false,false,true,false,1,true,true
+A0604,Midwest,2022,Education,false,false,false,true,true,8,true,true
+A0605,Northeast,2022,Nonprofit,true,false,false,true,true,7,false,true
+A0606,Mid-Atlantic,2022,Other,false,false,false,false,true,8,false,true
+A0607,West,2023,Nonprofit,false,false,false,true,false,4,true,false
+A0608,Mountain,2023,Nonprofit,true,true,true,true,true,5,false,false
+A0609,South,2023,Private sector,false,false,true,true,false,8,true,true
+A0610,Midwest,2023,Public service,true,false,false,true,false,2,true,true
+A0611,Northeast,2023,Education,false,false,true,true,true,4,true,false
+A0612,Mid-Atlantic,2023,Public service,true,false,false,true,true,4,false,false
+A0613,West,2018,Public service,false,false,false,true,true,4,false,true
+A0614,Mountain,2018,Education,true,false,false,true,false,3,true,false
+A0615,South,2018,Private sector,false,false,true,true,true,7,true,false
+A0616,Midwest,2018,Education,false,false,true,true,true,7,true,true
+A0617,Northeast,2018,Education,false,false,false,false,true,4,true,true
+A0618,Mid-Atlantic,2018,Education,false,true,true,true,false,1,true,false
+A0619,West,2019,Public service,false,false,false,true,true,2,true,true
+A0620,Mountain,2019,Public service,true,true,true,false,true,0,false,true
+A0621,South,2019,Other,false,false,false,true,true,8,false,true
+A0622,Midwest,2019,Other,false,false,true,true,true,8,true,true
+A0623,Northeast,2019,Nonprofit,true,true,false,true,true,8,true,false
+A0624,Mid-Atlantic,2019,Other,false,true,false,true,true,7,true,true
+A0625,West,2020,Public service,false,false,true,true,true,6,false,true
+A0626,Mountain,2020,Other,false,false,false,true,true,5,false,false
+A0627,South,2020,Public service,false,false,false,false,true,6,true,false
+A0628,Midwest,2020,Public service,true,false,false,true,false,3,false,false
+A0629,Northeast,2020,Education,false,false,true,false,true,6,true,true
+A0630,Mid-Atlantic,2020,Nonprofit,false,false,false,true,false,7,true,true
+A0631,West,2021,Private sector,false,false,false,true,true,1,false,true
+A0632,Mountain,2021,Other,false,false,false,true,true,1,true,true
+A0633,South,2021,Private sector,false,true,false,true,false,1,false,true
+A0634,Midwest,2021,Nonprofit,false,false,false,false,true,0,false,false
+A0635,Northeast,2021,Public service,true,false,false,true,false,3,true,true
+A0636,Mid-Atlantic,2021,Other,false,false,false,true,true,2,true,false
+A0637,West,2022,Other,false,true,true,true,true,5,false,true
+A0638,Mountain,2022,Other,true,true,false,true,false,8,true,true
+A0639,South,2022,Public service,false,false,false,true,true,3,false,false
+A0640,Midwest,2022,Nonprofit,true,false,false,true,true,2,true,true
+A0641,Northeast,2022,Education,false,false,false,false,true,8,true,true
+A0642,Mid-Atlantic,2022,Public service,false,false,false,true,false,6,false,true
+A0643,West,2023,Nonprofit,true,false,false,true,false,3,false,false
+A0644,Mountain,2023,Private sector,false,false,false,true,true,8,false,false
+A0645,South,2023,Education,true,false,false,true,true,5,true,true
+A0646,Midwest,2023,Education,false,true,false,true,false,7,true,false
+A0647,Northeast,2023,Private sector,true,false,false,true,true,4,false,true
+A0648,Mid-Atlantic,2023,Private sector,true,false,false,true,false,8,true,true
+A0649,West,2018,Nonprofit,false,false,false,false,true,0,false,false
+A0650,Mountain,2018,Other,false,false,true,true,true,2,false,false
+A0651,South,2018,Other,false,false,false,true,true,2,false,false
+A0652,Midwest,2018,Other,false,true,false,true,true,7,true,true
+A0653,Northeast,2018,Public service,false,false,false,true,true,7,true,true
+A0654,Mid-Atlantic,2018,Public service,false,false,false,true,true,6,true,true
+A0655,West,2019,Education,false,false,false,true,true,5,false,true
+A0656,Mountain,2019,Nonprofit,false,true,false,true,true,4,true,true
+A0657,South,2019,Public service,true,false,false,true,true,2,false,false
+A0658,Midwest,2019,Nonprofit,false,false,true,true,true,3,false,true
+A0659,Northeast,2019,Nonprofit,false,false,false,true,true,1,false,false
+A0660,Mid-Atlantic,2019,Education,false,false,false,true,false,0,false,true
+A0661,West,2020,Education,true,false,false,true,true,0,true,true
+A0662,Mountain,2020,Public service,false,false,true,false,false,6,true,false
+A0663,South,2020,Nonprofit,true,true,false,true,true,8,true,false
+A0664,Midwest,2020,Education,true,false,false,false,true,4,false,false
+A0665,Northeast,2020,Education,false,false,false,true,true,2,true,true
+A0666,Mid-Atlantic,2020,Public service,false,false,true,true,false,1,false,true
+A0667,West,2021,Education,false,false,false,true,true,4,false,false
+A0668,Mountain,2021,Private sector,false,false,false,true,false,5,false,true
+A0669,South,2021,Private sector,false,false,false,true,true,7,false,true
+A0670,Midwest,2021,Public service,false,false,true,false,false,0,true,true
+A0671,Northeast,2021,Nonprofit,false,false,false,false,true,4,false,true
+A0672,Mid-Atlantic,2021,Private sector,false,false,true,true,true,1,true,false
+A0673,West,2022,Education,false,false,false,true,true,1,false,true
+A0674,Mountain,2022,Education,true,false,false,true,true,7,false,true
+A0675,South,2022,Education,false,false,false,true,true,0,false,false
+A0676,Midwest,2022,Other,false,false,false,true,false,5,true,false
+A0677,Northeast,2022,Public service,false,false,false,true,true,1,false,false
+A0678,Mid-Atlantic,2022,Nonprofit,true,false,true,true,true,4,false,true
+A0679,West,2023,Private sector,false,false,true,true,true,2,false,false
+A0680,Mountain,2023,Nonprofit,false,true,false,true,true,5,true,true
+A0681,South,2023,Public service,false,false,false,true,true,2,true,true
+A0682,Midwest,2023,Public service,false,true,false,true,true,6,true,true
+A0683,Northeast,2023,Other,true,false,false,false,true,7,false,true
+A0684,Mid-Atlantic,2023,Other,true,true,false,true,true,5,true,false
+A0685,West,2018,Public service,false,false,false,true,false,4,false,false
+A0686,Mountain,2018,Public service,false,false,false,true,true,7,true,true
+A0687,South,2018,Education,false,false,true,false,false,3,true,true
+A0688,Midwest,2018,Nonprofit,false,false,false,true,false,5,true,true
+A0689,Northeast,2018,Nonprofit,true,false,true,true,true,6,false,true
+A0690,Mid-Atlantic,2018,Private sector,false,false,false,true,false,1,false,false
+A0691,West,2019,Public service,false,false,false,true,true,4,false,true
+A0692,Mountain,2019,Private sector,false,false,false,true,true,2,true,true
+A0693,South,2019,Public service,false,false,false,true,false,5,false,true
+A0694,Midwest,2019,Education,true,false,false,true,true,6,true,true
+A0695,Northeast,2019,Education,false,false,false,true,false,1,true,true
+A0696,Mid-Atlantic,2019,Private sector,false,false,false,true,true,4,false,true
+A0697,West,2020,Public service,false,false,false,true,true,8,false,false
+A0698,Mountain,2020,Private sector,true,false,false,true,true,8,false,false
+A0699,South,2020,Public service,false,true,true,true,true,3,false,false
+A0700,Midwest,2020,Private sector,true,true,true,true,true,3,false,true
+A0701,Northeast,2020,Nonprofit,true,true,false,false,false,1,true,true
+A0702,Mid-Atlantic,2020,Public service,true,false,true,true,false,0,false,true
+A0703,West,2021,Nonprofit,false,false,false,true,false,3,true,true
+A0704,Mountain,2021,Other,true,false,false,true,true,0,true,true
+A0705,South,2021,Education,false,false,false,true,false,2,false,true
+A0706,Midwest,2021,Education,true,false,false,true,true,0,true,false
+A0707,Northeast,2021,Education,false,true,false,true,true,3,false,true
+A0708,Mid-Atlantic,2021,Education,true,true,false,false,false,8,false,true
+A0709,West,2022,Private sector,false,true,true,true,true,7,true,false
+A0710,Mountain,2022,Nonprofit,false,true,true,true,false,1,false,true
+A0711,South,2022,Private sector,false,false,true,false,true,5,true,false
+A0712,Midwest,2022,Education,false,false,false,true,true,5,true,false
+A0713,Northeast,2022,Education,false,false,true,true,false,0,true,false
+A0714,Mid-Atlantic,2022,Education,true,false,false,true,true,1,true,false
+A0715,West,2023,Public service,false,true,false,true,true,3,false,false
+A0716,Mountain,2023,Nonprofit,false,false,true,true,false,1,true,true
+A0717,South,2023,Nonprofit,true,false,true,true,false,4,true,true
+A0718,Midwest,2023,Education,false,false,false,true,false,4,false,false
+A0719,Northeast,2023,Private sector,true,false,true,true,true,2,true,true
+A0720,Mid-Atlantic,2023,Other,true,false,false,true,true,3,true,true
+A0721,West,2018,Education,true,false,false,true,true,8,false,false
+A0722,Mountain,2018,Private sector,false,true,true,false,true,5,false,true
+A0723,South,2018,Private sector,false,false,false,true,true,6,true,true
+A0724,Midwest,2018,Nonprofit,false,true,false,true,false,1,false,true
+A0725,Northeast,2018,Other,false,false,false,true,true,6,false,false
+A0726,Mid-Atlantic,2018,Private sector,false,true,false,false,true,2,false,true
+A0727,West,2019,Other,true,false,false,false,true,2,false,false
+A0728,Mountain,2019,Nonprofit,false,false,true,false,true,3,false,true
+A0729,South,2019,Education,false,true,false,true,true,6,true,false
+A0730,Midwest,2019,Education,false,true,false,true,true,2,true,false
+A0731,Northeast,2019,Nonprofit,false,false,false,true,true,6,false,true
+A0732,Mid-Atlantic,2019,Nonprofit,true,true,false,true,true,3,false,true
+A0733,West,2020,Other,false,false,false,false,true,6,false,true
+A0734,Mountain,2020,Nonprofit,false,false,false,true,true,2,true,false
+A0735,South,2020,Other,false,false,false,false,false,1,false,false
+A0736,Midwest,2020,Private sector,true,false,false,true,true,3,false,false
+A0737,Northeast,2020,Other,true,false,true,true,true,0,true,false
+A0738,Mid-Atlantic,2020,Nonprofit,true,true,true,false,true,1,false,false
+A0739,West,2021,Other,true,true,true,true,true,8,true,true
+A0740,Mountain,2021,Private sector,false,false,true,true,true,1,true,false
+A0741,South,2021,Other,true,true,false,true,true,3,true,true
+A0742,Midwest,2021,Nonprofit,false,true,false,true,true,1,true,false
+A0743,Northeast,2021,Education,false,true,false,true,true,1,true,true
+A0744,Mid-Atlantic,2021,Public service,true,true,true,true,true,0,true,false
+A0745,West,2022,Other,false,false,true,true,true,3,true,true
+A0746,Mountain,2022,Education,true,false,false,true,true,3,false,false
+A0747,South,2022,Private sector,false,true,false,true,true,3,true,true
+A0748,Midwest,2022,Nonprofit,false,false,true,true,false,8,true,true
+A0749,Northeast,2022,Education,true,true,false,true,false,3,true,true
+A0750,Mid-Atlantic,2022,Nonprofit,false,false,true,true,true,8,true,false
+A0751,West,2023,Private sector,false,false,false,true,false,6,true,false
+A0752,Mountain,2023,Other,false,false,false,true,true,4,false,false
+A0753,South,2023,Public service,true,false,false,true,true,5,false,true
+A0754,Midwest,2023,Public service,false,false,false,true,true,2,true,false
+A0755,Northeast,2023,Other,false,true,false,true,true,2,false,false
+A0756,Mid-Atlantic,2023,Education,false,false,false,true,false,0,true,true
+A0757,West,2018,Other,false,false,false,false,false,0,false,true
+A0758,Mountain,2018,Education,false,false,false,false,true,2,false,true
+A0759,South,2018,Public service,false,false,false,true,true,7,false,true
+A0760,Midwest,2018,Other,true,true,true,true,false,8,true,true
+A0761,Northeast,2018,Nonprofit,true,false,false,true,false,0,true,true
+A0762,Mid-Atlantic,2018,Other,false,true,false,true,true,6,true,false
+A0763,West,2019,Education,false,true,false,true,true,3,false,true
+A0764,Mountain,2019,Other,false,true,true,false,true,7,false,true
+A0765,South,2019,Education,true,false,true,false,false,0,false,false
+A0766,Midwest,2019,Education,false,false,false,true,true,8,true,false
+A0767,Northeast,2019,Other,false,false,false,true,true,1,false,true
+A0768,Mid-Atlantic,2019,Education,false,false,true,false,true,8,true,false
+A0769,West,2020,Private sector,false,false,false,true,true,8,true,false
+A0770,Mountain,2020,Private sector,false,false,true,true,true,1,false,false
+A0771,South,2020,Education,false,true,true,true,false,4,false,true
+A0772,Midwest,2020,Private sector,false,false,false,true,true,6,false,false
+A0773,Northeast,2020,Nonprofit,true,false,false,true,true,2,true,true
+A0774,Mid-Atlantic,2020,Public service,false,false,false,false,true,8,false,true
+A0775,West,2021,Other,true,false,true,true,false,3,false,false
+A0776,Mountain,2021,Nonprofit,false,true,false,true,true,6,false,false
+A0777,South,2021,Public service,false,false,true,true,true,6,false,false
+A0778,Midwest,2021,Other,false,false,false,true,true,3,false,false
+A0779,Northeast,2021,Other,false,false,false,true,true,4,true,true
+A0780,Mid-Atlantic,2021,Other,true,false,true,true,true,8,true,true
+A0781,West,2022,Other,false,false,false,true,true,4,false,true
+A0782,Mountain,2022,Nonprofit,false,false,false,true,false,6,false,false
+A0783,South,2022,Nonprofit,true,true,false,false,true,0,false,true
+A0784,Midwest,2022,Education,false,false,false,true,true,0,false,true
+A0785,Northeast,2022,Private sector,false,false,false,true,false,8,true,true
+A0786,Mid-Atlantic,2022,Education,true,false,false,true,true,2,false,false
+A0787,West,2023,Private sector,true,true,false,true,true,2,true,true
+A0788,Mountain,2023,Nonprofit,true,false,false,true,true,7,true,false
+A0789,South,2023,Education,true,false,false,true,true,0,true,false
+A0790,Midwest,2023,Other,false,false,false,true,false,4,false,true
+A0791,Northeast,2023,Education,true,false,false,true,false,3,true,true
+A0792,Mid-Atlantic,2023,Other,false,false,true,true,false,6,true,false
+A0793,West,2018,Nonprofit,true,false,false,false,true,2,true,true
+A0794,Mountain,2018,Private sector,true,true,false,true,false,6,true,false
+A0795,South,2018,Private sector,false,false,false,true,true,2,false,false
+A0796,Midwest,2018,Private sector,false,false,false,true,true,6,false,true
+A0797,Northeast,2018,Other,false,true,true,true,false,4,false,false
+A0798,Mid-Atlantic,2018,Nonprofit,false,false,false,false,true,4,false,false
+A0799,West,2019,Private sector,false,false,false,true,true,1,true,true
+A0800,Mountain,2019,Other,false,false,false,true,false,1,false,true
+A0801,South,2019,Education,true,false,false,true,false,5,true,true
+A0802,Midwest,2019,Public service,false,false,true,true,true,8,false,true
+A0803,Northeast,2019,Education,true,false,false,true,true,8,true,false
+A0804,Mid-Atlantic,2019,Education,false,false,false,true,false,7,false,false
+A0805,West,2020,Education,false,true,false,true,false,3,true,false
+A0806,Mountain,2020,Public service,true,false,false,true,true,6,false,false
+A0807,South,2020,Other,false,false,true,true,true,8,true,true
+A0808,Midwest,2020,Other,true,false,true,true,false,6,false,true
+A0809,Northeast,2020,Public service,true,false,false,false,true,4,false,true
+A0810,Mid-Atlantic,2020,Private sector,false,false,true,false,true,7,false,true
+A0811,West,2021,Public service,true,true,false,true,true,3,false,false
+A0812,Mountain,2021,Public service,true,false,false,true,true,2,true,false
+A0813,South,2021,Education,true,false,false,true,true,0,true,false
+A0814,Midwest,2021,Other,false,true,true,true,true,3,true,true
+A0815,Northeast,2021,Private sector,true,true,false,true,true,7,false,true
+A0816,Mid-Atlantic,2021,Private sector,false,false,true,false,true,0,true,false
+A0817,West,2022,Education,false,false,false,true,false,0,true,true
+A0818,Mountain,2022,Other,false,false,true,true,true,4,false,false
+A0819,South,2022,Nonprofit,false,false,false,true,false,7,true,true
+A0820,Midwest,2022,Private sector,true,true,false,true,true,1,true,true
+A0821,Northeast,2022,Other,false,false,true,true,false,6,false,true
+A0822,Mid-Atlantic,2022,Nonprofit,false,true,false,false,false,6,false,true
+A0823,West,2023,Education,false,false,false,false,true,3,false,true
+A0824,Mountain,2023,Public service,false,true,false,true,true,6,false,false
+A0825,South,2023,Private sector,false,false,false,true,true,5,true,true
+A0826,Midwest,2023,Other,false,false,false,true,true,2,false,true
+A0827,Northeast,2023,Other,false,false,false,true,true,4,true,false
+A0828,Mid-Atlantic,2023,Private sector,false,false,false,true,true,0,false,false
+A0829,West,2018,Nonprofit,false,false,false,true,true,0,false,true
+A0830,Mountain,2018,Nonprofit,true,false,false,true,true,2,true,true
+A0831,South,2018,Other,false,true,true,false,true,1,false,false
+A0832,Midwest,2018,Public service,false,false,false,true,true,6,false,true
+A0833,Northeast,2018,Other,false,false,false,true,true,2,false,true
+A0834,Mid-Atlantic,2018,Public service,false,false,false,false,true,7,true,true
+A0835,West,2019,Education,true,false,false,true,true,5,true,false
+A0836,Mountain,2019,Private sector,false,false,true,true,true,4,false,true
+A0837,South,2019,Education,true,false,true,true,true,8,false,false
+A0838,Midwest,2019,Other,false,false,false,true,true,3,true,false
+A0839,Northeast,2019,Education,false,false,false,false,false,0,false,false
+A0840,Mid-Atlantic,2019,Education,false,true,false,true,true,5,false,true
+A0841,West,2020,Private sector,false,false,false,true,true,7,true,true
+A0842,Mountain,2020,Other,false,true,false,false,true,5,true,false
+A0843,South,2020,Private sector,true,false,true,true,false,5,false,true
+A0844,Midwest,2020,Education,true,false,false,true,true,7,true,true
+A0845,Northeast,2020,Private sector,false,false,false,true,true,6,false,true
+A0846,Mid-Atlantic,2020,Private sector,false,false,false,true,true,3,false,false
+A0847,West,2021,Nonprofit,false,false,false,true,false,7,true,true
+A0848,Mountain,2021,Education,false,false,false,true,true,5,false,false
+A0849,South,2021,Nonprofit,true,false,true,true,true,0,true,true
+A0850,Midwest,2021,Public service,true,false,false,true,true,5,false,true
+A0851,Northeast,2021,Public service,false,false,false,false,true,4,true,false
+A0852,Mid-Atlantic,2021,Nonprofit,false,true,false,true,false,7,false,true
+A0853,West,2022,Education,true,false,false,true,true,4,true,true
+A0854,Mountain,2022,Nonprofit,true,false,false,true,false,7,true,true
+A0855,South,2022,Public service,false,false,false,true,true,1,false,false
+A0856,Midwest,2022,Public service,false,false,false,true,true,5,false,true
+A0857,Northeast,2022,Public service,true,false,false,true,true,1,false,true
+A0858,Mid-Atlantic,2022,Public service,true,false,false,true,true,8,true,true
+A0859,West,2023,Other,false,true,false,false,false,1,true,true
+A0860,Mountain,2023,Education,false,true,true,true,true,1,true,true
+A0861,South,2023,Private sector,true,true,false,true,false,8,true,false
+A0862,Midwest,2023,Education,false,false,true,true,true,4,false,false
+A0863,Northeast,2023,Other,false,false,false,false,true,6,true,true
+A0864,Mid-Atlantic,2023,Other,true,false,true,false,true,3,true,false
+A0865,West,2018,Nonprofit,false,false,false,true,false,6,false,true
+A0866,Mountain,2018,Nonprofit,false,false,false,false,true,5,false,false
+A0867,South,2018,Other,true,false,true,false,false,2,false,true
+A0868,Midwest,2018,Nonprofit,true,false,false,true,true,2,true,true
+A0869,Northeast,2018,Nonprofit,false,false,false,true,false,0,false,false
+A0870,Mid-Atlantic,2018,Education,true,false,true,false,true,0,false,true
+A0871,West,2019,Nonprofit,false,false,false,true,false,4,false,true
+A0872,Mountain,2019,Public service,true,false,false,true,false,0,true,true
+A0873,South,2019,Nonprofit,false,false,false,true,true,7,false,true
+A0874,Midwest,2019,Public service,false,false,false,false,true,4,false,false
+A0875,Northeast,2019,Nonprofit,false,false,false,true,false,2,false,false
+A0876,Mid-Atlantic,2019,Education,false,false,true,true,true,4,false,false
+A0877,West,2020,Nonprofit,true,false,true,true,true,3,true,true
+A0878,Mountain,2020,Other,true,false,true,true,true,8,true,false
+A0879,South,2020,Nonprofit,true,false,false,true,false,4,false,false
+A0880,Midwest,2020,Education,false,false,false,true,false,0,false,false
+A0881,Northeast,2020,Private sector,true,false,false,true,true,2,true,false
+A0882,Mid-Atlantic,2020,Other,false,false,false,true,true,6,false,false
+A0883,West,2021,Nonprofit,false,false,false,true,true,6,true,true
+A0884,Mountain,2021,Private sector,false,true,false,true,true,8,false,true
+A0885,South,2021,Public service,false,false,true,true,true,0,true,false
+A0886,Midwest,2021,Private sector,true,false,false,true,true,8,false,true
+A0887,Northeast,2021,Education,false,false,false,false,true,1,false,true
+A0888,Mid-Atlantic,2021,Public service,true,false,false,true,true,8,true,true
+A0889,West,2022,Private sector,false,false,false,true,true,1,true,true
+A0890,Mountain,2022,Private sector,false,false,true,true,true,3,true,false
+A0891,South,2022,Nonprofit,true,true,true,true,false,8,false,true
+A0892,Midwest,2022,Nonprofit,false,false,true,false,true,6,true,true
+A0893,Northeast,2022,Other,true,false,true,true,true,1,true,true
+A0894,Mid-Atlantic,2022,Other,false,false,true,true,true,2,false,false
+A0895,West,2023,Private sector,true,false,false,true,true,6,true,true
+A0896,Mountain,2023,Other,true,false,false,true,false,3,false,true
+A0897,South,2023,Other,false,true,true,true,true,8,false,true
+A0898,Midwest,2023,Private sector,false,true,true,true,false,2,false,true
+A0899,Northeast,2023,Nonprofit,false,false,false,true,true,2,true,false
+A0900,Mid-Atlantic,2023,Education,false,false,false,true,false,4,false,false
+A0901,West,2018,Education,true,false,false,false,true,8,true,true
+A0902,Mountain,2018,Public service,false,false,true,true,false,2,false,true
+A0903,South,2018,Nonprofit,true,false,false,true,true,1,true,true
+A0904,Midwest,2018,Nonprofit,true,true,false,true,false,0,false,false
+A0905,Northeast,2018,Private sector,false,true,false,true,true,3,true,false
+A0906,Mid-Atlantic,2018,Nonprofit,true,false,false,false,false,5,true,true
+A0907,West,2019,Education,false,true,false,true,true,0,false,false
+A0908,Mountain,2019,Education,false,false,false,true,true,0,true,true
+A0909,South,2019,Private sector,false,false,false,false,false,6,true,true
+A0910,Midwest,2019,Education,false,false,false,true,true,3,true,false
+A0911,Northeast,2019,Other,false,false,false,false,true,2,true,false
+A0912,Mid-Atlantic,2019,Education,false,false,false,true,true,7,true,true
+A0913,West,2020,Nonprofit,true,true,false,false,false,3,true,false
+A0914,Mountain,2020,Other,false,true,true,true,false,2,false,false
+A0915,South,2020,Public service,true,false,false,true,true,5,true,true
+A0916,Midwest,2020,Education,true,false,false,true,true,2,true,false
+A0917,Northeast,2020,Education,false,false,true,true,true,2,true,true
+A0918,Mid-Atlantic,2020,Nonprofit,false,false,true,true,true,4,true,true
+A0919,West,2021,Other,true,false,false,true,false,3,true,false
+A0920,Mountain,2021,Nonprofit,false,false,false,true,true,3,true,false
+A0921,South,2021,Nonprofit,false,false,false,true,false,3,false,false
+A0922,Midwest,2021,Nonprofit,false,false,true,true,false,4,false,false
+A0923,Northeast,2021,Nonprofit,false,false,false,true,false,3,true,true
+A0924,Mid-Atlantic,2021,Nonprofit,true,false,false,true,true,0,false,true
+A0925,West,2022,Other,true,false,false,true,true,0,true,true
+A0926,Mountain,2022,Other,true,false,false,true,true,8,false,false
+A0927,South,2022,Public service,true,true,false,false,true,2,false,true
+A0928,Midwest,2022,Nonprofit,false,false,false,true,true,6,true,false
+A0929,Northeast,2022,Education,false,false,false,false,true,4,true,true
+A0930,Mid-Atlantic,2022,Education,false,false,false,true,false,2,false,false
+A0931,West,2023,Nonprofit,false,false,false,true,false,8,false,true
+A0932,Mountain,2023,Public service,false,false,false,true,false,4,false,true
+A0933,South,2023,Other,true,false,true,true,true,7,false,true
+A0934,Midwest,2023,Nonprofit,true,false,false,true,true,0,true,true
+A0935,Northeast,2023,Education,false,false,false,true,true,0,true,true
+A0936,Mid-Atlantic,2023,Other,false,false,false,true,true,3,true,true
+A0937,West,2018,Other,false,false,true,true,true,1,true,false
+A0938,Mountain,2018,Public service,false,false,false,true,true,0,true,true
+A0939,South,2018,Education,false,false,false,true,true,5,true,true
+A0940,Midwest,2018,Nonprofit,false,true,false,true,true,6,true,false
+A0941,Northeast,2018,Education,false,true,false,true,true,5,false,true
+A0942,Mid-Atlantic,2018,Private sector,false,false,false,false,false,7,false,false
+A0943,West,2019,Education,false,false,false,true,true,4,true,false
+A0944,Mountain,2019,Education,true,false,false,true,true,2,false,false
+A0945,South,2019,Public service,true,false,false,false,false,8,false,false
+A0946,Midwest,2019,Education,true,false,true,true,false,7,true,false
+A0947,Northeast,2019,Private sector,true,false,false,true,true,6,false,false
+A0948,Mid-Atlantic,2019,Other,true,true,false,true,true,3,true,false
+A0949,West,2020,Private sector,false,true,true,true,true,5,true,true
+A0950,Mountain,2020,Other,true,false,false,true,false,0,true,false
+A0951,South,2020,Nonprofit,false,false,false,true,true,7,false,false
+A0952,Midwest,2020,Public service,false,false,false,true,true,0,true,true
+A0953,Northeast,2020,Other,false,false,false,false,true,1,false,true
+A0954,Mid-Atlantic,2020,Public service,false,true,false,true,true,4,false,true
+A0955,West,2021,Private sector,false,false,false,true,false,5,true,true
+A0956,Mountain,2021,Education,false,false,false,true,true,3,false,false
+A0957,South,2021,Public service,false,false,false,true,false,5,false,true
+A0958,Midwest,2021,Other,false,false,false,true,true,3,true,true
+A0959,Northeast,2021,Nonprofit,false,false,true,true,true,5,true,true
+A0960,Mid-Atlantic,2021,Nonprofit,false,false,false,true,true,2,false,false
+A0961,West,2022,Education,false,false,false,true,true,6,false,false
+A0962,Mountain,2022,Education,false,false,true,true,false,5,false,true
+A0963,South,2022,Education,true,true,false,false,true,8,true,false
+A0964,Midwest,2022,Other,false,false,false,true,true,1,false,false
+A0965,Northeast,2022,Other,false,false,false,false,true,5,false,true
+A0966,Mid-Atlantic,2022,Education,true,false,false,true,false,7,true,false
+A0967,West,2023,Private sector,false,false,false,true,false,6,false,false
+A0968,Mountain,2023,Public service,false,false,true,true,true,5,true,false
+A0969,South,2023,Public service,false,false,false,false,true,3,true,true
+A0970,Midwest,2023,Education,false,true,false,false,false,2,true,true
+A0971,Northeast,2023,Private sector,false,false,true,false,true,7,false,true
+A0972,Mid-Atlantic,2023,Education,true,false,false,true,false,1,false,true
+A0973,West,2018,Nonprofit,false,false,false,true,false,2,false,true
+A0974,Mountain,2018,Public service,false,false,false,true,true,1,true,true
+A0975,South,2018,Education,false,false,true,true,true,7,true,true
+A0976,Midwest,2018,Private sector,false,true,false,true,true,5,true,true
+A0977,Northeast,2018,Public service,true,false,true,true,true,6,true,true
+A0978,Mid-Atlantic,2018,Other,false,false,true,true,true,7,false,true
+A0979,West,2019,Education,false,false,false,true,true,0,true,true
+A0980,Mountain,2019,Nonprofit,false,false,true,true,true,4,false,false
+A0981,South,2019,Private sector,true,false,true,true,true,3,true,true
+A0982,Midwest,2019,Private sector,false,false,false,true,false,3,false,true
+A0983,Northeast,2019,Other,false,false,false,true,true,4,true,false
+A0984,Mid-Atlantic,2019,Other,false,false,false,true,true,0,true,false
+A0985,West,2020,Other,false,false,true,true,true,3,false,true
+A0986,Mountain,2020,Private sector,false,false,false,false,true,1,true,true
+A0987,South,2020,Education,false,false,false,true,true,7,false,true
+A0988,Midwest,2020,Public service,false,false,false,true,true,6,false,false
+A0989,Northeast,2020,Other,false,true,false,true,true,3,true,false
+A0990,Mid-Atlantic,2020,Public service,false,false,false,true,false,7,false,true
+A0991,West,2021,Private sector,true,false,false,false,true,4,false,false
+A0992,Mountain,2021,Private sector,false,false,false,true,true,7,true,false
+A0993,South,2021,Other,false,false,false,true,true,1,true,false
+A0994,Midwest,2021,Education,true,false,false,true,true,6,false,true
+A0995,Northeast,2021,Private sector,true,true,false,true,true,7,false,true
+A0996,Mid-Atlantic,2021,Private sector,true,false,false,true,false,7,false,false
+A0997,West,2022,Nonprofit,true,false,false,true,true,1,false,true
+A0998,Mountain,2022,Education,false,false,false,true,true,4,true,true
+A0999,South,2022,Education,false,false,true,true,true,4,false,false
+A1000,Midwest,2022,Private sector,true,false,true,true,false,3,true,true
+A1001,Northeast,2022,Public service,false,false,true,true,true,4,true,true
+A1002,Mid-Atlantic,2022,Private sector,true,true,false,true,true,4,false,false
+A1003,West,2023,Nonprofit,false,true,false,true,false,0,false,false
+A1004,Mountain,2023,Public service,true,false,false,true,true,6,false,false
+A1005,South,2023,Private sector,false,false,false,true,true,0,false,true
+A1006,Midwest,2023,Nonprofit,false,true,false,false,false,1,false,false
+A1007,Northeast,2023,Education,false,false,false,true,true,5,true,false
+A1008,Mid-Atlantic,2023,Nonprofit,true,false,false,false,true,6,false,false
+A1009,West,2018,Private sector,true,true,false,true,false,1,false,true
+A1010,Mountain,2018,Private sector,true,false,false,true,true,0,false,false
+A1011,South,2018,Public service,true,false,false,true,true,8,false,true
+A1012,Midwest,2018,Public service,true,false,false,true,false,8,false,false
+A1013,Northeast,2018,Other,true,false,true,false,true,2,true,false
+A1014,Mid-Atlantic,2018,Private sector,false,false,false,true,true,5,true,true
+A1015,West,2019,Private sector,false,false,false,true,false,6,false,false
+A1016,Mountain,2019,Private sector,false,false,false,true,true,6,false,true
+A1017,South,2019,Education,true,false,false,false,false,5,true,false
+A1018,Midwest,2019,Nonprofit,true,false,false,true,true,8,true,true
+A1019,Northeast,2019,Education,false,false,true,true,true,1,true,true
+A1020,Mid-Atlantic,2019,Education,true,false,false,false,false,6,true,false
+A1021,West,2020,Private sector,true,false,false,true,true,8,false,true
+A1022,Mountain,2020,Private sector,true,false,false,true,true,0,false,true
+A1023,South,2020,Nonprofit,true,false,false,true,true,1,false,true
+A1024,Midwest,2020,Nonprofit,false,false,false,true,true,4,true,true
+A1025,Northeast,2020,Nonprofit,false,false,false,true,false,0,false,true
+A1026,Mid-Atlantic,2020,Public service,false,false,false,true,true,0,true,false
+A1027,West,2021,Private sector,false,false,false,false,true,7,true,true
+A1028,Mountain,2021,Private sector,false,false,false,true,true,0,true,false
+A1029,South,2021,Public service,false,false,false,true,true,6,true,true
+A1030,Midwest,2021,Public service,false,true,true,false,false,7,true,true
+A1031,Northeast,2021,Other,false,false,true,true,true,1,false,false
+A1032,Mid-Atlantic,2021,Private sector,false,false,false,true,true,3,false,true
+A1033,West,2022,Private sector,false,true,false,true,true,7,true,true
+A1034,Mountain,2022,Nonprofit,true,false,false,true,true,8,true,true
+A1035,South,2022,Public service,false,false,false,true,false,5,true,true
+A1036,Midwest,2022,Public service,false,true,true,false,true,6,false,true
+A1037,Northeast,2022,Public service,false,false,false,false,false,4,true,false
+A1038,Mid-Atlantic,2022,Public service,false,false,false,true,true,0,true,false
+A1039,West,2023,Private sector,false,false,true,true,true,6,true,true
+A1040,Mountain,2023,Other,false,false,false,true,true,5,false,true
+A1041,South,2023,Education,false,false,true,false,true,6,true,true
+A1042,Midwest,2023,Private sector,false,false,true,true,true,7,true,true
+A1043,Northeast,2023,Nonprofit,true,false,false,true,true,3,true,true
+A1044,Mid-Atlantic,2023,Education,false,false,true,true,true,7,false,false
+A1045,West,2018,Public service,false,true,false,true,true,5,true,true
+A1046,Mountain,2018,Nonprofit,false,false,true,false,true,6,false,true
+A1047,South,2018,Public service,false,false,true,true,false,7,false,true
+A1048,Midwest,2018,Other,true,true,true,true,true,8,true,true
+A1049,Northeast,2018,Public service,true,true,false,true,true,6,false,false
+A1050,Mid-Atlantic,2018,Private sector,true,false,false,true,false,1,true,false
+A1051,West,2019,Other,true,false,true,true,true,2,true,true
+A1052,Mountain,2019,Private sector,true,false,false,true,false,5,false,false
+A1053,South,2019,Nonprofit,false,false,false,true,true,6,true,false
+A1054,Midwest,2019,Other,false,false,false,true,true,6,false,false
+A1055,Northeast,2019,Other,false,false,false,true,true,1,true,true
+A1056,Mid-Atlantic,2019,Public service,false,true,false,true,true,5,false,true
+A1057,West,2020,Public service,true,false,false,true,false,0,true,true
+A1058,Mountain,2020,Public service,false,true,true,true,false,0,true,true
+A1059,South,2020,Private sector,true,false,false,true,true,2,true,true
+A1060,Midwest,2020,Education,false,false,false,true,false,0,false,false
+A1061,Northeast,2020,Public service,false,false,false,true,true,3,false,false
+A1062,Mid-Atlantic,2020,Public service,false,false,false,false,true,2,true,true
+A1063,West,2021,Private sector,false,false,true,true,true,8,true,false
+A1064,Mountain,2021,Nonprofit,false,false,true,true,true,1,false,true
+A1065,South,2021,Education,true,false,false,true,false,2,true,true
+A1066,Midwest,2021,Nonprofit,false,true,false,true,true,7,false,true
+A1067,Northeast,2021,Nonprofit,false,false,false,false,true,5,false,false
+A1068,Mid-Atlantic,2021,Public service,false,false,false,true,false,7,false,false
+A1069,West,2022,Education,false,false,false,true,true,1,true,true
+A1070,Mountain,2022,Private sector,true,false,true,true,false,2,true,true
+A1071,South,2022,Public service,false,false,false,true,true,4,true,true
+A1072,Midwest,2022,Private sector,false,false,true,true,true,1,false,true
+A1073,Northeast,2022,Private sector,true,false,true,true,false,5,false,true
+A1074,Mid-Atlantic,2022,Private sector,true,false,false,true,false,0,true,false
+A1075,West,2023,Other,false,true,false,true,false,5,false,true
+A1076,Mountain,2023,Nonprofit,false,false,false,true,true,2,false,false
+A1077,South,2023,Private sector,false,true,false,false,false,1,true,false
+A1078,Midwest,2023,Education,false,false,true,true,true,4,true,true
+A1079,Northeast,2023,Nonprofit,false,true,false,true,false,5,true,false
+A1080,Mid-Atlantic,2023,Public service,true,true,false,false,false,8,true,false
+A1081,West,2018,Other,true,false,true,false,true,4,false,true
+A1082,Mountain,2018,Private sector,false,false,true,true,true,5,true,true
+A1083,South,2018,Nonprofit,false,false,false,true,false,1,false,true
+A1084,Midwest,2018,Education,false,false,false,true,true,5,false,false
+A1085,Northeast,2018,Nonprofit,true,false,false,true,true,7,false,true
+A1086,Mid-Atlantic,2018,Private sector,false,false,true,false,true,8,false,true
+A1087,West,2019,Public service,false,false,true,false,true,8,true,true
+A1088,Mountain,2019,Public service,true,true,false,true,false,0,false,true
+A1089,South,2019,Other,true,false,false,false,true,7,false,true
+A1090,Midwest,2019,Education,false,false,false,false,true,2,false,false
+A1091,Northeast,2019,Public service,true,false,false,false,true,5,false,true
+A1092,Mid-Atlantic,2019,Public service,false,false,false,true,true,2,false,false
+A1093,West,2020,Education,true,false,false,false,true,6,true,true
+A1094,Mountain,2020,Public service,false,false,false,true,true,0,false,true
+A1095,South,2020,Education,false,false,false,false,true,2,true,true
+A1096,Midwest,2020,Public service,false,false,false,true,false,4,true,false
+A1097,Northeast,2020,Education,false,false,false,true,false,4,false,false
+A1098,Mid-Atlantic,2020,Private sector,false,false,true,true,true,0,false,true
+A1099,West,2021,Nonprofit,false,true,false,true,false,7,true,true
+A1100,Mountain,2021,Other,true,false,false,true,true,8,false,true
+A1101,South,2021,Public service,true,true,false,true,false,3,true,true
+A1102,Midwest,2021,Nonprofit,true,false,false,true,false,0,true,false
+A1103,Northeast,2021,Nonprofit,false,false,false,true,true,0,false,true
+A1104,Mid-Atlantic,2021,Education,true,false,false,true,true,7,false,false
+A1105,West,2022,Nonprofit,false,false,false,true,false,3,true,false
+A1106,Mountain,2022,Education,false,true,true,true,true,7,false,false
+A1107,South,2022,Other,false,false,false,true,true,1,true,false
+A1108,Midwest,2022,Other,false,false,false,true,true,5,true,false
+A1109,Northeast,2022,Other,false,false,false,false,false,4,true,true
+A1110,Mid-Atlantic,2022,Nonprofit,false,false,false,true,true,0,false,true
+A1111,West,2023,Public service,false,false,false,true,true,1,false,false
+A1112,Mountain,2023,Private sector,true,false,true,false,true,8,false,true
+A1113,South,2023,Public service,true,true,true,true,true,8,false,true
+A1114,Midwest,2023,Education,false,false,false,true,true,1,false,true
+A1115,Northeast,2023,Education,false,false,false,true,true,4,false,false
+A1116,Mid-Atlantic,2023,Education,true,true,false,true,true,0,false,true
+A1117,West,2018,Nonprofit,true,false,false,false,true,8,true,true
+A1118,Mountain,2018,Education,false,false,false,true,false,2,false,true
+A1119,South,2018,Private sector,false,false,false,true,true,2,false,true
+A1120,Midwest,2018,Private sector,false,false,false,true,true,1,true,true
+A1121,Northeast,2018,Education,false,false,false,true,true,6,false,true
+A1122,Mid-Atlantic,2018,Private sector,true,false,true,true,false,7,true,false
+A1123,West,2019,Public service,true,false,false,true,true,5,true,false
+A1124,Mountain,2019,Public service,false,false,true,true,false,1,false,true
+A1125,South,2019,Other,false,true,false,true,true,8,false,false
+A1126,Midwest,2019,Nonprofit,true,false,true,true,true,5,false,true
+A1127,Northeast,2019,Private sector,false,true,false,true,true,7,true,false
+A1128,Mid-Atlantic,2019,Public service,true,false,false,true,true,2,false,false
+A1129,West,2020,Private sector,false,false,false,false,true,6,true,false
+A1130,Mountain,2020,Other,false,false,false,false,false,6,true,false
+A1131,South,2020,Public service,false,true,false,true,true,1,false,false
+A1132,Midwest,2020,Nonprofit,false,false,false,true,true,8,true,true
+A1133,Northeast,2020,Other,true,false,false,true,false,0,true,false
+A1134,Mid-Atlantic,2020,Private sector,false,false,false,true,true,0,true,true
+A1135,West,2021,Private sector,true,false,true,true,true,7,false,true
+A1136,Mountain,2021,Education,true,true,true,true,false,2,false,true
+A1137,South,2021,Other,false,true,false,false,true,5,true,true
+A1138,Midwest,2021,Private sector,true,false,false,true,true,3,true,true
+A1139,Northeast,2021,Education,true,false,false,true,false,8,false,true
+A1140,Mid-Atlantic,2021,Nonprofit,false,true,false,true,true,0,true,true
+A1141,West,2022,Private sector,false,false,false,true,true,1,true,false
+A1142,Mountain,2022,Other,false,true,false,true,true,4,true,false
+A1143,South,2022,Public service,false,false,true,true,true,4,false,false
+A1144,Midwest,2022,Public service,false,false,false,true,false,2,true,true
+A1145,Northeast,2022,Private sector,false,true,false,false,false,3,true,true
+A1146,Mid-Atlantic,2022,Public service,false,false,false,true,true,6,true,false
+A1147,West,2023,Private sector,false,false,false,true,false,5,true,true
+A1148,Mountain,2023,Education,true,false,false,true,true,8,true,true
+A1149,South,2023,Public service,false,false,false,true,true,1,false,false
+A1150,Midwest,2023,Private sector,false,false,false,true,false,7,true,true
+A1151,Northeast,2023,Nonprofit,false,true,false,true,true,1,false,true
+A1152,Mid-Atlantic,2023,Private sector,false,false,false,true,true,3,true,true
+A1153,West,2018,Education,false,false,false,false,true,8,false,false
+A1154,Mountain,2018,Private sector,false,false,false,true,false,5,true,false
+A1155,South,2018,Nonprofit,true,true,false,true,true,3,true,false
+A1156,Midwest,2018,Education,false,false,false,true,false,4,true,false
+A1157,Northeast,2018,Education,false,false,false,true,true,8,false,false
+A1158,Mid-Atlantic,2018,Private sector,false,false,false,false,true,1,true,false
+A1159,West,2019,Education,true,false,false,true,false,5,false,true
+A1160,Mountain,2019,Education,false,true,false,true,true,5,false,true
+A1161,South,2019,Public service,false,true,false,false,true,4,false,false
+A1162,Midwest,2019,Other,false,false,false,true,false,1,false,false
+A1163,Northeast,2019,Nonprofit,false,true,true,true,true,4,false,true
+A1164,Mid-Atlantic,2019,Public service,false,true,false,true,true,7,false,false
+A1165,West,2020,Public service,false,false,false,true,false,2,true,false
+A1166,Mountain,2020,Education,false,false,false,true,false,4,true,true
+A1167,South,2020,Nonprofit,false,false,true,true,true,8,true,false
+A1168,Midwest,2020,Education,false,false,false,true,true,0,false,false
+A1169,Northeast,2020,Public service,false,false,false,true,false,3,true,true
+A1170,Mid-Atlantic,2020,Nonprofit,false,false,true,true,true,2,false,true
+A1171,West,2021,Education,false,false,false,true,true,6,false,false
+A1172,Mountain,2021,Public service,true,false,false,false,true,8,true,false
+A1173,South,2021,Education,false,false,true,true,true,7,false,true
+A1174,Midwest,2021,Public service,false,false,true,true,true,1,false,true
+A1175,Northeast,2021,Other,false,false,false,true,true,4,false,true
+A1176,Mid-Atlantic,2021,Education,false,false,false,true,false,3,true,true
+A1177,West,2022,Nonprofit,false,true,true,false,false,2,true,true
+A1178,Mountain,2022,Public service,false,false,true,false,true,4,true,false
+A1179,South,2022,Education,false,false,false,false,true,0,true,false
+A1180,Midwest,2022,Education,true,false,false,false,true,5,false,false
+A1181,Northeast,2022,Public service,true,false,false,false,true,3,false,false
+A1182,Mid-Atlantic,2022,Private sector,false,false,false,true,true,3,true,true
+A1183,West,2023,Other,true,true,false,false,false,5,false,false
+A1184,Mountain,2023,Education,false,false,true,true,true,7,false,true
+A1185,South,2023,Other,false,false,true,false,false,2,true,false
+A1186,Midwest,2023,Other,false,true,false,true,true,2,true,false
+A1187,Northeast,2023,Public service,true,false,false,true,true,1,false,false
+A1188,Mid-Atlantic,2023,Education,false,false,false,false,true,3,true,true
+A1189,West,2018,Other,true,true,false,true,true,6,true,true
+A1190,Mountain,2018,Public service,true,true,true,true,true,3,false,true
+A1191,South,2018,Education,true,false,true,true,false,2,true,true
+A1192,Midwest,2018,Other,true,false,false,true,true,7,true,false
+A1193,Northeast,2018,Public service,false,false,true,false,true,7,false,false
+A1194,Mid-Atlantic,2018,Nonprofit,false,false,false,true,true,4,false,true
+A1195,West,2019,Other,false,false,false,false,true,2,true,true
+A1196,Mountain,2019,Education,false,false,false,true,true,0,true,true
+A1197,South,2019,Other,false,false,false,true,true,3,false,false
+A1198,Midwest,2019,Education,false,false,false,true,false,7,false,true
+A1199,Northeast,2019,Education,false,false,false,true,true,2,true,false
+A1200,Mid-Atlantic,2019,Public service,true,true,false,true,true,5,true,false
+A1201,West,2020,Public service,false,false,false,false,true,0,true,false
+A1202,Mountain,2020,Public service,false,false,true,true,true,1,true,true
+A1203,South,2020,Private sector,true,true,true,true,true,2,false,true
+A1204,Midwest,2020,Private sector,false,false,false,true,true,6,false,true
+A1205,Northeast,2020,Private sector,false,false,true,true,false,0,false,false
+A1206,Mid-Atlantic,2020,Private sector,false,false,false,true,false,5,false,true
+A1207,West,2021,Education,true,false,false,true,true,6,true,true
+A1208,Mountain,2021,Public service,false,false,false,true,true,3,true,true
+A1209,South,2021,Public service,true,false,false,true,false,0,true,false
+A1210,Midwest,2021,Public service,false,true,false,true,false,3,false,false
+A1211,Northeast,2021,Public service,true,false,false,true,false,3,true,true
+A1212,Mid-Atlantic,2021,Education,false,true,true,true,true,4,false,false
+A1213,West,2022,Other,true,false,false,true,true,6,false,false
+A1214,Mountain,2022,Public service,false,true,false,true,false,1,true,false
+A1215,South,2022,Education,false,false,false,true,true,3,true,true
+A1216,Midwest,2022,Education,false,false,false,false,false,0,true,false
+A1217,Northeast,2022,Public service,true,false,false,true,true,3,true,true
+A1218,Mid-Atlantic,2022,Nonprofit,false,false,false,true,true,7,false,true
+A1219,West,2023,Public service,true,false,false,true,false,7,true,false
+A1220,Mountain,2023,Other,true,false,false,true,false,4,true,true
+A1221,South,2023,Nonprofit,true,false,false,false,false,6,false,true
+A1222,Midwest,2023,Education,true,false,true,true,false,7,false,false
+A1223,Northeast,2023,Private sector,false,true,false,true,true,4,true,true
+A1224,Mid-Atlantic,2023,Nonprofit,false,false,true,false,false,5,true,true
+A1225,West,2018,Public service,true,true,false,true,true,7,false,false
+A1226,Mountain,2018,Education,true,false,false,true,false,5,false,true
+A1227,South,2018,Education,false,false,true,false,true,0,false,true
+A1228,Midwest,2018,Other,false,false,false,true,false,6,false,true
+A1229,Northeast,2018,Other,true,true,true,false,true,4,true,true
+A1230,Mid-Atlantic,2018,Nonprofit,true,true,false,true,false,3,false,true
+A1231,West,2019,Education,false,false,false,false,true,5,true,false
+A1232,Mountain,2019,Education,false,false,false,false,true,3,true,true
+A1233,South,2019,Other,false,false,true,false,true,0,false,true
+A1234,Midwest,2019,Nonprofit,false,false,false,false,false,3,true,true
+A1235,Northeast,2019,Public service,false,false,true,true,false,2,false,false
+A1236,Mid-Atlantic,2019,Other,false,false,false,true,true,7,true,true
+A1237,West,2020,Education,false,false,false,false,true,8,true,false
+A1238,Mountain,2020,Private sector,true,false,true,true,true,4,false,false
+A1239,South,2020,Nonprofit,false,false,false,true,false,8,true,false
+A1240,Midwest,2020,Nonprofit,true,false,false,true,true,5,true,true
+A1241,Northeast,2020,Private sector,true,false,true,true,true,5,false,false
+A1242,Mid-Atlantic,2020,Education,true,false,true,true,true,1,false,false
+A1243,West,2021,Private sector,true,false,true,true,true,6,false,false
+A1244,Mountain,2021,Private sector,true,true,false,true,true,4,false,true
+A1245,South,2021,Public service,true,true,false,true,true,7,true,true
+A1246,Midwest,2021,Nonprofit,true,false,true,true,true,4,false,false
+A1247,Northeast,2021,Education,false,false,false,true,false,1,true,false
+A1248,Mid-Atlantic,2021,Other,true,false,true,false,true,0,true,true
+A1249,West,2022,Public service,true,false,false,true,true,2,true,false
+A1250,Mountain,2022,Private sector,false,false,false,true,true,3,false,true
+A1251,South,2022,Private sector,true,false,false,true,true,6,false,false
+A1252,Midwest,2022,Education,true,false,false,true,true,7,false,true
+A1253,Northeast,2022,Private sector,true,false,true,true,false,0,false,false
+A1254,Mid-Atlantic,2022,Public service,false,true,true,true,true,0,true,true
+A1255,West,2023,Education,true,false,false,true,true,8,false,true
+A1256,Mountain,2023,Education,false,false,false,true,false,6,false,true
+A1257,South,2023,Private sector,true,false,false,true,false,7,false,false
+A1258,Midwest,2023,Public service,false,false,false,true,false,4,true,false
+A1259,Northeast,2023,Education,false,false,false,true,true,5,false,false
+A1260,Mid-Atlantic,2023,Education,false,false,false,true,true,5,true,true
+A1261,West,2018,Nonprofit,false,false,true,true,true,1,false,false
+A1262,Mountain,2018,Education,false,false,false,false,false,8,true,false
+A1263,South,2018,Private sector,false,false,false,true,true,8,true,false
+A1264,Midwest,2018,Nonprofit,true,false,false,false,true,3,true,true
+A1265,Northeast,2018,Public service,false,false,false,true,true,2,true,true
+A1266,Mid-Atlantic,2018,Private sector,true,false,false,true,false,0,true,true
+A1267,West,2019,Private sector,false,false,false,true,true,4,true,true
+A1268,Mountain,2019,Education,false,false,false,false,true,2,false,true
+A1269,South,2019,Other,true,false,false,true,false,7,false,true
+A1270,Midwest,2019,Public service,false,false,false,false,true,1,true,true
+A1271,Northeast,2019,Public service,false,false,false,true,true,0,true,true
+A1272,Mid-Atlantic,2019,Nonprofit,false,false,false,true,true,7,true,true
+A1273,West,2020,Other,false,false,false,true,true,0,true,false
+A1274,Mountain,2020,Education,false,false,false,true,false,3,true,true
+A1275,South,2020,Nonprofit,true,true,false,true,true,0,true,false
+A1276,Midwest,2020,Nonprofit,true,false,false,true,true,8,true,true
+A1277,Northeast,2020,Nonprofit,false,false,true,false,false,4,true,true
+A1278,Mid-Atlantic,2020,Other,false,false,false,true,true,1,true,false
+A1279,West,2021,Other,false,false,false,true,false,1,false,true
+A1280,Mountain,2021,Other,true,true,false,true,false,7,false,false
+A1281,South,2021,Private sector,false,false,false,true,false,8,false,false
+A1282,Midwest,2021,Private sector,false,false,false,true,true,0,true,true
+A1283,Northeast,2021,Education,false,false,true,true,false,0,true,false
+A1284,Mid-Atlantic,2021,Other,false,false,false,true,true,2,true,false
+A1285,West,2022,Other,false,false,false,true,true,0,false,false
+A1286,Mountain,2022,Other,true,false,false,false,true,7,true,false
+A1287,South,2022,Public service,true,false,false,true,true,6,true,true
+A1288,Midwest,2022,Other,true,false,false,true,false,3,false,false
+A1289,Northeast,2022,Private sector,true,true,false,true,false,4,false,false
+A1290,Mid-Atlantic,2022,Other,false,false,false,true,false,5,false,false
+A1291,West,2023,Other,true,false,false,true,false,4,true,true
+A1292,Mountain,2023,Other,true,false,false,true,false,3,false,false
+A1293,South,2023,Private sector,false,true,false,true,true,4,true,false
+A1294,Midwest,2023,Private sector,false,false,true,true,true,6,true,true
+A1295,Northeast,2023,Nonprofit,false,false,false,false,true,4,true,false
+A1296,Mid-Atlantic,2023,Private sector,false,false,true,true,true,8,true,true
+A1297,West,2018,Public service,true,false,false,true,true,5,true,false
+A1298,Mountain,2018,Education,true,false,true,true,false,0,false,true
+A1299,South,2018,Other,false,false,false,true,true,3,false,true
+A1300,Midwest,2018,Education,false,false,false,true,true,3,true,true
+A1301,Northeast,2018,Private sector,false,false,false,true,true,6,true,false
+A1302,Mid-Atlantic,2018,Private sector,false,false,false,true,true,4,false,true
+A1303,West,2019,Nonprofit,false,false,false,true,true,2,false,false
+A1304,Mountain,2019,Education,true,false,false,true,false,0,false,true
+A1305,South,2019,Other,false,true,true,true,false,2,false,true
+A1306,Midwest,2019,Nonprofit,false,false,false,true,true,0,false,false
+A1307,Northeast,2019,Other,true,false,false,true,true,8,true,true
+A1308,Mid-Atlantic,2019,Other,false,false,true,true,true,8,true,false
+A1309,West,2020,Public service,false,false,false,true,false,5,true,true
+A1310,Mountain,2020,Other,false,true,false,false,true,4,false,true
+A1311,South,2020,Other,true,false,false,true,true,1,false,false
+A1312,Midwest,2020,Education,false,true,true,true,true,1,false,true
+A1313,Northeast,2020,Public service,true,false,false,true,true,4,true,false
+A1314,Mid-Atlantic,2020,Private sector,true,false,false,true,false,2,false,false
+A1315,West,2021,Education,true,false,false,true,true,3,true,false
+A1316,Mountain,2021,Other,false,false,false,false,true,4,false,false
+A1317,South,2021,Nonprofit,true,true,false,true,true,6,false,false
+A1318,Midwest,2021,Nonprofit,false,false,true,true,true,8,false,false
+A1319,Northeast,2021,Other,true,false,false,true,true,2,true,true
+A1320,Mid-Atlantic,2021,Education,false,false,false,true,true,0,true,true
+A1321,West,2022,Private sector,false,false,false,true,true,5,true,true
+A1322,Mountain,2022,Education,true,false,false,true,true,6,true,false
+A1323,South,2022,Public service,false,false,false,true,true,3,false,true
+A1324,Midwest,2022,Education,false,true,false,true,true,2,false,true
+A1325,Northeast,2022,Other,false,true,true,true,true,4,false,false
+A1326,Mid-Atlantic,2022,Other,true,false,false,true,true,0,true,false
+A1327,West,2023,Other,true,true,true,true,true,5,false,true
+A1328,Mountain,2023,Nonprofit,false,false,false,true,true,7,false,true
+A1329,South,2023,Education,false,false,false,false,true,4,false,false
+A1330,Midwest,2023,Other,true,false,false,true,true,2,true,false
+A1331,Northeast,2023,Education,false,false,false,true,false,6,false,false
+A1332,Mid-Atlantic,2023,Public service,true,false,false,true,true,1,true,false
+A1333,West,2018,Education,false,true,true,true,true,5,false,false
+A1334,Mountain,2018,Nonprofit,false,false,false,true,true,7,false,true
+A1335,South,2018,Public service,false,false,false,false,false,6,false,true
+A1336,Midwest,2018,Nonprofit,false,false,false,true,true,0,true,true
+A1337,Northeast,2018,Public service,false,false,false,true,true,3,true,false
+A1338,Mid-Atlantic,2018,Nonprofit,false,false,true,true,true,0,true,false
+A1339,West,2019,Education,false,false,true,true,true,5,true,false
+A1340,Mountain,2019,Private sector,true,false,false,true,true,4,false,false
+A1341,South,2019,Other,false,false,true,true,true,1,false,true
+A1342,Midwest,2019,Public service,true,false,false,true,true,7,false,true
+A1343,Northeast,2019,Private sector,false,false,false,true,true,3,false,true
+A1344,Mid-Atlantic,2019,Education,false,false,false,true,true,1,true,true
+A1345,West,2020,Education,true,false,false,true,false,0,true,false
+A1346,Mountain,2020,Public service,true,false,false,true,true,2,false,true
+A1347,South,2020,Education,false,false,false,false,true,4,true,false
+A1348,Midwest,2020,Other,false,false,true,true,true,5,true,true
+A1349,Northeast,2020,Private sector,false,true,true,true,false,3,false,false
+A1350,Mid-Atlantic,2020,Public service,false,false,true,true,true,1,true,true
+A1351,West,2021,Education,false,false,false,true,true,6,false,true
+A1352,Mountain,2021,Education,true,false,false,true,false,0,false,false
+A1353,South,2021,Other,true,false,true,false,false,5,true,false
+A1354,Midwest,2021,Other,true,false,false,true,true,8,false,true
+A1355,Northeast,2021,Private sector,true,true,true,false,true,1,false,false
+A1356,Mid-Atlantic,2021,Other,false,true,false,true,true,5,true,false
+A1357,West,2022,Other,false,false,false,true,true,6,false,true
+A1358,Mountain,2022,Public service,false,false,true,true,true,6,true,true
+A1359,South,2022,Public service,false,false,true,true,true,1,true,true
+A1360,Midwest,2022,Education,true,false,false,true,true,8,true,true
+A1361,Northeast,2022,Education,true,true,false,true,true,3,true,true
+A1362,Mid-Atlantic,2022,Other,false,true,true,true,false,4,true,false
+A1363,West,2023,Other,true,true,false,true,true,6,true,false
+A1364,Mountain,2023,Other,false,false,false,true,true,4,true,true
+A1365,South,2023,Private sector,false,false,true,true,true,7,false,false
+A1366,Midwest,2023,Other,true,true,false,true,true,3,false,true
+A1367,Northeast,2023,Education,true,true,false,true,true,5,false,false
+A1368,Mid-Atlantic,2023,Other,false,false,false,true,false,0,true,false
+A1369,West,2018,Other,false,false,false,true,true,8,false,true
+A1370,Mountain,2018,Nonprofit,false,true,true,true,true,2,true,true
+A1371,South,2018,Private sector,false,true,false,true,true,7,false,true
+A1372,Midwest,2018,Private sector,true,false,false,false,true,5,false,true
+A1373,Northeast,2018,Public service,false,false,false,false,false,8,false,true
+A1374,Mid-Atlantic,2018,Nonprofit,true,false,true,true,true,5,false,true
+A1375,West,2019,Nonprofit,false,true,false,true,true,6,false,true
+A1376,Mountain,2019,Nonprofit,false,true,true,false,true,6,false,true
+A1377,South,2019,Private sector,true,false,false,true,false,6,true,false
+A1378,Midwest,2019,Public service,false,false,false,true,true,7,false,false
+A1379,Northeast,2019,Other,false,true,false,true,true,4,true,true
+A1380,Mid-Atlantic,2019,Nonprofit,true,false,false,true,true,1,false,false
+A1381,West,2020,Other,false,false,false,true,true,4,false,false
+A1382,Mountain,2020,Education,true,true,false,true,true,5,false,true
+A1383,South,2020,Public service,false,true,false,true,false,5,true,false
+A1384,Midwest,2020,Public service,false,false,false,true,true,8,false,true
+A1385,Northeast,2020,Nonprofit,true,true,false,true,false,0,true,true
+A1386,Mid-Atlantic,2020,Education,false,false,false,true,true,6,true,true
+A1387,West,2021,Other,false,true,false,true,true,3,false,false
+A1388,Mountain,2021,Education,false,false,false,true,false,1,true,false
+A1389,South,2021,Public service,true,false,false,true,true,7,false,false
+A1390,Midwest,2021,Nonprofit,true,false,false,false,false,2,false,false
+A1391,Northeast,2021,Education,false,false,false,true,true,7,true,true
+A1392,Mid-Atlantic,2021,Private sector,false,false,false,true,true,6,false,false
+A1393,West,2022,Nonprofit,false,false,true,true,false,1,false,true
+A1394,Mountain,2022,Public service,true,false,true,true,false,0,false,false
+A1395,South,2022,Education,false,false,true,false,true,8,true,false
+A1396,Midwest,2022,Nonprofit,false,false,false,true,true,1,false,true
+A1397,Northeast,2022,Nonprofit,false,false,true,true,true,2,false,true
+A1398,Mid-Atlantic,2022,Other,false,false,false,true,false,6,true,true
+A1399,West,2023,Other,true,false,false,true,false,1,true,true
+A1400,Mountain,2023,Private sector,false,false,false,true,false,3,true,false
+A1401,South,2023,Nonprofit,true,false,true,false,true,4,false,true
+A1402,Midwest,2023,Education,true,false,false,true,true,0,true,true
+A1403,Northeast,2023,Public service,false,false,true,true,true,8,true,false
+A1404,Mid-Atlantic,2023,Public service,true,false,false,true,false,2,false,true
+A1405,West,2018,Private sector,true,false,false,true,true,2,true,true
+A1406,Mountain,2018,Nonprofit,true,true,false,true,false,5,true,true
+A1407,South,2018,Public service,false,false,false,true,false,1,false,false
+A1408,Midwest,2018,Nonprofit,false,false,false,true,false,6,false,true
+A1409,Northeast,2018,Other,false,true,false,true,true,6,true,true
+A1410,Mid-Atlantic,2018,Private sector,false,false,false,false,true,0,false,true
+A1411,West,2019,Private sector,false,false,false,true,true,4,true,true
+A1412,Mountain,2019,Education,false,false,false,true,true,4,true,true
+A1413,South,2019,Education,false,false,true,true,true,3,false,true
+A1414,Midwest,2019,Education,false,false,true,true,false,2,true,true
+A1415,Northeast,2019,Public service,false,true,false,false,true,6,true,true
+A1416,Mid-Atlantic,2019,Public service,true,false,false,true,true,0,true,true
+A1417,West,2020,Private sector,false,false,false,true,true,7,true,true
+A1418,Mountain,2020,Public service,false,true,false,true,true,7,true,false
+A1419,South,2020,Nonprofit,true,false,false,true,true,1,false,true
+A1420,Midwest,2020,Nonprofit,false,false,true,true,true,0,false,true
+A1421,Northeast,2020,Education,false,false,true,true,true,3,true,true
+A1422,Mid-Atlantic,2020,Private sector,false,false,false,false,true,3,false,true
+A1423,West,2021,Education,true,true,true,true,true,8,false,false
+A1424,Mountain,2021,Education,false,true,false,true,true,8,false,true
+A1425,South,2021,Private sector,false,false,true,true,true,7,true,true
+A1426,Midwest,2021,Public service,false,false,false,false,false,8,false,true
+A1427,Northeast,2021,Education,true,true,true,true,false,6,true,false
+A1428,Mid-Atlantic,2021,Public service,true,false,true,true,false,3,false,true
+A1429,West,2022,Private sector,false,false,false,false,false,7,false,true
+A1430,Mountain,2022,Nonprofit,false,false,true,true,false,3,true,true
+A1431,South,2022,Private sector,false,true,false,true,true,8,false,false
+A1432,Midwest,2022,Nonprofit,false,false,false,true,true,4,false,true
+A1433,Northeast,2022,Private sector,true,true,false,true,true,6,false,true
+A1434,Mid-Atlantic,2022,Private sector,true,false,false,true,true,2,true,false
+A1435,West,2023,Private sector,true,false,false,false,true,8,false,true
+A1436,Mountain,2023,Other,false,false,false,true,true,0,false,true
+A1437,South,2023,Education,true,false,true,true,true,4,true,true
+A1438,Midwest,2023,Other,false,false,false,false,true,0,true,true
+A1439,Northeast,2023,Education,true,false,false,true,false,8,false,false
+A1440,Mid-Atlantic,2023,Other,true,false,false,false,false,4,true,true
+A1441,West,2018,Nonprofit,false,false,false,true,true,2,false,true
+A1442,Mountain,2018,Public service,true,true,true,true,false,1,false,true
+A1443,South,2018,Private sector,false,true,false,true,true,4,true,false
+A1444,Midwest,2018,Nonprofit,false,false,false,true,true,5,true,true
+A1445,Northeast,2018,Nonprofit,false,true,false,true,false,6,false,true
+A1446,Mid-Atlantic,2018,Other,false,true,false,true,true,4,true,true
+A1447,West,2019,Private sector,false,false,false,true,true,0,false,true
+A1448,Mountain,2019,Nonprofit,false,false,false,true,false,5,true,true
+A1449,South,2019,Other,false,true,true,true,true,3,true,false
+A1450,Midwest,2019,Nonprofit,false,false,false,true,false,2,true,true
+A1451,Northeast,2019,Other,true,false,true,true,true,5,false,false
+A1452,Mid-Atlantic,2019,Public service,false,true,false,true,true,2,true,false
+A1453,West,2020,Education,true,false,true,true,true,4,false,false
+A1454,Mountain,2020,Other,true,false,false,true,false,8,false,false
+A1455,South,2020,Nonprofit,false,false,true,true,true,7,true,true
+A1456,Midwest,2020,Education,false,false,false,true,true,3,false,true
+A1457,Northeast,2020,Education,false,false,true,true,false,1,false,false
+A1458,Mid-Atlantic,2020,Education,true,true,false,true,true,6,true,false
+A1459,West,2021,Other,true,false,false,true,false,2,true,false
+A1460,Mountain,2021,Education,true,false,true,false,false,7,true,true
+A1461,South,2021,Nonprofit,true,false,false,true,true,7,false,true
+A1462,Midwest,2021,Public service,false,false,false,true,true,0,false,true
+A1463,Northeast,2021,Education,false,false,false,true,true,0,true,false
+A1464,Mid-Atlantic,2021,Education,false,false,false,false,true,1,false,true
+A1465,West,2022,Education,false,true,false,true,false,8,false,true
+A1466,Mountain,2022,Other,false,true,false,true,false,6,false,true
+A1467,South,2022,Public service,false,false,true,true,true,3,false,true
+A1468,Midwest,2022,Education,true,false,false,true,true,2,true,true
+A1469,Northeast,2022,Public service,false,false,false,true,false,3,true,true
+A1470,Mid-Atlantic,2022,Private sector,false,false,false,true,true,3,true,true
+A1471,West,2023,Nonprofit,true,false,false,true,false,3,false,false
+A1472,Mountain,2023,Nonprofit,false,false,true,false,false,5,false,false
+A1473,South,2023,Private sector,false,false,false,true,true,5,true,false
+A1474,Midwest,2023,Education,false,false,false,true,true,5,true,false
+A1475,Northeast,2023,Other,true,false,false,true,true,2,true,false
+A1476,Mid-Atlantic,2023,Public service,true,false,false,true,true,5,true,true
+A1477,West,2018,Education,true,true,false,true,true,8,false,false
+A1478,Mountain,2018,Nonprofit,true,false,false,true,false,0,false,false
+A1479,South,2018,Public service,true,false,true,true,true,0,false,false
+A1480,Midwest,2018,Private sector,false,false,false,true,false,2,true,true
+A1481,Northeast,2018,Public service,false,false,false,true,true,6,false,false
+A1482,Mid-Atlantic,2018,Other,false,false,false,true,true,7,false,true
+A1483,West,2019,Other,false,false,false,true,true,5,true,false
+A1484,Mountain,2019,Education,false,true,false,true,false,1,false,true
+A1485,South,2019,Nonprofit,true,false,false,true,true,2,false,true
+A1486,Midwest,2019,Public service,true,false,false,true,true,2,true,false
+A1487,Northeast,2019,Education,true,true,false,true,true,1,false,false
+A1488,Mid-Atlantic,2019,Private sector,true,false,false,true,true,0,true,true
+A1489,West,2020,Other,true,false,true,true,true,0,true,false
+A1490,Mountain,2020,Nonprofit,false,false,true,true,false,2,true,true
+A1491,South,2020,Public service,false,true,false,true,false,1,false,false
+A1492,Midwest,2020,Other,true,true,false,true,true,5,true,true
+A1493,Northeast,2020,Nonprofit,false,false,true,true,false,1,true,true
+A1494,Mid-Atlantic,2020,Private sector,true,true,false,true,true,2,true,false
+A1495,West,2021,Private sector,false,false,true,false,true,5,false,true
+A1496,Mountain,2021,Other,false,true,false,true,true,7,true,true
+A1497,South,2021,Education,false,true,false,false,true,5,true,true
+A1498,Midwest,2021,Education,false,false,true,false,true,4,true,true
+A1499,Northeast,2021,Other,false,true,true,true,true,6,false,false
+A1500,Mid-Atlantic,2021,Private sector,false,false,false,true,true,2,false,true
+A1501,West,2022,Private sector,false,false,true,true,true,2,false,true
+A1502,Mountain,2022,Public service,false,false,false,true,true,8,false,true
+A1503,South,2022,Education,false,false,false,true,true,6,false,true
+A1504,Midwest,2022,Public service,false,false,false,true,true,0,true,true
+A1505,Northeast,2022,Public service,true,false,true,true,false,5,false,true
+A1506,Mid-Atlantic,2022,Nonprofit,true,false,false,true,true,7,true,true
+A1507,West,2023,Nonprofit,false,true,true,true,true,2,false,true
+A1508,Mountain,2023,Education,false,false,false,true,true,2,false,true
+A1509,South,2023,Other,false,true,false,false,true,3,false,true
+A1510,Midwest,2023,Public service,false,true,false,true,true,4,true,true
+A1511,Northeast,2023,Education,false,false,true,true,true,8,true,false
+A1512,Mid-Atlantic,2023,Private sector,true,true,false,false,true,2,false,true
+A1513,West,2018,Other,false,false,false,true,true,2,false,true
+A1514,Mountain,2018,Other,false,false,false,true,true,0,true,true
+A1515,South,2018,Other,true,false,false,true,false,6,true,true
+A1516,Midwest,2018,Private sector,false,true,false,true,true,7,false,true
+A1517,Northeast,2018,Other,false,true,false,true,false,5,false,false
+A1518,Mid-Atlantic,2018,Education,false,false,false,false,false,5,true,true
+A1519,West,2019,Private sector,true,true,true,true,true,0,false,false
+A1520,Mountain,2019,Other,false,true,false,true,true,5,true,true
+A1521,South,2019,Nonprofit,false,false,false,true,true,3,true,false
+A1522,Midwest,2019,Nonprofit,false,false,false,true,true,1,true,true
+A1523,Northeast,2019,Nonprofit,true,false,false,false,false,8,false,false
+A1524,Mid-Atlantic,2019,Nonprofit,false,false,false,true,false,0,true,true
+A1525,West,2020,Private sector,false,false,false,true,true,2,true,true
+A1526,Mountain,2020,Public service,true,true,false,true,true,0,true,true
+A1527,South,2020,Nonprofit,false,false,true,true,true,4,false,true
+A1528,Midwest,2020,Private sector,true,false,false,false,true,6,false,true
+A1529,Northeast,2020,Public service,false,true,false,false,true,7,false,false
+A1530,Mid-Atlantic,2020,Other,true,false,false,true,false,6,false,true
+A1531,West,2021,Public service,true,false,true,false,true,5,false,true
+A1532,Mountain,2021,Private sector,false,true,true,true,true,0,false,false
+A1533,South,2021,Private sector,true,false,false,true,true,2,true,true
+A1534,Midwest,2021,Private sector,false,true,true,true,true,2,false,true
+A1535,Northeast,2021,Other,true,true,false,false,true,3,true,true
+A1536,Mid-Atlantic,2021,Other,true,false,false,true,true,7,false,false
+A1537,West,2022,Public service,true,false,false,true,true,1,false,false
+A1538,Mountain,2022,Education,false,false,false,false,true,5,false,false
+A1539,South,2022,Other,false,true,false,true,true,1,true,true
+A1540,Midwest,2022,Nonprofit,false,false,false,true,true,5,false,true
+A1541,Northeast,2022,Education,true,false,false,true,true,1,false,false
+A1542,Mid-Atlantic,2022,Other,false,false,true,true,false,5,true,true
+A1543,West,2023,Nonprofit,true,true,false,true,true,2,true,false
+A1544,Mountain,2023,Nonprofit,false,false,false,true,true,4,true,true
+A1545,South,2023,Education,false,false,false,true,true,3,true,false
+A1546,Midwest,2023,Education,false,false,true,true,true,8,true,false
+A1547,Northeast,2023,Nonprofit,true,true,true,true,true,3,false,false
+A1548,Mid-Atlantic,2023,Other,true,false,false,true,true,8,true,false
+A1549,West,2018,Nonprofit,false,false,false,true,true,2,false,true
+A1550,Mountain,2018,Other,false,false,false,true,false,3,false,false
+A1551,South,2018,Private sector,true,false,false,true,true,4,true,true
+A1552,Midwest,2018,Other,true,false,false,true,true,7,false,false
+A1553,Northeast,2018,Education,false,false,true,true,true,7,false,false
+A1554,Mid-Atlantic,2018,Education,false,false,true,true,true,6,true,false
+A1555,West,2019,Other,false,false,false,true,false,6,false,true
+A1556,Mountain,2019,Nonprofit,false,false,false,false,true,1,true,false
+A1557,South,2019,Private sector,false,false,true,true,true,0,false,false
+A1558,Midwest,2019,Education,true,true,false,true,true,6,true,true
+A1559,Northeast,2019,Education,false,false,false,true,true,7,true,true
+A1560,Mid-Atlantic,2019,Education,false,true,false,false,false,4,true,false
+A1561,West,2020,Nonprofit,false,false,true,true,true,8,true,false
+A1562,Mountain,2020,Education,false,false,true,true,false,0,false,true
+A1563,South,2020,Education,true,false,true,false,true,5,true,true
+A1564,Midwest,2020,Public service,true,false,false,true,false,2,false,false
+A1565,Northeast,2020,Other,false,false,false,true,true,7,false,false
+A1566,Mid-Atlantic,2020,Education,false,false,false,true,true,4,false,true
+A1567,West,2021,Education,true,false,false,false,true,3,true,true
+A1568,Mountain,2021,Nonprofit,false,false,true,false,true,6,false,false
+A1569,South,2021,Nonprofit,false,true,false,true,false,1,true,false
+A1570,Midwest,2021,Education,false,false,false,true,false,3,false,true
+A1571,Northeast,2021,Public service,false,true,false,true,true,5,true,false
+A1572,Mid-Atlantic,2021,Education,true,false,true,true,true,4,false,true
+A1573,West,2022,Other,false,false,true,true,true,8,false,true
+A1574,Mountain,2022,Nonprofit,false,false,false,true,true,1,false,true
+A1575,South,2022,Private sector,false,false,false,true,true,0,false,true
+A1576,Midwest,2022,Public service,false,false,true,true,true,8,true,true
+A1577,Northeast,2022,Education,true,true,true,true,false,8,true,false
+A1578,Mid-Atlantic,2022,Private sector,false,false,false,true,false,8,false,false
+A1579,West,2023,Other,false,false,true,true,true,5,true,false
+A1580,Mountain,2023,Private sector,true,false,false,true,false,6,true,true
+A1581,South,2023,Private sector,true,false,false,true,true,3,true,true
+A1582,Midwest,2023,Other,true,true,false,true,true,5,false,true
+A1583,Northeast,2023,Public service,true,false,false,false,false,6,true,false
+A1584,Mid-Atlantic,2023,Nonprofit,true,false,false,false,true,8,false,true
+A1585,West,2018,Private sector,false,true,false,true,true,1,false,false
+A1586,Mountain,2018,Private sector,false,false,false,true,true,4,false,false
+A1587,South,2018,Other,false,true,true,true,false,5,false,true
+A1588,Midwest,2018,Private sector,false,false,false,true,false,3,false,true
+A1589,Northeast,2018,Education,true,false,false,false,false,4,true,true
+A1590,Mid-Atlantic,2018,Other,false,false,false,true,true,6,false,false
+A1591,West,2019,Nonprofit,false,false,false,false,true,5,false,true
+A1592,Mountain,2019,Nonprofit,false,false,false,true,true,3,true,true
+A1593,South,2019,Other,false,true,false,true,false,3,true,true
+A1594,Midwest,2019,Education,false,false,false,true,true,1,true,true
+A1595,Northeast,2019,Education,true,false,false,true,true,6,false,true
+A1596,Mid-Atlantic,2019,Nonprofit,false,false,false,true,true,0,false,true
+A1597,West,2020,Private sector,false,false,false,true,false,3,true,false
+A1598,Mountain,2020,Other,true,true,false,false,true,7,false,true
+A1599,South,2020,Nonprofit,true,true,false,true,true,1,true,true
+A1600,Midwest,2020,Nonprofit,false,true,true,true,true,4,false,true
+A1601,Northeast,2020,Private sector,true,false,false,false,true,2,false,true
+A1602,Mid-Atlantic,2020,Nonprofit,false,false,false,true,false,8,false,false
+A1603,West,2021,Nonprofit,false,false,true,true,false,4,true,true
+A1604,Mountain,2021,Other,false,false,true,true,false,6,false,false
+A1605,South,2021,Other,false,false,false,true,true,8,false,true
+A1606,Midwest,2021,Other,true,false,true,false,true,5,false,false
+A1607,Northeast,2021,Nonprofit,false,false,false,true,true,8,false,true
+A1608,Mid-Atlantic,2021,Private sector,false,false,true,true,true,7,true,true
+A1609,West,2022,Private sector,false,false,false,true,true,5,true,true
+A1610,Mountain,2022,Private sector,false,false,false,true,true,6,true,true
+A1611,South,2022,Nonprofit,false,true,false,true,false,5,false,false
+A1612,Midwest,2022,Other,false,false,true,true,true,8,false,true
+A1613,Northeast,2022,Public service,false,false,false,false,false,3,true,true
+A1614,Mid-Atlantic,2022,Education,false,true,false,true,true,5,true,true
+A1615,West,2023,Other,false,false,false,true,true,3,false,true
+A1616,Mountain,2023,Other,false,true,false,true,true,7,false,false
+A1617,South,2023,Other,false,false,false,true,true,0,false,false
+A1618,Midwest,2023,Nonprofit,true,false,false,true,true,7,true,false
+A1619,Northeast,2023,Education,true,true,false,true,false,6,true,true
+A1620,Mid-Atlantic,2023,Nonprofit,false,false,true,true,false,1,true,true
+A1621,West,2018,Private sector,false,true,false,true,true,1,true,true
+A1622,Mountain,2018,Private sector,false,false,false,false,true,0,true,true
+A1623,South,2018,Education,false,false,true,true,true,8,false,true
+A1624,Midwest,2018,Nonprofit,false,true,false,true,false,3,true,true
+A1625,Northeast,2018,Education,false,false,false,true,true,1,false,false
+A1626,Mid-Atlantic,2018,Other,true,false,false,true,false,8,false,false
+A1627,West,2019,Education,false,false,false,true,true,0,true,true
+A1628,Mountain,2019,Nonprofit,false,true,false,true,true,3,false,true
+A1629,South,2019,Other,true,false,false,true,false,8,true,false
+A1630,Midwest,2019,Education,false,true,false,true,true,1,true,false
+A1631,Northeast,2019,Private sector,false,false,false,true,true,8,false,true
+A1632,Mid-Atlantic,2019,Private sector,true,false,false,true,false,4,false,false
+A1633,West,2020,Public service,false,false,false,true,true,7,true,true
+A1634,Mountain,2020,Education,true,true,false,true,true,6,false,false
+A1635,South,2020,Education,false,false,false,true,true,5,true,false
+A1636,Midwest,2020,Other,false,true,false,true,true,4,true,false
+A1637,Northeast,2020,Other,false,false,false,true,true,8,false,true
+A1638,Mid-Atlantic,2020,Private sector,false,true,false,false,true,6,true,false
+A1639,West,2021,Private sector,true,true,false,true,true,3,true,false
+A1640,Mountain,2021,Nonprofit,false,false,false,false,true,7,false,true
+A1641,South,2021,Education,false,false,true,true,false,0,false,false
+A1642,Midwest,2021,Education,false,true,false,true,true,5,true,false
+A1643,Northeast,2021,Nonprofit,false,false,true,true,false,3,false,true
+A1644,Mid-Atlantic,2021,Private sector,true,false,false,true,true,1,true,true
+A1645,West,2022,Public service,true,false,false,true,true,6,false,true
+A1646,Mountain,2022,Private sector,false,false,false,true,false,3,false,false
+A1647,South,2022,Education,false,false,false,true,true,6,true,false
+A1648,Midwest,2022,Public service,true,false,false,false,true,3,true,true
+A1649,Northeast,2022,Nonprofit,true,false,false,true,true,8,true,true
+A1650,Mid-Atlantic,2022,Public service,false,false,false,true,false,6,false,true
+A1651,West,2023,Public service,false,false,false,true,true,6,true,false
+A1652,Mountain,2023,Education,true,false,true,false,true,3,true,true
+A1653,South,2023,Private sector,false,false,false,true,false,6,false,true
+A1654,Midwest,2023,Public service,false,false,false,true,true,0,true,false
+A1655,Northeast,2023,Private sector,false,true,false,true,true,5,false,false
+A1656,Mid-Atlantic,2023,Other,false,false,false,true,true,4,true,false
+A1657,West,2018,Nonprofit,false,true,false,true,true,8,true,false
+A1658,Mountain,2018,Education,false,false,false,true,true,0,true,true
+A1659,South,2018,Other,false,true,false,true,false,6,true,true
+A1660,Midwest,2018,Private sector,false,false,true,true,true,8,false,true
+A1661,Northeast,2018,Other,false,false,false,true,false,6,true,true
+A1662,Mid-Atlantic,2018,Nonprofit,false,true,false,true,true,2,false,false
+A1663,West,2019,Nonprofit,true,false,false,true,false,4,true,false
+A1664,Mountain,2019,Education,false,false,false,true,false,3,false,true
+A1665,South,2019,Private sector,true,false,false,true,false,7,false,true
+A1666,Midwest,2019,Private sector,false,false,false,false,false,6,false,true
+A1667,Northeast,2019,Nonprofit,false,false,false,true,true,4,false,true
+A1668,Mid-Atlantic,2019,Public service,false,false,false,true,true,6,false,false
+A1669,West,2020,Other,false,false,false,true,true,2,true,false
+A1670,Mountain,2020,Nonprofit,false,false,false,true,true,0,true,false
+A1671,South,2020,Nonprofit,false,true,false,true,true,3,false,false
+A1672,Midwest,2020,Education,false,true,true,true,false,3,false,true
+A1673,Northeast,2020,Public service,false,false,true,true,true,3,true,false
+A1674,Mid-Atlantic,2020,Nonprofit,false,true,false,true,true,4,false,true
+A1675,West,2021,Education,true,true,true,true,true,4,false,false
+A1676,Mountain,2021,Other,false,true,false,true,true,4,false,true
+A1677,South,2021,Education,false,false,false,true,true,5,true,true
+A1678,Midwest,2021,Education,false,false,false,true,true,0,true,true
+A1679,Northeast,2021,Other,true,false,false,true,false,2,true,true
+A1680,Mid-Atlantic,2021,Public service,false,false,false,true,true,5,false,true
+A1681,West,2022,Nonprofit,false,false,true,true,false,2,false,true
+A1682,Mountain,2022,Private sector,true,false,false,false,true,3,true,true
+A1683,South,2022,Other,false,false,false,true,false,0,false,false
+A1684,Midwest,2022,Nonprofit,true,false,false,true,false,3,false,false
+A1685,Northeast,2022,Other,false,false,false,false,false,5,false,true
+A1686,Mid-Atlantic,2022,Private sector,true,true,true,true,true,1,true,true
+A1687,West,2023,Other,false,false,true,true,true,8,true,false
+A1688,Mountain,2023,Private sector,false,false,true,true,true,1,false,true
+A1689,South,2023,Other,true,true,true,false,false,0,false,true
+A1690,Midwest,2023,Private sector,true,false,false,false,true,2,false,false
+A1691,Northeast,2023,Education,false,false,false,true,false,1,true,true
+A1692,Mid-Atlantic,2023,Nonprofit,false,false,false,true,true,5,false,false
+A1693,West,2018,Public service,false,false,false,false,true,1,false,true
+A1694,Mountain,2018,Education,false,false,false,true,true,0,false,false
+A1695,South,2018,Education,false,false,true,true,false,1,true,false
+A1696,Midwest,2018,Public service,false,false,false,false,true,7,false,false
+A1697,Northeast,2018,Private sector,false,false,true,true,false,4,false,false
+A1698,Mid-Atlantic,2018,Nonprofit,false,true,false,true,true,0,false,true
+A1699,West,2019,Education,false,true,true,true,true,1,true,true
+A1700,Mountain,2019,Public service,false,false,false,true,false,7,false,true
+A1701,South,2019,Private sector,false,true,false,true,true,8,false,true
+A1702,Midwest,2019,Public service,false,false,false,true,true,2,true,true
+A1703,Northeast,2019,Private sector,false,false,false,true,true,0,false,true
+A1704,Mid-Atlantic,2019,Private sector,false,false,false,true,true,5,false,true
+A1705,West,2020,Nonprofit,false,false,false,true,true,0,false,false
+A1706,Mountain,2020,Nonprofit,true,true,false,true,true,3,true,true
+A1707,South,2020,Other,true,false,false,true,false,3,true,true
+A1708,Midwest,2020,Private sector,true,false,true,true,true,4,false,true
+A1709,Northeast,2020,Nonprofit,true,false,false,true,false,4,true,true
+A1710,Mid-Atlantic,2020,Public service,false,false,false,true,true,8,false,false
+A1711,West,2021,Education,false,false,false,true,true,5,true,false
+A1712,Mountain,2021,Public service,true,false,true,false,true,1,false,false
+A1713,South,2021,Public service,true,false,false,true,true,6,false,true
+A1714,Midwest,2021,Private sector,true,false,false,true,true,4,false,true
+A1715,Northeast,2021,Private sector,true,false,false,true,true,8,false,true
+A1716,Mid-Atlantic,2021,Education,false,false,false,true,false,0,false,true
+A1717,West,2022,Private sector,true,true,false,true,true,1,false,false
+A1718,Mountain,2022,Private sector,false,false,false,true,true,3,false,true
+A1719,South,2022,Private sector,true,true,false,true,true,1,false,true
+A1720,Midwest,2022,Education,false,false,false,true,false,1,false,true
+A1721,Northeast,2022,Public service,false,false,false,true,true,3,true,true
+A1722,Mid-Atlantic,2022,Public service,true,false,true,true,true,0,true,true
+A1723,West,2023,Education,false,false,false,true,true,6,true,false
+A1724,Mountain,2023,Other,false,false,true,false,true,4,true,false
+A1725,South,2023,Private sector,false,false,true,true,false,1,false,false
+A1726,Midwest,2023,Education,false,false,true,true,true,8,false,false
+A1727,Northeast,2023,Nonprofit,false,false,false,true,false,7,false,false
+A1728,Mid-Atlantic,2023,Public service,false,true,false,false,false,2,true,true
+A1729,West,2018,Private sector,false,false,false,true,false,1,false,true
+A1730,Mountain,2018,Education,false,false,true,true,true,2,false,false
+A1731,South,2018,Education,false,false,false,false,true,6,false,true
+A1732,Midwest,2018,Other,true,false,false,true,true,6,false,true
+A1733,Northeast,2018,Private sector,false,false,true,false,false,4,false,true
+A1734,Mid-Atlantic,2018,Education,true,true,false,true,true,5,false,true
+A1735,West,2019,Public service,false,false,false,true,true,6,true,false
+A1736,Mountain,2019,Other,false,true,false,true,true,8,true,true
+A1737,South,2019,Private sector,true,false,false,false,true,1,false,false
+A1738,Midwest,2019,Other,false,false,true,true,true,1,false,false
+A1739,Northeast,2019,Nonprofit,false,false,true,true,false,3,true,true
+A1740,Mid-Atlantic,2019,Education,false,false,false,true,false,1,false,false
+A1741,West,2020,Nonprofit,false,false,true,true,false,5,true,true
+A1742,Mountain,2020,Private sector,true,false,true,true,true,1,true,true
+A1743,South,2020,Other,true,false,false,true,true,0,true,false
+A1744,Midwest,2020,Nonprofit,false,false,false,true,true,2,false,true
+A1745,Northeast,2020,Education,false,false,false,true,true,8,true,false
+A1746,Mid-Atlantic,2020,Other,false,false,false,true,true,3,false,true
+A1747,West,2021,Other,false,true,false,true,true,6,true,false
+A1748,Mountain,2021,Education,false,false,false,true,true,3,true,true
+A1749,South,2021,Other,false,false,true,false,true,5,false,true
+A1750,Midwest,2021,Other,true,false,true,true,false,0,false,false
+A1751,Northeast,2021,Nonprofit,false,false,true,true,true,3,true,false
+A1752,Mid-Atlantic,2021,Public service,true,false,false,true,true,3,false,true
+A1753,West,2022,Private sector,true,true,false,true,false,1,false,true
+A1754,Mountain,2022,Other,true,false,false,true,true,2,true,true
+A1755,South,2022,Education,false,false,false,true,true,7,false,false
+A1756,Midwest,2022,Public service,true,true,false,false,false,3,false,false
+A1757,Northeast,2022,Private sector,false,false,false,true,false,3,true,false
+A1758,Mid-Atlantic,2022,Nonprofit,false,false,true,false,true,1,true,true
+A1759,West,2023,Public service,false,false,false,true,true,1,true,true
+A1760,Mountain,2023,Other,false,false,false,true,true,4,true,true
+A1761,South,2023,Other,true,false,false,true,false,6,false,false
+A1762,Midwest,2023,Private sector,false,false,false,false,true,8,false,true
+A1763,Northeast,2023,Public service,false,false,true,false,false,1,false,true
+A1764,Mid-Atlantic,2023,Nonprofit,false,true,false,false,true,1,true,false
+A1765,West,2018,Nonprofit,false,false,false,true,true,6,true,false
+A1766,Mountain,2018,Nonprofit,true,false,false,true,false,6,false,true
+A1767,South,2018,Private sector,false,true,true,true,false,2,false,false
+A1768,Midwest,2018,Other,false,false,true,true,true,5,true,true
+A1769,Northeast,2018,Private sector,false,true,false,true,true,6,true,true
+A1770,Mid-Atlantic,2018,Nonprofit,true,false,false,false,false,2,true,false
+A1771,West,2019,Education,false,false,true,true,true,3,true,true
+A1772,Mountain,2019,Public service,false,false,false,true,false,7,true,true
+A1773,South,2019,Nonprofit,false,false,true,false,true,4,false,false
+A1774,Midwest,2019,Education,false,false,false,true,true,7,true,false
+A1775,Northeast,2019,Education,false,false,true,true,false,1,true,false
+A1776,Mid-Atlantic,2019,Public service,false,true,false,true,true,6,false,false
+A1777,West,2020,Private sector,true,false,false,false,true,0,true,true
+A1778,Mountain,2020,Private sector,false,false,true,true,true,0,false,true
+A1779,South,2020,Other,false,false,false,true,true,6,false,false
+A1780,Midwest,2020,Private sector,false,true,true,false,true,1,true,false
+A1781,Northeast,2020,Private sector,true,false,false,true,true,0,true,true
+A1782,Mid-Atlantic,2020,Nonprofit,false,false,false,true,false,6,false,true
+A1783,West,2021,Other,false,true,true,true,false,4,false,false
+A1784,Mountain,2021,Other,true,false,false,true,true,4,false,false
+A1785,South,2021,Nonprofit,true,false,true,true,false,8,true,false
+A1786,Midwest,2021,Nonprofit,true,false,false,true,true,0,false,false
+A1787,Northeast,2021,Nonprofit,true,false,false,true,false,0,true,false
+A1788,Mid-Atlantic,2021,Other,false,false,false,true,false,8,false,true
+A1789,West,2022,Education,false,false,false,true,false,2,false,true
+A1790,Mountain,2022,Public service,false,false,false,true,true,8,false,false
+A1791,South,2022,Other,false,false,false,true,true,5,true,false
+A1792,Midwest,2022,Public service,false,false,false,true,true,6,false,false
+A1793,Northeast,2022,Nonprofit,true,false,false,true,true,7,false,false
+A1794,Mid-Atlantic,2022,Public service,false,false,false,true,true,2,false,false
+A1795,West,2023,Education,false,false,false,true,true,8,true,true
+A1796,Mountain,2023,Private sector,false,true,false,true,true,4,true,true
+A1797,South,2023,Education,false,false,false,true,false,5,false,true
+A1798,Midwest,2023,Private sector,false,false,false,true,true,1,true,true
+A1799,Northeast,2023,Education,false,true,false,true,true,7,true,true
+A1800,Mid-Atlantic,2023,Private sector,false,false,false,false,false,8,true,true
+A1801,West,2018,Private sector,false,false,false,false,false,6,true,false
+A1802,Mountain,2018,Other,false,false,false,true,true,7,false,false
+A1803,South,2018,Other,false,false,false,true,false,6,true,false
+A1804,Midwest,2018,Education,true,false,true,false,true,5,true,false
+A1805,Northeast,2018,Education,true,false,false,true,true,7,false,false
+A1806,Mid-Atlantic,2018,Nonprofit,false,true,false,false,false,3,true,true
+A1807,West,2019,Education,false,false,false,true,false,1,false,false
+A1808,Mountain,2019,Other,true,false,false,true,true,0,false,false
+A1809,South,2019,Education,false,false,true,true,true,0,true,false
+A1810,Midwest,2019,Public service,false,false,false,true,false,8,false,false
+A1811,Northeast,2019,Other,true,true,false,true,true,0,true,true
+A1812,Mid-Atlantic,2019,Education,false,false,false,true,true,1,false,false
+A1813,West,2020,Education,false,true,false,true,true,6,false,false
+A1814,Mountain,2020,Public service,true,true,false,false,true,3,true,false
+A1815,South,2020,Nonprofit,false,false,true,true,false,6,true,false
+A1816,Midwest,2020,Private sector,false,false,false,true,false,4,false,false
+A1817,Northeast,2020,Private sector,true,true,true,true,true,5,false,true
+A1818,Mid-Atlantic,2020,Public service,false,false,false,true,false,8,true,true
+A1819,West,2021,Other,false,false,false,true,true,3,true,true
+A1820,Mountain,2021,Public service,true,false,false,false,true,0,false,true
+A1821,South,2021,Public service,false,true,false,true,false,7,false,true
+A1822,Midwest,2021,Other,false,false,false,true,false,2,false,true
+A1823,Northeast,2021,Private sector,false,true,false,false,false,8,false,false
+A1824,Mid-Atlantic,2021,Other,true,false,false,true,true,0,true,false
+A1825,West,2022,Private sector,true,false,false,true,true,1,true,true
+A1826,Mountain,2022,Education,false,false,false,true,true,6,false,true
+A1827,South,2022,Nonprofit,false,false,false,true,true,6,true,true
+A1828,Midwest,2022,Nonprofit,true,false,true,true,true,4,true,false
+A1829,Northeast,2022,Private sector,false,false,false,true,true,4,true,false
+A1830,Mid-Atlantic,2022,Public service,false,false,false,true,true,5,true,true
+A1831,West,2023,Public service,false,false,false,true,false,6,false,false
+A1832,Mountain,2023,Education,true,false,false,false,true,2,false,true
+A1833,South,2023,Education,false,false,false,false,true,7,false,false
+A1834,Midwest,2023,Other,false,false,false,true,true,0,false,false
+A1835,Northeast,2023,Public service,false,false,false,true,true,8,true,true
+A1836,Mid-Atlantic,2023,Other,true,false,true,true,true,2,true,false
+A1837,West,2018,Public service,false,true,false,true,true,0,true,false
+A1838,Mountain,2018,Education,false,false,false,true,false,7,false,true
+A1839,South,2018,Education,true,false,false,true,false,7,true,false
+A1840,Midwest,2018,Public service,false,true,false,true,true,2,false,false
+A1841,Northeast,2018,Public service,false,false,false,true,true,6,false,true
+A1842,Mid-Atlantic,2018,Education,false,false,true,true,true,3,false,false
+A1843,West,2019,Private sector,true,true,false,true,true,0,false,true
+A1844,Mountain,2019,Other,true,false,false,true,true,4,false,false
+A1845,South,2019,Education,true,false,false,true,true,6,true,false
+A1846,Midwest,2019,Public service,false,true,true,false,true,1,true,true
+A1847,Northeast,2019,Nonprofit,true,false,false,true,true,6,false,true
+A1848,Mid-Atlantic,2019,Other,false,false,false,true,true,5,false,true
+A1849,West,2020,Private sector,true,true,false,true,true,4,true,true
+A1850,Mountain,2020,Other,true,false,true,false,true,4,false,true
+A1851,South,2020,Nonprofit,false,true,false,true,true,6,false,true
+A1852,Midwest,2020,Education,false,false,false,true,true,3,false,false
+A1853,Northeast,2020,Private sector,false,false,false,true,true,8,true,true
+A1854,Mid-Atlantic,2020,Nonprofit,false,false,true,true,true,6,false,false
+A1855,West,2021,Education,false,false,false,true,true,6,false,false
+A1856,Mountain,2021,Other,false,false,false,true,true,1,false,false
+A1857,South,2021,Nonprofit,true,true,false,false,true,6,true,true
+A1858,Midwest,2021,Other,false,false,false,false,true,4,true,false
+A1859,Northeast,2021,Private sector,false,false,true,true,true,7,true,false
+A1860,Mid-Atlantic,2021,Nonprofit,false,false,false,true,true,3,true,false
+A1861,West,2022,Other,false,false,false,true,false,4,false,true
+A1862,Mountain,2022,Private sector,false,false,true,false,true,0,true,false
+A1863,South,2022,Education,false,false,false,true,false,6,false,false
+A1864,Midwest,2022,Public service,false,false,false,true,true,7,true,true
+A1865,Northeast,2022,Nonprofit,false,true,false,true,false,7,false,true
+A1866,Mid-Atlantic,2022,Other,false,false,false,true,true,5,true,true
+A1867,West,2023,Private sector,false,true,false,false,true,7,true,true
+A1868,Mountain,2023,Public service,false,false,false,false,false,5,true,true
+A1869,South,2023,Education,true,false,true,true,true,2,false,true
+A1870,Midwest,2023,Education,true,false,false,true,true,5,true,true
+A1871,Northeast,2023,Education,false,false,true,true,false,2,false,false
+A1872,Mid-Atlantic,2023,Education,false,false,false,true,false,4,true,false
+A1873,West,2018,Nonprofit,true,true,true,true,false,4,false,true
+A1874,Mountain,2018,Education,false,false,true,true,false,5,true,true
+A1875,South,2018,Education,false,false,false,true,true,7,true,true
+A1876,Midwest,2018,Public service,true,false,false,true,true,2,true,true
+A1877,Northeast,2018,Private sector,false,false,false,true,false,6,true,true
+A1878,Mid-Atlantic,2018,Other,false,false,true,true,false,8,true,true
+A1879,West,2019,Private sector,false,false,true,true,true,5,false,true
+A1880,Mountain,2019,Nonprofit,false,false,true,false,false,2,false,false
+A1881,South,2019,Nonprofit,false,false,false,true,true,7,false,false
+A1882,Midwest,2019,Education,true,false,false,true,true,2,true,false
+A1883,Northeast,2019,Nonprofit,false,false,false,true,true,3,false,false
+A1884,Mid-Atlantic,2019,Education,true,false,false,true,false,8,false,true
+A1885,West,2020,Private sector,false,false,false,true,false,2,true,true
+A1886,Mountain,2020,Other,true,false,false,true,true,7,true,false
+A1887,South,2020,Education,false,false,false,true,true,6,false,true
+A1888,Midwest,2020,Other,true,false,false,true,true,1,true,true
+A1889,Northeast,2020,Private sector,false,false,false,false,true,5,false,false
+A1890,Mid-Atlantic,2020,Private sector,true,false,true,true,false,1,true,true
+A1891,West,2021,Nonprofit,false,true,false,true,true,1,true,true
+A1892,Mountain,2021,Education,false,false,true,true,true,4,true,true
+A1893,South,2021,Private sector,false,false,false,true,true,5,true,true
+A1894,Midwest,2021,Public service,false,false,false,true,true,7,true,true
+A1895,Northeast,2021,Public service,false,false,true,true,true,6,false,false
+A1896,Mid-Atlantic,2021,Other,true,false,false,true,true,5,false,true
+A1897,West,2022,Education,true,false,true,false,false,4,true,false
+A1898,Mountain,2022,Other,false,false,false,true,true,1,false,true
+A1899,South,2022,Public service,false,false,false,true,true,3,true,false
+A1900,Midwest,2022,Nonprofit,true,false,false,true,true,4,false,true
+A1901,Northeast,2022,Education,false,true,false,true,true,1,false,true
+A1902,Mid-Atlantic,2022,Other,false,false,true,true,true,7,false,false
+A1903,West,2023,Public service,false,false,false,false,true,1,false,true
+A1904,Mountain,2023,Private sector,true,false,true,true,true,3,true,true
+A1905,South,2023,Public service,false,false,false,false,false,7,true,true
+A1906,Midwest,2023,Education,true,false,true,true,true,7,false,true
+A1907,Northeast,2023,Nonprofit,true,false,false,true,false,8,true,false
+A1908,Mid-Atlantic,2023,Education,false,false,false,true,true,3,true,true
+A1909,West,2018,Public service,true,false,false,true,true,1,true,false
+A1910,Mountain,2018,Nonprofit,false,false,false,false,true,1,false,false
+A1911,South,2018,Nonprofit,true,false,true,true,true,5,false,true
+A1912,Midwest,2018,Public service,false,false,false,true,true,3,false,false
+A1913,Northeast,2018,Public service,false,true,false,true,false,6,true,true
+A1914,Mid-Atlantic,2018,Private sector,false,false,true,true,false,7,false,true
+A1915,West,2019,Education,true,false,false,false,false,7,true,false
+A1916,Mountain,2019,Public service,false,false,false,true,true,8,true,false
+A1917,South,2019,Public service,true,false,false,true,false,8,true,false
+A1918,Midwest,2019,Private sector,true,false,false,true,true,3,true,true
+A1919,Northeast,2019,Education,false,false,false,false,true,3,true,true
+A1920,Mid-Atlantic,2019,Other,true,false,false,true,true,1,true,true
+A1921,West,2020,Education,false,false,false,true,true,5,true,true
+A1922,Mountain,2020,Nonprofit,true,false,false,false,true,6,false,true
+A1923,South,2020,Education,false,false,false,true,false,2,true,true
+A1924,Midwest,2020,Education,false,false,false,false,true,8,false,false
+A1925,Northeast,2020,Private sector,true,false,true,true,true,4,false,true
+A1926,Mid-Atlantic,2020,Education,false,true,false,true,true,2,true,false
+A1927,West,2021,Public service,true,true,false,false,true,4,true,true
+A1928,Mountain,2021,Private sector,false,false,true,true,true,4,false,true
+A1929,South,2021,Other,true,false,false,true,true,2,false,false
+A1930,Midwest,2021,Public service,false,false,false,true,true,4,false,true
+A1931,Northeast,2021,Other,false,false,false,true,true,6,false,true
+A1932,Mid-Atlantic,2021,Other,true,false,false,true,false,8,true,true
+A1933,West,2022,Other,true,false,false,true,true,1,true,true
+A1934,Mountain,2022,Education,false,false,false,false,false,1,false,true
+A1935,South,2022,Other,true,false,false,false,true,0,true,true
+A1936,Midwest,2022,Education,false,false,true,true,true,2,true,true
+A1937,Northeast,2022,Nonprofit,false,false,true,true,true,1,false,true
+A1938,Mid-Atlantic,2022,Private sector,true,false,false,true,false,5,false,true
+A1939,West,2023,Other,true,false,false,true,true,0,true,true
+A1940,Mountain,2023,Education,true,false,false,true,false,7,true,false
+A1941,South,2023,Education,false,false,false,true,true,8,true,false
+A1942,Midwest,2023,Public service,true,true,true,true,true,0,true,true
+A1943,Northeast,2023,Education,false,false,false,true,true,1,false,false
+A1944,Mid-Atlantic,2023,Other,false,false,false,true,false,1,false,false
+A1945,West,2018,Education,true,true,false,false,true,1,false,true
+A1946,Mountain,2018,Nonprofit,false,false,false,true,false,7,true,false
+A1947,South,2018,Nonprofit,true,false,false,true,false,3,true,true
+A1948,Midwest,2018,Education,true,false,false,true,true,0,false,false
+A1949,Northeast,2018,Nonprofit,false,true,true,false,true,2,true,false
+A1950,Mid-Atlantic,2018,Private sector,true,true,false,true,true,8,true,false
+A1951,West,2019,Private sector,true,false,false,true,true,4,true,true
+A1952,Mountain,2019,Private sector,false,false,false,true,true,6,false,true
+A1953,South,2019,Public service,false,false,false,false,true,4,true,false
+A1954,Midwest,2019,Nonprofit,false,true,true,false,true,1,false,true
+A1955,Northeast,2019,Private sector,false,false,false,true,true,3,false,true
+A1956,Mid-Atlantic,2019,Education,false,false,false,true,true,4,false,true
+A1957,West,2020,Education,false,false,false,true,true,3,true,true
+A1958,Mountain,2020,Education,false,false,true,true,true,3,false,false
+A1959,South,2020,Public service,false,false,true,true,true,3,true,false
+A1960,Midwest,2020,Private sector,true,false,false,true,true,3,false,false
+A1961,Northeast,2020,Education,false,false,false,true,true,8,true,true
+A1962,Mid-Atlantic,2020,Other,false,true,true,true,true,6,false,false
+A1963,West,2021,Nonprofit,false,false,false,false,false,5,true,false
+A1964,Mountain,2021,Education,false,false,false,false,false,2,false,true
+A1965,South,2021,Nonprofit,true,false,false,false,true,1,false,false
+A1966,Midwest,2021,Public service,false,false,false,true,true,3,false,false
+A1967,Northeast,2021,Private sector,true,false,false,false,true,1,true,true
+A1968,Mid-Atlantic,2021,Nonprofit,false,false,true,true,true,7,false,false
+A1969,West,2022,Education,true,true,false,true,true,6,true,false
+A1970,Mountain,2022,Private sector,false,false,false,true,true,5,true,true
+A1971,South,2022,Other,false,false,false,true,false,5,true,false
+A1972,Midwest,2022,Other,false,false,false,true,false,6,true,true
+A1973,Northeast,2022,Public service,true,false,true,true,true,1,true,false
+A1974,Mid-Atlantic,2022,Other,true,true,false,true,false,2,true,true
+A1975,West,2023,Private sector,false,false,false,true,true,7,false,false
+A1976,Mountain,2023,Public service,false,false,false,true,true,4,false,false
+A1977,South,2023,Education,true,false,true,true,true,7,true,false
+A1978,Midwest,2023,Nonprofit,true,false,true,false,false,6,false,false
+A1979,Northeast,2023,Private sector,false,true,false,true,true,2,true,false
+A1980,Mid-Atlantic,2023,Other,true,false,true,true,false,1,false,true
+A1981,West,2018,Education,false,false,false,false,true,7,false,true
+A1982,Mountain,2018,Nonprofit,true,false,true,true,true,4,false,false
+A1983,South,2018,Other,false,false,false,true,false,7,true,true
+A1984,Midwest,2018,Other,false,false,false,true,true,2,false,false
+A1985,Northeast,2018,Education,false,false,false,true,true,6,false,false
+A1986,Mid-Atlantic,2018,Other,false,true,false,true,true,7,false,true
+A1987,West,2019,Private sector,false,true,true,true,true,1,false,false
+A1988,Mountain,2019,Other,false,false,false,true,false,4,true,false
+A1989,South,2019,Education,false,false,false,false,true,3,true,true
+A1990,Midwest,2019,Other,false,false,false,false,true,8,false,false
+A1991,Northeast,2019,Education,false,false,false,true,true,6,false,false
+A1992,Mid-Atlantic,2019,Public service,false,false,false,true,true,3,false,true
+A1993,West,2020,Other,true,false,false,true,true,8,true,false
+A1994,Mountain,2020,Education,true,true,false,false,true,1,true,false
+A1995,South,2020,Other,false,false,false,false,true,7,true,true
+A1996,Midwest,2020,Public service,true,false,true,true,false,6,false,true
+A1997,Northeast,2020,Public service,false,false,true,true,false,3,false,true
+A1998,Mid-Atlantic,2020,Private sector,false,false,false,true,true,1,false,true
+A1999,West,2021,Private sector,false,true,false,false,true,6,false,false
+A2000,Mountain,2021,Private sector,false,false,false,false,true,3,true,true
+A2001,South,2021,Public service,false,false,false,true,true,3,true,true
+A2002,Midwest,2021,Private sector,false,false,false,true,false,7,false,true
+A2003,Northeast,2021,Private sector,true,false,false,true,true,5,true,false
+A2004,Mid-Atlantic,2021,Nonprofit,false,false,true,false,false,0,true,true
+A2005,West,2022,Other,true,false,false,true,true,7,false,false
+A2006,Mountain,2022,Education,true,false,false,true,true,1,true,true
+A2007,South,2022,Private sector,false,false,true,true,true,3,true,true
+A2008,Midwest,2022,Other,true,false,false,true,true,2,true,true
+A2009,Northeast,2022,Public service,true,false,false,true,true,2,false,false
+A2010,Mid-Atlantic,2022,Private sector,false,false,false,true,true,6,false,true
+A2011,West,2023,Public service,true,false,true,true,true,7,false,true
+A2012,Mountain,2023,Other,true,true,true,true,true,3,false,true
+A2013,South,2023,Education,true,false,false,true,false,5,false,true
+A2014,Midwest,2023,Private sector,false,false,false,true,true,1,true,true
+A2015,Northeast,2023,Private sector,false,true,false,true,true,1,false,false
+A2016,Mid-Atlantic,2023,Public service,false,false,false,false,true,6,false,true
+A2017,West,2018,Nonprofit,true,false,false,true,true,0,false,true
+A2018,Mountain,2018,Other,false,false,false,false,true,0,false,true
+A2019,South,2018,Other,false,false,true,true,true,4,true,false
+A2020,Midwest,2018,Education,true,false,false,true,false,2,false,true
+A2021,Northeast,2018,Other,false,false,true,true,true,7,true,false
+A2022,Mid-Atlantic,2018,Other,true,false,true,true,true,2,true,true
+A2023,West,2019,Private sector,false,false,false,true,true,5,true,false
+A2024,Mountain,2019,Private sector,true,false,false,true,false,1,true,true
+A2025,South,2019,Private sector,false,false,true,true,true,7,false,false
+A2026,Midwest,2019,Nonprofit,false,false,false,true,true,8,true,false
+A2027,Northeast,2019,Education,true,false,false,true,true,2,true,false
+A2028,Mid-Atlantic,2019,Education,true,false,false,true,true,6,true,true
+A2029,West,2020,Education,false,false,true,true,false,3,false,false
+A2030,Mountain,2020,Education,false,true,false,true,true,5,false,true
+A2031,South,2020,Public service,false,false,false,true,true,2,false,false
+A2032,Midwest,2020,Nonprofit,true,false,true,true,true,8,false,true
+A2033,Northeast,2020,Other,true,false,false,true,true,1,false,true
+A2034,Mid-Atlantic,2020,Other,true,false,true,false,false,3,true,false
+A2035,West,2021,Other,false,false,false,true,true,3,true,false
+A2036,Mountain,2021,Private sector,false,false,false,true,false,6,true,false
+A2037,South,2021,Education,true,false,false,true,true,7,false,false
+A2038,Midwest,2021,Nonprofit,true,false,false,true,false,0,false,true
+A2039,Northeast,2021,Nonprofit,false,false,false,true,false,6,true,false
+A2040,Mid-Atlantic,2021,Other,false,false,false,false,true,8,false,true
+A2041,West,2022,Education,false,false,false,true,false,8,true,true
+A2042,Mountain,2022,Public service,false,false,false,false,false,6,false,true
+A2043,South,2022,Education,false,false,true,true,true,8,true,true
+A2044,Midwest,2022,Education,true,false,false,true,true,2,true,false
+A2045,Northeast,2022,Private sector,false,false,false,true,false,5,false,true
+A2046,Mid-Atlantic,2022,Nonprofit,true,false,true,false,true,0,true,true
+A2047,West,2023,Public service,false,false,true,true,true,7,true,true
+A2048,Mountain,2023,Other,false,true,false,true,true,3,false,true
+A2049,South,2023,Public service,false,true,false,true,false,6,true,true
+A2050,Midwest,2023,Nonprofit,false,false,false,true,true,6,false,false
+A2051,Northeast,2023,Nonprofit,false,false,false,true,true,7,true,false
+A2052,Mid-Atlantic,2023,Private sector,true,false,false,true,true,0,true,true
+A2053,West,2018,Public service,true,false,true,true,false,4,true,false
+A2054,Mountain,2018,Education,false,true,false,false,false,1,false,false
+A2055,South,2018,Other,true,false,false,true,true,0,false,false
+A2056,Midwest,2018,Other,true,false,false,true,true,3,true,true
+A2057,Northeast,2018,Other,false,true,false,true,false,6,false,false
+A2058,Mid-Atlantic,2018,Private sector,true,false,false,false,true,0,true,true
+A2059,West,2019,Nonprofit,false,false,true,false,true,2,true,false
+A2060,Mountain,2019,Other,false,false,false,true,false,2,false,false
+A2061,South,2019,Private sector,true,true,false,true,true,3,false,false
+A2062,Midwest,2019,Public service,true,false,false,true,true,2,true,true
+A2063,Northeast,2019,Nonprofit,false,false,false,true,true,2,false,true
+A2064,Mid-Atlantic,2019,Nonprofit,false,false,false,true,false,4,false,true
+A2065,West,2020,Private sector,false,false,false,true,true,3,false,true
+A2066,Mountain,2020,Nonprofit,false,false,true,true,true,3,false,false
+A2067,South,2020,Nonprofit,false,false,true,true,false,0,false,true
+A2068,Midwest,2020,Public service,false,false,true,false,true,1,true,false
+A2069,Northeast,2020,Public service,false,true,false,false,true,3,true,true
+A2070,Mid-Atlantic,2020,Private sector,false,false,false,true,true,7,false,false
+A2071,West,2021,Public service,true,true,true,true,true,2,false,true
+A2072,Mountain,2021,Private sector,false,false,false,true,true,4,false,true
+A2073,South,2021,Nonprofit,false,false,false,true,true,3,false,false
+A2074,Midwest,2021,Education,false,true,false,true,true,4,true,false
+A2075,Northeast,2021,Nonprofit,false,true,false,true,true,2,false,false
+A2076,Mid-Atlantic,2021,Other,true,false,false,true,true,8,false,false
+A2077,West,2022,Private sector,false,false,false,true,true,4,false,true
+A2078,Mountain,2022,Private sector,true,false,false,true,true,6,true,false
+A2079,South,2022,Public service,true,false,false,true,true,5,false,false
+A2080,Midwest,2022,Private sector,false,false,false,true,true,5,false,true
+A2081,Northeast,2022,Nonprofit,false,false,true,true,false,8,true,true
+A2082,Mid-Atlantic,2022,Education,true,false,true,true,true,4,false,false
+A2083,West,2023,Public service,true,false,false,true,true,3,false,true
+A2084,Mountain,2023,Nonprofit,false,false,false,true,true,6,true,false
+A2085,South,2023,Public service,true,false,true,true,true,4,false,true
+A2086,Midwest,2023,Other,false,false,true,false,true,6,true,true
+A2087,Northeast,2023,Private sector,false,false,false,true,true,0,false,true
+A2088,Mid-Atlantic,2023,Public service,false,false,false,true,true,1,true,true
+A2089,West,2018,Nonprofit,false,false,false,true,true,8,false,false
+A2090,Mountain,2018,Other,true,false,true,true,false,8,true,true
+A2091,South,2018,Private sector,true,false,true,true,true,1,false,false
+A2092,Midwest,2018,Public service,false,false,false,true,true,5,false,true
+A2093,Northeast,2018,Nonprofit,false,false,false,true,true,1,false,false
+A2094,Mid-Atlantic,2018,Private sector,true,false,true,true,true,2,true,true
+A2095,West,2019,Private sector,true,true,true,true,true,6,true,true
+A2096,Mountain,2019,Private sector,false,false,false,true,false,5,false,false
+A2097,South,2019,Education,false,false,false,false,true,6,false,true
+A2098,Midwest,2019,Other,false,false,false,true,true,6,false,false
+A2099,Northeast,2019,Education,false,false,true,true,true,4,false,true
+A2100,Mid-Atlantic,2019,Other,true,false,true,true,true,3,false,false
+A2101,West,2020,Public service,false,false,true,true,true,4,true,true
+A2102,Mountain,2020,Education,false,false,false,false,true,1,true,true
+A2103,South,2020,Other,true,true,false,true,true,6,false,false
+A2104,Midwest,2020,Other,false,true,false,true,false,5,true,true
+A2105,Northeast,2020,Education,false,false,false,true,false,7,false,true
+A2106,Mid-Atlantic,2020,Public service,false,false,true,true,false,3,true,true
+A2107,West,2021,Public service,true,false,true,true,true,0,true,true
+A2108,Mountain,2021,Public service,false,true,false,false,true,1,true,false
+A2109,South,2021,Public service,false,false,false,true,true,7,true,true
+A2110,Midwest,2021,Private sector,false,false,false,true,false,2,true,true
+A2111,Northeast,2021,Private sector,false,false,false,true,true,6,true,false
+A2112,Mid-Atlantic,2021,Other,true,false,false,true,true,6,true,false
+A2113,West,2022,Education,false,false,false,true,false,2,true,true
+A2114,Mountain,2022,Public service,false,false,false,false,false,3,true,false
+A2115,South,2022,Education,false,true,false,true,true,2,false,false
+A2116,Midwest,2022,Education,false,false,false,true,true,5,true,false
+A2117,Northeast,2022,Private sector,true,false,false,false,true,5,true,false
+A2118,Mid-Atlantic,2022,Public service,true,false,false,true,true,3,false,false
+A2119,West,2023,Other,false,false,true,true,true,2,false,true
+A2120,Mountain,2023,Private sector,false,false,false,true,true,2,false,false
+A2121,South,2023,Public service,false,false,true,true,true,7,true,true
+A2122,Midwest,2023,Public service,true,false,false,true,true,1,false,true
+A2123,Northeast,2023,Public service,false,false,true,true,true,6,false,false
+A2124,Mid-Atlantic,2023,Private sector,false,true,false,false,true,7,false,false
+A2125,West,2018,Public service,false,false,false,true,false,4,true,true
+A2126,Mountain,2018,Education,true,false,false,true,true,8,false,false
+A2127,South,2018,Private sector,false,false,false,false,true,8,true,true
+A2128,Midwest,2018,Other,false,false,false,true,true,0,true,false
+A2129,Northeast,2018,Other,true,false,false,true,false,0,true,true
+A2130,Mid-Atlantic,2018,Nonprofit,true,false,true,true,true,6,false,false
+A2131,West,2019,Education,true,false,true,true,false,0,false,true
+A2132,Mountain,2019,Public service,false,false,true,true,true,7,false,false
+A2133,South,2019,Private sector,false,true,false,true,true,3,false,true
+A2134,Midwest,2019,Nonprofit,false,false,false,true,true,6,true,false
+A2135,Northeast,2019,Nonprofit,false,false,false,true,true,8,true,true
+A2136,Mid-Atlantic,2019,Private sector,true,true,false,false,true,7,true,true
+A2137,West,2020,Public service,true,false,false,true,true,0,false,true
+A2138,Mountain,2020,Education,false,false,true,true,false,4,true,false
+A2139,South,2020,Nonprofit,false,false,false,true,true,4,true,false
+A2140,Midwest,2020,Other,true,false,true,false,false,8,false,false
+A2141,Northeast,2020,Nonprofit,false,false,false,true,true,1,true,true
+A2142,Mid-Atlantic,2020,Nonprofit,false,false,true,true,false,2,true,true
+A2143,West,2021,Other,true,false,true,true,true,0,false,true
+A2144,Mountain,2021,Private sector,false,false,false,true,true,8,false,true
+A2145,South,2021,Private sector,false,false,false,false,false,8,false,true
+A2146,Midwest,2021,Education,false,false,false,true,true,2,true,true
+A2147,Northeast,2021,Public service,false,true,false,true,true,5,true,false
+A2148,Mid-Atlantic,2021,Education,false,true,false,false,true,8,false,true
+A2149,West,2022,Other,true,true,false,true,false,2,false,true
+A2150,Mountain,2022,Nonprofit,false,false,false,true,true,0,true,true
+A2151,South,2022,Education,true,false,false,true,false,4,false,true
+A2152,Midwest,2022,Private sector,false,false,false,true,true,7,true,false
+A2153,Northeast,2022,Nonprofit,false,false,false,true,false,3,false,false
+A2154,Mid-Atlantic,2022,Education,true,false,true,true,true,5,true,false
+A2155,West,2023,Private sector,false,false,false,true,true,7,false,true
+A2156,Mountain,2023,Public service,false,false,false,false,false,5,true,true
+A2157,South,2023,Education,true,false,false,true,true,0,true,false
+A2158,Midwest,2023,Education,false,false,false,true,true,7,false,true
+A2159,Northeast,2023,Education,false,false,false,true,true,2,false,true
+A2160,Mid-Atlantic,2023,Nonprofit,true,false,false,false,true,3,true,false
+A2161,West,2018,Private sector,false,false,false,true,false,6,true,true
+A2162,Mountain,2018,Education,false,false,false,false,true,4,false,true
+A2163,South,2018,Private sector,false,true,true,false,true,1,true,false
+A2164,Midwest,2018,Other,false,false,false,true,true,0,true,false
+A2165,Northeast,2018,Public service,true,false,true,true,true,6,true,true
+A2166,Mid-Atlantic,2018,Public service,true,false,false,false,true,6,false,true
+A2167,West,2019,Nonprofit,true,true,false,true,true,6,false,true
+A2168,Mountain,2019,Education,true,false,true,true,true,0,true,false
+A2169,South,2019,Public service,false,true,false,true,true,4,true,false
+A2170,Midwest,2019,Nonprofit,false,false,false,true,true,7,true,true
+A2171,Northeast,2019,Public service,true,false,true,false,true,6,false,true
+A2172,Mid-Atlantic,2019,Nonprofit,false,true,false,true,true,2,true,true
+A2173,West,2020,Other,false,false,false,false,false,4,false,false
+A2174,Mountain,2020,Public service,false,false,false,true,true,3,true,false
+A2175,South,2020,Nonprofit,true,true,false,true,true,1,false,true
+A2176,Midwest,2020,Public service,false,false,true,true,true,3,true,false
+A2177,Northeast,2020,Public service,true,false,false,true,true,6,false,false
+A2178,Mid-Atlantic,2020,Public service,false,false,false,true,true,2,true,true
+A2179,West,2021,Public service,true,false,false,true,true,6,false,true
+A2180,Mountain,2021,Nonprofit,true,false,false,true,true,4,true,true
+A2181,South,2021,Other,true,false,true,true,false,5,false,true
+A2182,Midwest,2021,Other,false,false,false,true,false,8,true,true
+A2183,Northeast,2021,Public service,false,false,false,true,true,2,true,true
+A2184,Mid-Atlantic,2021,Public service,true,false,false,true,true,5,false,false
+A2185,West,2022,Private sector,false,false,false,true,true,5,true,true
+A2186,Mountain,2022,Other,false,true,false,true,true,3,true,true
+A2187,South,2022,Public service,true,false,true,true,true,1,false,true
+A2188,Midwest,2022,Private sector,false,true,false,true,false,1,false,false
+A2189,Northeast,2022,Other,true,false,false,true,true,7,false,true
+A2190,Mid-Atlantic,2022,Nonprofit,false,false,false,true,true,6,false,false
+A2191,West,2023,Other,false,false,false,true,false,8,true,true
+A2192,Mountain,2023,Public service,true,false,false,true,false,4,true,true
+A2193,South,2023,Private sector,false,false,false,true,true,3,false,false
+A2194,Midwest,2023,Public service,false,false,false,true,false,6,false,true
+A2195,Northeast,2023,Public service,true,false,false,true,false,4,false,false
+A2196,Mid-Atlantic,2023,Private sector,true,false,false,true,true,7,true,true
+A2197,West,2018,Other,false,false,false,true,true,8,false,false
+A2198,Mountain,2018,Private sector,true,false,true,true,true,7,false,false
+A2199,South,2018,Education,true,true,false,true,true,7,true,true
+A2200,Midwest,2018,Private sector,false,true,true,true,true,8,false,false
+A2201,Northeast,2018,Public service,false,false,false,true,true,2,true,true
+A2202,Mid-Atlantic,2018,Private sector,false,true,true,false,true,0,false,true
+A2203,West,2019,Education,false,false,false,true,true,4,true,false
+A2204,Mountain,2019,Other,false,false,false,true,true,3,false,false
+A2205,South,2019,Other,false,false,false,true,false,4,false,true
+A2206,Midwest,2019,Public service,false,false,false,true,false,7,true,false
+A2207,Northeast,2019,Education,false,false,false,true,true,4,false,true
+A2208,Mid-Atlantic,2019,Education,false,false,false,true,false,6,false,true
+A2209,West,2020,Public service,false,false,false,true,true,4,true,true
+A2210,Mountain,2020,Nonprofit,false,false,true,true,true,4,true,true
+A2211,South,2020,Education,true,false,false,true,true,5,false,true
+A2212,Midwest,2020,Education,false,false,false,true,true,1,false,false
+A2213,Northeast,2020,Education,true,false,false,true,true,4,true,false
+A2214,Mid-Atlantic,2020,Other,false,false,false,true,true,6,true,true
+A2215,West,2021,Education,false,false,false,true,false,2,true,false
+A2216,Mountain,2021,Other,true,true,false,false,true,5,false,true
+A2217,South,2021,Other,false,false,true,true,true,1,true,true
+A2218,Midwest,2021,Nonprofit,false,false,false,true,true,2,false,true
+A2219,Northeast,2021,Private sector,false,false,false,true,true,2,false,false
+A2220,Mid-Atlantic,2021,Nonprofit,true,false,false,true,true,6,true,true
+A2221,West,2022,Other,false,false,false,false,true,8,false,false
+A2222,Mountain,2022,Nonprofit,true,false,true,false,true,1,false,false
+A2223,South,2022,Education,false,false,false,true,false,4,true,true
+A2224,Midwest,2022,Public service,false,false,false,true,true,6,false,false
+A2225,Northeast,2022,Public service,false,true,false,true,true,1,true,false
+A2226,Mid-Atlantic,2022,Public service,true,false,true,true,false,2,false,true
+A2227,West,2023,Nonprofit,false,true,false,true,true,6,true,true
+A2228,Mountain,2023,Nonprofit,false,false,false,true,true,4,false,false
+A2229,South,2023,Other,false,false,true,false,true,7,false,false
+A2230,Midwest,2023,Private sector,false,false,false,true,true,2,true,true
+A2231,Northeast,2023,Other,false,false,false,true,true,8,true,true
+A2232,Mid-Atlantic,2023,Education,false,false,false,true,true,8,false,false
+A2233,West,2018,Education,false,false,false,true,true,8,true,true
+A2234,Mountain,2018,Public service,false,false,false,false,true,8,false,true
+A2235,South,2018,Education,false,false,true,true,false,0,false,false
+A2236,Midwest,2018,Public service,false,false,true,true,true,4,true,false
+A2237,Northeast,2018,Private sector,true,false,true,true,true,8,false,false
+A2238,Mid-Atlantic,2018,Public service,true,true,false,true,false,2,true,false
+A2239,West,2019,Public service,false,false,false,true,true,2,false,true
+A2240,Mountain,2019,Private sector,false,false,true,true,true,1,true,true
+A2241,South,2019,Other,false,false,false,true,false,8,true,true
+A2242,Midwest,2019,Private sector,true,true,false,true,false,4,false,false
+A2243,Northeast,2019,Public service,false,false,false,true,true,8,false,false
+A2244,Mid-Atlantic,2019,Public service,false,false,false,true,true,1,false,false
+A2245,West,2020,Private sector,false,false,false,true,true,6,false,false
+A2246,Mountain,2020,Nonprofit,false,false,true,true,true,2,false,true
+A2247,South,2020,Public service,false,false,false,true,true,5,false,false
+A2248,Midwest,2020,Public service,false,false,false,false,true,5,false,false
+A2249,Northeast,2020,Education,true,false,true,true,true,7,false,false
+A2250,Mid-Atlantic,2020,Education,false,false,false,true,true,4,true,false
+A2251,West,2021,Public service,false,true,false,true,true,8,true,false
+A2252,Mountain,2021,Other,false,true,false,true,true,6,false,false
+A2253,South,2021,Other,false,false,false,true,true,8,false,false
+A2254,Midwest,2021,Public service,true,true,false,false,false,6,true,false
+A2255,Northeast,2021,Private sector,false,false,false,true,true,0,false,true
+A2256,Mid-Atlantic,2021,Other,false,false,false,false,false,6,false,false
+A2257,West,2022,Education,true,false,true,true,false,7,true,true
+A2258,Mountain,2022,Education,true,false,true,true,true,2,false,true
+A2259,South,2022,Nonprofit,true,false,true,true,true,1,false,true
+A2260,Midwest,2022,Nonprofit,true,true,false,true,true,7,false,true
+A2261,Northeast,2022,Nonprofit,false,false,false,true,true,0,false,true
+A2262,Mid-Atlantic,2022,Other,false,false,true,true,true,5,false,true
+A2263,West,2023,Public service,false,false,true,true,false,2,false,true
+A2264,Mountain,2023,Private sector,true,false,true,true,true,2,true,false
+A2265,South,2023,Education,false,false,false,true,false,6,false,false
+A2266,Midwest,2023,Private sector,false,false,false,true,false,6,false,true
+A2267,Northeast,2023,Education,true,false,false,true,true,8,true,false
+A2268,Mid-Atlantic,2023,Education,false,false,false,true,true,6,true,true
+A2269,West,2018,Nonprofit,false,false,true,true,true,8,false,true
+A2270,Mountain,2018,Public service,false,false,false,true,true,4,false,false
+A2271,South,2018,Other,false,false,true,true,true,2,false,true
+A2272,Midwest,2018,Nonprofit,true,true,false,true,true,4,false,true
+A2273,Northeast,2018,Education,false,false,false,true,false,7,false,false
+A2274,Mid-Atlantic,2018,Other,false,false,false,true,true,2,false,true
+A2275,West,2019,Other,false,false,false,true,false,8,false,true
+A2276,Mountain,2019,Other,false,false,false,true,true,7,false,true
+A2277,South,2019,Education,false,false,false,true,true,2,false,false
+A2278,Midwest,2019,Private sector,false,true,true,true,true,1,false,true
+A2279,Northeast,2019,Nonprofit,true,false,true,false,false,4,false,true
+A2280,Mid-Atlantic,2019,Other,true,false,false,true,true,0,false,false
+A2281,West,2020,Public service,true,false,false,true,false,4,true,true
+A2282,Mountain,2020,Public service,false,false,false,true,true,8,false,true
+A2283,South,2020,Public service,false,false,false,true,true,8,false,false
+A2284,Midwest,2020,Education,false,true,true,true,true,8,false,true
+A2285,Northeast,2020,Public service,false,true,true,true,false,7,true,false
+A2286,Mid-Atlantic,2020,Other,false,true,true,true,true,5,false,false
+A2287,West,2021,Public service,false,false,false,true,false,0,true,false
+A2288,Mountain,2021,Private sector,true,false,false,true,false,0,true,true
+A2289,South,2021,Nonprofit,false,true,false,true,false,0,true,true
+A2290,Midwest,2021,Public service,true,true,false,true,false,8,false,true
+A2291,Northeast,2021,Private sector,false,false,false,true,true,4,false,true
+A2292,Mid-Atlantic,2021,Other,true,false,false,true,true,7,true,false
+A2293,West,2022,Other,false,false,false,true,true,4,false,true
+A2294,Mountain,2022,Nonprofit,true,false,false,true,true,2,true,false
+A2295,South,2022,Other,false,true,true,false,true,5,true,true
+A2296,Midwest,2022,Public service,true,false,false,true,true,7,true,true
+A2297,Northeast,2022,Other,true,false,false,true,false,0,true,false
+A2298,Mid-Atlantic,2022,Education,false,false,false,true,true,7,false,false
+A2299,West,2023,Education,true,false,false,true,true,3,true,false
+A2300,Mountain,2023,Other,false,true,false,true,true,4,true,true
+A2301,South,2023,Public service,true,false,false,true,true,2,true,false
+A2302,Midwest,2023,Public service,false,true,false,true,true,6,false,true
+A2303,Northeast,2023,Education,false,false,false,true,true,3,true,false
+A2304,Mid-Atlantic,2023,Public service,false,false,true,false,true,5,true,false
+A2305,West,2018,Public service,false,false,true,false,true,5,true,true
+A2306,Mountain,2018,Public service,false,true,false,true,false,0,true,true
+A2307,South,2018,Education,false,false,false,true,true,3,true,false
+A2308,Midwest,2018,Private sector,true,true,false,false,true,3,true,true
+A2309,Northeast,2018,Nonprofit,false,false,false,true,true,0,false,false
+A2310,Mid-Atlantic,2018,Education,false,false,true,true,false,0,true,true
+A2311,West,2019,Private sector,true,false,false,true,true,0,false,false
+A2312,Mountain,2019,Public service,false,true,true,true,true,1,false,true
+A2313,South,2019,Education,false,false,false,true,false,1,true,false
+A2314,Midwest,2019,Education,false,false,false,false,true,6,false,true
+A2315,Northeast,2019,Private sector,false,false,false,true,true,5,false,false
+A2316,Mid-Atlantic,2019,Education,false,false,false,true,true,2,false,true
+A2317,West,2020,Nonprofit,false,false,false,true,true,5,true,true
+A2318,Mountain,2020,Nonprofit,true,false,false,true,true,6,true,false
+A2319,South,2020,Nonprofit,false,false,false,true,true,6,false,true
+A2320,Midwest,2020,Other,false,false,false,true,true,7,false,false
+A2321,Northeast,2020,Nonprofit,false,false,false,true,false,1,true,false
+A2322,Mid-Atlantic,2020,Public service,false,false,false,true,false,0,true,true
+A2323,West,2021,Other,true,false,false,false,true,1,false,true
+A2324,Mountain,2021,Education,false,false,true,true,false,0,false,true
+A2325,South,2021,Nonprofit,false,false,true,true,false,1,true,false
+A2326,Midwest,2021,Other,true,false,false,true,true,7,false,true
+A2327,Northeast,2021,Public service,false,false,false,true,true,5,true,true
+A2328,Mid-Atlantic,2021,Nonprofit,false,false,false,false,true,5,false,true
+A2329,West,2022,Other,false,false,false,false,false,1,true,true
+A2330,Mountain,2022,Private sector,false,true,false,true,true,5,true,true
+A2331,South,2022,Other,false,true,false,true,true,7,true,false
+A2332,Midwest,2022,Nonprofit,false,false,true,true,true,8,true,false
+A2333,Northeast,2022,Private sector,false,false,false,true,false,7,false,false
+A2334,Mid-Atlantic,2022,Education,true,false,false,false,true,6,false,false
+A2335,West,2023,Other,false,false,false,true,true,6,true,true
+A2336,Mountain,2023,Private sector,false,false,false,false,true,5,false,true
+A2337,South,2023,Other,false,false,false,true,true,7,false,true
+A2338,Midwest,2023,Other,false,false,false,true,true,1,true,false
+A2339,Northeast,2023,Other,true,false,false,true,false,2,false,false
+A2340,Mid-Atlantic,2023,Education,false,false,false,false,false,3,true,false
+A2341,West,2018,Private sector,false,false,false,true,true,8,false,true
+A2342,Mountain,2018,Public service,false,false,false,true,true,3,true,false
+A2343,South,2018,Private sector,false,false,false,true,true,1,true,false
+A2344,Midwest,2018,Public service,false,false,true,true,false,4,true,true
+A2345,Northeast,2018,Private sector,false,false,false,true,false,5,true,true
+A2346,Mid-Atlantic,2018,Other,true,false,false,true,true,4,true,true
+A2347,West,2019,Public service,true,false,false,true,false,3,false,false
+A2348,Mountain,2019,Nonprofit,true,true,false,true,true,6,false,true
+A2349,South,2019,Education,true,false,true,true,true,4,true,false
+A2350,Midwest,2019,Education,true,false,true,true,true,1,true,false
+A2351,Northeast,2019,Private sector,false,false,false,true,false,4,true,false
+A2352,Mid-Atlantic,2019,Education,false,true,false,true,true,3,true,false
+A2353,West,2020,Other,false,false,true,true,false,2,true,true
+A2354,Mountain,2020,Nonprofit,false,false,false,true,true,0,true,true
+A2355,South,2020,Education,false,false,false,true,true,4,true,false
+A2356,Midwest,2020,Private sector,false,false,true,true,false,2,true,true
+A2357,Northeast,2020,Private sector,true,false,false,true,true,1,false,true
+A2358,Mid-Atlantic,2020,Public service,true,false,false,true,true,8,false,true
+A2359,West,2021,Education,false,false,false,true,true,0,true,true
+A2360,Mountain,2021,Public service,false,false,false,false,false,4,true,true
+A2361,South,2021,Other,false,true,true,true,false,0,false,false
+A2362,Midwest,2021,Other,false,false,false,true,true,5,true,true
+A2363,Northeast,2021,Private sector,true,false,true,true,true,5,false,true
+A2364,Mid-Atlantic,2021,Education,false,false,true,true,true,0,true,true
+A2365,West,2022,Other,true,false,true,true,true,4,false,false
+A2366,Mountain,2022,Other,true,false,false,true,true,4,false,false
+A2367,South,2022,Private sector,true,false,false,false,true,1,true,true
+A2368,Midwest,2022,Other,false,false,false,true,false,7,false,false
+A2369,Northeast,2022,Nonprofit,true,false,true,true,true,7,false,false
+A2370,Mid-Atlantic,2022,Other,false,false,false,true,true,5,false,true
+A2371,West,2023,Private sector,true,false,true,true,true,5,true,true
+A2372,Mountain,2023,Private sector,false,false,false,true,true,8,false,false
+A2373,South,2023,Private sector,true,false,false,true,false,4,false,true
+A2374,Midwest,2023,Other,false,false,false,true,false,8,true,false
+A2375,Northeast,2023,Nonprofit,false,false,false,true,true,4,true,false
+A2376,Mid-Atlantic,2023,Other,true,false,false,true,false,7,true,true
+A2377,West,2018,Nonprofit,false,true,false,true,false,1,false,true
+A2378,Mountain,2018,Public service,false,false,false,true,true,4,false,true
+A2379,South,2018,Private sector,false,false,false,true,true,2,false,true
+A2380,Midwest,2018,Other,false,false,false,true,true,0,true,false
+A2381,Northeast,2018,Other,false,false,false,true,true,5,true,true
+A2382,Mid-Atlantic,2018,Education,false,false,false,true,true,4,true,true
+A2383,West,2019,Other,false,false,false,false,false,6,false,true
+A2384,Mountain,2019,Education,true,false,true,true,true,6,true,false
+A2385,South,2019,Other,false,true,true,true,true,2,true,true
+A2386,Midwest,2019,Nonprofit,false,false,false,true,false,0,true,false
+A2387,Northeast,2019,Nonprofit,false,false,true,true,true,8,false,false
+A2388,Mid-Atlantic,2019,Public service,false,false,true,true,true,2,true,false
+A2389,West,2020,Education,true,true,true,false,false,1,true,true
+A2390,Mountain,2020,Public service,true,true,false,true,true,1,false,true
+A2391,South,2020,Other,false,true,true,true,false,4,false,true
+A2392,Midwest,2020,Private sector,false,false,true,true,true,0,true,false
+A2393,Northeast,2020,Other,false,false,false,true,false,3,false,false
+A2394,Mid-Atlantic,2020,Public service,false,false,false,true,true,7,true,true
+A2395,West,2021,Public service,false,false,false,true,true,6,true,false
+A2396,Mountain,2021,Private sector,false,false,false,true,true,7,false,false
+A2397,South,2021,Nonprofit,false,false,true,true,true,2,true,false
+A2398,Midwest,2021,Public service,false,false,false,true,false,4,false,false
+A2399,Northeast,2021,Other,false,false,true,true,true,7,false,true
+A2400,Mid-Atlantic,2021,Other,false,false,false,true,true,4,false,true
